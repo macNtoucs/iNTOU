@@ -1,0 +1,1080 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6EE67C7430399DF9C4E0BEED /* Pods_iNTOU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D058C77D855CA05A140962 /* Pods_iNTOU.framework */; };
+		9100EFE81E33449300756AE5 /* ModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9100EFE71E33449300756AE5 /* ModuleManager.m */; };
+		91053ABD1E51978300ACEA8D /* LifeModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91053ABC1E51978300ACEA8D /* LifeModule.storyboard */; };
+		91053AC21E51995800ACEA8D /* LifeModule.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91053AC11E51995800ACEA8D /* LifeModule.plist */; };
+		911B7CB61E476B15001A5328 /* CalendarModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 911B7CB51E476B15001A5328 /* CalendarModule.storyboard */; };
+		912B68851E717E460038D261 /* TrafficBusStopTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B68841E717E460038D261 /* TrafficBusStopTableViewController.m */; };
+		912B68881E780CE50038D261 /* TrafficBusRouteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B68871E780CE50038D261 /* TrafficBusRouteTableViewController.m */; };
+		912B68901E7949DD0038D261 /* TrafficExpressTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B688F1E7949DD0038D261 /* TrafficExpressTableViewController.m */; };
+		912B68921E7BA3280038D261 /* TrainStationList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 912B68911E7BA3280038D261 /* TrainStationList.plist */; };
+		912B68951E7BA3AC0038D261 /* TrafficExpressDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B68941E7BA3AC0038D261 /* TrafficExpressDetailTableViewController.m */; };
+		912B68981E7BABD60038D261 /* TrafficTrainDepartureTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B68971E7BABD60038D261 /* TrafficTrainDepartureTableViewController.m */; };
+		912B689B1E7BB4460038D261 /* TrafficTrainDestinationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B689A1E7BB4460038D261 /* TrafficTrainDestinationTableViewController.m */; };
+		912B689E1E7BB7460038D261 /* TrafficTrainDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B689D1E7BB7460038D261 /* TrafficTrainDateViewController.m */; };
+		912B68A11E7BC43C0038D261 /* TrafficTrainCarClassTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B68A01E7BC43C0038D261 /* TrafficTrainCarClassTableViewController.m */; };
+		912B68A71E7BC9700038D261 /* TrafficTrainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B68A61E7BC9700038D261 /* TrafficTrainTabBarController.m */; };
+		912B68AA1E7FC9E40038D261 /* TrafficTrainTimeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B68A91E7FC9E40038D261 /* TrafficTrainTimeTableViewController.m */; };
+		912B68B11E80009C0038D261 /* TrafficHSRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B68B01E80009C0038D261 /* TrafficHSRTabBarController.m */; };
+		912B68B41E8000FA0038D261 /* TrafficHSRDepartureTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B68B31E8000FA0038D261 /* TrafficHSRDepartureTableViewController.m */; };
+		912B68BF1E8005C20038D261 /* HSRStationList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 912B68BE1E8005C20038D261 /* HSRStationList.plist */; };
+		912B68C11E8007CB0038D261 /* TrafficHSRDestinationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B68C01E8007CB0038D261 /* TrafficHSRDestinationTableViewController.m */; };
+		912B68C61E8007D80038D261 /* TrafficHSRDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B68C31E8007D80038D261 /* TrafficHSRDateViewController.m */; };
+		912B68C71E8007D80038D261 /* TrafficHSRTimeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B68C51E8007D80038D261 /* TrafficHSRTimeTableViewController.m */; };
+		912B68C91E8292D70038D261 /* LibraryMedia.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 912B68C81E8292D70038D261 /* LibraryMedia.xcassets */; };
+		912B68CD1E8294FF0038D261 /* StellarMedia.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 912B68CC1E8294FF0038D261 /* StellarMedia.xcassets */; };
+		912B68D41E838D7D0038D261 /* NTOUBusTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B68D31E838D7D0038D261 /* NTOUBusTableViewController.m */; };
+		912B68D71E8393650038D261 /* NTOUToMRTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B68D61E8393650038D261 /* NTOUToMRTTableViewController.m */; };
+		912B68DA1E839FBE0038D261 /* NTOU1800TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B68D91E839FBE0038D261 /* NTOU1800TableViewController.m */; };
+		912B68DD1E83A3100038D261 /* NTOUBadouziTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B68DC1E83A3100038D261 /* NTOUBadouziTableViewController.m */; };
+		912B68E01E83AF420038D261 /* NTOUR66TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B68DF1E83AF420038D261 /* NTOUR66TableViewController.m */; };
+		912B68E31E83DE140038D261 /* NTOUR66PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B68E21E83DE140038D261 /* NTOUR66PictureViewController.m */; };
+		91342BB01EA4713E004F7422 /* StellarViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 91342BAF1EA4713E004F7422 /* StellarViewLayout.m */; };
+		913D65071E5C25DE00888676 /* LibrarySearchResultDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913D65061E5C25DE00888676 /* LibrarySearchResultDetailTableViewController.m */; };
+		913D650E1E5D348200888676 /* TrafficModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 913D650D1E5D348200888676 /* TrafficModule.storyboard */; };
+		913D65101E5D37E700888676 /* TrafficMedia.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 913D650F1E5D37E700888676 /* TrafficMedia.xcassets */; };
+		913D65121E5D380600888676 /* LifeMedia.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 913D65111E5D380600888676 /* LifeMedia.xcassets */; };
+		913D65161E5D44C600888676 /* TrafficBusTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913D65151E5D44C600888676 /* TrafficBusTableViewController.m */; };
+		913D65191E5D908000888676 /* TrafficClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913D65181E5D908000888676 /* TrafficClassViewController.m */; };
+		91477F9E1E55A98E00EC94C1 /* LibraryModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91477F9D1E55A98E00EC94C1 /* LibraryModule.storyboard */; };
+		91477FA01E55BFD500EC94C1 /* LibraryModuleFloor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91477F9F1E55BFD500EC94C1 /* LibraryModuleFloor.plist */; };
+		91477FA41E55C0AE00EC94C1 /* LibraryFloorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91477FA31E55C0AE00EC94C1 /* LibraryFloorTableViewController.m */; };
+		91477FA71E55C64C00EC94C1 /* LibraryConInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91477FA61E55C64C00EC94C1 /* LibraryConInfoTableViewController.m */; };
+		91477FAA1E55F5D500EC94C1 /* LibraryOpenTimeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91477FA91E55F5D500EC94C1 /* LibraryOpenTimeTableViewController.m */; };
+		91531E341E53304E005D2CAF /* GuideModule.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91531E331E53304E005D2CAF /* GuideModule.plist */; };
+		91531E371E53307C005D2CAF /* GuideTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91531E361E53307C005D2CAF /* GuideTableViewController.m */; };
+		91531E391E53309E005D2CAF /* GuideModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91531E381E53309E005D2CAF /* GuideModule.storyboard */; };
+		91531E3C1E53364F005D2CAF /* GuideLocationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91531E3B1E53364F005D2CAF /* GuideLocationsTableViewController.m */; };
+		91531E411E5343A0005D2CAF /* Moodle.m in Sources */ = {isa = PBXBuildFile; fileRef = 91531E401E5343A0005D2CAF /* Moodle.m */; };
+		91531E461E53449B005D2CAF /* GoogleMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91531E451E53449B005D2CAF /* GoogleMapViewController.m */; };
+		91678F911E3A6CFA00BE9AF0 /* NewsModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91678F901E3A6CFA00BE9AF0 /* NewsModule.storyboard */; };
+		916AAEB81E9B5064008A3F1B /* CalendarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916AAEB71E9B5064008A3F1B /* CalendarTableViewController.m */; };
+		917072561E534B2B0065F20F /* LifeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 917072551E534B2B0065F20F /* LifeButton.m */; };
+		91742CA21E9E3BC00064D5A3 /* StellarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91742CA11E9E3BC00064D5A3 /* StellarViewController.m */; };
+		91742CA81E9E3DC40064D5A3 /* StellarWeekBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 91742CA71E9E3DC40064D5A3 /* StellarWeekBar.m */; };
+		91742CAB1E9E44250064D5A3 /* StellarClassBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 91742CAA1E9E44250064D5A3 /* StellarClassBar.m */; };
+		918237AF1E88EEA3002E2464 /* LibraryBarCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 918237AE1E88EEA3002E2464 /* LibraryBarCodeViewController.m */; };
+		91853B3F1E592DA7007C37AB /* Library.m in Sources */ = {isa = PBXBuildFile; fileRef = 91853B3E1E592DA7007C37AB /* Library.m */; };
+		91853B431E593DAB007C37AB /* LibraryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91853B421E593DAB007C37AB /* LibraryTableViewController.m */; };
+		91853B461E594122007C37AB /* MoodleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91853B451E594122007C37AB /* MoodleTableViewController.m */; };
+		918896341E40137800DDC82C /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 918896331E40137800DDC82C /* NewsViewController.m */; };
+		919BC24E1E31DA4400451426 /* Module.m in Sources */ = {isa = PBXBuildFile; fileRef = 919BC24D1E31DA4400451426 /* Module.m */; };
+		91B72FA21E422B4B00896AF3 /* NewsContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B72FA11E422B4B00896AF3 /* NewsContentViewController.m */; };
+		91B8412D1E51F587000B4AAE /* LifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B8412C1E51F587000B4AAE /* LifeViewController.m */; };
+		91B841301E5223F1000B4AAE /* LifeStreetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B8412F1E5223F1000B4AAE /* LifeStreetViewController.m */; };
+		91CDBF4F1E5AC0A30085514E /* LibraryHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CDBF4E1E5AC0A30085514E /* LibraryHistoryTableViewController.m */; };
+		91CDBF581E5AE01F0085514E /* LibrarySearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CDBF571E5AE01F0085514E /* LibrarySearchViewController.m */; };
+		91CDBF5B1E5AE4260085514E /* LibrarySearchResultTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CDBF5A1E5AE4260085514E /* LibrarySearchResultTableViewController.m */; };
+		91D7A1321E977FD700B79396 /* OtherLinkModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91D7A1311E977FD700B79396 /* OtherLinkModule.storyboard */; };
+		91D7A1351E97811700B79396 /* OtherLinkTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D7A1341E97811700B79396 /* OtherLinkTableViewController.m */; };
+		91D7A1381E97820700B79396 /* AboutModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91D7A1371E97820700B79396 /* AboutModule.storyboard */; };
+		91D7A13B1E97899500B79396 /* AboutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D7A13A1E97899500B79396 /* AboutTableViewController.m */; };
+		91D7A13E1E978AF800B79396 /* AboutDeveloperTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D7A13D1E978AF800B79396 /* AboutDeveloperTableViewController.m */; };
+		91DAFED21E43934000745C2F /* NewsClassData.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAFED11E43934000745C2F /* NewsClassData.m */; };
+		91E09BAD1E5A6F8D001A1A02 /* LibraryBorrowTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E09BAC1E5A6F8D001A1A02 /* LibraryBorrowTableViewController.m */; };
+		91E09BB01E5A8421001A1A02 /* LibraryCurrentHoldTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E09BAF1E5A8421001A1A02 /* LibraryCurrentHoldTableViewController.m */; };
+		91E317EC1E5706BB005E24EB /* LibraryNewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E317EB1E5706BB005E24EB /* LibraryNewsTableViewController.m */; };
+		91E732581E31276400A54B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E732571E31276400A54B9A /* main.m */; };
+		91E7325B1E31276400A54B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E7325A1E31276400A54B9A /* AppDelegate.m */; };
+		91E732611E31276400A54B9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E7325F1E31276400A54B9A /* Main.storyboard */; };
+		91E732631E31276400A54B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E732621E31276400A54B9A /* Assets.xcassets */; };
+		91E732661E31276400A54B9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E732641E31276400A54B9A /* LaunchScreen.storyboard */; };
+		91E7326F1E3127E200A54B9A /* MainCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E7326E1E3127E200A54B9A /* MainCollectionViewController.m */; };
+		91EC9CD01E4C8AEA007BB413 /* StellarModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91EC9CCF1E4C8AEA007BB413 /* StellarModule.storyboard */; };
+		91EE91FE1E4AB94D00B2DFD1 /* CalendarModule.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91EE91FD1E4AB94D00B2DFD1 /* CalendarModule.plist */; };
+		91EE92011E4AD6AD00B2DFD1 /* EmergencyModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91EE92001E4AD6AD00B2DFD1 /* EmergencyModule.storyboard */; };
+		91EE920E1E4ADFB400B2DFD1 /* EmergencyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EE920D1E4ADFB400B2DFD1 /* EmergencyTableViewController.m */; };
+		91EE92101E4AE1B700B2DFD1 /* EmergencyModule.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91EE920F1E4AE1B700B2DFD1 /* EmergencyModule.plist */; };
+		91EE92131E4B088300B2DFD1 /* SettingModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91EE92121E4B088300B2DFD1 /* SettingModule.storyboard */; };
+		91F8DBD81E5445F000D45684 /* GoogleMapStreetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F8DBD71E5445F000D45684 /* GoogleMapStreetViewController.m */; };
+		91F8DBDB1E54659400D45684 /* StellarClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F8DBDA1E54659400D45684 /* StellarClassViewController.m */; };
+		91F8DBE21E54899400D45684 /* StellarCourseInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F8DBE11E54899400D45684 /* StellarCourseInfoTableViewController.m */; };
+		91F8DBE51E54CCD500D45684 /* StellarMoodleInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F8DBE41E54CCD500D45684 /* StellarMoodleInfoTableViewController.m */; };
+		91F8DBE81E54D33300D45684 /* StellarGradeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F8DBE71E54D33300D45684 /* StellarGradeTableViewController.m */; };
+		91F8DBEE1E54EDF100D45684 /* StellarFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F8DBED1E54EDF100D45684 /* StellarFileViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04D058C77D855CA05A140962 /* Pods_iNTOU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iNTOU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EB29B29DE07FAB35EB3ACA0 /* Pods-iNTOU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iNTOU.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iNTOU/Pods-iNTOU.debug.xcconfig"; sourceTree = "<group>"; };
+		9100EFE61E33449300756AE5 /* ModuleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModuleManager.h; path = Modules/ModuleManager.h; sourceTree = "<group>"; };
+		9100EFE71E33449300756AE5 /* ModuleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModuleManager.m; path = Modules/ModuleManager.m; sourceTree = "<group>"; };
+		91053ABC1E51978300ACEA8D /* LifeModule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LifeModule.storyboard; sourceTree = "<group>"; };
+		91053AC11E51995800ACEA8D /* LifeModule.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = LifeModule.plist; path = Resource/LifeModule.plist; sourceTree = "<group>"; };
+		911B7CB51E476B15001A5328 /* CalendarModule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CalendarModule.storyboard; path = Modules/CalendarModule/CalendarModule.storyboard; sourceTree = "<group>"; };
+		912B68831E717E460038D261 /* TrafficBusStopTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrafficBusStopTableViewController.h; path = Modules/TrafficModule/BusTraffic/TrafficBusStopTableViewController.h; sourceTree = "<group>"; };
+		912B68841E717E460038D261 /* TrafficBusStopTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrafficBusStopTableViewController.m; path = Modules/TrafficModule/BusTraffic/TrafficBusStopTableViewController.m; sourceTree = "<group>"; };
+		912B68861E780CE50038D261 /* TrafficBusRouteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrafficBusRouteTableViewController.h; path = Modules/TrafficModule/BusTraffic/TrafficBusRouteTableViewController.h; sourceTree = "<group>"; };
+		912B68871E780CE50038D261 /* TrafficBusRouteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrafficBusRouteTableViewController.m; path = Modules/TrafficModule/BusTraffic/TrafficBusRouteTableViewController.m; sourceTree = "<group>"; };
+		912B688E1E7949DD0038D261 /* TrafficExpressTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrafficExpressTableViewController.h; path = Modules/TrafficModule/ExpressTraffic/TrafficExpressTableViewController.h; sourceTree = "<group>"; };
+		912B688F1E7949DD0038D261 /* TrafficExpressTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrafficExpressTableViewController.m; path = Modules/TrafficModule/ExpressTraffic/TrafficExpressTableViewController.m; sourceTree = "<group>"; };
+		912B68911E7BA3280038D261 /* TrainStationList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = TrainStationList.plist; path = Resource/TrainStationList.plist; sourceTree = "<group>"; };
+		912B68931E7BA3AC0038D261 /* TrafficExpressDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrafficExpressDetailTableViewController.h; path = Modules/TrafficModule/ExpressTraffic/TrafficExpressDetailTableViewController.h; sourceTree = "<group>"; };
+		912B68941E7BA3AC0038D261 /* TrafficExpressDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrafficExpressDetailTableViewController.m; path = Modules/TrafficModule/ExpressTraffic/TrafficExpressDetailTableViewController.m; sourceTree = "<group>"; };
+		912B68961E7BABD60038D261 /* TrafficTrainDepartureTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrafficTrainDepartureTableViewController.h; path = Modules/TrafficModule/TrainTraffic/TrafficTrainDepartureTableViewController.h; sourceTree = "<group>"; };
+		912B68971E7BABD60038D261 /* TrafficTrainDepartureTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrafficTrainDepartureTableViewController.m; path = Modules/TrafficModule/TrainTraffic/TrafficTrainDepartureTableViewController.m; sourceTree = "<group>"; };
+		912B68991E7BB4460038D261 /* TrafficTrainDestinationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrafficTrainDestinationTableViewController.h; path = Modules/TrafficModule/TrainTraffic/TrafficTrainDestinationTableViewController.h; sourceTree = "<group>"; };
+		912B689A1E7BB4460038D261 /* TrafficTrainDestinationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrafficTrainDestinationTableViewController.m; path = Modules/TrafficModule/TrainTraffic/TrafficTrainDestinationTableViewController.m; sourceTree = "<group>"; };
+		912B689C1E7BB7460038D261 /* TrafficTrainDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrafficTrainDateViewController.h; path = Modules/TrafficModule/TrainTraffic/TrafficTrainDateViewController.h; sourceTree = "<group>"; };
+		912B689D1E7BB7460038D261 /* TrafficTrainDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrafficTrainDateViewController.m; path = Modules/TrafficModule/TrainTraffic/TrafficTrainDateViewController.m; sourceTree = "<group>"; };
+		912B689F1E7BC43C0038D261 /* TrafficTrainCarClassTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrafficTrainCarClassTableViewController.h; path = Modules/TrafficModule/TrainTraffic/TrafficTrainCarClassTableViewController.h; sourceTree = "<group>"; };
+		912B68A01E7BC43C0038D261 /* TrafficTrainCarClassTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrafficTrainCarClassTableViewController.m; path = Modules/TrafficModule/TrainTraffic/TrafficTrainCarClassTableViewController.m; sourceTree = "<group>"; };
+		912B68A51E7BC9700038D261 /* TrafficTrainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrafficTrainTabBarController.h; path = Modules/TrafficModule/TrainTraffic/TrafficTrainTabBarController.h; sourceTree = "<group>"; };
+		912B68A61E7BC9700038D261 /* TrafficTrainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrafficTrainTabBarController.m; path = Modules/TrafficModule/TrainTraffic/TrafficTrainTabBarController.m; sourceTree = "<group>"; };
+		912B68A81E7FC9E40038D261 /* TrafficTrainTimeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrafficTrainTimeTableViewController.h; path = Modules/TrafficModule/TrainTraffic/TrafficTrainTimeTableViewController.h; sourceTree = "<group>"; };
+		912B68A91E7FC9E40038D261 /* TrafficTrainTimeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrafficTrainTimeTableViewController.m; path = Modules/TrafficModule/TrainTraffic/TrafficTrainTimeTableViewController.m; sourceTree = "<group>"; };
+		912B68AF1E80003F0038D261 /* TrafficHSRTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrafficHSRTabBarController.h; path = Modules/TrafficModule/HSRTraffic/TrafficHSRTabBarController.h; sourceTree = "<group>"; };
+		912B68B01E80009C0038D261 /* TrafficHSRTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrafficHSRTabBarController.m; path = Modules/TrafficModule/HSRTraffic/TrafficHSRTabBarController.m; sourceTree = "<group>"; };
+		912B68B21E8000E70038D261 /* TrafficHSRDepartureTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrafficHSRDepartureTableViewController.h; path = Modules/TrafficModule/HSRTraffic/TrafficHSRDepartureTableViewController.h; sourceTree = "<group>"; };
+		912B68B31E8000FA0038D261 /* TrafficHSRDepartureTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrafficHSRDepartureTableViewController.m; path = Modules/TrafficModule/HSRTraffic/TrafficHSRDepartureTableViewController.m; sourceTree = "<group>"; };
+		912B68B51E8001190038D261 /* TrafficHSRDestinationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrafficHSRDestinationTableViewController.h; path = Modules/TrafficModule/HSRTraffic/TrafficHSRDestinationTableViewController.h; sourceTree = "<group>"; };
+		912B68BE1E8005C20038D261 /* HSRStationList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = HSRStationList.plist; path = Resource/HSRStationList.plist; sourceTree = "<group>"; };
+		912B68C01E8007CB0038D261 /* TrafficHSRDestinationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrafficHSRDestinationTableViewController.m; path = Modules/TrafficModule/HSRTraffic/TrafficHSRDestinationTableViewController.m; sourceTree = "<group>"; };
+		912B68C21E8007D80038D261 /* TrafficHSRDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrafficHSRDateViewController.h; path = Modules/TrafficModule/HSRTraffic/TrafficHSRDateViewController.h; sourceTree = "<group>"; };
+		912B68C31E8007D80038D261 /* TrafficHSRDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrafficHSRDateViewController.m; path = Modules/TrafficModule/HSRTraffic/TrafficHSRDateViewController.m; sourceTree = "<group>"; };
+		912B68C41E8007D80038D261 /* TrafficHSRTimeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrafficHSRTimeTableViewController.h; path = Modules/TrafficModule/HSRTraffic/TrafficHSRTimeTableViewController.h; sourceTree = "<group>"; };
+		912B68C51E8007D80038D261 /* TrafficHSRTimeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrafficHSRTimeTableViewController.m; path = Modules/TrafficModule/HSRTraffic/TrafficHSRTimeTableViewController.m; sourceTree = "<group>"; };
+		912B68C81E8292D70038D261 /* LibraryMedia.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = LibraryMedia.xcassets; path = Modules/LibraryModule/LibraryMedia.xcassets; sourceTree = "<group>"; };
+		912B68CC1E8294FF0038D261 /* StellarMedia.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = StellarMedia.xcassets; path = Modules/StellarModule/StellarMedia.xcassets; sourceTree = "<group>"; };
+		912B68D21E838D7D0038D261 /* NTOUBusTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NTOUBusTableViewController.h; path = Modules/TrafficModule/NTOUBus/NTOUBusTableViewController.h; sourceTree = "<group>"; };
+		912B68D31E838D7D0038D261 /* NTOUBusTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NTOUBusTableViewController.m; path = Modules/TrafficModule/NTOUBus/NTOUBusTableViewController.m; sourceTree = "<group>"; };
+		912B68D51E8393650038D261 /* NTOUToMRTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NTOUToMRTTableViewController.h; path = Modules/TrafficModule/NTOUBus/NTOUToMRTTableViewController.h; sourceTree = "<group>"; };
+		912B68D61E8393650038D261 /* NTOUToMRTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NTOUToMRTTableViewController.m; path = Modules/TrafficModule/NTOUBus/NTOUToMRTTableViewController.m; sourceTree = "<group>"; };
+		912B68D81E839FBE0038D261 /* NTOU1800TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NTOU1800TableViewController.h; path = Modules/TrafficModule/NTOUBus/NTOU1800TableViewController.h; sourceTree = "<group>"; };
+		912B68D91E839FBE0038D261 /* NTOU1800TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NTOU1800TableViewController.m; path = Modules/TrafficModule/NTOUBus/NTOU1800TableViewController.m; sourceTree = "<group>"; };
+		912B68DB1E83A3100038D261 /* NTOUBadouziTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NTOUBadouziTableViewController.h; path = Modules/TrafficModule/NTOUBus/NTOUBadouziTableViewController.h; sourceTree = "<group>"; };
+		912B68DC1E83A3100038D261 /* NTOUBadouziTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NTOUBadouziTableViewController.m; path = Modules/TrafficModule/NTOUBus/NTOUBadouziTableViewController.m; sourceTree = "<group>"; };
+		912B68DE1E83AF420038D261 /* NTOUR66TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NTOUR66TableViewController.h; path = Modules/TrafficModule/NTOUBus/NTOUR66TableViewController.h; sourceTree = "<group>"; };
+		912B68DF1E83AF420038D261 /* NTOUR66TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NTOUR66TableViewController.m; path = Modules/TrafficModule/NTOUBus/NTOUR66TableViewController.m; sourceTree = "<group>"; };
+		912B68E11E83DE140038D261 /* NTOUR66PictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NTOUR66PictureViewController.h; path = Modules/TrafficModule/NTOUBus/NTOUR66PictureViewController.h; sourceTree = "<group>"; };
+		912B68E21E83DE140038D261 /* NTOUR66PictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NTOUR66PictureViewController.m; path = Modules/TrafficModule/NTOUBus/NTOUR66PictureViewController.m; sourceTree = "<group>"; };
+		91342BAE1EA4713E004F7422 /* StellarViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StellarViewLayout.h; path = Modules/StellarModule/StellarViewLayout.h; sourceTree = "<group>"; };
+		91342BAF1EA4713E004F7422 /* StellarViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StellarViewLayout.m; path = Modules/StellarModule/StellarViewLayout.m; sourceTree = "<group>"; };
+		913D65051E5C25DE00888676 /* LibrarySearchResultDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LibrarySearchResultDetailTableViewController.h; path = Modules/LibraryModule/SearchLibrary/LibrarySearchResultDetailTableViewController.h; sourceTree = "<group>"; };
+		913D65061E5C25DE00888676 /* LibrarySearchResultDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LibrarySearchResultDetailTableViewController.m; path = Modules/LibraryModule/SearchLibrary/LibrarySearchResultDetailTableViewController.m; sourceTree = "<group>"; };
+		913D650D1E5D348200888676 /* TrafficModule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TrafficModule.storyboard; path = Modules/TrafficModule/TrafficModule.storyboard; sourceTree = "<group>"; };
+		913D650F1E5D37E700888676 /* TrafficMedia.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = TrafficMedia.xcassets; path = Modules/TrafficModule/TrafficMedia.xcassets; sourceTree = "<group>"; };
+		913D65111E5D380600888676 /* LifeMedia.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = LifeMedia.xcassets; path = Modules/LifeModule/LifeMedia.xcassets; sourceTree = "<group>"; };
+		913D65141E5D44C600888676 /* TrafficBusTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrafficBusTableViewController.h; path = Modules/TrafficModule/BusTraffic/TrafficBusTableViewController.h; sourceTree = "<group>"; };
+		913D65151E5D44C600888676 /* TrafficBusTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrafficBusTableViewController.m; path = Modules/TrafficModule/BusTraffic/TrafficBusTableViewController.m; sourceTree = "<group>"; };
+		913D65171E5D908000888676 /* TrafficClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrafficClassViewController.h; path = Modules/TrafficModule/TrafficClassViewController.h; sourceTree = "<group>"; };
+		913D65181E5D908000888676 /* TrafficClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrafficClassViewController.m; path = Modules/TrafficModule/TrafficClassViewController.m; sourceTree = "<group>"; };
+		913D651A1E5DBCD700888676 /* LibrarySearchResultTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LibrarySearchResultTableViewController.h; path = Modules/LibraryModule/SearchLibrary/LibrarySearchResultTableViewController.h; sourceTree = "<group>"; };
+		91477F9D1E55A98E00EC94C1 /* LibraryModule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LibraryModule.storyboard; path = Modules/LibraryModule/LibraryModule.storyboard; sourceTree = "<group>"; };
+		91477F9F1E55BFD500EC94C1 /* LibraryModuleFloor.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = LibraryModuleFloor.plist; path = Resource/LibraryModuleFloor.plist; sourceTree = "<group>"; };
+		91477FA21E55C0AE00EC94C1 /* LibraryFloorTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LibraryFloorTableViewController.h; path = Modules/LibraryModule/AboutLibrary/LibraryFloorTableViewController.h; sourceTree = "<group>"; };
+		91477FA31E55C0AE00EC94C1 /* LibraryFloorTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LibraryFloorTableViewController.m; path = Modules/LibraryModule/AboutLibrary/LibraryFloorTableViewController.m; sourceTree = "<group>"; };
+		91477FA51E55C64C00EC94C1 /* LibraryConInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LibraryConInfoTableViewController.h; path = Modules/LibraryModule/AboutLibrary/LibraryConInfoTableViewController.h; sourceTree = "<group>"; };
+		91477FA61E55C64C00EC94C1 /* LibraryConInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LibraryConInfoTableViewController.m; path = Modules/LibraryModule/AboutLibrary/LibraryConInfoTableViewController.m; sourceTree = "<group>"; };
+		91477FA81E55F5D500EC94C1 /* LibraryOpenTimeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LibraryOpenTimeTableViewController.h; path = Modules/LibraryModule/AboutLibrary/LibraryOpenTimeTableViewController.h; sourceTree = "<group>"; };
+		91477FA91E55F5D500EC94C1 /* LibraryOpenTimeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LibraryOpenTimeTableViewController.m; path = Modules/LibraryModule/AboutLibrary/LibraryOpenTimeTableViewController.m; sourceTree = "<group>"; };
+		91531E331E53304E005D2CAF /* GuideModule.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = GuideModule.plist; path = Resource/GuideModule.plist; sourceTree = "<group>"; };
+		91531E351E53307C005D2CAF /* GuideTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuideTableViewController.h; path = Modules/GuideModule/GuideTableViewController.h; sourceTree = "<group>"; };
+		91531E361E53307C005D2CAF /* GuideTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GuideTableViewController.m; path = Modules/GuideModule/GuideTableViewController.m; sourceTree = "<group>"; };
+		91531E381E53309E005D2CAF /* GuideModule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = GuideModule.storyboard; path = Modules/GuideModule/GuideModule.storyboard; sourceTree = "<group>"; };
+		91531E3A1E53364F005D2CAF /* GuideLocationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuideLocationsTableViewController.h; path = Modules/GuideModule/GuideLocationsTableViewController.h; sourceTree = "<group>"; };
+		91531E3B1E53364F005D2CAF /* GuideLocationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GuideLocationsTableViewController.m; path = Modules/GuideModule/GuideLocationsTableViewController.m; sourceTree = "<group>"; };
+		91531E3F1E5343A0005D2CAF /* Moodle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Moodle.h; path = API/Moodle/Moodle.h; sourceTree = "<group>"; };
+		91531E401E5343A0005D2CAF /* Moodle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Moodle.m; path = API/Moodle/Moodle.m; sourceTree = "<group>"; };
+		91531E441E53449B005D2CAF /* GoogleMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoogleMapViewController.h; path = API/GoogleMapsView/GoogleMapViewController.h; sourceTree = "<group>"; };
+		91531E451E53449B005D2CAF /* GoogleMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoogleMapViewController.m; path = API/GoogleMapsView/GoogleMapViewController.m; sourceTree = "<group>"; };
+		91678F901E3A6CFA00BE9AF0 /* NewsModule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = NewsModule.storyboard; path = Modules/NewsModule/NewsModule.storyboard; sourceTree = "<group>"; };
+		916AAEB61E9B5064008A3F1B /* CalendarTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarTableViewController.h; path = Modules/CalendarModule/CalendarTableViewController.h; sourceTree = "<group>"; };
+		916AAEB71E9B5064008A3F1B /* CalendarTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarTableViewController.m; path = Modules/CalendarModule/CalendarTableViewController.m; sourceTree = "<group>"; };
+		917072541E534B2B0065F20F /* LifeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LifeButton.h; path = Modules/LifeModule/LifeButton.h; sourceTree = "<group>"; };
+		917072551E534B2B0065F20F /* LifeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LifeButton.m; path = Modules/LifeModule/LifeButton.m; sourceTree = "<group>"; };
+		91742CA01E9E3BC00064D5A3 /* StellarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StellarViewController.h; path = Modules/StellarModule/StellarViewController.h; sourceTree = "<group>"; };
+		91742CA11E9E3BC00064D5A3 /* StellarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StellarViewController.m; path = Modules/StellarModule/StellarViewController.m; sourceTree = "<group>"; };
+		91742CA61E9E3DC40064D5A3 /* StellarWeekBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StellarWeekBar.h; path = Modules/StellarModule/StellarWeekBar.h; sourceTree = "<group>"; };
+		91742CA71E9E3DC40064D5A3 /* StellarWeekBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StellarWeekBar.m; path = Modules/StellarModule/StellarWeekBar.m; sourceTree = "<group>"; };
+		91742CA91E9E44250064D5A3 /* StellarClassBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StellarClassBar.h; path = Modules/StellarModule/StellarClassBar.h; sourceTree = "<group>"; };
+		91742CAA1E9E44250064D5A3 /* StellarClassBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StellarClassBar.m; path = Modules/StellarModule/StellarClassBar.m; sourceTree = "<group>"; };
+		918237AD1E88EEA3002E2464 /* LibraryBarCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LibraryBarCodeViewController.h; path = Modules/LibraryModule/SearchLibrary/LibraryBarCodeViewController.h; sourceTree = "<group>"; };
+		918237AE1E88EEA3002E2464 /* LibraryBarCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LibraryBarCodeViewController.m; path = Modules/LibraryModule/SearchLibrary/LibraryBarCodeViewController.m; sourceTree = "<group>"; };
+		91853B3D1E592DA7007C37AB /* Library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Library.h; path = API/Library/Library.h; sourceTree = "<group>"; };
+		91853B3E1E592DA7007C37AB /* Library.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Library.m; path = API/Library/Library.m; sourceTree = "<group>"; };
+		91853B411E593DAB007C37AB /* LibraryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LibraryTableViewController.h; path = Modules/SettingModule/LibraryTableViewController.h; sourceTree = "<group>"; };
+		91853B421E593DAB007C37AB /* LibraryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LibraryTableViewController.m; path = Modules/SettingModule/LibraryTableViewController.m; sourceTree = "<group>"; };
+		91853B441E594122007C37AB /* MoodleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoodleTableViewController.h; path = Modules/SettingModule/MoodleTableViewController.h; sourceTree = "<group>"; };
+		91853B451E594122007C37AB /* MoodleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoodleTableViewController.m; path = Modules/SettingModule/MoodleTableViewController.m; sourceTree = "<group>"; };
+		918896321E40137800DDC82C /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsViewController.h; path = Modules/NewsModule/NewsViewController.h; sourceTree = "<group>"; };
+		918896331E40137800DDC82C /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsViewController.m; path = Modules/NewsModule/NewsViewController.m; sourceTree = "<group>"; };
+		919BC24C1E31DA4400451426 /* Module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Module.h; path = Modules/Module.h; sourceTree = "<group>"; };
+		919BC24D1E31DA4400451426 /* Module.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Module.m; path = Modules/Module.m; sourceTree = "<group>"; };
+		91B72FA01E422B4B00896AF3 /* NewsContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsContentViewController.h; path = Modules/NewsModule/NewsContentViewController.h; sourceTree = "<group>"; };
+		91B72FA11E422B4B00896AF3 /* NewsContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsContentViewController.m; path = Modules/NewsModule/NewsContentViewController.m; sourceTree = "<group>"; };
+		91B8412B1E51F587000B4AAE /* LifeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LifeViewController.h; path = Modules/LifeModule/LifeViewController.h; sourceTree = "<group>"; };
+		91B8412C1E51F587000B4AAE /* LifeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LifeViewController.m; path = Modules/LifeModule/LifeViewController.m; sourceTree = "<group>"; };
+		91B8412E1E5223F1000B4AAE /* LifeStreetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LifeStreetViewController.h; path = Modules/LifeModule/LifeStreetViewController.h; sourceTree = "<group>"; };
+		91B8412F1E5223F1000B4AAE /* LifeStreetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LifeStreetViewController.m; path = Modules/LifeModule/LifeStreetViewController.m; sourceTree = "<group>"; };
+		91CDBF4D1E5AC0A30085514E /* LibraryHistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LibraryHistoryTableViewController.h; path = Modules/LibraryModule/PersonalLibrary/LibraryHistoryTableViewController.h; sourceTree = "<group>"; };
+		91CDBF4E1E5AC0A30085514E /* LibraryHistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LibraryHistoryTableViewController.m; path = Modules/LibraryModule/PersonalLibrary/LibraryHistoryTableViewController.m; sourceTree = "<group>"; };
+		91CDBF561E5AE01F0085514E /* LibrarySearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LibrarySearchViewController.h; path = Modules/LibraryModule/SearchLibrary/LibrarySearchViewController.h; sourceTree = "<group>"; };
+		91CDBF571E5AE01F0085514E /* LibrarySearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LibrarySearchViewController.m; path = Modules/LibraryModule/SearchLibrary/LibrarySearchViewController.m; sourceTree = "<group>"; };
+		91CDBF5A1E5AE4260085514E /* LibrarySearchResultTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LibrarySearchResultTableViewController.m; path = Modules/LibraryModule/SearchLibrary/LibrarySearchResultTableViewController.m; sourceTree = "<group>"; };
+		91D7A1311E977FD700B79396 /* OtherLinkModule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = OtherLinkModule.storyboard; path = Modules/OtherLinkModule/OtherLinkModule.storyboard; sourceTree = "<group>"; };
+		91D7A1331E97811700B79396 /* OtherLinkTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OtherLinkTableViewController.h; path = Modules/OtherLinkModule/OtherLinkTableViewController.h; sourceTree = "<group>"; };
+		91D7A1341E97811700B79396 /* OtherLinkTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OtherLinkTableViewController.m; path = Modules/OtherLinkModule/OtherLinkTableViewController.m; sourceTree = "<group>"; };
+		91D7A1371E97820700B79396 /* AboutModule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = AboutModule.storyboard; path = Modules/AboutModule/AboutModule.storyboard; sourceTree = "<group>"; };
+		91D7A1391E97899500B79396 /* AboutTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutTableViewController.h; path = Modules/AboutModule/AboutTableViewController.h; sourceTree = "<group>"; };
+		91D7A13A1E97899500B79396 /* AboutTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutTableViewController.m; path = Modules/AboutModule/AboutTableViewController.m; sourceTree = "<group>"; };
+		91D7A13C1E978AF800B79396 /* AboutDeveloperTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutDeveloperTableViewController.h; path = Modules/AboutModule/AboutDeveloperTableViewController.h; sourceTree = "<group>"; };
+		91D7A13D1E978AF800B79396 /* AboutDeveloperTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutDeveloperTableViewController.m; path = Modules/AboutModule/AboutDeveloperTableViewController.m; sourceTree = "<group>"; };
+		91DAFED01E43934000745C2F /* NewsClassData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsClassData.h; path = Modules/NewsModule/NewsClassData.h; sourceTree = "<group>"; };
+		91DAFED11E43934000745C2F /* NewsClassData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsClassData.m; path = Modules/NewsModule/NewsClassData.m; sourceTree = "<group>"; };
+		91E09BAB1E5A6F8D001A1A02 /* LibraryBorrowTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LibraryBorrowTableViewController.h; path = Modules/LibraryModule/PersonalLibrary/LibraryBorrowTableViewController.h; sourceTree = "<group>"; };
+		91E09BAC1E5A6F8D001A1A02 /* LibraryBorrowTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LibraryBorrowTableViewController.m; path = Modules/LibraryModule/PersonalLibrary/LibraryBorrowTableViewController.m; sourceTree = "<group>"; };
+		91E09BAE1E5A8421001A1A02 /* LibraryCurrentHoldTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LibraryCurrentHoldTableViewController.h; path = Modules/LibraryModule/PersonalLibrary/LibraryCurrentHoldTableViewController.h; sourceTree = "<group>"; };
+		91E09BAF1E5A8421001A1A02 /* LibraryCurrentHoldTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LibraryCurrentHoldTableViewController.m; path = Modules/LibraryModule/PersonalLibrary/LibraryCurrentHoldTableViewController.m; sourceTree = "<group>"; };
+		91E317EA1E5706BB005E24EB /* LibraryNewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LibraryNewsTableViewController.h; path = Modules/LibraryModule/AboutLibrary/LibraryNewsTableViewController.h; sourceTree = "<group>"; };
+		91E317EB1E5706BB005E24EB /* LibraryNewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LibraryNewsTableViewController.m; path = Modules/LibraryModule/AboutLibrary/LibraryNewsTableViewController.m; sourceTree = "<group>"; };
+		91E732531E31276400A54B9A /* iNTOU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iNTOU.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91E732571E31276400A54B9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		91E732591E31276400A54B9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		91E7325A1E31276400A54B9A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		91E732601E31276400A54B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		91E732621E31276400A54B9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		91E732651E31276400A54B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		91E732671E31276400A54B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91E7326D1E3127E200A54B9A /* MainCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainCollectionViewController.h; sourceTree = "<group>"; };
+		91E7326E1E3127E200A54B9A /* MainCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainCollectionViewController.m; sourceTree = "<group>"; };
+		91EC9CCF1E4C8AEA007BB413 /* StellarModule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = StellarModule.storyboard; path = Modules/StellarModule/StellarModule.storyboard; sourceTree = "<group>"; };
+		91EE91FD1E4AB94D00B2DFD1 /* CalendarModule.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = CalendarModule.plist; path = Resource/CalendarModule.plist; sourceTree = "<group>"; };
+		91EE92001E4AD6AD00B2DFD1 /* EmergencyModule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = EmergencyModule.storyboard; path = Modules/EmergencyModule/EmergencyModule.storyboard; sourceTree = "<group>"; };
+		91EE920C1E4ADFB400B2DFD1 /* EmergencyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EmergencyTableViewController.h; path = Modules/EmergencyModule/EmergencyTableViewController.h; sourceTree = "<group>"; };
+		91EE920D1E4ADFB400B2DFD1 /* EmergencyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmergencyTableViewController.m; path = Modules/EmergencyModule/EmergencyTableViewController.m; sourceTree = "<group>"; };
+		91EE920F1E4AE1B700B2DFD1 /* EmergencyModule.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = EmergencyModule.plist; path = Resource/EmergencyModule.plist; sourceTree = "<group>"; };
+		91EE92121E4B088300B2DFD1 /* SettingModule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SettingModule.storyboard; path = Modules/SettingModule/SettingModule.storyboard; sourceTree = "<group>"; };
+		91F8DBD61E5445F000D45684 /* GoogleMapStreetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoogleMapStreetViewController.h; path = API/GoogleMapsView/GoogleMapStreetViewController.h; sourceTree = "<group>"; };
+		91F8DBD71E5445F000D45684 /* GoogleMapStreetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoogleMapStreetViewController.m; path = API/GoogleMapsView/GoogleMapStreetViewController.m; sourceTree = "<group>"; };
+		91F8DBD91E54659400D45684 /* StellarClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StellarClassViewController.h; path = Modules/StellarModule/StellarClassViewController.h; sourceTree = "<group>"; };
+		91F8DBDA1E54659400D45684 /* StellarClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StellarClassViewController.m; path = Modules/StellarModule/StellarClassViewController.m; sourceTree = "<group>"; };
+		91F8DBE01E54899400D45684 /* StellarCourseInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StellarCourseInfoTableViewController.h; path = Modules/StellarModule/StellarClass/StellarCourseInfoTableViewController.h; sourceTree = "<group>"; };
+		91F8DBE11E54899400D45684 /* StellarCourseInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StellarCourseInfoTableViewController.m; path = Modules/StellarModule/StellarClass/StellarCourseInfoTableViewController.m; sourceTree = "<group>"; };
+		91F8DBE31E54CCD500D45684 /* StellarMoodleInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StellarMoodleInfoTableViewController.h; path = Modules/StellarModule/StellarClass/StellarMoodleInfoTableViewController.h; sourceTree = "<group>"; };
+		91F8DBE41E54CCD500D45684 /* StellarMoodleInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StellarMoodleInfoTableViewController.m; path = Modules/StellarModule/StellarClass/StellarMoodleInfoTableViewController.m; sourceTree = "<group>"; };
+		91F8DBE61E54D33300D45684 /* StellarGradeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StellarGradeTableViewController.h; path = Modules/StellarModule/StellarClass/StellarGradeTableViewController.h; sourceTree = "<group>"; };
+		91F8DBE71E54D33300D45684 /* StellarGradeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StellarGradeTableViewController.m; path = Modules/StellarModule/StellarClass/StellarGradeTableViewController.m; sourceTree = "<group>"; };
+		91F8DBEC1E54EDF100D45684 /* StellarFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StellarFileViewController.h; path = Modules/StellarModule/StellarClass/StellarFileViewController.h; sourceTree = "<group>"; };
+		91F8DBED1E54EDF100D45684 /* StellarFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StellarFileViewController.m; path = Modules/StellarModule/StellarClass/StellarFileViewController.m; sourceTree = "<group>"; };
+		E99A426054C1B94E5B7E0441 /* Pods-iNTOU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iNTOU.release.xcconfig"; path = "Pods/Target Support Files/Pods-iNTOU/Pods-iNTOU.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91E732501E31276400A54B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EE67C7430399DF9C4E0BEED /* Pods_iNTOU.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5816CAA05F1BCFAA22623DB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04D058C77D855CA05A140962 /* Pods_iNTOU.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9100EFE91E334B7400756AE5 /* NewsModule */ = {
+			isa = PBXGroup;
+			children = (
+				91678F901E3A6CFA00BE9AF0 /* NewsModule.storyboard */,
+				918896321E40137800DDC82C /* NewsViewController.h */,
+				918896331E40137800DDC82C /* NewsViewController.m */,
+				91B72FA01E422B4B00896AF3 /* NewsContentViewController.h */,
+				91B72FA11E422B4B00896AF3 /* NewsContentViewController.m */,
+				91DAFED01E43934000745C2F /* NewsClassData.h */,
+				91DAFED11E43934000745C2F /* NewsClassData.m */,
+			);
+			name = NewsModule;
+			sourceTree = "<group>";
+		};
+		91053ABB1E51977500ACEA8D /* LifeModule */ = {
+			isa = PBXGroup;
+			children = (
+				91053ABC1E51978300ACEA8D /* LifeModule.storyboard */,
+				91B8412B1E51F587000B4AAE /* LifeViewController.h */,
+				91B8412C1E51F587000B4AAE /* LifeViewController.m */,
+				91B8412E1E5223F1000B4AAE /* LifeStreetViewController.h */,
+				91B8412F1E5223F1000B4AAE /* LifeStreetViewController.m */,
+				917072541E534B2B0065F20F /* LifeButton.h */,
+				917072551E534B2B0065F20F /* LifeButton.m */,
+				913D65111E5D380600888676 /* LifeMedia.xcassets */,
+			);
+			name = LifeModule;
+			sourceTree = "<group>";
+		};
+		911B7CB41E476AFE001A5328 /* CalendarModule */ = {
+			isa = PBXGroup;
+			children = (
+				911B7CB51E476B15001A5328 /* CalendarModule.storyboard */,
+				916AAEB61E9B5064008A3F1B /* CalendarTableViewController.h */,
+				916AAEB71E9B5064008A3F1B /* CalendarTableViewController.m */,
+			);
+			name = CalendarModule;
+			sourceTree = "<group>";
+		};
+		912B68891E7944F60038D261 /* TrainTraffic */ = {
+			isa = PBXGroup;
+			children = (
+				912B68A51E7BC9700038D261 /* TrafficTrainTabBarController.h */,
+				912B68A61E7BC9700038D261 /* TrafficTrainTabBarController.m */,
+				912B68961E7BABD60038D261 /* TrafficTrainDepartureTableViewController.h */,
+				912B68971E7BABD60038D261 /* TrafficTrainDepartureTableViewController.m */,
+				912B68991E7BB4460038D261 /* TrafficTrainDestinationTableViewController.h */,
+				912B689A1E7BB4460038D261 /* TrafficTrainDestinationTableViewController.m */,
+				912B689C1E7BB7460038D261 /* TrafficTrainDateViewController.h */,
+				912B689D1E7BB7460038D261 /* TrafficTrainDateViewController.m */,
+				912B689F1E7BC43C0038D261 /* TrafficTrainCarClassTableViewController.h */,
+				912B68A01E7BC43C0038D261 /* TrafficTrainCarClassTableViewController.m */,
+				912B68A81E7FC9E40038D261 /* TrafficTrainTimeTableViewController.h */,
+				912B68A91E7FC9E40038D261 /* TrafficTrainTimeTableViewController.m */,
+			);
+			name = TrainTraffic;
+			sourceTree = "<group>";
+		};
+		912B688D1E7948B70038D261 /* ExpressTraffic */ = {
+			isa = PBXGroup;
+			children = (
+				912B688E1E7949DD0038D261 /* TrafficExpressTableViewController.h */,
+				912B688F1E7949DD0038D261 /* TrafficExpressTableViewController.m */,
+				912B68931E7BA3AC0038D261 /* TrafficExpressDetailTableViewController.h */,
+				912B68941E7BA3AC0038D261 /* TrafficExpressDetailTableViewController.m */,
+			);
+			name = ExpressTraffic;
+			sourceTree = "<group>";
+		};
+		912B68AE1E7FFF970038D261 /* HSRTraffic */ = {
+			isa = PBXGroup;
+			children = (
+				912B68AF1E80003F0038D261 /* TrafficHSRTabBarController.h */,
+				912B68B01E80009C0038D261 /* TrafficHSRTabBarController.m */,
+				912B68B51E8001190038D261 /* TrafficHSRDestinationTableViewController.h */,
+				912B68C01E8007CB0038D261 /* TrafficHSRDestinationTableViewController.m */,
+				912B68B21E8000E70038D261 /* TrafficHSRDepartureTableViewController.h */,
+				912B68B31E8000FA0038D261 /* TrafficHSRDepartureTableViewController.m */,
+				912B68C21E8007D80038D261 /* TrafficHSRDateViewController.h */,
+				912B68C31E8007D80038D261 /* TrafficHSRDateViewController.m */,
+				912B68C41E8007D80038D261 /* TrafficHSRTimeTableViewController.h */,
+				912B68C51E8007D80038D261 /* TrafficHSRTimeTableViewController.m */,
+			);
+			name = HSRTraffic;
+			sourceTree = "<group>";
+		};
+		912B68D11E838D4E0038D261 /* NTOUBus */ = {
+			isa = PBXGroup;
+			children = (
+				912B68D21E838D7D0038D261 /* NTOUBusTableViewController.h */,
+				912B68D31E838D7D0038D261 /* NTOUBusTableViewController.m */,
+				912B68D51E8393650038D261 /* NTOUToMRTTableViewController.h */,
+				912B68D61E8393650038D261 /* NTOUToMRTTableViewController.m */,
+				912B68D81E839FBE0038D261 /* NTOU1800TableViewController.h */,
+				912B68D91E839FBE0038D261 /* NTOU1800TableViewController.m */,
+				912B68DB1E83A3100038D261 /* NTOUBadouziTableViewController.h */,
+				912B68DC1E83A3100038D261 /* NTOUBadouziTableViewController.m */,
+				912B68DE1E83AF420038D261 /* NTOUR66TableViewController.h */,
+				912B68DF1E83AF420038D261 /* NTOUR66TableViewController.m */,
+				912B68E11E83DE140038D261 /* NTOUR66PictureViewController.h */,
+				912B68E21E83DE140038D261 /* NTOUR66PictureViewController.m */,
+			);
+			name = NTOUBus;
+			sourceTree = "<group>";
+		};
+		913D650C1E5D345A00888676 /* TrafficModule */ = {
+			isa = PBXGroup;
+			children = (
+				912B68D11E838D4E0038D261 /* NTOUBus */,
+				912B68AE1E7FFF970038D261 /* HSRTraffic */,
+				912B688D1E7948B70038D261 /* ExpressTraffic */,
+				912B68891E7944F60038D261 /* TrainTraffic */,
+				913D65131E5D447700888676 /* BusTraffic */,
+				913D650D1E5D348200888676 /* TrafficModule.storyboard */,
+				913D65171E5D908000888676 /* TrafficClassViewController.h */,
+				913D65181E5D908000888676 /* TrafficClassViewController.m */,
+				913D650F1E5D37E700888676 /* TrafficMedia.xcassets */,
+			);
+			name = TrafficModule;
+			sourceTree = "<group>";
+		};
+		913D65131E5D447700888676 /* BusTraffic */ = {
+			isa = PBXGroup;
+			children = (
+				913D65141E5D44C600888676 /* TrafficBusTableViewController.h */,
+				913D65151E5D44C600888676 /* TrafficBusTableViewController.m */,
+				912B68831E717E460038D261 /* TrafficBusStopTableViewController.h */,
+				912B68841E717E460038D261 /* TrafficBusStopTableViewController.m */,
+				912B68861E780CE50038D261 /* TrafficBusRouteTableViewController.h */,
+				912B68871E780CE50038D261 /* TrafficBusRouteTableViewController.m */,
+			);
+			name = BusTraffic;
+			sourceTree = "<group>";
+		};
+		91477F9A1E55A7BD00EC94C1 /* LibraryModule */ = {
+			isa = PBXGroup;
+			children = (
+				91CDBF521E5ADFAD0085514E /* SearchLibrary */,
+				91E09BAA1E5A6EFE001A1A02 /* PersonalLibrary */,
+				91477FA11E55C06E00EC94C1 /* AboutLibrary */,
+				91477F9D1E55A98E00EC94C1 /* LibraryModule.storyboard */,
+				912B68C81E8292D70038D261 /* LibraryMedia.xcassets */,
+			);
+			name = LibraryModule;
+			sourceTree = "<group>";
+		};
+		91477FA11E55C06E00EC94C1 /* AboutLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				91477FA21E55C0AE00EC94C1 /* LibraryFloorTableViewController.h */,
+				91477FA31E55C0AE00EC94C1 /* LibraryFloorTableViewController.m */,
+				91477FA51E55C64C00EC94C1 /* LibraryConInfoTableViewController.h */,
+				91477FA61E55C64C00EC94C1 /* LibraryConInfoTableViewController.m */,
+				91477FA81E55F5D500EC94C1 /* LibraryOpenTimeTableViewController.h */,
+				91477FA91E55F5D500EC94C1 /* LibraryOpenTimeTableViewController.m */,
+				91E317EA1E5706BB005E24EB /* LibraryNewsTableViewController.h */,
+				91E317EB1E5706BB005E24EB /* LibraryNewsTableViewController.m */,
+			);
+			name = AboutLibrary;
+			sourceTree = "<group>";
+		};
+		91531E2D1E53072B005D2CAF /* GuideModule */ = {
+			isa = PBXGroup;
+			children = (
+				91531E381E53309E005D2CAF /* GuideModule.storyboard */,
+				91531E351E53307C005D2CAF /* GuideTableViewController.h */,
+				91531E361E53307C005D2CAF /* GuideTableViewController.m */,
+				91531E3A1E53364F005D2CAF /* GuideLocationsTableViewController.h */,
+				91531E3B1E53364F005D2CAF /* GuideLocationsTableViewController.m */,
+			);
+			name = GuideModule;
+			sourceTree = "<group>";
+		};
+		91531E3D1E5342F6005D2CAF /* GoogleMapsView */ = {
+			isa = PBXGroup;
+			children = (
+				91531E441E53449B005D2CAF /* GoogleMapViewController.h */,
+				91531E451E53449B005D2CAF /* GoogleMapViewController.m */,
+				91F8DBD61E5445F000D45684 /* GoogleMapStreetViewController.h */,
+				91F8DBD71E5445F000D45684 /* GoogleMapStreetViewController.m */,
+			);
+			name = GoogleMapsView;
+			sourceTree = "<group>";
+		};
+		91531E3E1E53437B005D2CAF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				91853B401E592DAC007C37AB /* Library */,
+				91CBDB811E4C49AF002AC913 /* Moodle */,
+				91531E3D1E5342F6005D2CAF /* GoogleMapsView */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		91853B401E592DAC007C37AB /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				91853B3D1E592DA7007C37AB /* Library.h */,
+				91853B3E1E592DA7007C37AB /* Library.m */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		91CBDB811E4C49AF002AC913 /* Moodle */ = {
+			isa = PBXGroup;
+			children = (
+				91531E3F1E5343A0005D2CAF /* Moodle.h */,
+				91531E401E5343A0005D2CAF /* Moodle.m */,
+			);
+			name = Moodle;
+			sourceTree = "<group>";
+		};
+		91CDBF521E5ADFAD0085514E /* SearchLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				91CDBF561E5AE01F0085514E /* LibrarySearchViewController.h */,
+				91CDBF571E5AE01F0085514E /* LibrarySearchViewController.m */,
+				913D651A1E5DBCD700888676 /* LibrarySearchResultTableViewController.h */,
+				91CDBF5A1E5AE4260085514E /* LibrarySearchResultTableViewController.m */,
+				913D65051E5C25DE00888676 /* LibrarySearchResultDetailTableViewController.h */,
+				913D65061E5C25DE00888676 /* LibrarySearchResultDetailTableViewController.m */,
+				918237AD1E88EEA3002E2464 /* LibraryBarCodeViewController.h */,
+				918237AE1E88EEA3002E2464 /* LibraryBarCodeViewController.m */,
+			);
+			name = SearchLibrary;
+			sourceTree = "<group>";
+		};
+		91D7A12E1E977C7400B79396 /* OtherLinkModule */ = {
+			isa = PBXGroup;
+			children = (
+				91D7A1311E977FD700B79396 /* OtherLinkModule.storyboard */,
+				91D7A1331E97811700B79396 /* OtherLinkTableViewController.h */,
+				91D7A1341E97811700B79396 /* OtherLinkTableViewController.m */,
+			);
+			name = OtherLinkModule;
+			sourceTree = "<group>";
+		};
+		91D7A1361E9781D000B79396 /* AboutModule */ = {
+			isa = PBXGroup;
+			children = (
+				91D7A1371E97820700B79396 /* AboutModule.storyboard */,
+				91D7A1391E97899500B79396 /* AboutTableViewController.h */,
+				91D7A13A1E97899500B79396 /* AboutTableViewController.m */,
+				91D7A13C1E978AF800B79396 /* AboutDeveloperTableViewController.h */,
+				91D7A13D1E978AF800B79396 /* AboutDeveloperTableViewController.m */,
+			);
+			name = AboutModule;
+			sourceTree = "<group>";
+		};
+		91E09BAA1E5A6EFE001A1A02 /* PersonalLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				91E09BAB1E5A6F8D001A1A02 /* LibraryBorrowTableViewController.h */,
+				91E09BAC1E5A6F8D001A1A02 /* LibraryBorrowTableViewController.m */,
+				91E09BAE1E5A8421001A1A02 /* LibraryCurrentHoldTableViewController.h */,
+				91E09BAF1E5A8421001A1A02 /* LibraryCurrentHoldTableViewController.m */,
+				91CDBF4D1E5AC0A30085514E /* LibraryHistoryTableViewController.h */,
+				91CDBF4E1E5AC0A30085514E /* LibraryHistoryTableViewController.m */,
+			);
+			name = PersonalLibrary;
+			sourceTree = "<group>";
+		};
+		91E7324A1E31276400A54B9A = {
+			isa = PBXGroup;
+			children = (
+				91E732551E31276400A54B9A /* iNTOU */,
+				91E732541E31276400A54B9A /* Products */,
+				BBBEF53220F5D91806C472CB /* Pods */,
+				5816CAA05F1BCFAA22623DB6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		91E732541E31276400A54B9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91E732531E31276400A54B9A /* iNTOU.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91E732551E31276400A54B9A /* iNTOU */ = {
+			isa = PBXGroup;
+			children = (
+				91531E3E1E53437B005D2CAF /* API */,
+				91E732961E31399A00A54B9A /* Modules */,
+				91EE91FA1E4AB92200B2DFD1 /* Resource */,
+				91E732591E31276400A54B9A /* AppDelegate.h */,
+				91E7325A1E31276400A54B9A /* AppDelegate.m */,
+				91E7325F1E31276400A54B9A /* Main.storyboard */,
+				91E7326D1E3127E200A54B9A /* MainCollectionViewController.h */,
+				91E7326E1E3127E200A54B9A /* MainCollectionViewController.m */,
+				91E732621E31276400A54B9A /* Assets.xcassets */,
+				91E732641E31276400A54B9A /* LaunchScreen.storyboard */,
+				91E732671E31276400A54B9A /* Info.plist */,
+				91E732561E31276400A54B9A /* Supporting Files */,
+			);
+			path = iNTOU;
+			sourceTree = "<group>";
+		};
+		91E732561E31276400A54B9A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				91E732571E31276400A54B9A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		91E732961E31399A00A54B9A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				91D7A1361E9781D000B79396 /* AboutModule */,
+				91D7A12E1E977C7400B79396 /* OtherLinkModule */,
+				913D650C1E5D345A00888676 /* TrafficModule */,
+				91477F9A1E55A7BD00EC94C1 /* LibraryModule */,
+				91531E2D1E53072B005D2CAF /* GuideModule */,
+				91053ABB1E51977500ACEA8D /* LifeModule */,
+				91EC9CCE1E4C72F3007BB413 /* StellarModule */,
+				91EE92111E4B085300B2DFD1 /* SettingModule */,
+				91EE91FF1E4AD61000B2DFD1 /* EmergencyModule */,
+				911B7CB41E476AFE001A5328 /* CalendarModule */,
+				9100EFE91E334B7400756AE5 /* NewsModule */,
+				919BC24C1E31DA4400451426 /* Module.h */,
+				919BC24D1E31DA4400451426 /* Module.m */,
+				9100EFE61E33449300756AE5 /* ModuleManager.h */,
+				9100EFE71E33449300756AE5 /* ModuleManager.m */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		91EC9CCE1E4C72F3007BB413 /* StellarModule */ = {
+			isa = PBXGroup;
+			children = (
+				91EC9CCF1E4C8AEA007BB413 /* StellarModule.storyboard */,
+				91742CA01E9E3BC00064D5A3 /* StellarViewController.h */,
+				91742CA11E9E3BC00064D5A3 /* StellarViewController.m */,
+				91342BAE1EA4713E004F7422 /* StellarViewLayout.h */,
+				91342BAF1EA4713E004F7422 /* StellarViewLayout.m */,
+				91742CA61E9E3DC40064D5A3 /* StellarWeekBar.h */,
+				91742CA71E9E3DC40064D5A3 /* StellarWeekBar.m */,
+				91742CA91E9E44250064D5A3 /* StellarClassBar.h */,
+				91742CAA1E9E44250064D5A3 /* StellarClassBar.m */,
+				91F8DBDC1E546A6200D45684 /* StellarClass */,
+				91F8DBD91E54659400D45684 /* StellarClassViewController.h */,
+				91F8DBDA1E54659400D45684 /* StellarClassViewController.m */,
+				912B68CC1E8294FF0038D261 /* StellarMedia.xcassets */,
+			);
+			name = StellarModule;
+			sourceTree = "<group>";
+		};
+		91EE91FA1E4AB92200B2DFD1 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				912B68BE1E8005C20038D261 /* HSRStationList.plist */,
+				912B68911E7BA3280038D261 /* TrainStationList.plist */,
+				91EE920F1E4AE1B700B2DFD1 /* EmergencyModule.plist */,
+				91477F9F1E55BFD500EC94C1 /* LibraryModuleFloor.plist */,
+				91EE91FD1E4AB94D00B2DFD1 /* CalendarModule.plist */,
+				91053AC11E51995800ACEA8D /* LifeModule.plist */,
+				91531E331E53304E005D2CAF /* GuideModule.plist */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		91EE91FF1E4AD61000B2DFD1 /* EmergencyModule */ = {
+			isa = PBXGroup;
+			children = (
+				91EE92001E4AD6AD00B2DFD1 /* EmergencyModule.storyboard */,
+				91EE920C1E4ADFB400B2DFD1 /* EmergencyTableViewController.h */,
+				91EE920D1E4ADFB400B2DFD1 /* EmergencyTableViewController.m */,
+			);
+			name = EmergencyModule;
+			sourceTree = "<group>";
+		};
+		91EE92111E4B085300B2DFD1 /* SettingModule */ = {
+			isa = PBXGroup;
+			children = (
+				91EE92121E4B088300B2DFD1 /* SettingModule.storyboard */,
+				91853B411E593DAB007C37AB /* LibraryTableViewController.h */,
+				91853B421E593DAB007C37AB /* LibraryTableViewController.m */,
+				91853B441E594122007C37AB /* MoodleTableViewController.h */,
+				91853B451E594122007C37AB /* MoodleTableViewController.m */,
+			);
+			name = SettingModule;
+			sourceTree = "<group>";
+		};
+		91F8DBDC1E546A6200D45684 /* StellarClass */ = {
+			isa = PBXGroup;
+			children = (
+				91F8DBE01E54899400D45684 /* StellarCourseInfoTableViewController.h */,
+				91F8DBE11E54899400D45684 /* StellarCourseInfoTableViewController.m */,
+				91F8DBE31E54CCD500D45684 /* StellarMoodleInfoTableViewController.h */,
+				91F8DBE41E54CCD500D45684 /* StellarMoodleInfoTableViewController.m */,
+				91F8DBE61E54D33300D45684 /* StellarGradeTableViewController.h */,
+				91F8DBE71E54D33300D45684 /* StellarGradeTableViewController.m */,
+				91F8DBEC1E54EDF100D45684 /* StellarFileViewController.h */,
+				91F8DBED1E54EDF100D45684 /* StellarFileViewController.m */,
+			);
+			name = StellarClass;
+			sourceTree = "<group>";
+		};
+		BBBEF53220F5D91806C472CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1EB29B29DE07FAB35EB3ACA0 /* Pods-iNTOU.debug.xcconfig */,
+				E99A426054C1B94E5B7E0441 /* Pods-iNTOU.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91E732521E31276400A54B9A /* iNTOU */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91E7326A1E31276400A54B9A /* Build configuration list for PBXNativeTarget "iNTOU" */;
+			buildPhases = (
+				0D9439D271E943E69B07C29C /* [CP] Check Pods Manifest.lock */,
+				91E7324F1E31276400A54B9A /* Sources */,
+				91E732501E31276400A54B9A /* Frameworks */,
+				91E732511E31276400A54B9A /* Resources */,
+				EE3D9BCCF3D3DD1778513834 /* [CP] Embed Pods Frameworks */,
+				CF8E89279F04A9047111B2AA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iNTOU;
+			productName = iNTOU;
+			productReference = 91E732531E31276400A54B9A /* iNTOU.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91E7324B1E31276400A54B9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = "";
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Lab414;
+				TargetAttributes = {
+					91E732521E31276400A54B9A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 46873356PM;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 91E7324E1E31276400A54B9A /* Build configuration list for PBXProject "iNTOU" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 91E7324A1E31276400A54B9A;
+			productRefGroup = 91E732541E31276400A54B9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91E732521E31276400A54B9A /* iNTOU */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		91E732511E31276400A54B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912B68C91E8292D70038D261 /* LibraryMedia.xcassets in Resources */,
+				912B68921E7BA3280038D261 /* TrainStationList.plist in Resources */,
+				91E732661E31276400A54B9A /* LaunchScreen.storyboard in Resources */,
+				91531E391E53309E005D2CAF /* GuideModule.storyboard in Resources */,
+				91E732631E31276400A54B9A /* Assets.xcassets in Resources */,
+				91477F9E1E55A98E00EC94C1 /* LibraryModule.storyboard in Resources */,
+				913D650E1E5D348200888676 /* TrafficModule.storyboard in Resources */,
+				91D7A1321E977FD700B79396 /* OtherLinkModule.storyboard in Resources */,
+				913D65121E5D380600888676 /* LifeMedia.xcassets in Resources */,
+				912B68CD1E8294FF0038D261 /* StellarMedia.xcassets in Resources */,
+				91053ABD1E51978300ACEA8D /* LifeModule.storyboard in Resources */,
+				91E732611E31276400A54B9A /* Main.storyboard in Resources */,
+				91EE92131E4B088300B2DFD1 /* SettingModule.storyboard in Resources */,
+				91477FA01E55BFD500EC94C1 /* LibraryModuleFloor.plist in Resources */,
+				91EE92011E4AD6AD00B2DFD1 /* EmergencyModule.storyboard in Resources */,
+				91EE92101E4AE1B700B2DFD1 /* EmergencyModule.plist in Resources */,
+				912B68BF1E8005C20038D261 /* HSRStationList.plist in Resources */,
+				91678F911E3A6CFA00BE9AF0 /* NewsModule.storyboard in Resources */,
+				911B7CB61E476B15001A5328 /* CalendarModule.storyboard in Resources */,
+				91EE91FE1E4AB94D00B2DFD1 /* CalendarModule.plist in Resources */,
+				91EC9CD01E4C8AEA007BB413 /* StellarModule.storyboard in Resources */,
+				913D65101E5D37E700888676 /* TrafficMedia.xcassets in Resources */,
+				91053AC21E51995800ACEA8D /* LifeModule.plist in Resources */,
+				91D7A1381E97820700B79396 /* AboutModule.storyboard in Resources */,
+				91531E341E53304E005D2CAF /* GuideModule.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D9439D271E943E69B07C29C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF8E89279F04A9047111B2AA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iNTOU/Pods-iNTOU-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE3D9BCCF3D3DD1778513834 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iNTOU/Pods-iNTOU-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91E7324F1E31276400A54B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912B68E31E83DE140038D261 /* NTOUR66PictureViewController.m in Sources */,
+				91477FA41E55C0AE00EC94C1 /* LibraryFloorTableViewController.m in Sources */,
+				912B68D41E838D7D0038D261 /* NTOUBusTableViewController.m in Sources */,
+				912B68851E717E460038D261 /* TrafficBusStopTableViewController.m in Sources */,
+				91CDBF581E5AE01F0085514E /* LibrarySearchViewController.m in Sources */,
+				912B68C61E8007D80038D261 /* TrafficHSRDateViewController.m in Sources */,
+				91E7325B1E31276400A54B9A /* AppDelegate.m in Sources */,
+				91B72FA21E422B4B00896AF3 /* NewsContentViewController.m in Sources */,
+				91742CA21E9E3BC00064D5A3 /* StellarViewController.m in Sources */,
+				91D7A1351E97811700B79396 /* OtherLinkTableViewController.m in Sources */,
+				912B68DD1E83A3100038D261 /* NTOUBadouziTableViewController.m in Sources */,
+				91531E411E5343A0005D2CAF /* Moodle.m in Sources */,
+				919BC24E1E31DA4400451426 /* Module.m in Sources */,
+				91477FA71E55C64C00EC94C1 /* LibraryConInfoTableViewController.m in Sources */,
+				91531E461E53449B005D2CAF /* GoogleMapViewController.m in Sources */,
+				912B689E1E7BB7460038D261 /* TrafficTrainDateViewController.m in Sources */,
+				912B68951E7BA3AC0038D261 /* TrafficExpressDetailTableViewController.m in Sources */,
+				916AAEB81E9B5064008A3F1B /* CalendarTableViewController.m in Sources */,
+				912B68881E780CE50038D261 /* TrafficBusRouteTableViewController.m in Sources */,
+				91F8DBD81E5445F000D45684 /* GoogleMapStreetViewController.m in Sources */,
+				91742CA81E9E3DC40064D5A3 /* StellarWeekBar.m in Sources */,
+				912B68B11E80009C0038D261 /* TrafficHSRTabBarController.m in Sources */,
+				917072561E534B2B0065F20F /* LifeButton.m in Sources */,
+				91B8412D1E51F587000B4AAE /* LifeViewController.m in Sources */,
+				91742CAB1E9E44250064D5A3 /* StellarClassBar.m in Sources */,
+				91D7A13B1E97899500B79396 /* AboutTableViewController.m in Sources */,
+				912B68E01E83AF420038D261 /* NTOUR66TableViewController.m in Sources */,
+				91E732581E31276400A54B9A /* main.m in Sources */,
+				912B68A71E7BC9700038D261 /* TrafficTrainTabBarController.m in Sources */,
+				91531E3C1E53364F005D2CAF /* GuideLocationsTableViewController.m in Sources */,
+				912B68901E7949DD0038D261 /* TrafficExpressTableViewController.m in Sources */,
+				91F8DBE21E54899400D45684 /* StellarCourseInfoTableViewController.m in Sources */,
+				91853B3F1E592DA7007C37AB /* Library.m in Sources */,
+				91E317EC1E5706BB005E24EB /* LibraryNewsTableViewController.m in Sources */,
+				91853B461E594122007C37AB /* MoodleTableViewController.m in Sources */,
+				913D65191E5D908000888676 /* TrafficClassViewController.m in Sources */,
+				912B68AA1E7FC9E40038D261 /* TrafficTrainTimeTableViewController.m in Sources */,
+				918896341E40137800DDC82C /* NewsViewController.m in Sources */,
+				91CDBF5B1E5AE4260085514E /* LibrarySearchResultTableViewController.m in Sources */,
+				91853B431E593DAB007C37AB /* LibraryTableViewController.m in Sources */,
+				91B841301E5223F1000B4AAE /* LifeStreetViewController.m in Sources */,
+				91E7326F1E3127E200A54B9A /* MainCollectionViewController.m in Sources */,
+				912B68B41E8000FA0038D261 /* TrafficHSRDepartureTableViewController.m in Sources */,
+				91D7A13E1E978AF800B79396 /* AboutDeveloperTableViewController.m in Sources */,
+				91342BB01EA4713E004F7422 /* StellarViewLayout.m in Sources */,
+				912B68D71E8393650038D261 /* NTOUToMRTTableViewController.m in Sources */,
+				91F8DBE81E54D33300D45684 /* StellarGradeTableViewController.m in Sources */,
+				9100EFE81E33449300756AE5 /* ModuleManager.m in Sources */,
+				91F8DBEE1E54EDF100D45684 /* StellarFileViewController.m in Sources */,
+				912B68A11E7BC43C0038D261 /* TrafficTrainCarClassTableViewController.m in Sources */,
+				912B689B1E7BB4460038D261 /* TrafficTrainDestinationTableViewController.m in Sources */,
+				91F8DBE51E54CCD500D45684 /* StellarMoodleInfoTableViewController.m in Sources */,
+				912B68C11E8007CB0038D261 /* TrafficHSRDestinationTableViewController.m in Sources */,
+				91531E371E53307C005D2CAF /* GuideTableViewController.m in Sources */,
+				912B68DA1E839FBE0038D261 /* NTOU1800TableViewController.m in Sources */,
+				91477FAA1E55F5D500EC94C1 /* LibraryOpenTimeTableViewController.m in Sources */,
+				913D65161E5D44C600888676 /* TrafficBusTableViewController.m in Sources */,
+				91E09BAD1E5A6F8D001A1A02 /* LibraryBorrowTableViewController.m in Sources */,
+				918237AF1E88EEA3002E2464 /* LibraryBarCodeViewController.m in Sources */,
+				912B68C71E8007D80038D261 /* TrafficHSRTimeTableViewController.m in Sources */,
+				91E09BB01E5A8421001A1A02 /* LibraryCurrentHoldTableViewController.m in Sources */,
+				913D65071E5C25DE00888676 /* LibrarySearchResultDetailTableViewController.m in Sources */,
+				912B68981E7BABD60038D261 /* TrafficTrainDepartureTableViewController.m in Sources */,
+				91DAFED21E43934000745C2F /* NewsClassData.m in Sources */,
+				91EE920E1E4ADFB400B2DFD1 /* EmergencyTableViewController.m in Sources */,
+				91F8DBDB1E54659400D45684 /* StellarClassViewController.m in Sources */,
+				91CDBF4F1E5AC0A30085514E /* LibraryHistoryTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		91E7325F1E31276400A54B9A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91E732601E31276400A54B9A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		91E732641E31276400A54B9A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91E732651E31276400A54B9A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		91E732681E31276400A54B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		91E732691E31276400A54B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91E7326B1E31276400A54B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EB29B29DE07FAB35EB3ACA0 /* Pods-iNTOU.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 46873356PM;
+				INFOPLIST_FILE = iNTOU/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ntoucs.NTOU-Mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		91E7326C1E31276400A54B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E99A426054C1B94E5B7E0441 /* Pods-iNTOU.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 46873356PM;
+				INFOPLIST_FILE = iNTOU/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ntoucs.NTOU-Mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91E7324E1E31276400A54B9A /* Build configuration list for PBXProject "iNTOU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91E732681E31276400A54B9A /* Debug */,
+				91E732691E31276400A54B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91E7326A1E31276400A54B9A /* Build configuration list for PBXNativeTarget "iNTOU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91E7326B1E31276400A54B9A /* Debug */,
+				91E7326C1E31276400A54B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91E7324B1E31276400A54B9A /* Project object */;
+}

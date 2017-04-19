@@ -1,0 +1,22 @@
+PODS:
+  - FSCalendar (2.7.2)
+  - GoogleMaps (2.2.0):
+    - GoogleMaps/Maps (= 2.2.0)
+  - GoogleMaps/Base (2.2.0)
+  - GoogleMaps/Maps (2.2.0):
+    - GoogleMaps/Base
+  - MBProgressHUD (1.0.0)
+
+DEPENDENCIES:
+  - FSCalendar
+  - GoogleMaps
+  - MBProgressHUD
+
+SPEC CHECKSUMS:
+  FSCalendar: 6200ef796dfe85005ff2fb19bbd429f8be742f86
+  GoogleMaps: 104c418d61ab8a05dff06ed0784c25ea9d37da45
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+
+PODFILE CHECKSUM: 0e9940b0cf1f55f33899f5c2fa2e95693814967f
+
+COCOAPODS: 1.2.0

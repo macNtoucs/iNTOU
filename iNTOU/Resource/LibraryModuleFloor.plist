@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>floor</key>
+			<string>地下室</string>
+			<key>info</key>
+			<string>全興書苑、罕用書庫</string>
+		</dict>
+		<dict>
+			<key>floor</key>
+			<string>一樓</string>
+			<key>info</key>
+			<string>採編組辦公室、館藏管理組辦公室、藝文中心辦公室、臨時閱讀區</string>
+		</dict>
+		<dict>
+			<key>floor</key>
+			<string>二樓</string>
+			<key>info</key>
+			<string>新書展示區、借還書櫃台、資訊檢索服務區、愛樂廳、團體視聽室、多媒體區、視聽資料區、討論室、參考書區、閱覽組辦公室、參考諮詢組辦公室</string>
+		</dict>
+		<dict>
+			<key>floor</key>
+			<string>三樓</string>
+			<key>info</key>
+			<string>中外文期刊合訂本區、期刊辦公室、影印室、個人研究小間</string>
+		</dict>
+		<dict>
+			<key>floor</key>
+			<string>四樓</string>
+			<key>info</key>
+			<string>西方語文圖書區、日文期刊合訂本區、本校博碩士論文區、童書、指定參考書室、罕用書區</string>
+		</dict>
+		<dict>
+			<key>floor</key>
+			<string>五樓</string>
+			<key>info</key>
+			<string>東方語文圖書區、特藏室、視聽資料典藏室</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>floor</key>
+			<string>三樓</string>
+			<key>info</key>
+			<string>副處長辦公室、資訊素養教室</string>
+		</dict>
+		<dict>
+			<key>floor</key>
+			<string>四樓</string>
+			<key>info</key>
+			<string>中、外文期刊現刊區、資訊檢索服務區</string>
+		</dict>
+	</array>
+</array>
+</plist>
