@@ -67,6 +67,7 @@
 		91853B461E594122007C37AB /* MoodleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91853B451E594122007C37AB /* MoodleTableViewController.m */; };
 		918896341E40137800DDC82C /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 918896331E40137800DDC82C /* NewsViewController.m */; };
 		919BC24E1E31DA4400451426 /* Module.m in Sources */ = {isa = PBXBuildFile; fileRef = 919BC24D1E31DA4400451426 /* Module.m */; };
+		91A3DC3C1EAF53CD002766BD /* CalendarPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A3DC3B1EAF53CD002766BD /* CalendarPageViewController.m */; };
 		91B72FA21E422B4B00896AF3 /* NewsContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B72FA11E422B4B00896AF3 /* NewsContentViewController.m */; };
 		91B8412D1E51F587000B4AAE /* LifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B8412C1E51F587000B4AAE /* LifeViewController.m */; };
 		91B841301E5223F1000B4AAE /* LifeStreetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B8412F1E5223F1000B4AAE /* LifeStreetViewController.m */; };
@@ -209,6 +210,8 @@
 		918896331E40137800DDC82C /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsViewController.m; path = Modules/NewsModule/NewsViewController.m; sourceTree = "<group>"; };
 		919BC24C1E31DA4400451426 /* Module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Module.h; path = Modules/Module.h; sourceTree = "<group>"; };
 		919BC24D1E31DA4400451426 /* Module.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Module.m; path = Modules/Module.m; sourceTree = "<group>"; };
+		91A3DC3A1EAF53CD002766BD /* CalendarPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarPageViewController.h; path = Modules/CalendarModule/CalendarPageViewController.h; sourceTree = "<group>"; };
+		91A3DC3B1EAF53CD002766BD /* CalendarPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarPageViewController.m; path = Modules/CalendarModule/CalendarPageViewController.m; sourceTree = "<group>"; };
 		91B72FA01E422B4B00896AF3 /* NewsContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsContentViewController.h; path = Modules/NewsModule/NewsContentViewController.h; sourceTree = "<group>"; };
 		91B72FA11E422B4B00896AF3 /* NewsContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsContentViewController.m; path = Modules/NewsModule/NewsContentViewController.m; sourceTree = "<group>"; };
 		91B8412B1E51F587000B4AAE /* LifeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LifeViewController.h; path = Modules/LifeModule/LifeViewController.h; sourceTree = "<group>"; };
@@ -321,6 +324,8 @@
 			isa = PBXGroup;
 			children = (
 				911B7CB51E476B15001A5328 /* CalendarModule.storyboard */,
+				91A3DC3A1EAF53CD002766BD /* CalendarPageViewController.h */,
+				91A3DC3B1EAF53CD002766BD /* CalendarPageViewController.m */,
 				916AAEB61E9B5064008A3F1B /* CalendarTableViewController.h */,
 				916AAEB71E9B5064008A3F1B /* CalendarTableViewController.m */,
 			);
@@ -888,6 +893,7 @@
 				912B68B41E8000FA0038D261 /* TrafficHSRDepartureTableViewController.m in Sources */,
 				91D7A13E1E978AF800B79396 /* AboutDeveloperTableViewController.m in Sources */,
 				91342BB01EA4713E004F7422 /* StellarViewLayout.m in Sources */,
+				91A3DC3C1EAF53CD002766BD /* CalendarPageViewController.m in Sources */,
 				912B68D71E8393650038D261 /* NTOUToMRTTableViewController.m in Sources */,
 				91F8DBE81E54D33300D45684 /* StellarGradeTableViewController.m in Sources */,
 				9100EFE81E33449300756AE5 /* ModuleManager.m in Sources */,

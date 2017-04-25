@@ -13,6 +13,8 @@
 @end
 
 @implementation CalendarTableViewController
+@synthesize year,sectionData;
+
 static NSArray* month;
 static NSArray* monthNum;
 
@@ -29,16 +31,7 @@ static NSArray* monthNum;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //讀取檔案
-    calenderData = [[NSUserDefaults standardUserDefaults] objectForKey:@"CalendarModule"];
-    if(!calenderData)
-        calenderData = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"CalendarModule" ofType:@"plist"]];
-    [self setSectionData];
     
-    //下載檔案
-    [self downloadDataFromServer];
-    
-    [self.tableView reloadData];
     //讀取現在月份
     NSDateFormatter* formatter = [NSDateFormatter new];
     NSDate* now = [NSDate date];
@@ -51,79 +44,6 @@ static NSArray* monthNum;
     // Dispose of any resources that can be recreated.
 }
 
--(void)setSectionData {
-    //找出最新的年份
-    NSArray* target = calenderData[@"event"];
-    max_year = [[[target  valueForKeyPath:@"@max.DtStart"] substringToIndex:4] intValue];
-    
-    sectionData = [NSMutableArray new];
-    
-    for(int i = 0 ; i < [month count] ; i++)
-    {
-        //年月份的漏斗 例：201706
-        NSString* sortKey;
-        if(i < 5) // 8 ~ 12 月
-            sortKey = [[NSString alloc]initWithFormat:@"%d%02d",max_year - 1,[monthNum[i] intValue]];
-        else
-            sortKey = [[NSString alloc]initWithFormat:@"%d%02d",max_year,[monthNum[i] intValue]];
-        NSPredicate *filter = [NSPredicate predicateWithFormat:@"SELF['DtStart'] CONTAINS %@",sortKey];
-        
-        //排序工具 優先順序 DtStart > DtEnd
-        NSSortDescriptor* DtStartDescriptor = [[NSSortDescriptor alloc] initWithKey:@"DtStart" ascending:YES];
-        NSSortDescriptor* DtEndDescriptor = [[NSSortDescriptor alloc] initWithKey:@"DtEnd" ascending:YES];
-        NSArray *sortDescriptors = @[DtStartDescriptor,DtEndDescriptor];
-        NSArray *sortedArray = [[calenderData[@"event"] filteredArrayUsingPredicate:filter] sortedArrayUsingDescriptors:sortDescriptors];
-        
-        [sectionData addObject: sortedArray];
-    }
-}
-
-
--(void)downloadDataFromServer {
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSString* urlString = @"http://140.121.100.103:8080/CalendarServlet/CalendarServlet.do";
-        NSURL* url = [[NSURL alloc]initWithString:urlString];
-        NSMutableURLRequest* request = [[NSMutableURLRequest alloc]initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:30.0];
-        [request setHTTPMethod:@"POST"];
-        NSString *postString = @"version=0&dataType=json";
-        [request setHTTPBody:[postString dataUsingEncoding:NSUTF8StringEncoding]];
-        
-        NSURLSession* session = [NSURLSession sharedSession];
-        dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
-        NSURLSessionDataTask* task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-            if(data) {
-                NSDictionary* json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-                //版本不符合
-                if(![json[@"version"] isEqualToString:calenderData[@"version"]]) {
-                    
-                    //更新本地檔案
-                    [[NSUserDefaults standardUserDefaults]setObject:json forKey:@"CalendarModule"];
-                    
-                    //跳出更新視窗
-                    dispatch_async(dispatch_get_main_queue(), ^{
-                        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"偵測到更新"
-                                                                                       message:@"有新版本的行事曆！"
-                                                                                preferredStyle:UIAlertControllerStyleAlert];
-                        
-                        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"更新" style:UIAlertActionStyleDefault
-                                                                              handler:^(UIAlertAction * action) {
-                                                                                  calenderData = json;
-                                                                                  [self setSectionData];
-                                                                                  [self.tableView reloadData];
-                                                                              }];
-                        
-                        [alert addAction:defaultAction];
-                        [self presentViewController:alert animated:YES completion:nil];
-                    });
-                }
-                
-            }
-            dispatch_semaphore_signal(semaphore);
-        }];
-        [task resume];
-        dispatch_wait(semaphore, DISPATCH_TIME_FOREVER);
-    });
-}
 
 #pragma mark - Table view data source
 
@@ -163,9 +83,9 @@ static NSArray* monthNum;
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
     if(section < 5)
-        return [[NSString alloc] initWithFormat:@"%d年%@",max_year - 1,month[section]];
+        return [[NSString alloc] initWithFormat:@"%d年%@",year - 1,month[section]];
     else
-        return [[NSString alloc] initWithFormat:@"%d年%@",max_year,month[section]];
+        return [[NSString alloc] initWithFormat:@"%d年%@",year,month[section]];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView

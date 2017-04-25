@@ -10,8 +10,9 @@
 
 @interface CalendarTableViewController : UITableViewController {
     NSDictionary* calenderData;
-    NSMutableArray* sectionData;
-    int max_year;
 }
+
+@property (nonatomic)int year;
+@property (strong,nonatomic)NSArray* sectionData;
 
 @end
