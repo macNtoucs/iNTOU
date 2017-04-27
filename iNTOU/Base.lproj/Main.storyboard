@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vRo-kz-2rC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vRo-kz-2rC">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="-902" y="-183"/>
         </scene>
-        <!--海大App-->
+        <!--Main Collection View Controller-->
         <scene sceneID="Qvm-qo-QpI">
             <objects>
                 <collectionViewController storyboardIdentifier="UICollectionViewCell" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nqH-G3-cfL" customClass="MainCollectionViewController" sceneMemberID="viewController">
@@ -77,7 +77,7 @@
                             <outlet property="delegate" destination="nqH-G3-cfL" id="LJJ-TE-Gnf"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="海大App" id="feG-9d-hEI"/>
+                    <navigationItem key="navigationItem" id="feG-9d-hEI"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CMC-q6-HNt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

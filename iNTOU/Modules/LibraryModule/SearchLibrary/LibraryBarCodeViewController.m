@@ -16,29 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    switch([AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo])
-    {
-        case AVAuthorizationStatusAuthorized:
-            [self setupSession];
-            break;
-        default:
-        {
-            UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"錯誤" message:@"相機權限未開啟！" preferredStyle:UIAlertControllerStyleAlert];
-            UIAlertAction* cancelAction = [UIAlertAction actionWithTitle:@"確定" style:UIAlertActionStyleDefault
-                                                                 handler:^(UIAlertAction * _Nonnull action) {
-                                                                     [self.navigationController popViewControllerAnimated:YES];
-                                                                 }];
-            [alert addAction:cancelAction];
-            [self presentViewController:alert animated:YES completion:nil];
-        }
-    }
-
+    [self setupSession];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
+
     [captureSession startRunning];
 }
 
@@ -60,18 +43,26 @@
     AVCaptureDeviceInput *audioInput = [AVCaptureDeviceInput deviceInputWithDevice:audioCaptureDevice error:&error];
     if (audioInput) {
         [captureSession addInput:audioInput];
+        
+        AVCaptureMetadataOutput* captureMetadataOutput = [AVCaptureMetadataOutput new];
+        [captureSession addOutput:captureMetadataOutput];
+        [captureMetadataOutput setMetadataObjectsDelegate:self queue:dispatch_get_main_queue()];
+        captureMetadataOutput.metadataObjectTypes = @[AVMetadataObjectTypeEAN13Code];
+        
+        AVCaptureVideoPreviewLayer* previewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:captureSession];
+        [previewLayer setFrame:self.view.layer.bounds];
+        [self.view.layer addSublayer:previewLayer];
     }
     else {
         NSLog(@"%@",error);
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"錯誤" message:@"相機權限未開啟！" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction* cancelAction = [UIAlertAction actionWithTitle:@"確定" style:UIAlertActionStyleDefault
+                                                             handler:^(UIAlertAction * _Nonnull action) {
+                                                                 [self.navigationController popViewControllerAnimated:YES];
+                                                             }];
+        [alert addAction:cancelAction];
+        [self presentViewController:alert animated:YES completion:nil];
     }
-    AVCaptureMetadataOutput* captureMetadataOutput = [AVCaptureMetadataOutput new];
-    [captureSession addOutput:captureMetadataOutput];
-    [captureMetadataOutput setMetadataObjectsDelegate:self queue:dispatch_get_main_queue()];
-    captureMetadataOutput.metadataObjectTypes = @[AVMetadataObjectTypeEAN13Code];
-    
-    AVCaptureVideoPreviewLayer* previewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:captureSession];
-    [previewLayer setFrame:self.view.layer.bounds];
-    [self.view.layer addSublayer:previewLayer];
 }
 
 -(void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects

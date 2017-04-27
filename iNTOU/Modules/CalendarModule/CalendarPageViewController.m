@@ -32,6 +32,8 @@ static NSArray* monthNum;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor blackColor];
+    
     //設定delegate
     self.dataSource = self;
     self.delegate = self;

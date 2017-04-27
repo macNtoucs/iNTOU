@@ -47,7 +47,7 @@
         NSString* urlString = [[NSString alloc]initWithFormat:@"http://140.121.100.103:8080/NTOULibraryAPI/Search.do?searcharg=%@&searchtype=%@&segment=%d",searchKey,type,segment];
         urlString = [urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
         NSURL* url = [[NSURL alloc]initWithString:urlString];
-        NSURLRequest* request = [[NSURLRequest alloc]initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:30.0];
+        NSURLRequest* request = [[NSURLRequest alloc]initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:300.0];
         
         NSURLSession* session = [NSURLSession sharedSession];
         dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);

@@ -13,7 +13,7 @@
 @end
 
 @implementation LibrarySearchViewController
-@synthesize typePicker,searchTextField,tapRecognizer,searchScrollView;
+@synthesize searchTextField,tapRecognizer,searchScrollView;
 
 static NSArray* type;
 
@@ -96,24 +96,6 @@ static NSArray* type;
     return YES;
 }
 
-#pragma mark - picker view datasource
-
-- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
-    return 1;
-}
-
-- (NSInteger)pickerView:(UIPickerView *)pickerView
-numberOfRowsInComponent:(NSInteger)component {
-    return 2;
-}
-
-#pragma mark - picker view
-
-- (NSString *)pickerView:(UIPickerView *)pickerView
-             titleForRow:(NSInteger)row
-            forComponent:(NSInteger)component {
-    return type[row];
-}
 
 #pragma mark - Navigation
 
@@ -121,7 +103,7 @@ numberOfRowsInComponent:(NSInteger)component {
     id view = [segue destinationViewController];
     if([segue.identifier isEqualToString:@"SearchAction"])
     {
-        if([typePicker selectedRowInComponent:0])
+        if([searchTextField.text intValue]%100000000000>0)
             [view setValue:@"i" forKey:@"type"];
         else
             [view setValue:@"X" forKey:@"type"];

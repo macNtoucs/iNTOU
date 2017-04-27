@@ -106,19 +106,32 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"StellarGradeCells" forIndexPath:indexPath];
     
+    NSDictionary* cellData = gradeData[@"list"][indexPath.row];
 
-    ((UILabel*)[cell viewWithTag:101]).text = gradeData[@"list"][indexPath.row][@"name"];
-    if(gradeData[@"list"][indexPath.row][@"grade"]) {
-        if([gradeData[@"list"][indexPath.row][@"grade"] isKindOfClass:[NSNumber class]])
-            ((UILabel*)[cell viewWithTag:102]).text = [[NSString alloc] initWithFormat:@"分數：%@",[gradeData[@"list"][indexPath.row][@"grade"] stringValue]];
+    ((UILabel*)[cell viewWithTag:101]).text = cellData[@"name"];
+    if(cellData[@"grade"]) {
+        NSString* gradeString = nil;
+        if([cellData[@"grade"] isKindOfClass:[NSNumber class]])
+            gradeString = [cellData[@"grade"] stringValue];
         else
-            ((UILabel*)[cell viewWithTag:102]).text = [[NSString alloc] initWithFormat:@"分數：%@",gradeData[@"list"][indexPath.row][@"grade"]];
+            gradeString = cellData[@"grade"];
+        if([gradeString isEqualToString:@""] || [gradeString isEqualToString:@"-1"])
+            ((UILabel*)[cell viewWithTag:102]).text = @"分數：未給予";
+        else
+            ((UILabel*)[cell viewWithTag:102]).text = [[NSString alloc] initWithFormat:@"分數：%@",cellData[@"grade"]];
 
     }
     else {
-        ((UILabel*)[cell viewWithTag:102]).text = @"";
+        ((UILabel*)[cell viewWithTag:102]).text = @"分數：未給予";
     }
-    ((UITextView*)[cell viewWithTag:103]).text = gradeData[@"list"][indexPath.row][@"comment"];
+    if(cellData[@"end"]) {
+        long long int second = [(NSString*)cellData[@"end"] longLongValue];
+        NSDate* endDate = [NSDate dateWithTimeIntervalSince1970: second];
+        NSDateFormatter* formatter = [NSDateFormatter new];
+        [formatter setDateFormat:@"YYYY/MM/dd HH:mm"];
+        ((UITextView*)[cell viewWithTag:104]).text = [[NSString alloc] initWithFormat:@"截止時間：%@",[formatter stringFromDate:endDate]];
+    }
+    ((UITextView*)[cell viewWithTag:103]).text = [[NSString alloc] initWithFormat:@"評語：%@",cellData[@"comment"]?cellData[@"comment"]:@""];
     
     return cell;
 }

@@ -10,7 +10,6 @@
 
 @interface LibrarySearchViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIPickerView *typePicker;
 @property (weak, nonatomic) IBOutlet UITextField *searchTextField;
 @property (weak, nonatomic) IBOutlet UITapGestureRecognizer *tapRecognizer;
 @property (weak, nonatomic) IBOutlet UIScrollView *searchScrollView;

@@ -26,6 +26,23 @@ static NSString * const reuseIdentifier = @"mainCells";
     moduleManager = [ModuleManager new];
     
     fontSize = [self getFontSize];
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    UIImageView* Nav_BG = [[UIImageView alloc]
+                           initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 44)];
+    Nav_BG.image = [UIImage imageNamed:@"Nav_backGround"];
+    Nav_BG.tag = 1;
+    [self.navigationController.navigationBar addSubview:Nav_BG];
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+
+    [[self.navigationController.navigationBar viewWithTag:1] removeFromSuperview];
 }
 
 - (void)didReceiveMemoryWarning {
