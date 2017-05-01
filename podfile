@@ -4,4 +4,5 @@ use_frameworks!
 pod 'GoogleMaps'
 pod 'MBProgressHUD'
 pod 'FSCalendar'
+pod 'Vialer-pjsip-iOS'
 target 'iNTOU'

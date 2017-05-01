@@ -140,7 +140,7 @@ static NSArray* dayTag;
     if(indexPath.row < [day[i][@"time"] intValue] - 1)
         return 0;
     //尋找小於課程時間最大值
-    while(i + 1 < [day count] && indexPath.row >= [day[i+1][@"time"] intValue] - 1)
+    while(i+1 < [day count] && indexPath.row >= [day[i+1][@"time"] intValue] - 1)
         i++;
     //檢查兩者是否相同
     if(indexPath.row == [day[i][@"time"] intValue] - 1)

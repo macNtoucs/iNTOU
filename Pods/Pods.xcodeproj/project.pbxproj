@@ -7,53 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0968524ED4DE8DF7834055C5B6089D72 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0536F1D39AE024B2443662D942200AE1 /* MBProgressHUD-dummy.m */; };
-		0A7AF0E9B853211DE831CAAD4C21F11C /* FSCalendarConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = C35365AEF13B6B3BD5FF16D2F3629CA0 /* FSCalendarConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0DD46AF65FABE6D2BDE4501F807046A6 /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EE09235B6AA7346FF8C4282AA9152B /* FSCalendarAppearance.m */; };
+		0968524ED4DE8DF7834055C5B6089D72 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB22C8E7E50192286B627A76ED470C6F /* MBProgressHUD-dummy.m */; };
+		0A7AF0E9B853211DE831CAAD4C21F11C /* FSCalendarConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 76D9D3A49704069BB7777F82C7B058CE /* FSCalendarConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DD46AF65FABE6D2BDE4501F807046A6 /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6572B2D15213153B0AEEA00C77529A /* FSCalendarAppearance.m */; };
 		1215629D558162CE728B27386DA02D1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6647ACC906E3FCEEFF3813BB32B1FCF6 /* Foundation.framework */; };
-		243E3FBB25AD6B55CDF6971E0D22DA4F /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A065BFC1AC38E7ED503B34E2F52E62 /* FSCalendarConstants.m */; };
-		28A794912ED1E06B05D96DF5ED0AED19 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05F7B8634E691B5BE970BD6DB48A97E7 /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		243E3FBB25AD6B55CDF6971E0D22DA4F /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC2F3A03DB998A91CE0264354DA29BE /* FSCalendarConstants.m */; };
+		28A794912ED1E06B05D96DF5ED0AED19 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D7D512060C08BB7BB2D3F1F57A006A03 /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30D419CD6FB02F3701215D40CF358FAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6647ACC906E3FCEEFF3813BB32B1FCF6 /* Foundation.framework */; };
-		49F1C59A34E52484FD2B6462CE8D7C91 /* FSCalendarDelegationProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 0388C6A7638D16CBFE76A77C65116469 /* FSCalendarDelegationProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		55F4561E55A6CF264BEDB8FB18B5FA8C /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4042C2C60ED57C62E22EE3BF6146E76 /* FSCalendarCell.m */; };
-		57D4F36C483A487950FA1F143AE5DCBC /* FSCalendarDelegationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 67105FAB5FCD8BA59BBE91311A7A1C47 /* FSCalendarDelegationFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5C62C27E2855390100E9519DE3095DDB /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7B58DD16E934FCC1117D13CF608F4E /* FSCalendarHeaderView.m */; };
-		625F05F7702CA250DEB66A699766DA9E /* FSCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E59A6B5BA654213952785FA24591C8DA /* FSCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		66737F48243D514269C499D65A7B4DBE /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F201FB9077E5A501E8367BE3E42460 /* FSCalendar.m */; };
-		712FF0C70B4C85F44AFB5CDDC1DD9018 /* FSCalendarDynamicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = B2724A09F9BD369B5902862FF3838813 /* FSCalendarDynamicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7E320930D1F4218F307C7FB786F0C514 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1A42D28B8C5CCD552F38B4F7AA11EB /* FSCalendarCollectionView.m */; };
-		8632FCFA0471878FC95240290BE97458 /* FSCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3AE8F1D942B6B16A46712865F4B14D /* FSCalendar-dummy.m */; };
-		897C38C8E3C31950E2E93A4D6937CCC4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 983C19F983C017A3418FD8EEA8623AFE /* MBProgressHUD.m */; };
-		8E8E60E0406837DF7038528766C90AEA /* FSCalendarScopeHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 73191125476CDC1DACD048EC5A894B79 /* FSCalendarScopeHandle.m */; };
-		8F7003744526BA3547F59200EE4F4D16 /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7F46455044EECE2F48BC0B3CB43A1 /* FSCalendarWeekdayView.m */; };
-		91693C90642539B4F411E794548A9E2A /* FSCalendarCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 407114E6C7C32992C322C5A3D8E92B01 /* FSCalendarCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		96E021283F050BCADF9A9B668C77B203 /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F3E609B1438AEC8236CD9B5244F63 /* FSCalendarExtensions.m */; };
+		49F1C59A34E52484FD2B6462CE8D7C91 /* FSCalendarDelegationProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B6F97B660289885166814E2BFAEF4F1 /* FSCalendarDelegationProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55F4561E55A6CF264BEDB8FB18B5FA8C /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BBA12AA3E9C56F6C197B6CAFD58F63 /* FSCalendarCell.m */; };
+		57D4F36C483A487950FA1F143AE5DCBC /* FSCalendarDelegationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0942187EEA1897D97A3A9EDB1C38FFE0 /* FSCalendarDelegationFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C62C27E2855390100E9519DE3095DDB /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95796E247E4A77C87CD5C06E01B9228B /* FSCalendarHeaderView.m */; };
+		625F05F7702CA250DEB66A699766DA9E /* FSCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 448A0D9B2655F79D5526398489AC6E07 /* FSCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66737F48243D514269C499D65A7B4DBE /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A6B1D75C3DBB05341F569752B4501B /* FSCalendar.m */; };
+		712FF0C70B4C85F44AFB5CDDC1DD9018 /* FSCalendarDynamicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 04D468861ADB5AECDFBDAF42622278AA /* FSCalendarDynamicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E320930D1F4218F307C7FB786F0C514 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FA601758287F3E2050B02D19C47F27 /* FSCalendarCollectionView.m */; };
+		8632FCFA0471878FC95240290BE97458 /* FSCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E20AB04A4B4F7A9410DEC6E7DF85516 /* FSCalendar-dummy.m */; };
+		897C38C8E3C31950E2E93A4D6937CCC4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE407FC67CCDAF539739F15E5A3806F /* MBProgressHUD.m */; };
+		8E8E60E0406837DF7038528766C90AEA /* FSCalendarScopeHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = D451DAD30FD5ABCDDB89582D6BA210F9 /* FSCalendarScopeHandle.m */; };
+		8F7003744526BA3547F59200EE4F4D16 /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D7C6AD6BEAF20AC0537277F710680B /* FSCalendarWeekdayView.m */; };
+		91693C90642539B4F411E794548A9E2A /* FSCalendarCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = AD77A7214A9676C6F3F27D000855095F /* FSCalendarCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96E021283F050BCADF9A9B668C77B203 /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4601870CC39886CD9BD598EB8AD39121 /* FSCalendarExtensions.m */; };
 		98DF470CA8F6DD132AFAC1398FCD579C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8EF2301073B01E30612B5B1BD94446 /* CoreGraphics.framework */; };
-		9CF04404C01848D25E78B22A88BFF129 /* FSCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 87F479A87C57B86A9B6CB6EA856C269F /* FSCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A000A7A7023F7FB4CEDD1023EB87BF93 /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DED30A0FAAE600E8B7811324BD8738D2 /* FSCalendarCollectionViewLayout.m */; };
-		A3D1147CED9648BEDE2E47B8E8A44924 /* FSCalendar+Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0C1E393D710AB1808666B5C4856917 /* FSCalendar+Deprecated.m */; };
-		A5BF8DBDD8660DBCFE712657F3D82BDA /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = D767B72B1EEF63B05EE3B9C7769902BF /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CF04404C01848D25E78B22A88BFF129 /* FSCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 779C8452265DC69544185A00E9C49C04 /* FSCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A000A7A7023F7FB4CEDD1023EB87BF93 /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A824DD23A27D6F97D2E9CBE1BC5823CC /* FSCalendarCollectionViewLayout.m */; };
+		A3D1147CED9648BEDE2E47B8E8A44924 /* FSCalendar+Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = B0173B1C0BE727188B791BEF370FD3F5 /* FSCalendar+Deprecated.m */; };
+		A5BF8DBDD8660DBCFE712657F3D82BDA /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = F7F94337E7CF5CD09F07680A446699E7 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A701CE014A08B08DD4CA1632BDF9247A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51498E299B7CB17BCC8B54F93C150FAA /* QuartzCore.framework */; };
 		AA530E2A16D259DF436F9957BC923F18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6647ACC906E3FCEEFF3813BB32B1FCF6 /* Foundation.framework */; };
-		AA978FCF3EF1D8D10DDE3BB4C6312A7B /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA9895D32DACB0CA6AB2AC9E95B5F5C /* FSCalendarDelegationProxy.m */; };
-		BDA1ED05CBA5580B30785A431D5B231B /* FSCalendarTransitionCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ADD4A96418F8F9EB0CAADAF68ABDE6B /* FSCalendarTransitionCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C17D68C964954EF1C0BB3C314C2F452F /* FSCalendarWeekdayView.h in Headers */ = {isa = PBXBuildFile; fileRef = E291BB0B6BBB80AF6EF4C236B4652724 /* FSCalendarWeekdayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C69663957B2EB4C7CF4D8192480AA8B4 /* FSCalendarExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A5CACE707A8CB46D19DD4C45A1404710 /* FSCalendarExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CDB052C277F6148BBAACB2C2C7C6321B /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4DF5E4F80138587788110F8AC3544A /* FSCalendarTransitionCoordinator.m */; };
+		AA978FCF3EF1D8D10DDE3BB4C6312A7B /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A9E98FA6065685B5227EFF876CB3A7 /* FSCalendarDelegationProxy.m */; };
+		BDA1ED05CBA5580B30785A431D5B231B /* FSCalendarTransitionCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = CC923DAE55F4C730F3E5AFB596B24FB8 /* FSCalendarTransitionCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17D68C964954EF1C0BB3C314C2F452F /* FSCalendarWeekdayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 16ABCD066B84B88D8B37FB8BB56613C5 /* FSCalendarWeekdayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C69663957B2EB4C7CF4D8192480AA8B4 /* FSCalendarExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = C708C4D7ECCE82B5269DC82B78D79049 /* FSCalendarExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDB052C277F6148BBAACB2C2C7C6321B /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 053E13D94506DD58A35E283E3ABE16B6 /* FSCalendarTransitionCoordinator.m */; };
 		CF2ABD6A243A7C112FD204C18DD7BC73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1FD743D031D373EDF29CC526F758E2 /* UIKit.framework */; };
 		D33A38DE15A56969ED69107DC443294C /* Pods-iNTOU-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3396E8487D43279EEC9C48F2D02F2AA /* Pods-iNTOU-dummy.m */; };
-		D4F3BEEB43698475E5443150838E84ED /* FSCalendarStickyHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = A8FE96DB06592AA245AC46357E077584 /* FSCalendarStickyHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4F3BEEB43698475E5443150838E84ED /* FSCalendarStickyHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 371550159465FFAE9412D4C773777DC8 /* FSCalendarStickyHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA3FBCF3B21EB18151C3BC2645107E0D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51498E299B7CB17BCC8B54F93C150FAA /* QuartzCore.framework */; };
-		E1B077BAFD8840CA3D96BB4545B7B255 /* FSCalendarScopeHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4740F663285E2D382F0ACEF4E96619 /* FSCalendarScopeHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1B077BAFD8840CA3D96BB4545B7B255 /* FSCalendarScopeHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 77D73D7E5BBE0F063798BFA64F49C329 /* FSCalendarScopeHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1D5A8786A449D7D4F73D89039158F95 /* Pods-iNTOU-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2CEDF2750B03D7E7CAA9DF2FC9390A3 /* Pods-iNTOU-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E3B93CDF418A2678614DDAD9331C0C0D /* FSCalendarCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A98BC6218560E9F808B70C715E079E /* FSCalendarCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE078A13105301767BE0ECAC1705A9B5 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED28AAF49C8C7DADD195ADB2B0D0268 /* FSCalendarStickyHeader.m */; };
-		F54E2CAED6EAE74D9E1F878E10FA30BD /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 25701F0C148971032AC4A61288A2C216 /* FSCalendarDelegationFactory.m */; };
-		F6A1EC699E916996EF2B7B4C6137DB8D /* FSCalendarHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B496BC6F5E9737A665559772540645C /* FSCalendarHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F746795DC38AD2DB3D584A110174FED0 /* FSCalendarCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 50FF4B8A3729C76927C5717E10C6BD8D /* FSCalendarCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F75DFB5A6E8642C4964CC3968A2DD0C8 /* FSCalendarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D87A0FC09A1A351277BF9AD90CA3AEE /* FSCalendarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FD051B5A9F3E663081656EB261A724D2 /* FSCalendarAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FB7F77DB72765D04B2FC050B4F8816A /* FSCalendarAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFBEAF63A28F6A7DD881E8256F9503B7 /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDB37FD0A2B9358B8389CF316829F58 /* FSCalendarCalculator.m */; };
+		E3B93CDF418A2678614DDAD9331C0C0D /* FSCalendarCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FCF230BCA19832D469B9A5D24507D06 /* FSCalendarCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE078A13105301767BE0ECAC1705A9B5 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FF00497C23BE11670A8D8EFBAA34C3 /* FSCalendarStickyHeader.m */; };
+		F54E2CAED6EAE74D9E1F878E10FA30BD /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 62ADBD9F6219B3155BBA6884DB02EE69 /* FSCalendarDelegationFactory.m */; };
+		F6A1EC699E916996EF2B7B4C6137DB8D /* FSCalendarHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = AD4FBF3C21B4EAB0C55E6B2A32166300 /* FSCalendarHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F746795DC38AD2DB3D584A110174FED0 /* FSCalendarCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = B734757F0DF4C1AD03044C16D766D6F2 /* FSCalendarCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F75DFB5A6E8642C4964CC3968A2DD0C8 /* FSCalendarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C5901244009F9A67359B9B7544AE4BC9 /* FSCalendarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD051B5A9F3E663081656EB261A724D2 /* FSCalendarAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 6706E92CAAF1B089100AF9D13E574102 /* FSCalendarAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFBEAF63A28F6A7DD881E8256F9503B7 /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AC04FC669F4AAF6E0A167D44F074B0 /* FSCalendarCalculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,74 +74,457 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0388C6A7638D16CBFE76A77C65116469 /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationProxy.h; path = FSCalendar/FSCalendarDelegationProxy.h; sourceTree = "<group>"; };
-		0536F1D39AE024B2443662D942200AE1 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		05F7B8634E691B5BE970BD6DB48A97E7 /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
-		0ADD4A96418F8F9EB0CAADAF68ABDE6B /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarTransitionCoordinator.h; path = FSCalendar/FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
-		0D4740F663285E2D382F0ACEF4E96619 /* FSCalendarScopeHandle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarScopeHandle.h; path = FSCalendar/FSCalendarScopeHandle.h; sourceTree = "<group>"; };
+		026A553ABB2C4152710DEF0B9AB56020 /* opus_defines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus_defines.h; path = VialerPJSIP.framework/Versions/A/Headers/opus/opus_defines.h; sourceTree = "<group>"; };
+		0350F0241A6407D23F7FA2AE0D757089 /* turn_session.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = turn_session.h; path = VialerPJSIP.framework/Versions/A/Headers/pjnath/turn_session.h; sourceTree = "<group>"; };
+		04D0E061DC06963B1A385C7467370E05 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		04D468861ADB5AECDFBDAF42622278AA /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDynamicHeader.h; path = FSCalendar/FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
+		04DC3BEADC1EA00E0B888A1A47385543 /* ffmpeg_vid_codecs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ffmpeg_vid_codecs.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-codec/ffmpeg_vid_codecs.h"; sourceTree = "<group>"; };
+		04FE8CD693F69FB9DFC5F867A85FDDB3 /* json.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = json.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib-util/json.h"; sourceTree = "<group>"; };
+		053E13D94506DD58A35E283E3ABE16B6 /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarTransitionCoordinator.m; path = FSCalendar/FSCalendarTransitionCoordinator.m; sourceTree = "<group>"; };
+		05A6B1D75C3DBB05341F569752B4501B /* FSCalendar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendar.m; path = FSCalendar/FSCalendar.m; sourceTree = "<group>"; };
+		06D01C6856B2C00E39DEA677205FFD1D /* m_i386.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = m_i386.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/m_i386.h; sourceTree = "<group>"; };
+		06FD7536623BFB44FC61D23C124028A5 /* codec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = codec.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/codec.h; sourceTree = "<group>"; };
+		07B1C9491699E31BEECD060D4CCE74F9 /* err.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = err.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/err.h; sourceTree = "<group>"; };
+		07E24DEDD46EDDB172EFC62FEDD6311C /* md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md5.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib-util/md5.h"; sourceTree = "<group>"; };
+		07E7BEDAF7EEE354CAE46AFED9ED86F6 /* rbtree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rbtree.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/rbtree.h; sourceTree = "<group>"; };
+		085CCBB0A924D7772328679B122EF583 /* blowfish.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = blowfish.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/blowfish.h; sourceTree = "<group>"; };
+		0942187EEA1897D97A3A9EDB1C38FFE0 /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationFactory.h; path = FSCalendar/FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
+		09788715798F7142F7F0FFDA7C20790B /* e_os2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = e_os2.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/e_os2.h; sourceTree = "<group>"; };
+		0AAB1BCAE36A03D5CDEC586539A8CA85 /* sip_config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_config.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip/sip_config.h; sourceTree = "<group>"; };
+		0ACB6C1B35B4E5EAC0FBE444A963ABFF /* crypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/crypto.h; sourceTree = "<group>"; };
+		0B56B608787C793C283B1920EDBACCBF /* ilbc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ilbc.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-codec/ilbc.h"; sourceTree = "<group>"; };
+		0CC4BFD5125208EB5AF0AD987EF3086B /* g711.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = g711.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/g711.h; sourceTree = "<group>"; };
 		0D8EF2301073B01E30612B5B1BD94446 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		0DA7F46455044EECE2F48BC0B3CB43A1 /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarWeekdayView.m; path = FSCalendar/FSCalendarWeekdayView.m; sourceTree = "<group>"; };
-		10161D0D1523FF86A72F1CE06235EFA4 /* FSCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSCalendar.xcconfig; sourceTree = "<group>"; };
-		20A98BC6218560E9F808B70C715E079E /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionView.h; path = FSCalendar/FSCalendarCollectionView.h; sourceTree = "<group>"; };
-		25701F0C148971032AC4A61288A2C216 /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationFactory.m; path = FSCalendar/FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
-		2D87A0FC09A1A351277BF9AD90CA3AEE /* FSCalendarCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCell.h; path = FSCalendar/FSCalendarCell.h; sourceTree = "<group>"; };
-		36F201FB9077E5A501E8367BE3E42460 /* FSCalendar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendar.m; path = FSCalendar/FSCalendar.m; sourceTree = "<group>"; };
-		3A0B7821C3F5BFBDE29E35C1AABC1255 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
-		3C0F3E609B1438AEC8236CD9B5244F63 /* FSCalendarExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarExtensions.m; path = FSCalendar/FSCalendarExtensions.m; sourceTree = "<group>"; };
-		407114E6C7C32992C322C5A3D8E92B01 /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionViewLayout.h; path = FSCalendar/FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
+		0DAFABABB59F338030B9F31FBD655EAB /* h264_packetizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = h264_packetizer.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-codec/h264_packetizer.h"; sourceTree = "<group>"; };
+		0E681E59FAF4A94E7B2A7CC8F9918990 /* publish.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = publish.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjsip-simple/publish.h"; sourceTree = "<group>"; };
+		0F1B223CF138305026663EAEF525340B /* openh264.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = openh264.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-codec/openh264.h"; sourceTree = "<group>"; };
+		0F4E45ED538CF9A2EA0FD875AC832B04 /* silk.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = silk.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-codec/silk.h"; sourceTree = "<group>"; };
+		1059478953591799660BC7BB543AE902 /* vid_stream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vid_stream.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/vid_stream.h; sourceTree = "<group>"; };
+		10658F532B698982A0668F4151E130E0 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		1143D2E3EF3B8131437D5F31EFAA3386 /* cc_armcc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cc_armcc.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/cc_armcc.h; sourceTree = "<group>"; };
+		1229FDDBB85E99AA84A76845032BD78B /* opengl_dev.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opengl_dev.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-videodev/opengl_dev.h"; sourceTree = "<group>"; };
+		13FF0E83C35871169B753B4C9D7FD74D /* h263_packetizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = h263_packetizer.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-codec/h263_packetizer.h"; sourceTree = "<group>"; };
+		14FB0E3424929CCFE6B1817B91A0B1F6 /* m_sparc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = m_sparc.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/m_sparc.h; sourceTree = "<group>"; };
+		15707316D8ECC269BC5114643B2EBFCD /* hash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hash.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/hash.h; sourceTree = "<group>"; };
+		163783D0ADA4230C70636D62EAA5DDB5 /* sip_private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_private.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip/sip_private.h; sourceTree = "<group>"; };
+		16ABCD066B84B88D8B37FB8BB56613C5 /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarWeekdayView.h; path = FSCalendar/FSCalendarWeekdayView.h; sourceTree = "<group>"; };
+		17BB8B25DBD1D8EBF1313BE80EFF99E8 /* ecdh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdh.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/ecdh.h; sourceTree = "<group>"; };
+		1805A6B48E225FE877FDF0ECCEEEFFB7 /* sip_parser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_parser.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip/sip_parser.h; sourceTree = "<group>"; };
+		181FDD17021DC26C3C4F9AD6C9571045 /* stun_msg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stun_msg.h; path = VialerPJSIP.framework/Versions/A/Headers/pjnath/stun_msg.h; sourceTree = "<group>"; };
+		18FF4FFD4328039336B9DC48E0656DBD /* json.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = json.hpp; path = VialerPJSIP.framework/Versions/A/Headers/pjsua2/json.hpp; sourceTree = "<group>"; };
+		194FB06163D180F4B0D1A87CCC11AF92 /* rc4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rc4.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/rc4.h; sourceTree = "<group>"; };
+		19B3FCF91131F419DA904277C0332896 /* ctype.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ctype.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/ctype.h; sourceTree = "<group>"; };
+		1AB4926773FD8F8AA63A6E11D9A3A4B8 /* errno.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = errno.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/errno.h; sourceTree = "<group>"; };
+		1AE1B61B75319B543883784E19F64528 /* m_alpha.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = m_alpha.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/m_alpha.h; sourceTree = "<group>"; };
+		1B4C5B61701B3B3E773FF849D58EAB52 /* des_old.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = des_old.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/des_old.h; sourceTree = "<group>"; };
+		1CA71EE13FACB8946B92B29575CFF006 /* sock_select.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sock_select.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/sock_select.h; sourceTree = "<group>"; };
+		1D62ADC390D5675B6901F40A656E5843 /* ec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ec.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/ec.h; sourceTree = "<group>"; };
+		1D84FFD645A044E5ACEE782AA5F6E371 /* high_precision.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = high_precision.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/high_precision.h; sourceTree = "<group>"; };
+		1ED4CA8C8422E35C4715BA5D16B5606B /* amr_sdp_match.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = amr_sdp_match.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-codec/amr_sdp_match.h"; sourceTree = "<group>"; };
+		1EF23CDD132D1FB61E93341A1FF53C52 /* symhacks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = symhacks.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/symhacks.h; sourceTree = "<group>"; };
+		1F1DE9B25F4994A81FB49B0131DD3C32 /* types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = types.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjsip-simple/types.h"; sourceTree = "<group>"; };
+		1F8808238A46D8C4F90181624DF253D4 /* evsub_msg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = evsub_msg.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjsip-simple/evsub_msg.h"; sourceTree = "<group>"; };
+		1FC2E63C5B502738F1D9D79666CF7DFF /* vid_port.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vid_port.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/vid_port.h; sourceTree = "<group>"; };
+		1FD29F8634F1C3A1321D8831B7BD5127 /* persistent.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = persistent.hpp; path = VialerPJSIP.framework/Versions/A/Headers/pjsua2/persistent.hpp; sourceTree = "<group>"; };
+		22740321ACD96BC7A52F9F3D338CE75A /* passthrough.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = passthrough.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-codec/passthrough.h"; sourceTree = "<group>"; };
+		2323473E6B6051280EFFD0E68E4DFA31 /* wsola.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = wsola.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/wsola.h; sourceTree = "<group>"; };
+		235C300493184CFCAA770CCF5FE0312C /* cli_telnet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cli_telnet.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib-util/cli_telnet.h"; sourceTree = "<group>"; };
+		236466650BDB56F4320425A783CDEE71 /* opensslv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opensslv.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/opensslv.h; sourceTree = "<group>"; };
+		24B3785EA05A94B35838EF09F7B4A6C8 /* avi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = avi.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/avi.h; sourceTree = "<group>"; };
+		24C1CB4319AF373E0BB93639721F1D51 /* plc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = plc.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/plc.h; sourceTree = "<group>"; };
+		2522C2101E8C487DE5772665A5EAE2F0 /* pool_alt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pool_alt.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/pool_alt.h; sourceTree = "<group>"; };
+		260A0D900BFDCE9F205318D910EAE318 /* m_powerpc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = m_powerpc.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/m_powerpc.h; sourceTree = "<group>"; };
+		267CCCAF3010A722A763A7BB657591A8 /* transport_srtp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = transport_srtp.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/transport_srtp.h; sourceTree = "<group>"; };
+		2946A4296C33EC92D6FE599C665206CE /* codec_ver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = codec_ver.h; path = VialerPJSIP.framework/Versions/A/Headers/wels/codec_ver.h; sourceTree = "<group>"; };
+		29C9F49FEAFABA88BA5A7D24D9AA6D0A /* rtp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rtp.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/rtp.h; sourceTree = "<group>"; };
+		2AEA7BF6F69A16D30F1B6348F6408CF2 /* x509_vfy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509_vfy.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/x509_vfy.h; sourceTree = "<group>"; };
+		2B1110F8A35C31EA725DB1F23830CADF /* bidirectional.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bidirectional.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/bidirectional.h; sourceTree = "<group>"; };
+		2B751CB4699CB03BE6A1F9EBAC77EFC7 /* errno.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = errno.h; path = VialerPJSIP.framework/Versions/A/Headers/pjnath/errno.h; sourceTree = "<group>"; };
+		2B960F9FC469C471C2ABE0E47338A503 /* conf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/conf.h; sourceTree = "<group>"; };
+		2BB5725B246F185F3D74945EE359D7F9 /* getopt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = getopt.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib-util/getopt.h"; sourceTree = "<group>"; };
+		2CAC96C1D91419D47096374DF803408F /* config_site_sample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config_site_sample.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/config_site_sample.h; sourceTree = "<group>"; };
+		2DD1FACC1432C860FC98ABED24D100CF /* stun_auth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stun_auth.h; path = VialerPJSIP.framework/Versions/A/Headers/pjnath/stun_auth.h; sourceTree = "<group>"; };
+		2E618853F10138548BC1FBBEC77DAFC7 /* transport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = transport.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/transport.h; sourceTree = "<group>"; };
+		2EC4A15259F277D259A8807E10954230 /* string.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = string.hpp; path = "VialerPJSIP.framework/Versions/A/Headers/pj++/string.hpp"; sourceTree = "<group>"; };
+		2F0DE304BA0D1608D4AAC6C16FF4C2D4 /* evsub.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = evsub.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjsip-simple/evsub.h"; sourceTree = "<group>"; };
+		2F66B1B4D2A0A948EF8FD997E120AD54 /* ipp_codecs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ipp_codecs.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-codec/ipp_codecs.h"; sourceTree = "<group>"; };
+		2FA1AD88FCF563436798EDD06DB8C037 /* pem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pem.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/pem.h; sourceTree = "<group>"; };
+		2FF1CFFA0EB4279847665C1BF52858BE /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/config.h; sourceTree = "<group>"; };
+		301EA70AB60AA6DD84F0FD108CB10CEA /* types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = types.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-codec/types.h"; sourceTree = "<group>"; };
+		3138266DFB2273B34E184C3073F8C079 /* dh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dh.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/dh.h; sourceTree = "<group>"; };
+		3174E468CADF0ED66017FB9CF66DDEDF /* frame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = frame.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/frame.h; sourceTree = "<group>"; };
+		31AAAA532F63E74273F29B9A59987B3F /* scanner_cis_bitwise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scanner_cis_bitwise.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib-util/scanner_cis_bitwise.h"; sourceTree = "<group>"; };
+		31C3BDD95310B9AFC961DFFCCFD14611 /* rtcp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rtcp.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/rtcp.h; sourceTree = "<group>"; };
+		32C6B0F1F69891D6C73F8A0C5B2E7EE3 /* string.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = string.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib-util/string.h"; sourceTree = "<group>"; };
+		331519513EC0AE966F353370060FB0F9 /* os_win32.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = os_win32.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/os_win32.h; sourceTree = "<group>"; };
+		342C63CC8EB4A9F08227DCC79AA2EA13 /* conference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conference.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/conference.h; sourceTree = "<group>"; };
+		34A5D65CA081A772CAB71950E4B4C20E /* types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = types.h; path = VialerPJSIP.framework/Versions/A/Headers/pjnath/types.h; sourceTree = "<group>"; };
+		34E05130796A905D4CE481ABD004EFFF /* mwi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mwi.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjsip-simple/mwi.h"; sourceTree = "<group>"; };
+		35E965EBD09DBF8BF517F91F277BAABC /* except.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = except.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/except.h; sourceTree = "<group>"; };
+		36B34E7B1D3925134E77A137B54454A0 /* setjmp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = setjmp.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/setjmp.h; sourceTree = "<group>"; };
+		371550159465FFAE9412D4C773777DC8 /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarStickyHeader.h; path = FSCalendar/FSCalendarStickyHeader.h; sourceTree = "<group>"; };
+		371B36C182D81379355400F0D4D6FCFC /* stream_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stream_common.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/stream_common.h; sourceTree = "<group>"; };
+		3754C4E2C893911D9BF2F09B3C01B82E /* resample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = resample.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/resample.h; sourceTree = "<group>"; };
+		3780DA3B06E474CCA53CCDF237588C4C /* cast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cast.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/cast.h; sourceTree = "<group>"; };
+		37CF52B70C0BBD000714B3D244E440C5 /* signatures.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = signatures.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/signatures.h; sourceTree = "<group>"; };
+		37DCE5BB1A99A5CB35F6AC39B76A263D /* ctype.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ctype.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/ctype.h; sourceTree = "<group>"; };
+		3826F3B04DC38230200658B6071A6B75 /* os_winuwp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = os_winuwp.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/os_winuwp.h; sourceTree = "<group>"; };
+		38BBE2FD59F714CE49EC548A38C222EC /* alaw_ulaw.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = alaw_ulaw.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/alaw_ulaw.h; sourceTree = "<group>"; };
+		3935BBBC3C388AC3B23B629393E3242E /* engine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = engine.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/engine.h; sourceTree = "<group>"; };
+		394DE92A19A5831CE814D663BA641F72 /* videodev.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = videodev.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/videodev.h; sourceTree = "<group>"; };
+		39C1D2D9E9BF7179D0874E418E23AF8F /* cmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cmac.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/cmac.h; sourceTree = "<group>"; };
+		39CF3D44E10324F595EABC426B799264 /* ssl3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl3.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/ssl3.h; sourceTree = "<group>"; };
+		3A30CCC3D51BC2DA3C4C6CD3CE091418 /* krb5_asn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = krb5_asn.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/krb5_asn.h; sourceTree = "<group>"; };
+		3A867840CA369283700B87B6ED9C2105 /* buffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/buffer.h; sourceTree = "<group>"; };
+		3BC31C1D168E6C3B21CD8AB2BCA226BF /* os_linux.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = os_linux.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/os_linux.h; sourceTree = "<group>"; };
+		3C2B276557C3D65F85AA01837125DB8B /* g7221.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = g7221.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-codec/g7221.h"; sourceTree = "<group>"; };
+		3C5FD9052AC5C797CDD3339EC1EE2C4C /* ts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ts.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/ts.h; sourceTree = "<group>"; };
+		3D59B7C0C91E45D7236DE1E221C3AC11 /* sip_resolve.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_resolve.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip/sip_resolve.h; sourceTree = "<group>"; };
+		3D6572B2D15213153B0AEEA00C77529A /* FSCalendarAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarAppearance.m; path = FSCalendar/FSCalendarAppearance.m; sourceTree = "<group>"; };
+		3DBB823E1C9854751F28DA6B145BB545 /* pjmedia_videodev.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pjmedia_videodev.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia_videodev.h; sourceTree = "<group>"; };
+		3DDB2276C058C2CF949C5C642903D59E /* avi_dev.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = avi_dev.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-videodev/avi_dev.h"; sourceTree = "<group>"; };
+		3E109BC8E022A01998DE1CBD36C712B2 /* os_rtems.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = os_rtems.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/os_rtems.h; sourceTree = "<group>"; };
+		3E82051E1B067361BAB4B26A7FC2893B /* pool_buf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pool_buf.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/pool_buf.h; sourceTree = "<group>"; };
+		3F4F91E86A51F09A02A6ACD926A88167 /* bn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bn.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/bn.h; sourceTree = "<group>"; };
+		3FE85FF6E2DB3865B990E1384CA284AC /* FSCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSCalendar.xcconfig; sourceTree = "<group>"; };
+		403625435CEB2581E82C020106DB00EB /* pjlib++.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = "pjlib++.hpp"; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib++.hpp"; sourceTree = "<group>"; };
+		40C7B81D267A28A5BC10CB2A7E24D8F9 /* amr_helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = amr_helper.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-codec/amr_helper.h"; sourceTree = "<group>"; };
+		415CCB3D591203E006327BDD1DA717C8 /* codec_app_def.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = codec_app_def.h; path = VialerPJSIP.framework/Versions/A/Headers/wels/codec_app_def.h; sourceTree = "<group>"; };
+		41AC04FC669F4AAF6E0A167D44F074B0 /* FSCalendarCalculator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCalculator.m; path = FSCalendar/FSCalendarCalculator.m; sourceTree = "<group>"; };
 		4225A8AF3107FF5AC9F9BF4C6ED77529 /* Pods-iNTOU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iNTOU.debug.xcconfig"; sourceTree = "<group>"; };
-		4C4DF5E4F80138587788110F8AC3544A /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarTransitionCoordinator.m; path = FSCalendar/FSCalendarTransitionCoordinator.m; sourceTree = "<group>"; };
-		4E3AE8F1D942B6B16A46712865F4B14D /* FSCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar-dummy.m"; sourceTree = "<group>"; };
-		4F349F54E6510536FE1BEF348E80FA45 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
-		4FB7F77DB72765D04B2FC050B4F8816A /* FSCalendarAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarAppearance.h; path = FSCalendar/FSCalendarAppearance.h; sourceTree = "<group>"; };
-		50FF4B8A3729C76927C5717E10C6BD8D /* FSCalendarCalculator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCalculator.h; path = FSCalendar/FSCalendarCalculator.h; sourceTree = "<group>"; };
+		425973A8D89B2D95658CB3AFB97C2BA9 /* sound_port.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sound_port.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/sound_port.h; sourceTree = "<group>"; };
+		4284AF03CD809EB750A384F93387A769 /* file.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = file.hpp; path = "VialerPJSIP.framework/Versions/A/Headers/pj++/file.hpp"; sourceTree = "<group>"; };
+		42D7C6AD6BEAF20AC0537277F710680B /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarWeekdayView.m; path = FSCalendar/FSCalendarWeekdayView.m; sourceTree = "<group>"; };
+		42EDD5BA4F92ADBBC0500176C9E0CABC /* list.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = list.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/list.h; sourceTree = "<group>"; };
+		440D12E523C4FCDE489D07C6A3A3726A /* sip_transport_loop.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_transport_loop.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip/sip_transport_loop.h; sourceTree = "<group>"; };
+		448A0D9B2655F79D5526398489AC6E07 /* FSCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-umbrella.h"; sourceTree = "<group>"; };
+		4601870CC39886CD9BD598EB8AD39121 /* FSCalendarExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarExtensions.m; path = FSCalendar/FSCalendarExtensions.m; sourceTree = "<group>"; };
+		463358892F1B18FCFBC727AC83B124D4 /* objects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = objects.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/objects.h; sourceTree = "<group>"; };
+		46BC01352749B9D4A5C339E7C26C2456 /* sip_xfer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_xfer.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjsip-ua/sip_xfer.h"; sourceTree = "<group>"; };
+		471ECC5200726554AFB587C2BDCC6D34 /* file_access.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = file_access.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/file_access.h; sourceTree = "<group>"; };
+		49A63D9E77ABB5553D649796BE102ECC /* socket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = socket.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/socket.h; sourceTree = "<group>"; };
+		49EE7528D6140C1CAC659DFE255F980C /* bio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bio.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/bio.h; sourceTree = "<group>"; };
+		4A18427C0390ABE7745A5C371E098F1C /* pjlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pjlib.h; path = VialerPJSIP.framework/Versions/A/Headers/pjlib.h; sourceTree = "<group>"; };
+		4A724EEC9255D62D64AA50B771538C9E /* config.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = config.hpp; path = VialerPJSIP.framework/Versions/A/Headers/pjsua2/config.hpp; sourceTree = "<group>"; };
+		4C21B7CC4406E16D26D47AD57DF6D0B1 /* sip_transport_tls.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_transport_tls.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip/sip_transport_tls.h; sourceTree = "<group>"; };
+		4C81798DD5D15F0A77AE12129BBD7F8D /* cc_gcce.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cc_gcce.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/cc_gcce.h; sourceTree = "<group>"; };
+		4CE8484979A5718091A924900C65A410 /* m_x86_64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = m_x86_64.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/m_x86_64.h; sourceTree = "<group>"; };
+		4D721784B5147A2C06DDC624EC12B0ED /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-codec/config.h"; sourceTree = "<group>"; };
+		4E361246952C1F7C11F9356368960DA4 /* avi_stream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = avi_stream.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/avi_stream.h; sourceTree = "<group>"; };
+		4EE5FD3A8A8C8B6EA21DCC5031697B42 /* tonegen.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tonegen.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/tonegen.h; sourceTree = "<group>"; };
+		4F38C17302A65E59232176E679777E79 /* ebcdic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ebcdic.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/ebcdic.h; sourceTree = "<group>"; };
+		50323982AD26CC131B07479877D11164 /* types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = types.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/types.h; sourceTree = "<group>"; };
+		50428231718690F5EF66ADEA18E1D06E /* sip_inv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_inv.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjsip-ua/sip_inv.h"; sourceTree = "<group>"; };
+		5114ABA11C611083A0F15B5029B8B8A4 /* g7221_sdp_match.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = g7221_sdp_match.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-codec/g7221_sdp_match.h"; sourceTree = "<group>"; };
 		51498E299B7CB17BCC8B54F93C150FAA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		57E848DF31B6DA7648F7927439055C7E /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		59EE09235B6AA7346FF8C4282AA9152B /* FSCalendarAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarAppearance.m; path = FSCalendar/FSCalendarAppearance.m; sourceTree = "<group>"; };
-		5B496BC6F5E9737A665559772540645C /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarHeaderView.h; path = FSCalendar/FSCalendarHeaderView.h; sourceTree = "<group>"; };
-		5ED28AAF49C8C7DADD195ADB2B0D0268 /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarStickyHeader.m; path = FSCalendar/FSCalendarStickyHeader.m; sourceTree = "<group>"; };
+		5228AEC0B27F00D786CB39772A8283D0 /* vid_codec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vid_codec.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/vid_codec.h; sourceTree = "<group>"; };
+		52C57C962FE1E50F145B467A00F735C2 /* doxygen.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = doxygen.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/doxygen.h; sourceTree = "<group>"; };
+		5364A9FF15217B79005EC580399E5994 /* pool.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = pool.hpp; path = "VialerPJSIP.framework/Versions/A/Headers/pj++/pool.hpp"; sourceTree = "<group>"; };
+		537E429C6F714978CD45F02353615E74 /* xpidf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xpidf.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjsip-simple/xpidf.h"; sourceTree = "<group>"; };
+		54188FF60A52043DDDA704D23E956005 /* echo_port.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = echo_port.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/echo_port.h; sourceTree = "<group>"; };
+		54546B42737BF205F33C7FD1ECF9D7A9 /* errno.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = errno.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-videodev/errno.h"; sourceTree = "<group>"; };
+		54651FDB49A9F816C1E7657D0264954C /* sip_util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_util.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip/sip_util.h; sourceTree = "<group>"; };
+		55DD6500A04DAA3FB9BE3811ED491653 /* pjnath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pjnath.h; path = VialerPJSIP.framework/Versions/A/Headers/pjnath.h; sourceTree = "<group>"; };
+		5605DF5A6881C248E835EB5401070C88 /* wave.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = wave.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/wave.h; sourceTree = "<group>"; };
+		560733175884BA8A72DE48258A6CFAB1 /* types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = types.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib-util/types.h"; sourceTree = "<group>"; };
+		56C9C8884909F25FB7388B23CBD3CD38 /* sip_auth_msg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_auth_msg.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip/sip_auth_msg.h; sourceTree = "<group>"; };
+		5840E3F1006AA4DE824240FA394AC6AD /* null_port.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = null_port.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/null_port.h; sourceTree = "<group>"; };
+		586CC05959A28252A48E33FE05800957 /* os_symbian.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = os_symbian.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/os_symbian.h; sourceTree = "<group>"; };
+		58C769EEE57B1647A3F9984C6AEC908B /* sip_dialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_dialog.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip/sip_dialog.h; sourceTree = "<group>"; };
+		58E21C29ACC7C600E1F095893AE8FEBC /* master_port.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = master_port.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/master_port.h; sourceTree = "<group>"; };
+		59ECC94891302297D7FAA573D91C8A62 /* stereo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stereo.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/stereo.h; sourceTree = "<group>"; };
+		5A4FD4FE4E9B35E65D8EBB265E26D7C6 /* pjsua.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pjsua.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjsua-lib/pjsua.h"; sourceTree = "<group>"; };
+		5A6FE8681CB03A1B01143C8A133528FF /* doxygen.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = doxygen.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/doxygen.h; sourceTree = "<group>"; };
+		5B1B4C649EA8F2B8C80ABC724B5B802F /* resolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = resolver.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib-util/resolver.h"; sourceTree = "<group>"; };
+		5B90413DC22A1142A642218981CE65A8 /* endpoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = endpoint.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/endpoint.h; sourceTree = "<group>"; };
+		5BE34B604F9BAA9CDACEE5A99259BEA5 /* videodev.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = videodev.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-videodev/videodev.h"; sourceTree = "<group>"; };
+		5BFE9CF83C6706AC0E743F63FCCF58FA /* rand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rand.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/rand.h; sourceTree = "<group>"; };
+		5D75C8DFA9B595FFBC27A9E4447832AD /* addr_resolv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = addr_resolv.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/addr_resolv.h; sourceTree = "<group>"; };
+		5E47522214B5B9EAD6E7E243D11AFA7F /* stdfileio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stdfileio.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/stdfileio.h; sourceTree = "<group>"; };
+		5E4D2EC099727B5413B3AEC4E72B8EFF /* cms.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cms.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/cms.h; sourceTree = "<group>"; };
+		5E6A6EBE7380CB0DABBC8525C584AB18 /* srv_resolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srv_resolver.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib-util/srv_resolver.h"; sourceTree = "<group>"; };
+		5EBFBBED4E583E9A424CF88D6E95B8CD /* modes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = modes.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/modes.h; sourceTree = "<group>"; };
+		5FA08E50D152CC24FCFD66BDE65B9CA0 /* dns.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dns.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib-util/dns.h"; sourceTree = "<group>"; };
+		5FCA78FCEC27182BD76346205A488A63 /* lock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lock.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/lock.h; sourceTree = "<group>"; };
+		5FCF230BCA19832D469B9A5D24507D06 /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionView.h; path = FSCalendar/FSCalendarCollectionView.h; sourceTree = "<group>"; };
+		5FDCC4EB6B9A8698A181BC7017B188CB /* event.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = event.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/event.h; sourceTree = "<group>"; };
+		5FEC485F4B8114306285479B6FF17AA3 /* sip_tel_uri.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_tel_uri.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip/sip_tel_uri.h; sourceTree = "<group>"; };
+		614911A418FADC224C668CDD5780F051 /* base64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = base64.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib-util/base64.h"; sourceTree = "<group>"; };
+		616523BC34BFA04BE0F46F33C4CD0A2D /* codec_def.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = codec_def.h; path = VialerPJSIP.framework/Versions/A/Headers/wels/codec_def.h; sourceTree = "<group>"; };
+		61BC866429D4C4ABD2E45764F17D72B1 /* sip_event.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_event.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip/sip_event.h; sourceTree = "<group>"; };
+		61C23AFA2DE36A4A5C43F62FB6381AEB /* xml.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xml.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib-util/xml.h"; sourceTree = "<group>"; };
+		61C549F0D9967CE4BDAFD8F9D9AA6B19 /* audiodev.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = audiodev.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/audiodev.h; sourceTree = "<group>"; };
+		62ADBD9F6219B3155BBA6884DB02EE69 /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationFactory.m; path = FSCalendar/FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
+		62FAD694AC295CBA1262C194052DC1A0 /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/config.h; sourceTree = "<group>"; };
+		6332D5A3529773BB5FE92F9EE3BFCD3C /* FSCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FSCalendar.modulemap; sourceTree = "<group>"; };
+		635459C2A278CD03AECB5C615D06C73B /* clock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = clock.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/clock.h; sourceTree = "<group>"; };
+		635EA73EDEEB1B9D4950BBD3CF9C1D55 /* os_winphone8.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = os_winphone8.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/os_winphone8.h; sourceTree = "<group>"; };
+		63C2FAE4BFE36140AD34D5570B6FE39D /* pqueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pqueue.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/pqueue.h; sourceTree = "<group>"; };
+		650AEF5DB64BC7BEEFE659418C7BD123 /* safestack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = safestack.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/safestack.h; sourceTree = "<group>"; };
+		659F3ACF9B97F2F538BBB8D179453B2D /* x509v3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509v3.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/x509v3.h; sourceTree = "<group>"; };
 		6647ACC906E3FCEEFF3813BB32B1FCF6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		67105FAB5FCD8BA59BBE91311A7A1C47 /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationFactory.h; path = FSCalendar/FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
-		73191125476CDC1DACD048EC5A894B79 /* FSCalendarScopeHandle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarScopeHandle.m; path = FSCalendar/FSCalendarScopeHandle.m; sourceTree = "<group>"; };
-		785C23E84AD2CBD19E3804E5680176D2 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
-		7D8299A404493D939E9DA206DB89AB1D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87F479A87C57B86A9B6CB6EA856C269F /* FSCalendar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendar.h; path = FSCalendar/FSCalendar.h; sourceTree = "<group>"; };
-		89940342A8B48750BF05B8AE34C41AF7 /* FSCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FSCalendar.framework; path = FSCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66A94486297BDF7ED2759B1BBF3FEBF3 /* doxygen.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = doxygen.hpp; path = VialerPJSIP.framework/Versions/A/Headers/pjsua2/doxygen.hpp; sourceTree = "<group>"; };
+		66EC60F746AFAAC422EB539695E09577 /* sip_auth_aka.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_auth_aka.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip/sip_auth_aka.h; sourceTree = "<group>"; };
+		6706E92CAAF1B089100AF9D13E574102 /* FSCalendarAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarAppearance.h; path = FSCalendar/FSCalendarAppearance.h; sourceTree = "<group>"; };
+		673F2E7C1437D015BA0561AD1973E42A /* os_palmos.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = os_palmos.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/os_palmos.h; sourceTree = "<group>"; };
+		67922D5293923C927EC189B0E0750719 /* idea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = idea.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/idea.h; sourceTree = "<group>"; };
+		687E3E50645DAD49A98277EC74524CD0 /* tree.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = tree.hpp; path = "VialerPJSIP.framework/Versions/A/Headers/pj++/tree.hpp"; sourceTree = "<group>"; };
+		69C1DC652666EEEA49034CEDD35E7F42 /* m_auto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = m_auto.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/m_auto.h; sourceTree = "<group>"; };
+		69E8A17471032F108365CD6284A05638 /* pjsua.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pjsua.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsua.h; sourceTree = "<group>"; };
+		6A2023731D282F49D56526FC6FE89C95 /* ecdsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdsa.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/ecdsa.h; sourceTree = "<group>"; };
+		6A20665F25C13CAD5A59B96F5E899558 /* vid_codec_util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vid_codec_util.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/vid_codec_util.h; sourceTree = "<group>"; };
+		6A94BEA1231B8B001CDE70F2E390BBEF /* ripemd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ripemd.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/ripemd.h; sourceTree = "<group>"; };
+		6AE407FC67CCDAF539739F15E5A3806F /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		6B6F97B660289885166814E2BFAEF4F1 /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationProxy.h; path = FSCalendar/FSCalendarDelegationProxy.h; sourceTree = "<group>"; };
+		6D58EA317E866B467954AF64C2E02F76 /* mdc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mdc2.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/mdc2.h; sourceTree = "<group>"; };
+		6D87268CA6D939B17AC1E4F433D78766 /* stun_sock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stun_sock.h; path = VialerPJSIP.framework/Versions/A/Headers/pjnath/stun_sock.h; sourceTree = "<group>"; };
+		6DE5CDAD19AB4D92360A2472B1365F0C /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/aes.h; sourceTree = "<group>"; };
+		6E82212C11BC8BF5027F9772671D8EF2 /* symbian_sound_aps.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = symbian_sound_aps.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/symbian_sound_aps.h; sourceTree = "<group>"; };
+		6EE1890687774FB93614E8CCFCE29913 /* dtls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dtls1.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/dtls1.h; sourceTree = "<group>"; };
+		6F489D68FDF4926D5077252B3F789B06 /* wav_playlist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = wav_playlist.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/wav_playlist.h; sourceTree = "<group>"; };
+		71C24DD7875383B866FE6E7E1450D98D /* rpid.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rpid.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjsip-simple/rpid.h"; sourceTree = "<group>"; };
+		721B2EE5C142C685CFA71270E7A26322 /* stun_simple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stun_simple.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib-util/stun_simple.h"; sourceTree = "<group>"; };
+		724DF810FBC40678B80E2944638BA897 /* hmac_md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac_md5.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib-util/hmac_md5.h"; sourceTree = "<group>"; };
+		72A9A6936E348BE8D5ACF20637B46DE3 /* os_auto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = os_auto.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/os_auto.h; sourceTree = "<group>"; };
+		73218ADF0DF712DD05F0FA9FD8130F28 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		737719434A4FBA67749D5CB7DBCC0A86 /* evp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = evp.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/evp.h; sourceTree = "<group>"; };
+		738546C54D93ACAD9A196DD2B6768348 /* transport_adapter_sample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = transport_adapter_sample.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/transport_adapter_sample.h; sourceTree = "<group>"; };
+		7515956BBB7E9FCCE3F172F99B3AE3A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75A173220845B74CF6DADCA625251196 /* whrlpool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = whrlpool.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/whrlpool.h; sourceTree = "<group>"; };
+		75C1DCDF401B5C93B054DEAF9686E231 /* sound.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sound.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/sound.h; sourceTree = "<group>"; };
+		76071F0294A81FB82454EED301CEB405 /* echo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = echo.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/echo.h; sourceTree = "<group>"; };
+		765F749F4E75526F41693453EE1A2E3B /* pem2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pem2.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/pem2.h; sourceTree = "<group>"; };
+		76855C9EBBA73EC780014FC75E0F4AD6 /* audio_codecs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = audio_codecs.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-codec/audio_codecs.h"; sourceTree = "<group>"; };
+		76D9D3A49704069BB7777F82C7B058CE /* FSCalendarConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarConstants.h; path = FSCalendar/FSCalendarConstants.h; sourceTree = "<group>"; };
+		76E2DFF6FC17CD4923BC8738483D1D5F /* converter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = converter.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/converter.h; sourceTree = "<group>"; };
+		779C8452265DC69544185A00E9C49C04 /* FSCalendar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendar.h; path = FSCalendar/FSCalendar.h; sourceTree = "<group>"; };
+		77A9E98FA6065685B5227EFF876CB3A7 /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationProxy.m; path = FSCalendar/FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
+		77D73D7E5BBE0F063798BFA64F49C329 /* FSCalendarScopeHandle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarScopeHandle.h; path = FSCalendar/FSCalendarScopeHandle.h; sourceTree = "<group>"; };
+		77F0444AE1968137A87679CE4FAEF69A /* os_sunos.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = os_sunos.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/os_sunos.h; sourceTree = "<group>"; };
+		7809D2667E7298B6CD3DB848C2354C47 /* string_i.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = string_i.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/string_i.h; sourceTree = "<group>"; };
+		787EB616AB868BBB4098BE59D08D2FC7 /* transport_loop.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = transport_loop.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/transport_loop.h; sourceTree = "<group>"; };
+		78DE8337ACBC2DA07B8C6D5B575AA84C /* math.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = math.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/math.h; sourceTree = "<group>"; };
+		78EC3EC1BCDCBAB8DF7B6FED1648EF5C /* sip_errno.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_errno.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip/sip_errno.h; sourceTree = "<group>"; };
+		79FACAB07DFD6CD9A2CA5CF68F02EECA /* scanner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scanner.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib-util/scanner.h"; sourceTree = "<group>"; };
+		7A631A6038DDCB342B6F53A6DEAC9B6D /* audiodev_imp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = audiodev_imp.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-audiodev/audiodev_imp.h"; sourceTree = "<group>"; };
+		7BCDBED69B812A72B26963F5B7C1E256 /* sip_auth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_auth.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip/sip_auth.h; sourceTree = "<group>"; };
+		7CFBCBBA8DFC76E6C4662C7E8A1D8424 /* string.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = string.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/string.h; sourceTree = "<group>"; };
+		7DA09D80B22AB451B7561363570415D6 /* comp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = comp.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/comp.h; sourceTree = "<group>"; };
+		7E20AB04A4B4F7A9410DEC6E7DF85516 /* FSCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar-dummy.m"; sourceTree = "<group>"; };
+		7E776084144CF759FC91E13C65069764 /* videodev_imp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = videodev_imp.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-videodev/videodev_imp.h"; sourceTree = "<group>"; };
+		7E98917F19A5FAD1A6BC9D86234FCE8C /* cc_msvc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cc_msvc.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/cc_msvc.h; sourceTree = "<group>"; };
+		8037A13C3AE6B6138575F3E78A7E1E7E /* ssl23.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl23.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/ssl23.h; sourceTree = "<group>"; };
+		80AED7ACF52D349561974A1C7457E7CC /* sip_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_types.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip/sip_types.h; sourceTree = "<group>"; };
+		812CE1A35CD298851C0C49354959B13E /* silencedet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = silencedet.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/silencedet.h; sourceTree = "<group>"; };
+		816EA2AE6D3C78591E85329ABF8E8AA7 /* pjsip_ua.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pjsip_ua.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip_ua.h; sourceTree = "<group>"; };
+		81AB83CEF7A73FD0205261197A0A55C2 /* types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = types.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/types.h; sourceTree = "<group>"; };
+		81BBA12AA3E9C56F6C197B6CAFD58F63 /* FSCalendarCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCell.m; path = FSCalendar/FSCalendarCell.m; sourceTree = "<group>"; };
+		82EB7AF18B1D5F92B93B364E86BA98E2 /* sip_transport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_transport.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip/sip_transport.h; sourceTree = "<group>"; };
+		82F891301C7121A4B6C442A2271735EF /* sip_ua_layer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_ua_layer.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip/sip_ua_layer.h; sourceTree = "<group>"; };
+		83F0A4AA1CF3D743BEC62548DCF102F1 /* ocsp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ocsp.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/ocsp.h; sourceTree = "<group>"; };
+		840941E64CEEAC44CC118EF55029591B /* sock_qos.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sock_qos.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/sock_qos.h; sourceTree = "<group>"; };
+		84C050AAB98523DF27A2C995E8CE5E5A /* srp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srp.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/srp.h; sourceTree = "<group>"; };
+		850A00988A932837BC415662734A2276 /* pjmedia.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pjmedia.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia.h; sourceTree = "<group>"; };
+		85168006B6E62DF0E6699EBECA48AA44 /* rsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rsa.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/rsa.h; sourceTree = "<group>"; };
+		854F5D49AC696F1B3FE42F20D3EF99DB /* malloc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = malloc.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/malloc.h; sourceTree = "<group>"; };
+		856DB8E37BAEEDF54AB8B77B9A7115B0 /* time.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = time.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/time.h; sourceTree = "<group>"; };
+		892D68414CDA59C9E3CFAF651B949CE3 /* asn1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/asn1.h; sourceTree = "<group>"; };
+		896A18627BEBDBC373A5A8F14DBAF001 /* lock.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = lock.hpp; path = "VialerPJSIP.framework/Versions/A/Headers/pj++/lock.hpp"; sourceTree = "<group>"; };
+		89940342A8B48750BF05B8AE34C41AF7 /* FSCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FSCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89B028D5816DA6775F285728184DFC4A /* timer.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = timer.hpp; path = "VialerPJSIP.framework/Versions/A/Headers/pj++/timer.hpp"; sourceTree = "<group>"; };
+		89E2ABE276931DAB1B623F555644C8D1 /* sha.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/sha.h; sourceTree = "<group>"; };
+		89FC9CB1B24588C919ED106AFEE5AB06 /* proactor.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = proactor.hpp; path = "VialerPJSIP.framework/Versions/A/Headers/pj++/proactor.hpp"; sourceTree = "<group>"; };
+		8B1CA4582D3EC5E9AC98845C26964290 /* os_linux_kernel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = os_linux_kernel.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/os_linux_kernel.h; sourceTree = "<group>"; };
+		8D23B7153175C065E685655E91BDA523 /* pjsua2.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = pjsua2.hpp; path = VialerPJSIP.framework/Versions/A/Headers/pjsua2.hpp; sourceTree = "<group>"; };
+		8DD2B53E8F0AA396C29815AC38B30CAA /* siptypes.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = siptypes.hpp; path = VialerPJSIP.framework/Versions/A/Headers/pjsua2/siptypes.hpp; sourceTree = "<group>"; };
 		8E6A0AE9131D2353BF476B6AC525C8C6 /* Pods-iNTOU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iNTOU.release.xcconfig"; sourceTree = "<group>"; };
-		8F0C1E393D710AB1808666B5C4856917 /* FSCalendar+Deprecated.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FSCalendar+Deprecated.m"; path = "FSCalendar/FSCalendar+Deprecated.m"; sourceTree = "<group>"; };
-		8FA9895D32DACB0CA6AB2AC9E95B5F5C /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationProxy.m; path = FSCalendar/FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
+		910B772CC336A129AA735E5FA83E76E9 /* pidf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pidf.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjsip-simple/pidf.h"; sourceTree = "<group>"; };
 		92082D082670DF5BB868308EA7D846F9 /* Pods-iNTOU-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iNTOU-acknowledgements.plist"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		983C19F983C017A3418FD8EEA8623AFE /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		9A1A42D28B8C5CCD552F38B4F7AA11EB /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionView.m; path = FSCalendar/FSCalendarCollectionView.m; sourceTree = "<group>"; };
+		9228EA512A9431EDD02FD97D342B4B9D /* timer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = timer.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/timer.h; sourceTree = "<group>"; };
+		92B440E109BFFC643F92780D6F72C9C7 /* config_site.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config_site.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/config_site.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94C6C76133158B05AC91F0F8C7A98144 /* sock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sock.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/sock.h; sourceTree = "<group>"; };
+		953710329B5765A29C0BF78F8916F02D /* cli_imp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cli_imp.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib-util/cli_imp.h"; sourceTree = "<group>"; };
+		953A6CEF95CDD7117D2826B9C4A002A6 /* tls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tls1.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/tls1.h; sourceTree = "<group>"; };
+		95796E247E4A77C87CD5C06E01B9228B /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarHeaderView.m; path = FSCalendar/FSCalendarHeaderView.m; sourceTree = "<group>"; };
+		9718A18F736A896956B95FEC25DBB108 /* turn_sock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = turn_sock.h; path = VialerPJSIP.framework/Versions/A/Headers/pjnath/turn_sock.h; sourceTree = "<group>"; };
+		978797B5B88AD12B81A604F7FFF890B6 /* audiodev.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = audiodev.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-audiodev/audiodev.h"; sourceTree = "<group>"; };
+		987EBDA319E02BED71DDF621C839CA5F /* dsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dsa.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/dsa.h; sourceTree = "<group>"; };
+		996AED15905447769C2EDD420303D178 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		99AB101B24167F68832BC8CDD9DC9A0B /* sip_transport_tcp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_transport_tcp.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip/sip_transport_tcp.h; sourceTree = "<group>"; };
 		9A85679B7ADD0E626B831007310A5525 /* Pods-iNTOU-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iNTOU-frameworks.sh"; sourceTree = "<group>"; };
+		9AA22479F89459F4AD53F6E993182417 /* ice_strans.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ice_strans.h; path = VialerPJSIP.framework/Versions/A/Headers/pjnath/ice_strans.h; sourceTree = "<group>"; };
+		9AE766B153D3BF5A85B49A55B7724490 /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/hmac.h; sourceTree = "<group>"; };
+		9B5ACD5895C4C49941F22C384FFE3AF0 /* pjsip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pjsip.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip.h; sourceTree = "<group>"; };
+		9CCC2D124FF43F5CB6003DFAF191843B /* ice_session.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ice_session.h; path = VialerPJSIP.framework/Versions/A/Headers/pjnath/ice_session.h; sourceTree = "<group>"; };
+		9D7B8405B669B4FC9F2D436176AC1CC3 /* stdarg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stdarg.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/stdarg.h; sourceTree = "<group>"; };
+		9E6FAEE6BC823E9B9166F7B138FF20C9 /* opus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus.h; path = VialerPJSIP.framework/Versions/A/Headers/opus/opus.h; sourceTree = "<group>"; };
+		9EF21C7515E6219BE5818B24A062DA4D /* endpoint.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = endpoint.hpp; path = VialerPJSIP.framework/Versions/A/Headers/pjsua2/endpoint.hpp; sourceTree = "<group>"; };
+		9EF4E6EBC02311530F0AA094648BBBF1 /* errno.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = errno.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-audiodev/errno.h"; sourceTree = "<group>"; };
+		9F60FC66F8E6264FC87F0EA802A0A722 /* gsm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gsm.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-codec/gsm.h"; sourceTree = "<group>"; };
+		9FD5001559F724D29C08B11F67D0EDEB /* camellia.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = camellia.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/camellia.h; sourceTree = "<group>"; };
+		A03FF3EB5D1E57677FCED84853E9CB7E /* scanner_cis_uint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scanner_cis_uint.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib-util/scanner_cis_uint.h"; sourceTree = "<group>"; };
+		A0EA56636A36D3C5833652956B9AC739 /* codec_api.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = codec_api.h; path = VialerPJSIP.framework/Versions/A/Headers/wels/codec_api.h; sourceTree = "<group>"; };
+		A0EDA2D00272F68288BE358D66504E30 /* cc_gcc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cc_gcc.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/cc_gcc.h; sourceTree = "<group>"; };
+		A17ACBA55CB6691FF1EC151BD483523E /* cc_mwcc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cc_mwcc.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/cc_mwcc.h; sourceTree = "<group>"; };
 		A2CEDF2750B03D7E7CAA9DF2FC9390A3 /* Pods-iNTOU-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iNTOU-umbrella.h"; sourceTree = "<group>"; };
-		A5CACE707A8CB46D19DD4C45A1404710 /* FSCalendarExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarExtensions.h; path = FSCalendar/FSCalendarExtensions.h; sourceTree = "<group>"; };
-		A8FE96DB06592AA245AC46357E077584 /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarStickyHeader.h; path = FSCalendar/FSCalendarStickyHeader.h; sourceTree = "<group>"; };
-		B2724A09F9BD369B5902862FF3838813 /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDynamicHeader.h; path = FSCalendar/FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
-		B4042C2C60ED57C62E22EE3BF6146E76 /* FSCalendarCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCell.m; path = FSCalendar/FSCalendarCell.m; sourceTree = "<group>"; };
-		B58A73C3907339A80E8FB670EC36E286 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
-		C35365AEF13B6B3BD5FF16D2F3629CA0 /* FSCalendarConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarConstants.h; path = FSCalendar/FSCalendarConstants.h; sourceTree = "<group>"; };
-		C6A065BFC1AC38E7ED503B34E2F52E62 /* FSCalendarConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarConstants.m; path = FSCalendar/FSCalendarConstants.m; sourceTree = "<group>"; };
-		C9D89EB4691B5AC628280F717BB15A20 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CCDB37FD0A2B9358B8389CF316829F58 /* FSCalendarCalculator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCalculator.m; path = FSCalendar/FSCalendarCalculator.m; sourceTree = "<group>"; };
-		D2BAD07E6863633880FF4FCDB98DF25F /* FSCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FSCalendar.modulemap; sourceTree = "<group>"; };
+		A307CE0FA662267EF38900269A0A8996 /* VialerPJSIP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VialerPJSIP.framework; sourceTree = "<group>"; };
+		A3A52452640B1A76BBAD10604F7ABD3D /* obj_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = obj_mac.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/obj_mac.h; sourceTree = "<group>"; };
+		A411EEAFE413BC2162668848486792F0 /* wav_port.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = wav_port.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/wav_port.h; sourceTree = "<group>"; };
+		A5850842727F1BA76A7A1253F24CD6D8 /* dso.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dso.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/dso.h; sourceTree = "<group>"; };
+		A59B44ED772ABC1D23CBDFC791E19B69 /* sip_uri.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_uri.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip/sip_uri.h; sourceTree = "<group>"; };
+		A5F88476759C168079778EFA08501CBC /* sha1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib-util/sha1.h"; sourceTree = "<group>"; };
+		A60B86276CFEEC395550C8809D4149E2 /* des.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = des.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/des.h; sourceTree = "<group>"; };
+		A631FD7AC87D0A0BC1AEB2C4918656CE /* iscomposing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iscomposing.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjsip-simple/iscomposing.h"; sourceTree = "<group>"; };
+		A6BB0707995D0D61D931BE2FF6607073 /* list.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = list.hpp; path = "VialerPJSIP.framework/Versions/A/Headers/pj++/list.hpp"; sourceTree = "<group>"; };
+		A6D2B03A0CFE82153B52ABCCC3A7EBD6 /* pkcs7.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs7.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/pkcs7.h; sourceTree = "<group>"; };
+		A6E7B7A5CFBD0B3A66B88AFE973F9ACB /* file_io.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = file_io.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/file_io.h; sourceTree = "<group>"; };
+		A824DD23A27D6F97D2E9CBE1BC5823CC /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionViewLayout.m; path = FSCalendar/FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
+		A8670CC1C767B13773A5D8AE2AD88C29 /* cc_codew.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cc_codew.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/cc_codew.h; sourceTree = "<group>"; };
+		A94EEFA45200808ED4F65D4E9C446770 /* log.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = log.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/log.h; sourceTree = "<group>"; };
+		A9FE651CBE1DF23778A3A00A1A686FE0 /* ui.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ui.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/ui.h; sourceTree = "<group>"; };
+		ACDB93AA16C632350D944486B3F509D5 /* ssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/ssl.h; sourceTree = "<group>"; };
+		AD4FBF3C21B4EAB0C55E6B2A32166300 /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarHeaderView.h; path = FSCalendar/FSCalendarHeaderView.h; sourceTree = "<group>"; };
+		AD77A7214A9676C6F3F27D000855095F /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionViewLayout.h; path = FSCalendar/FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
+		ADAF1FBC9D3A5E7E5256AFCF1D474935 /* pjlib-util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "pjlib-util.h"; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib-util.h"; sourceTree = "<group>"; };
+		AEF0E1CB09161D18504D7515C4936544 /* rtcp_xr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rtcp_xr.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/rtcp_xr.h; sourceTree = "<group>"; };
+		AF991C83400F4DE3D8A9AC8D3090EDCB /* size_t.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = size_t.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/size_t.h; sourceTree = "<group>"; };
+		AFBE2E834B1502169D4F98E191B69A6E /* call.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = call.hpp; path = VialerPJSIP.framework/Versions/A/Headers/pjsua2/call.hpp; sourceTree = "<group>"; };
+		B0173B1C0BE727188B791BEF370FD3F5 /* FSCalendar+Deprecated.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FSCalendar+Deprecated.m"; path = "FSCalendar/FSCalendar+Deprecated.m"; sourceTree = "<group>"; };
+		B0343E78DCD5E4F182BB79F9C3D50BD0 /* circbuf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = circbuf.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/circbuf.h; sourceTree = "<group>"; };
+		B06E72E67EF054C58FD01C8202A0544D /* port.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = port.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/port.h; sourceTree = "<group>"; };
+		B078C79EE24EFB78BCCC12612D67C1F9 /* asn1t.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1t.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/asn1t.h; sourceTree = "<group>"; };
+		B17D603ADD85E4184BDEA74FE40C3CA1 /* os_win32_wince.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = os_win32_wince.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/os_win32_wince.h; sourceTree = "<group>"; };
+		B25F54F57498775D2F78A97439DB95E0 /* pool_i.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pool_i.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/pool_i.h; sourceTree = "<group>"; };
+		B401982DDF5C251BC4A61786C74F3635 /* transport_udp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = transport_udp.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/transport_udp.h; sourceTree = "<group>"; };
+		B454E4F2297D515186D5960E0245C037 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		B4648C81D34AB277D8D590FDC464843F /* rc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rc2.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/rc2.h; sourceTree = "<group>"; };
+		B49A097388466D3AB84366FC9F475AC2 /* opus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-codec/opus.h"; sourceTree = "<group>"; };
+		B4DA0B82064F3BB73518488FFC9F4910 /* opus_multistream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus_multistream.h; path = VialerPJSIP.framework/Versions/A/Headers/opus/opus_multistream.h; sourceTree = "<group>"; };
+		B54E8C7CF1C07962C53DCF1AB12267E6 /* md4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md4.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/md4.h; sourceTree = "<group>"; };
+		B637B7022F9009BC81FA61591A4B4E2D /* hash.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = hash.hpp; path = "VialerPJSIP.framework/Versions/A/Headers/pj++/hash.hpp"; sourceTree = "<group>"; };
+		B734757F0DF4C1AD03044C16D766D6F2 /* FSCalendarCalculator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCalculator.h; path = FSCalendar/FSCalendarCalculator.h; sourceTree = "<group>"; };
+		B76C68C216571F607848C10FE4B900AB /* sip_endpoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_endpoint.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip/sip_endpoint.h; sourceTree = "<group>"; };
+		B8D71CF809F2ECC11015ED11EA3D1B6E /* seed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = seed.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/seed.h; sourceTree = "<group>"; };
+		B959902E1CFFFBBDDCA803A34313BDE4 /* sip_msg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_msg.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip/sip_msg.h; sourceTree = "<group>"; };
+		B9A78027E7A804A8B25354BA5AD4518E /* activesock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = activesock.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/activesock.h; sourceTree = "<group>"; };
+		BA01FC9EE81E4814BA3B98BEE6D94421 /* opus_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus_types.h; path = VialerPJSIP.framework/Versions/A/Headers/opus/opus_types.h; sourceTree = "<group>"; };
+		BB32F708366EB190172EEF6F10F012BA /* kssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = kssl.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/kssl.h; sourceTree = "<group>"; };
+		BC5A9CB9C34EF7C58EB753FCC7049C05 /* sip_regc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_regc.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjsip-ua/sip_regc.h"; sourceTree = "<group>"; };
+		BD87EA82E78F2F694B294731DD9A6FCC /* srtp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srtp.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/srtp.h; sourceTree = "<group>"; };
+		BDF4AA88415A620878575CE87DB292F0 /* stream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stream.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/stream.h; sourceTree = "<group>"; };
+		BE62CEAEB89497975202F40883C817F0 /* conf_api.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf_api.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/conf_api.h; sourceTree = "<group>"; };
+		BECD8ACECB2811777ABC39F70928DAB9 /* config_auto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config_auto.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-codec/config_auto.h"; sourceTree = "<group>"; };
+		BF01D2B7ADD010C82C395B4044FF1507 /* FSCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-prefix.pch"; sourceTree = "<group>"; };
+		BF31A449ED7158B5C8FC8680DF028F31 /* sip_multipart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_multipart.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip/sip_multipart.h; sourceTree = "<group>"; };
+		C09B09A539914DAF74539D86278F40E2 /* sip_transport_udp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_transport_udp.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip/sip_transport_udp.h; sourceTree = "<group>"; };
+		C12D7CD0E3D0DCE9CC1198704E1F2975 /* speex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = speex.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-codec/speex.h"; sourceTree = "<group>"; };
+		C14C77438EDD3111233CC6343620C15B /* audiotest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = audiotest.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-audiodev/audiotest.h"; sourceTree = "<group>"; };
+		C1EEB2197AB24C1F71B7159B29DC4B1C /* pjsip_simple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pjsip_simple.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip_simple.h; sourceTree = "<group>"; };
+		C2052097B9F532B375ADE304AF6E7631 /* sip_transaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_transaction.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip/sip_transaction.h; sourceTree = "<group>"; };
+		C2499C7E308FA2BE3FDC4A040230E3DB /* ossl_typ.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ossl_typ.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/ossl_typ.h; sourceTree = "<group>"; };
+		C318D4E2C920C706AD769D813D781933 /* rand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rand.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/rand.h; sourceTree = "<group>"; };
+		C322AC183BC6B01E317CFCED88571658 /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-videodev/config.h"; sourceTree = "<group>"; };
+		C44D38402ED3CEFAF121A2821A3397A7 /* account.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = account.hpp; path = VialerPJSIP.framework/Versions/A/Headers/pjsua2/account.hpp; sourceTree = "<group>"; };
+		C573FA82E3BF5E76C248A3319B13FB5B /* ssl_sock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl_sock.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/ssl_sock.h; sourceTree = "<group>"; };
+		C5901244009F9A67359B9B7544AE4BC9 /* FSCalendarCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCell.h; path = FSCalendar/FSCalendarCell.h; sourceTree = "<group>"; };
+		C598A76EC0CF0FA73A4362BA69D61440 /* guid.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = guid.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/guid.h; sourceTree = "<group>"; };
+		C67F836921536D9C6FB21C2BC8C8F404 /* media.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = media.hpp; path = VialerPJSIP.framework/Versions/A/Headers/pjsua2/media.hpp; sourceTree = "<group>"; };
+		C708C4D7ECCE82B5269DC82B78D79049 /* FSCalendarExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarExtensions.h; path = FSCalendar/FSCalendarExtensions.h; sourceTree = "<group>"; };
+		C8C044966580E68965C5DF83303E0DC4 /* http_client.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = http_client.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib-util/http_client.h"; sourceTree = "<group>"; };
+		C9AC5E88FEA499374CA0922C3A581A97 /* sdp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sdp.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/sdp.h; sourceTree = "<group>"; };
+		CA4452DDD25B6B3CE1BE1B63C7F6A4EB /* m_armv4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = m_armv4.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/m_armv4.h; sourceTree = "<group>"; };
+		CB45F3D04C5C9E6C3FEF4FB8D340DBCF /* txt_db.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = txt_db.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/txt_db.h; sourceTree = "<group>"; };
+		CC923DAE55F4C730F3E5AFB596B24FB8 /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarTransitionCoordinator.h; path = FSCalendar/FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
+		CD6CEEFF6C6283417487002D05E6486B /* types.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = types.hpp; path = VialerPJSIP.framework/Versions/A/Headers/pjsua2/types.hpp; sourceTree = "<group>"; };
+		CEEDF0443B16FF2AFC4BDB60C1399ABF /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
+		D061C89E9F7949B3FA86976A96647A29 /* assert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = assert.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/assert.h; sourceTree = "<group>"; };
+		D1118845D90BFAE398C4EAC4251BA956 /* types.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = types.hpp; path = "VialerPJSIP.framework/Versions/A/Headers/pj++/types.hpp"; sourceTree = "<group>"; };
+		D325D07E0243F4EACA0659C3A2C0DA1F /* lhash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lhash.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/lhash.h; sourceTree = "<group>"; };
+		D451DAD30FD5ABCDDB89582D6BA210F9 /* FSCalendarScopeHandle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarScopeHandle.m; path = FSCalendar/FSCalendarScopeHandle.m; sourceTree = "<group>"; };
+		D55108D5354BC6BC9109862BE9E588EC /* md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md5.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/md5.h; sourceTree = "<group>"; };
+		D57AFA1E96DF9081D61EE85BCF87F050 /* delaybuf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = delaybuf.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/delaybuf.h; sourceTree = "<group>"; };
 		D71434B09480CB63560DE04C537988EA /* Pods-iNTOU-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iNTOU-resources.sh"; sourceTree = "<group>"; };
-		D767B72B1EEF63B05EE3B9C7769902BF /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		DC9832DE7F886377477AD20EB8F8F318 /* Pods-iNTOU.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-iNTOU.modulemap"; sourceTree = "<group>"; };
-		DED30A0FAAE600E8B7811324BD8738D2 /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionViewLayout.m; path = FSCalendar/FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
-		E291BB0B6BBB80AF6EF4C236B4652724 /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarWeekdayView.h; path = FSCalendar/FSCalendarWeekdayView.h; sourceTree = "<group>"; };
+		D731CD2F0169F896930E53AB8A712615 /* sock.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = sock.hpp; path = "VialerPJSIP.framework/Versions/A/Headers/pj++/sock.hpp"; sourceTree = "<group>"; };
+		D7D512060C08BB7BB2D3F1F57A006A03 /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		D8C052AFDFB1C4537650C99CB9F795E9 /* print_util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = print_util.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip/print_util.h; sourceTree = "<group>"; };
+		D939C5A92B682C7B66857D7027666DD2 /* scanner.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = scanner.hpp; path = "VialerPJSIP.framework/Versions/A/Headers/pj++/scanner.hpp"; sourceTree = "<group>"; };
+		DA5E1738FB029412035931A48B67A5E4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA756B9BF30819446139F6A6069A874 /* presence.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = presence.hpp; path = VialerPJSIP.framework/Versions/A/Headers/pjsua2/presence.hpp; sourceTree = "<group>"; };
+		DB22C8E7E50192286B627A76ED470C6F /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		DB36E20E934A7EA518E372AA124F7DD4 /* asn1_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1_mac.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/asn1_mac.h; sourceTree = "<group>"; };
+		DC9832DE7F886377477AD20EB8F8F318 /* Pods-iNTOU.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-iNTOU.modulemap"; sourceTree = "<group>"; };
+		DD2F69F6AB32A52750EFDEFE2B1B1021 /* mem_port.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mem_port.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/mem_port.h; sourceTree = "<group>"; };
+		DD92153767914458B7D7AE7BC2FAD079 /* list_i.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = list_i.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/list_i.h; sourceTree = "<group>"; };
+		DE28D60793750B6EFF0C1B38FBA416EB /* jbuf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = jbuf.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/jbuf.h; sourceTree = "<group>"; };
+		DE5F67DB5F4D3324984CE7ED150ED4BF /* ip_helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ip_helper.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/ip_helper.h; sourceTree = "<group>"; };
+		DFDEB773D187F340FD7900FAB18DC040 /* errno.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = errno.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjsip-simple/errno.h"; sourceTree = "<group>"; };
+		E1326E776F1B4460C3E6B96BCC3DF0EF /* errno.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = errno.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/errno.h; sourceTree = "<group>"; };
+		E1F9657CFE50E98351895FB1416AE883 /* sip_autoconf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_autoconf.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip/sip_autoconf.h; sourceTree = "<group>"; };
+		E28235999ABF239A3268B825165087F5 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		E299BC14334FECE8F5BD650225582844 /* pool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pool.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/pool.h; sourceTree = "<group>"; };
+		E32A26ED42D598F356B02724FAEDC49D /* stun_config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stun_config.h; path = VialerPJSIP.framework/Versions/A/Headers/pjnath/stun_config.h; sourceTree = "<group>"; };
 		E3396E8487D43279EEC9C48F2D02F2AA /* Pods-iNTOU-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iNTOU-dummy.m"; sourceTree = "<group>"; };
-		E59A6B5BA654213952785FA24591C8DA /* FSCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-umbrella.h"; sourceTree = "<group>"; };
-		E6F0FACA5FD8F5A1C5C1ABBD89287370 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBADA803EDF009EF0311B6DBDC21FEBD /* Pods_iNTOU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iNTOU.framework; path = "Pods-iNTOU.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3575AB80AC74590466EF54B45C37C0B /* config_auto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config_auto.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/config_auto.h; sourceTree = "<group>"; };
+		E42A75C5C97BB39CB14FDF1471E2E1F3 /* sip_module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_module.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip/sip_module.h; sourceTree = "<group>"; };
+		E4461212CF4EBED8A8DD7216C9A5AD05 /* array.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = array.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/array.h; sourceTree = "<group>"; };
+		E4AEB8CD8668B5FC743756DA7973EB65 /* stun_session.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stun_session.h; path = VialerPJSIP.framework/Versions/A/Headers/pjnath/stun_session.h; sourceTree = "<group>"; };
+		E5A32D6BBDC39CEB7DCB131962F66707 /* cli.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cli.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib-util/cli.h"; sourceTree = "<group>"; };
+		E654DE2FAD19A36039191715232906D6 /* ioqueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioqueue.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/ioqueue.h; sourceTree = "<group>"; };
+		E6F0FACA5FD8F5A1C5C1ABBD89287370 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6F433864B6B7C1F37AD25BE3B362E7E /* stack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stack.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/stack.h; sourceTree = "<group>"; };
+		E76820793F2512744B409E31D71CE97B /* x509.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/x509.h; sourceTree = "<group>"; };
+		E887574CC615073C9AB723491E323659 /* pjmedia_audiodev.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pjmedia_audiodev.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia_audiodev.h; sourceTree = "<group>"; };
+		EA46FA9A157E9BB691EB662640FC4539 /* assert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = assert.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/assert.h; sourceTree = "<group>"; };
+		EABA290F36CEDD3EB0C84216657F6461 /* opencore_amr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opencore_amr.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-codec/opencore_amr.h"; sourceTree = "<group>"; };
+		EBADA803EDF009EF0311B6DBDC21FEBD /* Pods_iNTOU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iNTOU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBDEAD03DE2D6E148F1206AF9B11D1BA /* sip_auth_parser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_auth_parser.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip/sip_auth_parser.h; sourceTree = "<group>"; };
+		EBFF37F5781C165E749212DC6507F2C6 /* crc32.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crc32.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib-util/crc32.h"; sourceTree = "<group>"; };
 		EC1FD743D031D373EDF29CC526F758E2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		EC67BA782333F509A4EC1C894A3D6448 /* sip_timer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_timer.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjsip-ua/sip_timer.h"; sourceTree = "<group>"; };
+		EC71C48EFC31C2FE5A72937134F67BE8 /* fifobuf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fifobuf.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/fifobuf.h; sourceTree = "<group>"; };
+		EC777DF7014A71262577DCDEF2780C2F /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config.h; path = VialerPJSIP.framework/Versions/A/Headers/pjnath/config.h; sourceTree = "<group>"; };
+		ECE8EB235E199CEAB966B7F53D096DF6 /* pkcs12.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs12.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/pkcs12.h; sourceTree = "<group>"; };
+		ED92BF98AB36CC6BFB74FFA6BF49739F /* transport_ice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = transport_ice.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/transport_ice.h; sourceTree = "<group>"; };
+		EDFDA4A9839F6DBB1FF7FF5434E63E65 /* l16.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = l16.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-codec/l16.h"; sourceTree = "<group>"; };
+		EE093B9EBD5AB3C629B9B457B6135179 /* g722.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = g722.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-codec/g722.h"; sourceTree = "<group>"; };
+		EE32BCB5C8AFC4D7DF4558492D2DCE0C /* pcap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pcap.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib-util/pcap.h"; sourceTree = "<group>"; };
+		EEF3853C89702DA355866AEADA062F3A /* sip_100rel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_100rel.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjsip-ua/sip_100rel.h"; sourceTree = "<group>"; };
+		EF3D8242AF9FEF68F29013A9C49FC1F5 /* m_m68k.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = m_m68k.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/m_m68k.h; sourceTree = "<group>"; };
+		EF5E8EB9ACDF74E491621A71A59344FB /* vid_tee.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vid_tee.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/vid_tee.h; sourceTree = "<group>"; };
+		EF6F94C07E7E876849F33DEF67149A0B /* pjmedia-codec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "pjmedia-codec.h"; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-codec.h"; sourceTree = "<group>"; };
 		EFD20A9907BED2C15F83F6DB50DCF8A1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F06E3031812808A8B8B30CE91F9ACB74 /* os.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = os.hpp; path = "VialerPJSIP.framework/Versions/A/Headers/pj++/os.hpp"; sourceTree = "<group>"; };
+		F13BAEBC91DEE476E8A1F6520352C55E /* dns_server.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dns_server.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib-util/dns_server.h"; sourceTree = "<group>"; };
+		F157D0BB7F999DC7C4D88C2C8E6EC2FB /* ui_compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ui_compat.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/ui_compat.h; sourceTree = "<group>"; };
 		F28FF912E69F14402FA6AB8B21B22EB8 /* Pods-iNTOU-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iNTOU-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F3F78328D5286C7724662599D18B5840 /* FSCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-prefix.pch"; sourceTree = "<group>"; };
-		F744B703C4D1AF681F358847697CD38A /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
-		F7DD844D002806A5EE4DD17330E3B21E /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
-		FC7B58DD16E934FCC1117D13CF608F4E /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarHeaderView.m; path = FSCalendar/FSCalendarHeaderView.m; sourceTree = "<group>"; };
+		F2FF00497C23BE11670A8D8EFBAA34C3 /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarStickyHeader.m; path = FSCalendar/FSCalendarStickyHeader.m; sourceTree = "<group>"; };
+		F382E2814788374702328D67B610DC02 /* string.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = string.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/string.h; sourceTree = "<group>"; };
+		F3CECF403CC16D711867B795EC48D7FD /* hmac_sha1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac_sha1.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib-util/hmac_sha1.h"; sourceTree = "<group>"; };
+		F40EAB82DC92DE9DEFF1DE26308BC0C4 /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib-util/config.h"; sourceTree = "<group>"; };
+		F46AD61FE39C3191CB3EBDEBDD2D783F /* sdp_neg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sdp_neg.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/sdp_neg.h; sourceTree = "<group>"; };
+		F590AEAA2409CCFCD9F9968EE373A4D4 /* os.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = os.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/os.h; sourceTree = "<group>"; };
+		F5FA601758287F3E2050B02D19C47F27 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionView.m; path = FSCalendar/FSCalendarCollectionView.m; sourceTree = "<group>"; };
+		F640209E5BF150272DF11200197C68F5 /* rand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rand.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/rand.h; sourceTree = "<group>"; };
+		F7F94337E7CF5CD09F07680A446699E7 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		F803C84EB01656F452D20A38C8394880 /* ssl2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl2.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/ssl2.h; sourceTree = "<group>"; };
+		F819947EE4599765096DB326FCBB6377 /* errno.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = errno.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib-util/errno.h"; sourceTree = "<group>"; };
+		F87936283201E346D7BBF85C7F13E5A1 /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjmedia-audiodev/config.h"; sourceTree = "<group>"; };
+		F8BB8C8231C5B50248BFDE3EC13D5284 /* presence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = presence.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjsip-simple/presence.h"; sourceTree = "<group>"; };
+		F93F8680BDACCB1351FD56DF24D6E73C /* pjsua_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pjsua_internal.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjsua-lib/pjsua_internal.h"; sourceTree = "<group>"; };
+		FA4A78C028B2B50AAE84F2D1BD293490 /* pjsip_auth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pjsip_auth.h; path = VialerPJSIP.framework/Versions/A/Headers/pjsip_auth.h; sourceTree = "<group>"; };
+		FA6CE6D8AE0F3DFBC63F44B180EB747A /* session.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = session.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/session.h; sourceTree = "<group>"; };
+		FAC2F3A03DB998A91CE0264354DA29BE /* FSCalendarConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarConstants.m; path = FSCalendar/FSCalendarConstants.m; sourceTree = "<group>"; };
+		FBC68869442C9D287807267D3606A1BF /* nat_detect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = nat_detect.h; path = VialerPJSIP.framework/Versions/A/Headers/pjnath/nat_detect.h; sourceTree = "<group>"; };
+		FBEFF95B42EA714ADD308E4EB526B5AD /* os_darwinos.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = os_darwinos.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/compat/os_darwinos.h; sourceTree = "<group>"; };
+		FC12A85DD24E4748F2069DC71DEAF1B9 /* opensslconf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opensslconf.h; path = VialerPJSIP.framework/Versions/A/Headers/openssl/opensslconf.h; sourceTree = "<group>"; };
+		FC40080BEC2774D8F9E14B61F2DC20E1 /* splitcomb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = splitcomb.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/splitcomb.h; sourceTree = "<group>"; };
+		FC7CF7812A8F6F111DDE7FACFE1F3978 /* sip_replaces.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sip_replaces.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjsip-ua/sip_replaces.h"; sourceTree = "<group>"; };
+		FCD5B750D3E9F907CC94A70E75FD99AD /* stun_transaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stun_transaction.h; path = VialerPJSIP.framework/Versions/A/Headers/pjnath/stun_transaction.h; sourceTree = "<group>"; };
+		FEAC37716ADEDF3976823A0D1FFA3FE9 /* unicode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unicode.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/unicode.h; sourceTree = "<group>"; };
+		FF31A1DB9D9491D3D90B23C1B0F4A1BF /* errno.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = errno.h; path = VialerPJSIP.framework/Versions/A/Headers/pj/errno.h; sourceTree = "<group>"; };
+		FFBA1A239A4082A9D44D6B0F6748384A /* format.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = format.h; path = VialerPJSIP.framework/Versions/A/Headers/pjmedia/format.h; sourceTree = "<group>"; };
+		FFF15D52731EF092CB70E6DD23573112 /* cli_console.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cli_console.h; path = "VialerPJSIP.framework/Versions/A/Headers/pjlib-util/cli_console.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,12 +559,80 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		006543BFD1898CA82E65435F2BD309F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B2222BE86CC29C7DC193625BE33D816 /* FSCalendar */,
+				084378774F236B4491DF7DF96AC439CC /* GoogleMaps */,
+				AF5A57AB733680127D79A082C8E76BD4 /* MBProgressHUD */,
+				5F43A0A96FDE9602762799129D0E6C58 /* Vialer-pjsip-iOS */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		060F27BD891160AA2E0FC0873D081D04 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B454E4F2297D515186D5960E0245C037 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		084378774F236B4491DF7DF96AC439CC /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				C9181F4FC13D1020667F64BF44AD4B8E /* Base */,
+				43E0501140DD04CF72BF459BBFE55BD4 /* Maps */,
+			);
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
 		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				2691F93227E549B2A03FB9E6D0C3C623 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1B2222BE86CC29C7DC193625BE33D816 /* FSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				779C8452265DC69544185A00E9C49C04 /* FSCalendar.h */,
+				05A6B1D75C3DBB05341F569752B4501B /* FSCalendar.m */,
+				B0173B1C0BE727188B791BEF370FD3F5 /* FSCalendar+Deprecated.m */,
+				6706E92CAAF1B089100AF9D13E574102 /* FSCalendarAppearance.h */,
+				3D6572B2D15213153B0AEEA00C77529A /* FSCalendarAppearance.m */,
+				B734757F0DF4C1AD03044C16D766D6F2 /* FSCalendarCalculator.h */,
+				41AC04FC669F4AAF6E0A167D44F074B0 /* FSCalendarCalculator.m */,
+				C5901244009F9A67359B9B7544AE4BC9 /* FSCalendarCell.h */,
+				81BBA12AA3E9C56F6C197B6CAFD58F63 /* FSCalendarCell.m */,
+				5FCF230BCA19832D469B9A5D24507D06 /* FSCalendarCollectionView.h */,
+				F5FA601758287F3E2050B02D19C47F27 /* FSCalendarCollectionView.m */,
+				AD77A7214A9676C6F3F27D000855095F /* FSCalendarCollectionViewLayout.h */,
+				A824DD23A27D6F97D2E9CBE1BC5823CC /* FSCalendarCollectionViewLayout.m */,
+				76D9D3A49704069BB7777F82C7B058CE /* FSCalendarConstants.h */,
+				FAC2F3A03DB998A91CE0264354DA29BE /* FSCalendarConstants.m */,
+				0942187EEA1897D97A3A9EDB1C38FFE0 /* FSCalendarDelegationFactory.h */,
+				62ADBD9F6219B3155BBA6884DB02EE69 /* FSCalendarDelegationFactory.m */,
+				6B6F97B660289885166814E2BFAEF4F1 /* FSCalendarDelegationProxy.h */,
+				77A9E98FA6065685B5227EFF876CB3A7 /* FSCalendarDelegationProxy.m */,
+				04D468861ADB5AECDFBDAF42622278AA /* FSCalendarDynamicHeader.h */,
+				C708C4D7ECCE82B5269DC82B78D79049 /* FSCalendarExtensions.h */,
+				4601870CC39886CD9BD598EB8AD39121 /* FSCalendarExtensions.m */,
+				AD4FBF3C21B4EAB0C55E6B2A32166300 /* FSCalendarHeaderView.h */,
+				95796E247E4A77C87CD5C06E01B9228B /* FSCalendarHeaderView.m */,
+				77D73D7E5BBE0F063798BFA64F49C329 /* FSCalendarScopeHandle.h */,
+				D451DAD30FD5ABCDDB89582D6BA210F9 /* FSCalendarScopeHandle.m */,
+				371550159465FFAE9412D4C773777DC8 /* FSCalendarStickyHeader.h */,
+				F2FF00497C23BE11670A8D8EFBAA34C3 /* FSCalendarStickyHeader.m */,
+				CC923DAE55F4C730F3E5AFB596B24FB8 /* FSCalendarTransitionCoordinator.h */,
+				053E13D94506DD58A35E283E3ABE16B6 /* FSCalendarTransitionCoordinator.m */,
+				16ABCD066B84B88D8B37FB8BB56613C5 /* FSCalendarWeekdayView.h */,
+				42D7C6AD6BEAF20AC0537277F710680B /* FSCalendarWeekdayView.m */,
+				D820F9FA777C65EAE1E42CE3BA9815E7 /* Support Files */,
+			);
+			path = FSCalendar;
 			sourceTree = "<group>";
 		};
 		2230DB0741688819BF5128DDBCA0AD12 /* Products */ = {
@@ -205,31 +656,426 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		2873C562E3881B35FAD75BC9DEB51966 /* Maps */ = {
+		2EFF9D8E19EA21A1036F258DBA900ED1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AB5B3A7FB934ECD4F8C6BBAF459605C0 /* Frameworks */,
-				92681C79EA88EF4E8DF068B5DF024D60 /* Resources */,
+				996AED15905447769C2EDD420303D178 /* GoogleMaps.framework */,
+				E28235999ABF239A3268B825165087F5 /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		398C66B9B220B9457F28DD93075CC4A6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA5E1738FB029412035931A48B67A5E4 /* Info.plist */,
+				CEEDF0443B16FF2AFC4BDB60C1399ABF /* MBProgressHUD.modulemap */,
+				10658F532B698982A0668F4151E130E0 /* MBProgressHUD.xcconfig */,
+				DB22C8E7E50192286B627A76ED470C6F /* MBProgressHUD-dummy.m */,
+				04D0E061DC06963B1A385C7467370E05 /* MBProgressHUD-prefix.pch */,
+				D7D512060C08BB7BB2D3F1F57A006A03 /* MBProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		43E0501140DD04CF72BF459BBFE55BD4 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				2EFF9D8E19EA21A1036F258DBA900ED1 /* Frameworks */,
+				060F27BD891160AA2E0FC0873D081D04 /* Resources */,
 			);
 			name = Maps;
 			sourceTree = "<group>";
 		};
-		65B11FF2A14FE620146579435D912341 /* Base */ = {
+		5F43A0A96FDE9602762799129D0E6C58 /* Vialer-pjsip-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				97C0B6FE6166E1680902DADA121F88D0 /* Frameworks */,
+				C44D38402ED3CEFAF121A2821A3397A7 /* account.hpp */,
+				B9A78027E7A804A8B25354BA5AD4518E /* activesock.h */,
+				5D75C8DFA9B595FFBC27A9E4447832AD /* addr_resolv.h */,
+				6DE5CDAD19AB4D92360A2472B1365F0C /* aes.h */,
+				38BBE2FD59F714CE49EC548A38C222EC /* alaw_ulaw.h */,
+				40C7B81D267A28A5BC10CB2A7E24D8F9 /* amr_helper.h */,
+				1ED4CA8C8422E35C4715BA5D16B5606B /* amr_sdp_match.h */,
+				E4461212CF4EBED8A8DD7216C9A5AD05 /* array.h */,
+				892D68414CDA59C9E3CFAF651B949CE3 /* asn1.h */,
+				DB36E20E934A7EA518E372AA124F7DD4 /* asn1_mac.h */,
+				B078C79EE24EFB78BCCC12612D67C1F9 /* asn1t.h */,
+				D061C89E9F7949B3FA86976A96647A29 /* assert.h */,
+				EA46FA9A157E9BB691EB662640FC4539 /* assert.h */,
+				76855C9EBBA73EC780014FC75E0F4AD6 /* audio_codecs.h */,
+				978797B5B88AD12B81A604F7FFF890B6 /* audiodev.h */,
+				61C549F0D9967CE4BDAFD8F9D9AA6B19 /* audiodev.h */,
+				7A631A6038DDCB342B6F53A6DEAC9B6D /* audiodev_imp.h */,
+				C14C77438EDD3111233CC6343620C15B /* audiotest.h */,
+				24B3785EA05A94B35838EF09F7B4A6C8 /* avi.h */,
+				3DDB2276C058C2CF949C5C642903D59E /* avi_dev.h */,
+				4E361246952C1F7C11F9356368960DA4 /* avi_stream.h */,
+				614911A418FADC224C668CDD5780F051 /* base64.h */,
+				2B1110F8A35C31EA725DB1F23830CADF /* bidirectional.h */,
+				49EE7528D6140C1CAC659DFE255F980C /* bio.h */,
+				085CCBB0A924D7772328679B122EF583 /* blowfish.h */,
+				3F4F91E86A51F09A02A6ACD926A88167 /* bn.h */,
+				3A867840CA369283700B87B6ED9C2105 /* buffer.h */,
+				AFBE2E834B1502169D4F98E191B69A6E /* call.hpp */,
+				9FD5001559F724D29C08B11F67D0EDEB /* camellia.h */,
+				3780DA3B06E474CCA53CCDF237588C4C /* cast.h */,
+				1143D2E3EF3B8131437D5F31EFAA3386 /* cc_armcc.h */,
+				A8670CC1C767B13773A5D8AE2AD88C29 /* cc_codew.h */,
+				A0EDA2D00272F68288BE358D66504E30 /* cc_gcc.h */,
+				4C81798DD5D15F0A77AE12129BBD7F8D /* cc_gcce.h */,
+				7E98917F19A5FAD1A6BC9D86234FCE8C /* cc_msvc.h */,
+				A17ACBA55CB6691FF1EC151BD483523E /* cc_mwcc.h */,
+				B0343E78DCD5E4F182BB79F9C3D50BD0 /* circbuf.h */,
+				E5A32D6BBDC39CEB7DCB131962F66707 /* cli.h */,
+				FFF15D52731EF092CB70E6DD23573112 /* cli_console.h */,
+				953710329B5765A29C0BF78F8916F02D /* cli_imp.h */,
+				235C300493184CFCAA770CCF5FE0312C /* cli_telnet.h */,
+				635459C2A278CD03AECB5C615D06C73B /* clock.h */,
+				39C1D2D9E9BF7179D0874E418E23AF8F /* cmac.h */,
+				5E4D2EC099727B5413B3AEC4E72B8EFF /* cms.h */,
+				06FD7536623BFB44FC61D23C124028A5 /* codec.h */,
+				A0EA56636A36D3C5833652956B9AC739 /* codec_api.h */,
+				415CCB3D591203E006327BDD1DA717C8 /* codec_app_def.h */,
+				616523BC34BFA04BE0F46F33C4CD0A2D /* codec_def.h */,
+				2946A4296C33EC92D6FE599C665206CE /* codec_ver.h */,
+				7DA09D80B22AB451B7561363570415D6 /* comp.h */,
+				2B960F9FC469C471C2ABE0E47338A503 /* conf.h */,
+				BE62CEAEB89497975202F40883C817F0 /* conf_api.h */,
+				342C63CC8EB4A9F08227DCC79AA2EA13 /* conference.h */,
+				62FAD694AC295CBA1262C194052DC1A0 /* config.h */,
+				F87936283201E346D7BBF85C7F13E5A1 /* config.h */,
+				F40EAB82DC92DE9DEFF1DE26308BC0C4 /* config.h */,
+				2FF1CFFA0EB4279847665C1BF52858BE /* config.h */,
+				C322AC183BC6B01E317CFCED88571658 /* config.h */,
+				EC777DF7014A71262577DCDEF2780C2F /* config.h */,
+				4D721784B5147A2C06DDC624EC12B0ED /* config.h */,
+				4A724EEC9255D62D64AA50B771538C9E /* config.hpp */,
+				BECD8ACECB2811777ABC39F70928DAB9 /* config_auto.h */,
+				E3575AB80AC74590466EF54B45C37C0B /* config_auto.h */,
+				92B440E109BFFC643F92780D6F72C9C7 /* config_site.h */,
+				2CAC96C1D91419D47096374DF803408F /* config_site_sample.h */,
+				76E2DFF6FC17CD4923BC8738483D1D5F /* converter.h */,
+				EBFF37F5781C165E749212DC6507F2C6 /* crc32.h */,
+				0ACB6C1B35B4E5EAC0FBE444A963ABFF /* crypto.h */,
+				37DCE5BB1A99A5CB35F6AC39B76A263D /* ctype.h */,
+				19B3FCF91131F419DA904277C0332896 /* ctype.h */,
+				D57AFA1E96DF9081D61EE85BCF87F050 /* delaybuf.h */,
+				A60B86276CFEEC395550C8809D4149E2 /* des.h */,
+				1B4C5B61701B3B3E773FF849D58EAB52 /* des_old.h */,
+				3138266DFB2273B34E184C3073F8C079 /* dh.h */,
+				5FA08E50D152CC24FCFD66BDE65B9CA0 /* dns.h */,
+				F13BAEBC91DEE476E8A1F6520352C55E /* dns_server.h */,
+				52C57C962FE1E50F145B467A00F735C2 /* doxygen.h */,
+				5A6FE8681CB03A1B01143C8A133528FF /* doxygen.h */,
+				66A94486297BDF7ED2759B1BBF3FEBF3 /* doxygen.hpp */,
+				987EBDA319E02BED71DDF621C839CA5F /* dsa.h */,
+				A5850842727F1BA76A7A1253F24CD6D8 /* dso.h */,
+				6EE1890687774FB93614E8CCFCE29913 /* dtls1.h */,
+				09788715798F7142F7F0FFDA7C20790B /* e_os2.h */,
+				4F38C17302A65E59232176E679777E79 /* ebcdic.h */,
+				1D62ADC390D5675B6901F40A656E5843 /* ec.h */,
+				17BB8B25DBD1D8EBF1313BE80EFF99E8 /* ecdh.h */,
+				6A2023731D282F49D56526FC6FE89C95 /* ecdsa.h */,
+				76071F0294A81FB82454EED301CEB405 /* echo.h */,
+				54188FF60A52043DDDA704D23E956005 /* echo_port.h */,
+				5B90413DC22A1142A642218981CE65A8 /* endpoint.h */,
+				9EF21C7515E6219BE5818B24A062DA4D /* endpoint.hpp */,
+				3935BBBC3C388AC3B23B629393E3242E /* engine.h */,
+				07B1C9491699E31BEECD060D4CCE74F9 /* err.h */,
+				F819947EE4599765096DB326FCBB6377 /* errno.h */,
+				DFDEB773D187F340FD7900FAB18DC040 /* errno.h */,
+				1AB4926773FD8F8AA63A6E11D9A3A4B8 /* errno.h */,
+				54546B42737BF205F33C7FD1ECF9D7A9 /* errno.h */,
+				9EF4E6EBC02311530F0AA094648BBBF1 /* errno.h */,
+				FF31A1DB9D9491D3D90B23C1B0F4A1BF /* errno.h */,
+				2B751CB4699CB03BE6A1F9EBAC77EFC7 /* errno.h */,
+				E1326E776F1B4460C3E6B96BCC3DF0EF /* errno.h */,
+				5FDCC4EB6B9A8698A181BC7017B188CB /* event.h */,
+				737719434A4FBA67749D5CB7DBCC0A86 /* evp.h */,
+				2F0DE304BA0D1608D4AAC6C16FF4C2D4 /* evsub.h */,
+				1F8808238A46D8C4F90181624DF253D4 /* evsub_msg.h */,
+				35E965EBD09DBF8BF517F91F277BAABC /* except.h */,
+				04DC3BEADC1EA00E0B888A1A47385543 /* ffmpeg_vid_codecs.h */,
+				EC71C48EFC31C2FE5A72937134F67BE8 /* fifobuf.h */,
+				4284AF03CD809EB750A384F93387A769 /* file.hpp */,
+				471ECC5200726554AFB587C2BDCC6D34 /* file_access.h */,
+				A6E7B7A5CFBD0B3A66B88AFE973F9ACB /* file_io.h */,
+				FFBA1A239A4082A9D44D6B0F6748384A /* format.h */,
+				3174E468CADF0ED66017FB9CF66DDEDF /* frame.h */,
+				0CC4BFD5125208EB5AF0AD987EF3086B /* g711.h */,
+				EE093B9EBD5AB3C629B9B457B6135179 /* g722.h */,
+				3C2B276557C3D65F85AA01837125DB8B /* g7221.h */,
+				5114ABA11C611083A0F15B5029B8B8A4 /* g7221_sdp_match.h */,
+				2BB5725B246F185F3D74945EE359D7F9 /* getopt.h */,
+				9F60FC66F8E6264FC87F0EA802A0A722 /* gsm.h */,
+				C598A76EC0CF0FA73A4362BA69D61440 /* guid.h */,
+				13FF0E83C35871169B753B4C9D7FD74D /* h263_packetizer.h */,
+				0DAFABABB59F338030B9F31FBD655EAB /* h264_packetizer.h */,
+				15707316D8ECC269BC5114643B2EBFCD /* hash.h */,
+				B637B7022F9009BC81FA61591A4B4E2D /* hash.hpp */,
+				1D84FFD645A044E5ACEE782AA5F6E371 /* high_precision.h */,
+				9AE766B153D3BF5A85B49A55B7724490 /* hmac.h */,
+				724DF810FBC40678B80E2944638BA897 /* hmac_md5.h */,
+				F3CECF403CC16D711867B795EC48D7FD /* hmac_sha1.h */,
+				C8C044966580E68965C5DF83303E0DC4 /* http_client.h */,
+				9CCC2D124FF43F5CB6003DFAF191843B /* ice_session.h */,
+				9AA22479F89459F4AD53F6E993182417 /* ice_strans.h */,
+				67922D5293923C927EC189B0E0750719 /* idea.h */,
+				0B56B608787C793C283B1920EDBACCBF /* ilbc.h */,
+				E654DE2FAD19A36039191715232906D6 /* ioqueue.h */,
+				DE5F67DB5F4D3324984CE7ED150ED4BF /* ip_helper.h */,
+				2F66B1B4D2A0A948EF8FD997E120AD54 /* ipp_codecs.h */,
+				A631FD7AC87D0A0BC1AEB2C4918656CE /* iscomposing.h */,
+				DE28D60793750B6EFF0C1B38FBA416EB /* jbuf.h */,
+				04FE8CD693F69FB9DFC5F867A85FDDB3 /* json.h */,
+				18FF4FFD4328039336B9DC48E0656DBD /* json.hpp */,
+				3A30CCC3D51BC2DA3C4C6CD3CE091418 /* krb5_asn.h */,
+				BB32F708366EB190172EEF6F10F012BA /* kssl.h */,
+				EDFDA4A9839F6DBB1FF7FF5434E63E65 /* l16.h */,
+				D325D07E0243F4EACA0659C3A2C0DA1F /* lhash.h */,
+				42EDD5BA4F92ADBBC0500176C9E0CABC /* list.h */,
+				A6BB0707995D0D61D931BE2FF6607073 /* list.hpp */,
+				DD92153767914458B7D7AE7BC2FAD079 /* list_i.h */,
+				5FCA78FCEC27182BD76346205A488A63 /* lock.h */,
+				896A18627BEBDBC373A5A8F14DBAF001 /* lock.hpp */,
+				A94EEFA45200808ED4F65D4E9C446770 /* log.h */,
+				1AE1B61B75319B543883784E19F64528 /* m_alpha.h */,
+				CA4452DDD25B6B3CE1BE1B63C7F6A4EB /* m_armv4.h */,
+				69C1DC652666EEEA49034CEDD35E7F42 /* m_auto.h */,
+				06D01C6856B2C00E39DEA677205FFD1D /* m_i386.h */,
+				EF3D8242AF9FEF68F29013A9C49FC1F5 /* m_m68k.h */,
+				260A0D900BFDCE9F205318D910EAE318 /* m_powerpc.h */,
+				14FB0E3424929CCFE6B1817B91A0B1F6 /* m_sparc.h */,
+				4CE8484979A5718091A924900C65A410 /* m_x86_64.h */,
+				854F5D49AC696F1B3FE42F20D3EF99DB /* malloc.h */,
+				58E21C29ACC7C600E1F095893AE8FEBC /* master_port.h */,
+				78DE8337ACBC2DA07B8C6D5B575AA84C /* math.h */,
+				B54E8C7CF1C07962C53DCF1AB12267E6 /* md4.h */,
+				07E24DEDD46EDDB172EFC62FEDD6311C /* md5.h */,
+				D55108D5354BC6BC9109862BE9E588EC /* md5.h */,
+				6D58EA317E866B467954AF64C2E02F76 /* mdc2.h */,
+				C67F836921536D9C6FB21C2BC8C8F404 /* media.hpp */,
+				DD2F69F6AB32A52750EFDEFE2B1B1021 /* mem_port.h */,
+				5EBFBBED4E583E9A424CF88D6E95B8CD /* modes.h */,
+				34E05130796A905D4CE481ABD004EFFF /* mwi.h */,
+				FBC68869442C9D287807267D3606A1BF /* nat_detect.h */,
+				5840E3F1006AA4DE824240FA394AC6AD /* null_port.h */,
+				A3A52452640B1A76BBAD10604F7ABD3D /* obj_mac.h */,
+				463358892F1B18FCFBC727AC83B124D4 /* objects.h */,
+				83F0A4AA1CF3D743BEC62548DCF102F1 /* ocsp.h */,
+				EABA290F36CEDD3EB0C84216657F6461 /* opencore_amr.h */,
+				1229FDDBB85E99AA84A76845032BD78B /* opengl_dev.h */,
+				0F1B223CF138305026663EAEF525340B /* openh264.h */,
+				FC12A85DD24E4748F2069DC71DEAF1B9 /* opensslconf.h */,
+				236466650BDB56F4320425A783CDEE71 /* opensslv.h */,
+				B49A097388466D3AB84366FC9F475AC2 /* opus.h */,
+				9E6FAEE6BC823E9B9166F7B138FF20C9 /* opus.h */,
+				026A553ABB2C4152710DEF0B9AB56020 /* opus_defines.h */,
+				B4DA0B82064F3BB73518488FFC9F4910 /* opus_multistream.h */,
+				BA01FC9EE81E4814BA3B98BEE6D94421 /* opus_types.h */,
+				F590AEAA2409CCFCD9F9968EE373A4D4 /* os.h */,
+				F06E3031812808A8B8B30CE91F9ACB74 /* os.hpp */,
+				72A9A6936E348BE8D5ACF20637B46DE3 /* os_auto.h */,
+				FBEFF95B42EA714ADD308E4EB526B5AD /* os_darwinos.h */,
+				3BC31C1D168E6C3B21CD8AB2BCA226BF /* os_linux.h */,
+				8B1CA4582D3EC5E9AC98845C26964290 /* os_linux_kernel.h */,
+				673F2E7C1437D015BA0561AD1973E42A /* os_palmos.h */,
+				3E109BC8E022A01998DE1CBD36C712B2 /* os_rtems.h */,
+				77F0444AE1968137A87679CE4FAEF69A /* os_sunos.h */,
+				586CC05959A28252A48E33FE05800957 /* os_symbian.h */,
+				331519513EC0AE966F353370060FB0F9 /* os_win32.h */,
+				B17D603ADD85E4184BDEA74FE40C3CA1 /* os_win32_wince.h */,
+				635EA73EDEEB1B9D4950BBD3CF9C1D55 /* os_winphone8.h */,
+				3826F3B04DC38230200658B6071A6B75 /* os_winuwp.h */,
+				C2499C7E308FA2BE3FDC4A040230E3DB /* ossl_typ.h */,
+				22740321ACD96BC7A52F9F3D338CE75A /* passthrough.h */,
+				EE32BCB5C8AFC4D7DF4558492D2DCE0C /* pcap.h */,
+				2FA1AD88FCF563436798EDD06DB8C037 /* pem.h */,
+				765F749F4E75526F41693453EE1A2E3B /* pem2.h */,
+				1FD29F8634F1C3A1321D8831B7BD5127 /* persistent.hpp */,
+				910B772CC336A129AA735E5FA83E76E9 /* pidf.h */,
+				4A18427C0390ABE7745A5C371E098F1C /* pjlib.h */,
+				403625435CEB2581E82C020106DB00EB /* pjlib++.hpp */,
+				ADAF1FBC9D3A5E7E5256AFCF1D474935 /* pjlib-util.h */,
+				850A00988A932837BC415662734A2276 /* pjmedia.h */,
+				EF6F94C07E7E876849F33DEF67149A0B /* pjmedia-codec.h */,
+				E887574CC615073C9AB723491E323659 /* pjmedia_audiodev.h */,
+				3DBB823E1C9854751F28DA6B145BB545 /* pjmedia_videodev.h */,
+				55DD6500A04DAA3FB9BE3811ED491653 /* pjnath.h */,
+				9B5ACD5895C4C49941F22C384FFE3AF0 /* pjsip.h */,
+				FA4A78C028B2B50AAE84F2D1BD293490 /* pjsip_auth.h */,
+				C1EEB2197AB24C1F71B7159B29DC4B1C /* pjsip_simple.h */,
+				816EA2AE6D3C78591E85329ABF8E8AA7 /* pjsip_ua.h */,
+				5A4FD4FE4E9B35E65D8EBB265E26D7C6 /* pjsua.h */,
+				69E8A17471032F108365CD6284A05638 /* pjsua.h */,
+				8D23B7153175C065E685655E91BDA523 /* pjsua2.hpp */,
+				F93F8680BDACCB1351FD56DF24D6E73C /* pjsua_internal.h */,
+				ECE8EB235E199CEAB966B7F53D096DF6 /* pkcs12.h */,
+				A6D2B03A0CFE82153B52ABCCC3A7EBD6 /* pkcs7.h */,
+				24C1CB4319AF373E0BB93639721F1D51 /* plc.h */,
+				E299BC14334FECE8F5BD650225582844 /* pool.h */,
+				5364A9FF15217B79005EC580399E5994 /* pool.hpp */,
+				2522C2101E8C487DE5772665A5EAE2F0 /* pool_alt.h */,
+				3E82051E1B067361BAB4B26A7FC2893B /* pool_buf.h */,
+				B25F54F57498775D2F78A97439DB95E0 /* pool_i.h */,
+				B06E72E67EF054C58FD01C8202A0544D /* port.h */,
+				63C2FAE4BFE36140AD34D5570B6FE39D /* pqueue.h */,
+				F8BB8C8231C5B50248BFDE3EC13D5284 /* presence.h */,
+				DAA756B9BF30819446139F6A6069A874 /* presence.hpp */,
+				D8C052AFDFB1C4537650C99CB9F795E9 /* print_util.h */,
+				89FC9CB1B24588C919ED106AFEE5AB06 /* proactor.hpp */,
+				0E681E59FAF4A94E7B2A7CC8F9918990 /* publish.h */,
+				F640209E5BF150272DF11200197C68F5 /* rand.h */,
+				C318D4E2C920C706AD769D813D781933 /* rand.h */,
+				5BFE9CF83C6706AC0E743F63FCCF58FA /* rand.h */,
+				07E7BEDAF7EEE354CAE46AFED9ED86F6 /* rbtree.h */,
+				B4648C81D34AB277D8D590FDC464843F /* rc2.h */,
+				194FB06163D180F4B0D1A87CCC11AF92 /* rc4.h */,
+				3754C4E2C893911D9BF2F09B3C01B82E /* resample.h */,
+				5B1B4C649EA8F2B8C80ABC724B5B802F /* resolver.h */,
+				6A94BEA1231B8B001CDE70F2E390BBEF /* ripemd.h */,
+				71C24DD7875383B866FE6E7E1450D98D /* rpid.h */,
+				85168006B6E62DF0E6699EBECA48AA44 /* rsa.h */,
+				31C3BDD95310B9AFC961DFFCCFD14611 /* rtcp.h */,
+				AEF0E1CB09161D18504D7515C4936544 /* rtcp_xr.h */,
+				29C9F49FEAFABA88BA5A7D24D9AA6D0A /* rtp.h */,
+				650AEF5DB64BC7BEEFE659418C7BD123 /* safestack.h */,
+				79FACAB07DFD6CD9A2CA5CF68F02EECA /* scanner.h */,
+				D939C5A92B682C7B66857D7027666DD2 /* scanner.hpp */,
+				31AAAA532F63E74273F29B9A59987B3F /* scanner_cis_bitwise.h */,
+				A03FF3EB5D1E57677FCED84853E9CB7E /* scanner_cis_uint.h */,
+				C9AC5E88FEA499374CA0922C3A581A97 /* sdp.h */,
+				F46AD61FE39C3191CB3EBDEBDD2D783F /* sdp_neg.h */,
+				B8D71CF809F2ECC11015ED11EA3D1B6E /* seed.h */,
+				FA6CE6D8AE0F3DFBC63F44B180EB747A /* session.h */,
+				36B34E7B1D3925134E77A137B54454A0 /* setjmp.h */,
+				89E2ABE276931DAB1B623F555644C8D1 /* sha.h */,
+				A5F88476759C168079778EFA08501CBC /* sha1.h */,
+				37CF52B70C0BBD000714B3D244E440C5 /* signatures.h */,
+				812CE1A35CD298851C0C49354959B13E /* silencedet.h */,
+				0F4E45ED538CF9A2EA0FD875AC832B04 /* silk.h */,
+				EEF3853C89702DA355866AEADA062F3A /* sip_100rel.h */,
+				7BCDBED69B812A72B26963F5B7C1E256 /* sip_auth.h */,
+				66EC60F746AFAAC422EB539695E09577 /* sip_auth_aka.h */,
+				56C9C8884909F25FB7388B23CBD3CD38 /* sip_auth_msg.h */,
+				EBDEAD03DE2D6E148F1206AF9B11D1BA /* sip_auth_parser.h */,
+				E1F9657CFE50E98351895FB1416AE883 /* sip_autoconf.h */,
+				0AAB1BCAE36A03D5CDEC586539A8CA85 /* sip_config.h */,
+				58C769EEE57B1647A3F9984C6AEC908B /* sip_dialog.h */,
+				B76C68C216571F607848C10FE4B900AB /* sip_endpoint.h */,
+				78EC3EC1BCDCBAB8DF7B6FED1648EF5C /* sip_errno.h */,
+				61BC866429D4C4ABD2E45764F17D72B1 /* sip_event.h */,
+				50428231718690F5EF66ADEA18E1D06E /* sip_inv.h */,
+				E42A75C5C97BB39CB14FDF1471E2E1F3 /* sip_module.h */,
+				B959902E1CFFFBBDDCA803A34313BDE4 /* sip_msg.h */,
+				BF31A449ED7158B5C8FC8680DF028F31 /* sip_multipart.h */,
+				1805A6B48E225FE877FDF0ECCEEEFFB7 /* sip_parser.h */,
+				163783D0ADA4230C70636D62EAA5DDB5 /* sip_private.h */,
+				BC5A9CB9C34EF7C58EB753FCC7049C05 /* sip_regc.h */,
+				FC7CF7812A8F6F111DDE7FACFE1F3978 /* sip_replaces.h */,
+				3D59B7C0C91E45D7236DE1E221C3AC11 /* sip_resolve.h */,
+				5FEC485F4B8114306285479B6FF17AA3 /* sip_tel_uri.h */,
+				EC67BA782333F509A4EC1C894A3D6448 /* sip_timer.h */,
+				C2052097B9F532B375ADE304AF6E7631 /* sip_transaction.h */,
+				82EB7AF18B1D5F92B93B364E86BA98E2 /* sip_transport.h */,
+				440D12E523C4FCDE489D07C6A3A3726A /* sip_transport_loop.h */,
+				99AB101B24167F68832BC8CDD9DC9A0B /* sip_transport_tcp.h */,
+				4C21B7CC4406E16D26D47AD57DF6D0B1 /* sip_transport_tls.h */,
+				C09B09A539914DAF74539D86278F40E2 /* sip_transport_udp.h */,
+				80AED7ACF52D349561974A1C7457E7CC /* sip_types.h */,
+				82F891301C7121A4B6C442A2271735EF /* sip_ua_layer.h */,
+				A59B44ED772ABC1D23CBDFC791E19B69 /* sip_uri.h */,
+				54651FDB49A9F816C1E7657D0264954C /* sip_util.h */,
+				46BC01352749B9D4A5C339E7C26C2456 /* sip_xfer.h */,
+				8DD2B53E8F0AA396C29815AC38B30CAA /* siptypes.hpp */,
+				AF991C83400F4DE3D8A9AC8D3090EDCB /* size_t.h */,
+				94C6C76133158B05AC91F0F8C7A98144 /* sock.h */,
+				D731CD2F0169F896930E53AB8A712615 /* sock.hpp */,
+				840941E64CEEAC44CC118EF55029591B /* sock_qos.h */,
+				1CA71EE13FACB8946B92B29575CFF006 /* sock_select.h */,
+				49A63D9E77ABB5553D649796BE102ECC /* socket.h */,
+				75C1DCDF401B5C93B054DEAF9686E231 /* sound.h */,
+				425973A8D89B2D95658CB3AFB97C2BA9 /* sound_port.h */,
+				C12D7CD0E3D0DCE9CC1198704E1F2975 /* speex.h */,
+				FC40080BEC2774D8F9E14B61F2DC20E1 /* splitcomb.h */,
+				84C050AAB98523DF27A2C995E8CE5E5A /* srp.h */,
+				BD87EA82E78F2F694B294731DD9A6FCC /* srtp.h */,
+				5E6A6EBE7380CB0DABBC8525C584AB18 /* srv_resolver.h */,
+				ACDB93AA16C632350D944486B3F509D5 /* ssl.h */,
+				F803C84EB01656F452D20A38C8394880 /* ssl2.h */,
+				8037A13C3AE6B6138575F3E78A7E1E7E /* ssl23.h */,
+				39CF3D44E10324F595EABC426B799264 /* ssl3.h */,
+				C573FA82E3BF5E76C248A3319B13FB5B /* ssl_sock.h */,
+				E6F433864B6B7C1F37AD25BE3B362E7E /* stack.h */,
+				9D7B8405B669B4FC9F2D436176AC1CC3 /* stdarg.h */,
+				5E47522214B5B9EAD6E7E243D11AFA7F /* stdfileio.h */,
+				59ECC94891302297D7FAA573D91C8A62 /* stereo.h */,
+				BDF4AA88415A620878575CE87DB292F0 /* stream.h */,
+				371B36C182D81379355400F0D4D6FCFC /* stream_common.h */,
+				32C6B0F1F69891D6C73F8A0C5B2E7EE3 /* string.h */,
+				7CFBCBBA8DFC76E6C4662C7E8A1D8424 /* string.h */,
+				F382E2814788374702328D67B610DC02 /* string.h */,
+				2EC4A15259F277D259A8807E10954230 /* string.hpp */,
+				7809D2667E7298B6CD3DB848C2354C47 /* string_i.h */,
+				2DD1FACC1432C860FC98ABED24D100CF /* stun_auth.h */,
+				E32A26ED42D598F356B02724FAEDC49D /* stun_config.h */,
+				181FDD17021DC26C3C4F9AD6C9571045 /* stun_msg.h */,
+				E4AEB8CD8668B5FC743756DA7973EB65 /* stun_session.h */,
+				721B2EE5C142C685CFA71270E7A26322 /* stun_simple.h */,
+				6D87268CA6D939B17AC1E4F433D78766 /* stun_sock.h */,
+				FCD5B750D3E9F907CC94A70E75FD99AD /* stun_transaction.h */,
+				6E82212C11BC8BF5027F9772671D8EF2 /* symbian_sound_aps.h */,
+				1EF23CDD132D1FB61E93341A1FF53C52 /* symhacks.h */,
+				856DB8E37BAEEDF54AB8B77B9A7115B0 /* time.h */,
+				9228EA512A9431EDD02FD97D342B4B9D /* timer.h */,
+				89B028D5816DA6775F285728184DFC4A /* timer.hpp */,
+				953A6CEF95CDD7117D2826B9C4A002A6 /* tls1.h */,
+				4EE5FD3A8A8C8B6EA21DCC5031697B42 /* tonegen.h */,
+				2E618853F10138548BC1FBBEC77DAFC7 /* transport.h */,
+				738546C54D93ACAD9A196DD2B6768348 /* transport_adapter_sample.h */,
+				ED92BF98AB36CC6BFB74FFA6BF49739F /* transport_ice.h */,
+				787EB616AB868BBB4098BE59D08D2FC7 /* transport_loop.h */,
+				267CCCAF3010A722A763A7BB657591A8 /* transport_srtp.h */,
+				B401982DDF5C251BC4A61786C74F3635 /* transport_udp.h */,
+				687E3E50645DAD49A98277EC74524CD0 /* tree.hpp */,
+				3C5FD9052AC5C797CDD3339EC1EE2C4C /* ts.h */,
+				0350F0241A6407D23F7FA2AE0D757089 /* turn_session.h */,
+				9718A18F736A896956B95FEC25DBB108 /* turn_sock.h */,
+				CB45F3D04C5C9E6C3FEF4FB8D340DBCF /* txt_db.h */,
+				301EA70AB60AA6DD84F0FD108CB10CEA /* types.h */,
+				81AB83CEF7A73FD0205261197A0A55C2 /* types.h */,
+				1F1DE9B25F4994A81FB49B0131DD3C32 /* types.h */,
+				34A5D65CA081A772CAB71950E4B4C20E /* types.h */,
+				50323982AD26CC131B07479877D11164 /* types.h */,
+				560733175884BA8A72DE48258A6CFAB1 /* types.h */,
+				CD6CEEFF6C6283417487002D05E6486B /* types.hpp */,
+				D1118845D90BFAE398C4EAC4251BA956 /* types.hpp */,
+				A9FE651CBE1DF23778A3A00A1A686FE0 /* ui.h */,
+				F157D0BB7F999DC7C4D88C2C8E6EC2FB /* ui_compat.h */,
+				FEAC37716ADEDF3976823A0D1FFA3FE9 /* unicode.h */,
+				5228AEC0B27F00D786CB39772A8283D0 /* vid_codec.h */,
+				6A20665F25C13CAD5A59B96F5E899558 /* vid_codec_util.h */,
+				1FC2E63C5B502738F1D9D79666CF7DFF /* vid_port.h */,
+				1059478953591799660BC7BB543AE902 /* vid_stream.h */,
+				EF5E8EB9ACDF74E491621A71A59344FB /* vid_tee.h */,
+				394DE92A19A5831CE814D663BA641F72 /* videodev.h */,
+				5BE34B604F9BAA9CDACEE5A99259BEA5 /* videodev.h */,
+				7E776084144CF759FC91E13C65069764 /* videodev_imp.h */,
+				6F489D68FDF4926D5077252B3F789B06 /* wav_playlist.h */,
+				A411EEAFE413BC2162668848486792F0 /* wav_port.h */,
+				5605DF5A6881C248E835EB5401070C88 /* wave.h */,
+				75A173220845B74CF6DADCA625251196 /* whrlpool.h */,
+				2323473E6B6051280EFFD0E68E4DFA31 /* wsola.h */,
+				E76820793F2512744B409E31D71CE97B /* x509.h */,
+				2AEA7BF6F69A16D30F1B6348F6408CF2 /* x509_vfy.h */,
+				659F3ACF9B97F2F538BBB8D179453B2D /* x509v3.h */,
+				61C23AFA2DE36A4A5C43F62FB6381AEB /* xml.h */,
+				537E429C6F714978CD45F02353615E74 /* xpidf.h */,
+				A75FABEC374E4E88048F083DDED8C825 /* Frameworks */,
 			);
-			name = Base;
-			sourceTree = "<group>";
-		};
-		6BB351EA83159EF082CB7E3E4CE63EFD /* GoogleMaps */ = {
-			isa = PBXGroup;
-			children = (
-				65B11FF2A14FE620146579435D912341 /* Base */,
-				2873C562E3881B35FAD75BC9DEB51966 /* Maps */,
-			);
-			name = GoogleMaps;
-			path = GoogleMaps;
+			path = "Vialer-pjsip-iOS";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -237,111 +1083,58 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
-				BC0FFEBC7208F3D766B7362DB9FD369C /* Pods */,
+				006543BFD1898CA82E65435F2BD309F5 /* Pods */,
 				2230DB0741688819BF5128DDBCA0AD12 /* Products */,
 				F46E05A277A5751EF1DC677BAAC074E6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		92681C79EA88EF4E8DF068B5DF024D60 /* Resources */ = {
+		86B7BB83C6BF917C647B3AAB704E1758 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F7DD844D002806A5EE4DD17330E3B21E /* GoogleMaps.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		97C0B6FE6166E1680902DADA121F88D0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				785C23E84AD2CBD19E3804E5680176D2 /* GoogleMapsBase.framework */,
+				73218ADF0DF712DD05F0FA9FD8130F28 /* GoogleMapsBase.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		AB5B3A7FB934ECD4F8C6BBAF459605C0 /* Frameworks */ = {
+		A75FABEC374E4E88048F083DDED8C825 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4F349F54E6510536FE1BEF348E80FA45 /* GoogleMaps.framework */,
-				B58A73C3907339A80E8FB670EC36E286 /* GoogleMapsCore.framework */,
+				A307CE0FA662267EF38900269A0A8996 /* VialerPJSIP.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BC0FFEBC7208F3D766B7362DB9FD369C /* Pods */ = {
+		AF5A57AB733680127D79A082C8E76BD4 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				F3AAE84E117E46D1040DA705115962F9 /* FSCalendar */,
-				6BB351EA83159EF082CB7E3E4CE63EFD /* GoogleMaps */,
-				CBE5F5E5723B4BA3945CF867850B2D78 /* MBProgressHUD */,
+				F7F94337E7CF5CD09F07680A446699E7 /* MBProgressHUD.h */,
+				6AE407FC67CCDAF539739F15E5A3806F /* MBProgressHUD.m */,
+				398C66B9B220B9457F28DD93075CC4A6 /* Support Files */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		CBE5F5E5723B4BA3945CF867850B2D78 /* MBProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				D767B72B1EEF63B05EE3B9C7769902BF /* MBProgressHUD.h */,
-				983C19F983C017A3418FD8EEA8623AFE /* MBProgressHUD.m */,
-				D855A3A4AC91C718F38A0AC34502C036 /* Support Files */,
-			);
-			name = MBProgressHUD;
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
-		D855A3A4AC91C718F38A0AC34502C036 /* Support Files */ = {
+		C9181F4FC13D1020667F64BF44AD4B8E /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				C9D89EB4691B5AC628280F717BB15A20 /* Info.plist */,
-				F744B703C4D1AF681F358847697CD38A /* MBProgressHUD.modulemap */,
-				3A0B7821C3F5BFBDE29E35C1AABC1255 /* MBProgressHUD.xcconfig */,
-				0536F1D39AE024B2443662D942200AE1 /* MBProgressHUD-dummy.m */,
-				57E848DF31B6DA7648F7927439055C7E /* MBProgressHUD-prefix.pch */,
-				05F7B8634E691B5BE970BD6DB48A97E7 /* MBProgressHUD-umbrella.h */,
+				86B7BB83C6BF917C647B3AAB704E1758 /* Frameworks */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/MBProgressHUD";
+			name = Base;
 			sourceTree = "<group>";
 		};
-		F3AAE84E117E46D1040DA705115962F9 /* FSCalendar */ = {
+		D820F9FA777C65EAE1E42CE3BA9815E7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				87F479A87C57B86A9B6CB6EA856C269F /* FSCalendar.h */,
-				36F201FB9077E5A501E8367BE3E42460 /* FSCalendar.m */,
-				8F0C1E393D710AB1808666B5C4856917 /* FSCalendar+Deprecated.m */,
-				4FB7F77DB72765D04B2FC050B4F8816A /* FSCalendarAppearance.h */,
-				59EE09235B6AA7346FF8C4282AA9152B /* FSCalendarAppearance.m */,
-				50FF4B8A3729C76927C5717E10C6BD8D /* FSCalendarCalculator.h */,
-				CCDB37FD0A2B9358B8389CF316829F58 /* FSCalendarCalculator.m */,
-				2D87A0FC09A1A351277BF9AD90CA3AEE /* FSCalendarCell.h */,
-				B4042C2C60ED57C62E22EE3BF6146E76 /* FSCalendarCell.m */,
-				20A98BC6218560E9F808B70C715E079E /* FSCalendarCollectionView.h */,
-				9A1A42D28B8C5CCD552F38B4F7AA11EB /* FSCalendarCollectionView.m */,
-				407114E6C7C32992C322C5A3D8E92B01 /* FSCalendarCollectionViewLayout.h */,
-				DED30A0FAAE600E8B7811324BD8738D2 /* FSCalendarCollectionViewLayout.m */,
-				C35365AEF13B6B3BD5FF16D2F3629CA0 /* FSCalendarConstants.h */,
-				C6A065BFC1AC38E7ED503B34E2F52E62 /* FSCalendarConstants.m */,
-				67105FAB5FCD8BA59BBE91311A7A1C47 /* FSCalendarDelegationFactory.h */,
-				25701F0C148971032AC4A61288A2C216 /* FSCalendarDelegationFactory.m */,
-				0388C6A7638D16CBFE76A77C65116469 /* FSCalendarDelegationProxy.h */,
-				8FA9895D32DACB0CA6AB2AC9E95B5F5C /* FSCalendarDelegationProxy.m */,
-				B2724A09F9BD369B5902862FF3838813 /* FSCalendarDynamicHeader.h */,
-				A5CACE707A8CB46D19DD4C45A1404710 /* FSCalendarExtensions.h */,
-				3C0F3E609B1438AEC8236CD9B5244F63 /* FSCalendarExtensions.m */,
-				5B496BC6F5E9737A665559772540645C /* FSCalendarHeaderView.h */,
-				FC7B58DD16E934FCC1117D13CF608F4E /* FSCalendarHeaderView.m */,
-				0D4740F663285E2D382F0ACEF4E96619 /* FSCalendarScopeHandle.h */,
-				73191125476CDC1DACD048EC5A894B79 /* FSCalendarScopeHandle.m */,
-				A8FE96DB06592AA245AC46357E077584 /* FSCalendarStickyHeader.h */,
-				5ED28AAF49C8C7DADD195ADB2B0D0268 /* FSCalendarStickyHeader.m */,
-				0ADD4A96418F8F9EB0CAADAF68ABDE6B /* FSCalendarTransitionCoordinator.h */,
-				4C4DF5E4F80138587788110F8AC3544A /* FSCalendarTransitionCoordinator.m */,
-				E291BB0B6BBB80AF6EF4C236B4652724 /* FSCalendarWeekdayView.h */,
-				0DA7F46455044EECE2F48BC0B3CB43A1 /* FSCalendarWeekdayView.m */,
-				FF4B6BE123714C52FDF0D1E52EA2F411 /* Support Files */,
+				6332D5A3529773BB5FE92F9EE3BFCD3C /* FSCalendar.modulemap */,
+				3FE85FF6E2DB3865B990E1384CA284AC /* FSCalendar.xcconfig */,
+				7E20AB04A4B4F7A9410DEC6E7DF85516 /* FSCalendar-dummy.m */,
+				BF01D2B7ADD010C82C395B4044FF1507 /* FSCalendar-prefix.pch */,
+				448A0D9B2655F79D5526398489AC6E07 /* FSCalendar-umbrella.h */,
+				7515956BBB7E9FCCE3F172F99B3AE3A6 /* Info.plist */,
 			);
-			name = FSCalendar;
-			path = FSCalendar;
+			name = "Support Files";
+			path = "../Target Support Files/FSCalendar";
 			sourceTree = "<group>";
 		};
 		F46E05A277A5751EF1DC677BAAC074E6 /* Targets Support Files */ = {
@@ -368,20 +1161,6 @@
 			);
 			name = "Pods-iNTOU";
 			path = "Target Support Files/Pods-iNTOU";
-			sourceTree = "<group>";
-		};
-		FF4B6BE123714C52FDF0D1E52EA2F411 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D2BAD07E6863633880FF4FCDB98DF25F /* FSCalendar.modulemap */,
-				10161D0D1523FF86A72F1CE06235EFA4 /* FSCalendar.xcconfig */,
-				4E3AE8F1D942B6B16A46712865F4B14D /* FSCalendar-dummy.m */,
-				F3F78328D5286C7724662599D18B5840 /* FSCalendar-prefix.pch */,
-				E59A6B5BA654213952785FA24591C8DA /* FSCalendar-umbrella.h */,
-				7D8299A404493D939E9DA206DB89AB1D /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/FSCalendar";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -574,7 +1353,7 @@
 /* Begin XCBuildConfiguration section */
 		0166417896C125B1FD100184FD8C9E99 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10161D0D1523FF86A72F1CE06235EFA4 /* FSCalendar.xcconfig */;
+			baseConfigurationReference = 3FE85FF6E2DB3865B990E1384CA284AC /* FSCalendar.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -684,7 +1463,7 @@
 		};
 		679B973EA7AD405C207DDD569F65D749 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A0B7821C3F5BFBDE29E35C1AABC1255 /* MBProgressHUD.xcconfig */;
+			baseConfigurationReference = 10658F532B698982A0668F4151E130E0 /* MBProgressHUD.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -715,7 +1494,7 @@
 		};
 		7B1230B2BA14E13BD851B1184FB2BC7E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A0B7821C3F5BFBDE29E35C1AABC1255 /* MBProgressHUD.xcconfig */;
+			baseConfigurationReference = 10658F532B698982A0668F4151E130E0 /* MBProgressHUD.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -746,7 +1525,7 @@
 		};
 		7C43D8E0EA546EFC74B0F3952CC470F1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10161D0D1523FF86A72F1CE06235EFA4 /* FSCalendar.xcconfig */;
+			baseConfigurationReference = 3FE85FF6E2DB3865B990E1384CA284AC /* FSCalendar.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

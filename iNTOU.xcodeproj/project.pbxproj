@@ -68,6 +68,8 @@
 		918896341E40137800DDC82C /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 918896331E40137800DDC82C /* NewsViewController.m */; };
 		919BC24E1E31DA4400451426 /* Module.m in Sources */ = {isa = PBXBuildFile; fileRef = 919BC24D1E31DA4400451426 /* Module.m */; };
 		91A3DC3C1EAF53CD002766BD /* CalendarPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A3DC3B1EAF53CD002766BD /* CalendarPageViewController.m */; };
+		91A3DC3F1EB72018002766BD /* SipPhoneModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91A3DC3E1EB72018002766BD /* SipPhoneModule.storyboard */; };
+		91A3DC421EB72A5C002766BD /* SipPhoneBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A3DC411EB72A5C002766BD /* SipPhoneBoardViewController.m */; };
 		91B72FA21E422B4B00896AF3 /* NewsContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B72FA11E422B4B00896AF3 /* NewsContentViewController.m */; };
 		91B8412D1E51F587000B4AAE /* LifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B8412C1E51F587000B4AAE /* LifeViewController.m */; };
 		91B841301E5223F1000B4AAE /* LifeStreetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B8412F1E5223F1000B4AAE /* LifeStreetViewController.m */; };
@@ -212,6 +214,10 @@
 		919BC24D1E31DA4400451426 /* Module.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Module.m; path = Modules/Module.m; sourceTree = "<group>"; };
 		91A3DC3A1EAF53CD002766BD /* CalendarPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarPageViewController.h; path = Modules/CalendarModule/CalendarPageViewController.h; sourceTree = "<group>"; };
 		91A3DC3B1EAF53CD002766BD /* CalendarPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarPageViewController.m; path = Modules/CalendarModule/CalendarPageViewController.m; sourceTree = "<group>"; };
+		91A3DC3E1EB72018002766BD /* SipPhoneModule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SipPhoneModule.storyboard; path = Modules/SipPhoneModule/SipPhoneModule.storyboard; sourceTree = "<group>"; };
+		91A3DC401EB72A5C002766BD /* SipPhoneBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SipPhoneBoardViewController.h; path = Modules/SipPhoneModule/SipPhoneBoardViewController.h; sourceTree = "<group>"; };
+		91A3DC411EB72A5C002766BD /* SipPhoneBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SipPhoneBoardViewController.m; path = Modules/SipPhoneModule/SipPhoneBoardViewController.m; sourceTree = "<group>"; };
+		91A3DC431EB72D5D002766BD /* iNTOU.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iNTOU.entitlements; sourceTree = "<group>"; };
 		91B72FA01E422B4B00896AF3 /* NewsContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsContentViewController.h; path = Modules/NewsModule/NewsContentViewController.h; sourceTree = "<group>"; };
 		91B72FA11E422B4B00896AF3 /* NewsContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsContentViewController.m; path = Modules/NewsModule/NewsContentViewController.m; sourceTree = "<group>"; };
 		91B8412B1E51F587000B4AAE /* LifeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LifeViewController.h; path = Modules/LifeModule/LifeViewController.h; sourceTree = "<group>"; };
@@ -496,6 +502,16 @@
 			name = Library;
 			sourceTree = "<group>";
 		};
+		91A3DC3D1EB71E46002766BD /* SipPhoneModule */ = {
+			isa = PBXGroup;
+			children = (
+				91A3DC3E1EB72018002766BD /* SipPhoneModule.storyboard */,
+				91A3DC401EB72A5C002766BD /* SipPhoneBoardViewController.h */,
+				91A3DC411EB72A5C002766BD /* SipPhoneBoardViewController.m */,
+			);
+			name = SipPhoneModule;
+			sourceTree = "<group>";
+		};
 		91CBDB811E4C49AF002AC913 /* Moodle */ = {
 			isa = PBXGroup;
 			children = (
@@ -576,6 +592,7 @@
 		91E732551E31276400A54B9A /* iNTOU */ = {
 			isa = PBXGroup;
 			children = (
+				91A3DC431EB72D5D002766BD /* iNTOU.entitlements */,
 				91531E3E1E53437B005D2CAF /* API */,
 				91E732961E31399A00A54B9A /* Modules */,
 				91EE91FA1E4AB92200B2DFD1 /* Resource */,
@@ -603,6 +620,7 @@
 		91E732961E31399A00A54B9A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				91A3DC3D1EB71E46002766BD /* SipPhoneModule */,
 				91D7A1361E9781D000B79396 /* AboutModule */,
 				91D7A12E1E977C7400B79396 /* OtherLinkModule */,
 				913D650C1E5D345A00888676 /* TrafficModule */,
@@ -739,6 +757,14 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 46873356PM;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -787,6 +813,7 @@
 				91EE91FE1E4AB94D00B2DFD1 /* CalendarModule.plist in Resources */,
 				91EC9CD01E4C8AEA007BB413 /* StellarModule.storyboard in Resources */,
 				913D65101E5D37E700888676 /* TrafficMedia.xcassets in Resources */,
+				91A3DC3F1EB72018002766BD /* SipPhoneModule.storyboard in Resources */,
 				91053AC21E51995800ACEA8D /* LifeModule.plist in Resources */,
 				91D7A1381E97820700B79396 /* AboutModule.storyboard in Resources */,
 				91531E341E53304E005D2CAF /* GuideModule.plist in Resources */,
@@ -856,6 +883,7 @@
 				912B68C61E8007D80038D261 /* TrafficHSRDateViewController.m in Sources */,
 				91E7325B1E31276400A54B9A /* AppDelegate.m in Sources */,
 				91B72FA21E422B4B00896AF3 /* NewsContentViewController.m in Sources */,
+				91A3DC421EB72A5C002766BD /* SipPhoneBoardViewController.m in Sources */,
 				91742CA21E9E3BC00064D5A3 /* StellarViewController.m in Sources */,
 				91D7A1351E97811700B79396 /* OtherLinkTableViewController.m in Sources */,
 				912B68DD1E83A3100038D261 /* NTOUBadouziTableViewController.m in Sources */,
@@ -1035,6 +1063,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 46873356PM;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/Vialer-pjsip-iOS",
+				);
 				INFOPLIST_FILE = iNTOU/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1050,9 +1083,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 46873356PM;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/Vialer-pjsip-iOS",
+				);
 				INFOPLIST_FILE = iNTOU/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "ntoucs.NTOU-Mobile";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
