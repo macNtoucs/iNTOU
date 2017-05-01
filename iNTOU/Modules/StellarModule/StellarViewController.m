@@ -71,8 +71,27 @@ static NSArray* dayTag;
 - (IBAction)refresh:(id)sender {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         Moodle* moodle = [Moodle sharedInstance];
+        
         if([moodle checkLogin]) {
-            stellarData = [self makeDataEasyToShow:[moodle getCourse]];
+            NSDictionary* stellarDataTemp = [moodle getCourse];
+            
+            //token過氣
+            if([stellarDataTemp[@"result"] isEqualToString:@"-404"]) {
+                NSDictionary* accountResult = [moodle loginAccount:moodle.account AndPassword:moodle.password];
+                //帳號密碼錯誤或連線出問題
+                if([accountResult[@"result"] isEqualToString:@"1"]) {
+                    stellarDataTemp = [moodle getCourse];
+                }
+                else {
+                    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"錯誤" message:@"Moodle帳號密碼錯誤或連線失敗！" preferredStyle:UIAlertControllerStyleAlert];
+                    UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"確定" style:UIAlertActionStyleCancel handler:nil];
+                    [alert addAction:cancel];
+                    [self presentViewController:alert animated:YES completion:nil];
+                }
+            }
+            //整理資料
+            stellarData = [self makeDataEasyToShow:stellarDataTemp];
+            
             [[NSUserDefaults standardUserDefaults] setObject:stellarData forKey:@"StellarModule"];
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self.mainScrollView reloadData];

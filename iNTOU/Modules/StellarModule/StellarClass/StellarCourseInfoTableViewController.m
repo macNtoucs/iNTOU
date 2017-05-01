@@ -122,10 +122,19 @@ static NSDictionary* mustType;
                 break;
                 
             default:
-                if([courseInfoData[tagOrder[indexPath.row]] isKindOfClass:[NSNumber class]])
-                    ((UITextView*)[cell viewWithTag:102]).text = [courseInfoData[tagOrder[indexPath.row]] stringValue];
+                //(防閃退)是否存在物件
+                if(courseInfoData[tagOrder[indexPath.row]])
+                {
+                    //(防閃退)是否是NSNumber
+                    if([courseInfoData[tagOrder[indexPath.row]] isKindOfClass:[NSNumber class]])
+                        ((UITextView*)[cell viewWithTag:102]).text = [courseInfoData[tagOrder[indexPath.row]] stringValue];
+                    else
+                        ((UITextView*)[cell viewWithTag:102]).text = courseInfoData[tagOrder[indexPath.row]];
+                }
                 else
-                    ((UITextView*)[cell viewWithTag:102]).text = courseInfoData[tagOrder[indexPath.row]];
+                {
+                    ((UITextView*)[cell viewWithTag:102]).text = @"";
+                }
                 break;
         }
     return cell;

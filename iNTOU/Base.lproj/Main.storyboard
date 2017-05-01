@@ -12,7 +12,7 @@
         <scene sceneID="4ql-tA-T1y">
             <objects>
                 <navigationController id="vRo-kz-2rC" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="qYf-Mw-Ncb">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="qYf-Mw-Ncb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -28,7 +28,7 @@
         <scene sceneID="Qvm-qo-QpI">
             <objects>
                 <collectionViewController storyboardIdentifier="UICollectionViewCell" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nqH-G3-cfL" customClass="MainCollectionViewController" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="bIy-Q3-0T4">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="bIy-Q3-0T4">
                         <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.92146831750869751" green="0.92162638902664185" blue="0.92145842313766479" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
