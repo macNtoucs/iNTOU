@@ -112,13 +112,26 @@ static NSArray* dayTag;
     for(NSDictionary*day in data[@"list"])
     {
         NSMutableArray* dayTemp = [NSMutableArray new];
-        for(int i=0;i<[day[@"course"] count];i++)
+        
+        //排序時間
+        NSSortDescriptor *timeSort = [[NSSortDescriptor alloc] initWithKey:@"time" ascending:YES comparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+            if ([obj1 integerValue] > [obj2 integerValue]) {
+                return (NSComparisonResult)NSOrderedDescending;
+            }
+            if ([obj1 integerValue] < [obj2 integerValue]) {
+                return (NSComparisonResult)NSOrderedAscending;
+            }
+            return (NSComparisonResult)NSOrderedSame;
+        }];
+        NSArray* sortedCourse = [day[@"course"] sortedArrayUsingDescriptors:@[timeSort]];
+        
+        for(int i=0;i<[sortedCourse count];i++)
         {
             int length = 1;
-            while(i+length < [day[@"course"] count] && [day[@"course"][i][@"name"] isEqualToString: day[@"course"][i + length][@"name"] ])
+            while(i+length < [sortedCourse count] && [sortedCourse[i][@"name"] isEqualToString: sortedCourse[i + length][@"name"] ])
                     length++;
             
-            NSMutableDictionary* classTemp = [day[@"course"][i] mutableCopy];
+            NSMutableDictionary* classTemp = [sortedCourse[i] mutableCopy];
             [classTemp setObject:[NSNumber numberWithInteger:length] forKey:@"length"];
             [dayTemp addObject:[classTemp copy]];
             i += length - 1;
