@@ -61,25 +61,25 @@ static Moodle* globalPointer = nil;
 }
 
 -(NSDictionary*) loginAccount:(NSString*)account_temp AndPassword:(NSString*)password_temp {
-    //取得現在時間
-    NSDate* nowDate = [NSDate date];
-    long long int nowMilliSecond = (long long int)([nowDate timeIntervalSince1970]*1000);
-    NSString* now = [[NSString alloc] initWithFormat:@"%lld",nowMilliSecond];
-    long long int keyLLI = nowMilliSecond % 100000000;
-    NSString* DESKey = [[NSString alloc]initWithFormat:@"%lld",keyLLI];
-
-    //加密帳號密碼
-    NSString* account_encrypted = [self DESencrypt:account_temp Key:DESKey];
-    NSString* password_encrypted = [self DESencrypt:password_temp Key:DESKey];
+    NSString* account_encrypted;
+    NSString* password_encrypted;
+    NSString* DESKey_string;
     
-    /*
-     標準的Base64並不適合直接放在URL裡傳輸，因為URL編碼器會把標準Base64中的「/」和「+」字元變為形如「%XX」的形式，而這些「%」號在存入資料庫時還需要再進行轉換，因為ANSI SQL中已將「%」號用作通配符。
-            "+" 改成 "%2B";
-     */
-    account_encrypted = [account_encrypted stringByReplacingOccurrencesOfString:@"+" withString:@"%2B"];
-    password_encrypted = [password_encrypted stringByReplacingOccurrencesOfString:@"+" withString:@"%2B"];
+    do {
+        long long unsigned a = rand()%10000+10000;
+        long long unsigned b = rand()%10000+10000;
+        long long unsigned msec = ( a * b ) + 1430000000000;
+        long long unsigned DESKey = msec%100000000;
+        DESKey_string = [NSString stringWithFormat:@"%lld",DESKey];
+        
+        account_encrypted = [self DESencrypt:account_temp Key:DESKey_string];
+        password_encrypted = [self DESencrypt:password_temp Key:DESKey_string];
+        
+    }
+    while ([self checkIsStringIncludePulseSymbol:account_encrypted] || [self checkIsStringIncludePulseSymbol:password_encrypted]);
     
-    NSDictionary* dictionary = @{@"username":account_encrypted,@"password":password_encrypted,@"now":now};
+    
+    NSDictionary* dictionary = @{@"username":account_encrypted,@"password":password_encrypted,@"now":DESKey_string};
     
     NSDictionary* result = [self sendToAPIType:@"login.do" andDictionary:dictionary];
     
@@ -210,6 +210,15 @@ static Moodle* globalPointer = nil;
     [defaults removeObjectForKey:@"Moodle_account"];
     [defaults removeObjectForKey:@"Moodle_password"];
     [defaults removeObjectForKey:@"Moodle_token"];
+}
+
+-(Boolean)checkIsStringIncludePulseSymbol:(NSString*)string {
+    NSString * plusSymbol = @"+";
+    NSRange range = [string rangeOfString:plusSymbol];
+    if(range.location != NSNotFound)
+        return true;
+    else
+        return false;
 }
 
 -(NSString*)DESencrypt:(NSString*)PlainText Key:(NSString*)key {

@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.001</string>
+	<string>2.002</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -29,10 +29,10 @@
 	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string>App需要您的同意，才能訪問相機。</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>App需要您的同意，才能訪問相簿。</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>App需要您的同意，才能使用麥克風。</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>App需要您的同意，才能訪問相簿。</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

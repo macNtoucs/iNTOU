@@ -7,7 +7,6 @@
 //
 
 #import "SipPhoneBoardViewController.h"
-#import "VialerPJSIP/pjsua.h"
 
 @interface SipPhoneBoardViewController ()
 
@@ -19,28 +18,9 @@
     [super viewDidLoad];
     
     [self pjsuaStart];
+    [self addNTOUAccount];
     
-    pjsua_acc_config acc;
-    
-    pjsua_acc_config_default(&acc);
-    acc.id = pj_str("<sip:601@140.121.99.170>");
-    acc.reg_uri = pj_str("sip:140.121.99.170");
-    acc.cred_count = 1;
-    acc.cred_info[0].realm = pj_str("*");
-    acc.cred_info[0].scheme = pj_str("digest");
-    acc.cred_info[0].username = pj_str("602");
-    acc.cred_info[0].data_type = 0;
-    acc.cred_info[0].data = pj_str("12345678");
-    
-    pjsua_acc_id acc_id;
-    
-    pjsua_acc_add(&acc, PJ_TRUE, &acc_id);
-    
-    pj_str_t NtouUri = pj_str("sip:16877@140.121.99.170");
-    pjsua_call_id current_call;
-    
-    pjsua_call_make_call(acc_id,&NtouUri,0,0,0,&current_call);
-    
+    [self callToNtou];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,6 +28,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - pjsip
 
 - (void)pjsuaStart{
     pj_status_t status;
@@ -82,7 +63,51 @@
     
 }
 
-static void on_call_media_state(pjsua_call_id call_id) // a special c-function called by pjsua, go to pjsip Documentations see more function like this
+-(void)sendDtmf:(NSString*)dtmf toCurrent_call:(int)current_call {
+    NSRange range;
+    range.location = 0;
+    range.length = 1;
+    
+    char temp[2];
+    while(range.location < dtmf.length){
+        strcpy(temp,[[dtmf substringWithRange:range]UTF8String]);
+        pj_str_t diag = pj_str(temp);
+        pjsua_call_dial_dtmf(current_call,&diag);
+        
+        range.location ++;
+    }
+}
+
+-(void)addNTOUAccount {
+    pjsua_acc_config acc;
+    
+    pjsua_acc_config_default(&acc);
+    acc.id = pj_str("<sip:601@140.121.99.170>");
+    acc.reg_uri = pj_str("sip:140.121.99.170");
+    acc.cred_count = 1;
+    acc.cred_info[0].realm = pj_str("*");
+    acc.cred_info[0].scheme = pj_str("digest");
+    acc.cred_info[0].username = pj_str("602");
+    acc.cred_info[0].data_type = 0;
+    acc.cred_info[0].data = pj_str("12345678");
+    
+    pjsua_acc_add(&acc, PJ_TRUE, &m_acc_id);
+}
+
+-(IBAction)callToNtou {
+    pj_str_t NtouUri = pj_str("sip:16877@140.121.99.170"); //海大server
+    
+    pjsua_call_make_call(m_acc_id,&NtouUri,0,0,0,&m_current_call);
+    
+    pjsua_call_info ci;
+    pjsua_call_get_info(m_current_call, &ci);
+}
+
+-(void)hangup {
+    
+}
+
+void on_call_media_state(pjsua_call_id call_id) // a special c-function called by pjsua, go to pjsip Documentations see more function like this
 {
     pjsua_call_info ci;
     pjsua_call_get_info(call_id, &ci);
@@ -93,7 +118,7 @@ static void on_call_media_state(pjsua_call_id call_id) // a special c-function c
     }
 }
 
-static void on_stream_destroyed(pjsua_call_id call_id, pjmedia_stream *strm, unsigned stream_idx)
+void on_stream_destroyed(pjsua_call_id call_id, pjmedia_stream *strm, unsigned stream_idx)
 {
     
 }

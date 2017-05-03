@@ -238,7 +238,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="102" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="tag102" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nWx-sI-Q2P">
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="102" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="tag102" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWx-sI-Q2P">
                                             <rect key="frame" x="94" y="8" width="312" height="76"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -286,15 +286,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StellarMoodleCells" textLabel="x3b-Ln-TrB" style="IBUITableViewCellStyleDefault" id="Loa-1s-SFl">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="StellarMoodleCells" textLabel="x3b-Ln-TrB" style="IBUITableViewCellStyleDefault" id="Loa-1s-SFl">
                                 <rect key="frame" x="0.0" y="55.333333333333336" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Loa-1s-SFl" id="5BM-5H-EVY">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="381" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x3b-Ln-TrB">
-                                            <rect key="frame" x="15" y="0.0" width="384" height="43.666666666666664"/>
+                                            <rect key="frame" x="15" y="0.0" width="364" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -402,7 +402,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="103" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="tag103" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qld-e8-f57">
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="103" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="tag103" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qld-e8-f57">
                                             <rect key="frame" x="8" y="92" width="398" height="33"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>

@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VialerPJSIP/pjsua.h"
 
-@interface SipPhoneBoardViewController : UIViewController
+@interface SipPhoneBoardViewController : UIViewController {
+    pjsua_acc_id m_acc_id;
+    pjsua_call_id m_current_call;
+}
 
 @end

@@ -85,10 +85,14 @@ static NSString* reuseIdentifier = @"EmergencyCells";
     
     ((UILabel*)[cell viewWithTag:101]).text = cellData[@"name"];
     
-    if([cellData[@"email"]isEqualToString:@""])
+    if([cellData[@"email"]isEqualToString:@""]) {
+        ((UIImageView*)[cell viewWithTag:103]).image = [UIImage imageNamed:@"action_phone"];
         ((UILabel*)[cell viewWithTag:102]).text = cellData[@"phone"];
-    else
+    }
+    else {
+        ((UIImageView*)[cell viewWithTag:103]).image = [UIImage imageNamed:@"action_email"];
         ((UILabel*)[cell viewWithTag:102]).text = cellData[@"email"];
+    }
     
     return cell;
 }

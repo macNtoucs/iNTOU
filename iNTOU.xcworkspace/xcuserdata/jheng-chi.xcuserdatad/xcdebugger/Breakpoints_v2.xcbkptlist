@@ -120,7 +120,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iNTOU/Modules/TrafficModule/BusTraffic/TrafficBusStopTableViewController.m"
-            timestampString = "511183611.012353"
+            timestampString = "515410940.952354"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "80"
@@ -452,11 +452,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iNTOU/Modules/SipPhoneModule/SipPhoneBoardViewController.m"
-            timestampString = "515323227.900078"
+            timestampString = "515494835.153884"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "-pjsuaStart"
             landmarkType = "7">
          </BreakpointContent>
