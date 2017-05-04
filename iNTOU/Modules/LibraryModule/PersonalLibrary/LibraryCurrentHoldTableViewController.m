@@ -8,7 +8,9 @@
 
 #import "LibraryCurrentHoldTableViewController.h"
 
-@interface LibraryCurrentHoldTableViewController ()
+@interface LibraryCurrentHoldTableViewController () {
+    UINavigationController* loginNavi;
+}
 
 @end
 
@@ -34,9 +36,9 @@
 
 -(void)downloadDataFromServer {
     [refresh beginRefreshing];
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        if([library checkLogin]) {
-            
+    
+    if([library checkLogin]) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             libraryCurrentHoldData = [library getCurrentHolds];
             
             if(!libraryCurrentHoldData) {
@@ -50,15 +52,30 @@
                 [self.tableView reloadData];
                 [refresh endRefreshing];
             });
-            
-        }
-        else {
-            UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"錯誤" message:@"沒有登入的帳號！" preferredStyle:UIAlertControllerStyleAlert];
-            UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"確定" style:UIAlertActionStyleCancel handler:nil];
-            [alert addAction:cancel];
-            [self presentViewController:alert animated:YES completion:nil];
-        }
-    });
+        });
+    }
+    else {
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"錯誤" message:@"沒有登入的帳號！" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"確定" style:UIAlertActionStyleCancel handler:nil];
+        UIAlertAction* goToLogin = [UIAlertAction actionWithTitle:@"前往登入" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            UIStoryboard* settingModule = [UIStoryboard storyboardWithName:@"SettingModule" bundle:nil];
+            UIViewController* loginViewController = [settingModule instantiateViewControllerWithIdentifier:@"SettingModuleLibrary"];
+            loginViewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Done"
+                                                                                                    style:UIBarButtonItemStylePlain target:self action:@selector(removeLogin)];
+            loginNavi = [[UINavigationController alloc] initWithRootViewController:loginViewController];
+            [self presentViewController:loginNavi animated:YES completion:nil];
+        }];
+        [alert addAction:goToLogin];
+        [alert addAction:cancel];
+        [self presentViewController:alert animated:YES completion:nil];
+    }
+    
+}
+
+-(void)removeLogin {
+    [loginNavi dismissViewControllerAnimated:YES completion:^{
+        [self downloadDataFromServer];
+    }];
 }
 
 #pragma mark - Table view data source

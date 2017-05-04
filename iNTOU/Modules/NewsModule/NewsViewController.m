@@ -54,7 +54,7 @@ static NSArray* className;
         UIButton* b = [UIButton buttonWithType:UIButtonTypeSystem];
         [b setTintColor:[UIColor whiteColor]];
         [b setTitle:className[i] forState:UIControlStateNormal];
-        [b setFrame:CGRectMake(0 + i*80, 0, 80, 40)];
+        [b setFrame:CGRectMake(0 + i*80, 0, 80, 44)];
         [b setTag:i];
         [b addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchDown];
         [buttonBar addSubview: b];
@@ -136,6 +136,47 @@ static NSArray* className;
     [scanner setScanLocation:1]; // bypass '#' character
     [scanner scanHexInt:&rgbValue];
     return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
+}
+
+-(IBAction)leftScroll:(id)sender {
+    CGFloat x = self.scrollBar.contentOffset.x;
+    if(x - 80 < 0)
+        x = 0;
+    else
+        x = x - 80;
+    [self.scrollBar setContentOffset:CGPointMake(x, self.scrollBar.contentOffset.y) animated:YES];
+    [self checkScrollButton:x];
+}
+
+-(IBAction)rightScroll:(id)sender {
+    CGFloat x = self.scrollBar.contentOffset.x;
+    if(x + 80 > [className count] * 80 - self.scrollBar.frame.size.width)
+        x = [className count] * 80 - self.scrollBar.frame.size.width;
+    else
+        x = x + 80;
+    [self.scrollBar setContentOffset:CGPointMake(x, self.scrollBar.contentOffset.y) animated:YES];
+    [self checkScrollButton:x];
+}
+
+-(void)checkScrollButton:(CGFloat)x{
+
+    if(x == 0)
+       [self.leftScrollButton setHidden:YES];
+    else
+        [self.leftScrollButton setHidden:NO];
+    
+    if(x == [className count] * 80 - self.scrollBar.frame.size.width)
+       [self.rightScrollButton setHidden:YES];
+    else
+        [self.rightScrollButton setHidden:NO];
+    
+}
+
+#pragma mark - sroll view
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    if(scrollView == self.scrollBar)
+        [self checkScrollButton:self.scrollBar.contentOffset.x];
 }
 
 #pragma mark - TableView Data Source

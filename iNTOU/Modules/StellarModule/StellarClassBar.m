@@ -48,7 +48,7 @@ static NSArray* classEndTime;
                            cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ClassCells" forIndexPath:indexPath];
     
-    ((UILabel*)[cell viewWithTag:101]).text = [[NSString alloc] initWithFormat:@"%ld",(long)indexPath.row+1];
+    //((UILabel*)[cell viewWithTag:101]).text = [[NSString alloc] initWithFormat:@"%ld",(long)indexPath.row+1];
     ((UILabel*)[cell viewWithTag:102]).text = classStartTime[indexPath.row];
     ((UILabel*)[cell viewWithTag:103]).text = classEndTime[indexPath.row];
     return cell;

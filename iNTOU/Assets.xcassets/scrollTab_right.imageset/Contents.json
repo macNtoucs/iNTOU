@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "desktop logo-120x120.png",
+      "filename" : "scrolltabs-rightarrow.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "scrolltabs-rightarrow@2x.png",
       "scale" : "2x"
     },
     {

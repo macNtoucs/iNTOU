@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="g7J-WG-Vt1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="g7J-WG-Vt1">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,27 +21,6 @@
                         <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNN-rZ-61X">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJM-qg-kI9">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
-                                        <color key="backgroundColor" red="0.0" green="0.53725490196078429" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="414" id="CxN-EO-zIf"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.53725490200000003" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="hJM-qg-kI9" secondAttribute="trailing" id="5oP-hG-vVK"/>
-                                    <constraint firstItem="hJM-qg-kI9" firstAttribute="leading" secondItem="mNN-rZ-61X" secondAttribute="leading" id="647-nh-OZ7"/>
-                                    <constraint firstAttribute="bottom" secondItem="hJM-qg-kI9" secondAttribute="bottom" id="JA8-2O-Hkp"/>
-                                    <constraint firstAttribute="height" constant="40" id="Jrr-aw-n4B"/>
-                                    <constraint firstItem="hJM-qg-kI9" firstAttribute="centerY" secondItem="mNN-rZ-61X" secondAttribute="centerY" id="dCT-fa-UBo"/>
-                                    <constraint firstItem="hJM-qg-kI9" firstAttribute="top" secondItem="mNN-rZ-61X" secondAttribute="top" id="veG-zm-F1A"/>
-                                </constraints>
-                            </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvh-kJ-qol" userLabel="buttonbar">
                                 <rect key="frame" x="0.0" y="651" width="414" height="21"/>
                                 <subviews>
@@ -82,7 +61,7 @@
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="標題101" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFR-N7-7Pw">
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="標題101" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFR-N7-7Pw">
                                                     <rect key="frame" x="8" y="51" width="365" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -120,27 +99,93 @@
                                     <outlet property="delegate" destination="g7J-WG-Vt1" id="Ptw-0u-ivu"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Scd-Eq-byp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNN-rZ-61X">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJM-qg-kI9">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                                <color key="backgroundColor" red="0.0" green="0.53725490196078429" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="Gou-Dw-yS5"/>
+                                                    <constraint firstAttribute="width" constant="414" id="oJJ-Jz-EqM"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.53725490200000003" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="hJM-qg-kI9" secondAttribute="trailing" id="5oP-hG-vVK"/>
+                                            <constraint firstItem="hJM-qg-kI9" firstAttribute="leading" secondItem="mNN-rZ-61X" secondAttribute="leading" id="647-nh-OZ7"/>
+                                            <constraint firstAttribute="bottom" secondItem="hJM-qg-kI9" secondAttribute="bottom" id="JA8-2O-Hkp"/>
+                                            <constraint firstItem="hJM-qg-kI9" firstAttribute="centerY" secondItem="mNN-rZ-61X" secondAttribute="centerY" id="dCT-fa-UBo"/>
+                                            <constraint firstItem="hJM-qg-kI9" firstAttribute="top" secondItem="mNN-rZ-61X" secondAttribute="top" id="veG-zm-F1A"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="delegate" destination="g7J-WG-Vt1" id="coC-sR-BrF"/>
+                                        </connections>
+                                    </scrollView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efK-X3-MGC">
+                                        <rect key="frame" x="382" y="0.0" width="32" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="KxS-jO-QOX"/>
+                                        </constraints>
+                                        <state key="normal" image="scrollTab_right"/>
+                                        <connections>
+                                            <action selector="rightScroll:" destination="g7J-WG-Vt1" eventType="touchUpInside" id="YtB-QI-tlC"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2u-bG-QTc">
+                                        <rect key="frame" x="0.0" y="0.0" width="32" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="SHu-dK-uVs"/>
+                                        </constraints>
+                                        <state key="normal" image="scrollTab_left"/>
+                                        <connections>
+                                            <action selector="leftScroll:" destination="g7J-WG-Vt1" eventType="touchUpInside" id="WQr-Fz-jbg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.53725490200000003" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="mNN-rZ-61X" secondAttribute="trailing" id="0hB-UW-0uX"/>
+                                    <constraint firstItem="efK-X3-MGC" firstAttribute="top" secondItem="Scd-Eq-byp" secondAttribute="top" id="BfV-wu-Eln"/>
+                                    <constraint firstAttribute="height" constant="44" id="DRZ-m5-VBp"/>
+                                    <constraint firstAttribute="bottom" secondItem="L2u-bG-QTc" secondAttribute="bottom" id="EAc-Nc-0Kb"/>
+                                    <constraint firstItem="mNN-rZ-61X" firstAttribute="leading" secondItem="Scd-Eq-byp" secondAttribute="leading" id="Ee6-LH-Mz4"/>
+                                    <constraint firstAttribute="bottom" secondItem="efK-X3-MGC" secondAttribute="bottom" id="HLV-cy-Vre"/>
+                                    <constraint firstItem="L2u-bG-QTc" firstAttribute="top" secondItem="Scd-Eq-byp" secondAttribute="top" id="LbD-Kg-x59"/>
+                                    <constraint firstAttribute="trailing" secondItem="efK-X3-MGC" secondAttribute="trailing" id="RSG-VD-hOh"/>
+                                    <constraint firstAttribute="bottom" secondItem="mNN-rZ-61X" secondAttribute="bottom" id="ejU-rB-ALd"/>
+                                    <constraint firstItem="L2u-bG-QTc" firstAttribute="leading" secondItem="Scd-Eq-byp" secondAttribute="leading" id="lcG-2h-7M8"/>
+                                    <constraint firstItem="mNN-rZ-61X" firstAttribute="top" secondItem="Scd-Eq-byp" secondAttribute="top" id="z9C-BR-2Cj"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="rvh-kJ-qol" firstAttribute="width" secondItem="E66-ni-7R9" secondAttribute="width" id="2g3-0r-6ag"/>
                             <constraint firstItem="rvh-kJ-qol" firstAttribute="centerX" secondItem="E66-ni-7R9" secondAttribute="centerX" id="38F-Ut-QST"/>
                             <constraint firstItem="kGJ-9D-g8u" firstAttribute="top" secondItem="rvh-kJ-qol" secondAttribute="bottom" id="4TR-u9-yzq"/>
-                            <constraint firstItem="mNN-rZ-61X" firstAttribute="centerX" secondItem="E66-ni-7R9" secondAttribute="centerX" id="B12-2z-XZ3"/>
                             <constraint firstItem="rvh-kJ-qol" firstAttribute="top" secondItem="TKM-mj-sWS" secondAttribute="bottom" id="IDw-Zk-FOJ"/>
                             <constraint firstItem="TKM-mj-sWS" firstAttribute="width" secondItem="E66-ni-7R9" secondAttribute="width" id="N19-p4-P60"/>
-                            <constraint firstItem="mNN-rZ-61X" firstAttribute="top" secondItem="353-jQ-BVL" secondAttribute="bottom" id="YPF-wh-ZB6"/>
+                            <constraint firstItem="Scd-Eq-byp" firstAttribute="leading" secondItem="E66-ni-7R9" secondAttribute="leading" id="dtK-hT-YC9"/>
+                            <constraint firstAttribute="trailing" secondItem="Scd-Eq-byp" secondAttribute="trailing" id="ebi-GT-gTy"/>
                             <constraint firstItem="TKM-mj-sWS" firstAttribute="centerX" secondItem="E66-ni-7R9" secondAttribute="centerX" id="gE9-sM-GB2"/>
                             <constraint firstItem="TKM-mj-sWS" firstAttribute="top" secondItem="353-jQ-BVL" secondAttribute="bottom" constant="40" id="mY9-pp-e4P"/>
-                            <constraint firstItem="mNN-rZ-61X" firstAttribute="width" secondItem="E66-ni-7R9" secondAttribute="width" id="tv1-Va-hRd"/>
+                            <constraint firstItem="Scd-Eq-byp" firstAttribute="top" secondItem="353-jQ-BVL" secondAttribute="bottom" id="vP3-Iq-h9c"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="buttonBar" destination="hJM-qg-kI9" id="s1d-Ry-cCn"/>
-                        <outlet property="buttonBarWidth" destination="CxN-EO-zIf" id="4wD-Ma-wij"/>
+                        <outlet property="buttonBarWidth" destination="oJJ-Jz-EqM" id="Wds-wa-C6x"/>
+                        <outlet property="leftScrollButton" destination="L2u-bG-QTc" id="LfB-re-cM7"/>
                         <outlet property="newsTableView" destination="TKM-mj-sWS" id="WUp-LK-xQm"/>
+                        <outlet property="rightScrollButton" destination="efK-X3-MGC" id="NOP-4f-sT2"/>
+                        <outlet property="scrollBar" destination="mNN-rZ-61X" id="Jl4-wB-iCU"/>
                         <outlet property="statusLabel" destination="hvy-8K-JOy" id="2rp-J5-GYo"/>
                     </connections>
                 </viewController>
@@ -187,4 +232,8 @@
             <point key="canvasLocation" x="456.52173913043481" y="117.39130434782609"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="scrollTab_left" width="32" height="44"/>
+        <image name="scrollTab_right" width="32" height="44"/>
+    </resources>
 </document>

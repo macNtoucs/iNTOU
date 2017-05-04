@@ -20,6 +20,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *statusLabel;
 @property (weak, nonatomic) IBOutlet UIView *buttonBar;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *buttonBarWidth;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollBar;
+@property (weak, nonatomic) IBOutlet UIButton *rightScrollButton;
+@property (weak, nonatomic) IBOutlet UIButton *leftScrollButton;
 
 @property (strong,nonatomic)NSArray* buttons;
 @property (nonatomic)int selected;

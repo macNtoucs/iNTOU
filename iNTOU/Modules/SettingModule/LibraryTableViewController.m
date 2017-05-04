@@ -22,8 +22,6 @@
     library = [Library sharedInstance];
     
     if(library.account) {
-        [account setEnabled:NO];
-        [password setEnabled:NO];
         [button setTitle:@"登出" forState:UIControlStateNormal];
         [button addTarget:self action:@selector(logout) forControlEvents:UIControlEventTouchDown];
     }
@@ -69,11 +67,15 @@
                     cell = [tableView dequeueReusableCellWithIdentifier:@"LibraryAccountCells"];
                     account = [cell viewWithTag:101];
                     account.text = library.account;
+                    if(library.account)
+                        [account setEnabled:NO];
                     break;
                 case 1:
                     cell = [tableView dequeueReusableCellWithIdentifier:@"LibraryPasswordCells"];
                     password = [cell viewWithTag:102];
                     password.text = library.password;
+                    if(library.account)
+                        [password setEnabled:NO];
                     break;
                 default:
                     return nil;

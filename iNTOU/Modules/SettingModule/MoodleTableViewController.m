@@ -22,8 +22,6 @@
     moodle = [Moodle sharedInstance];
     
     if(moodle.account) {
-        [account setEnabled:NO];
-        [password setEnabled:NO];
         [button setTitle:@"登出" forState:UIControlStateNormal];
         [button addTarget:self action:@selector(logout) forControlEvents:UIControlEventTouchDown];
     }
@@ -69,11 +67,15 @@
                     cell = [tableView dequeueReusableCellWithIdentifier:@"MoodleAccountCells"];
                     account = [cell viewWithTag:101];
                     account.text = moodle.account;
+                    if(moodle.account)
+                        [account setEnabled:NO];
                     break;
                 case 1:
                     cell = [tableView dequeueReusableCellWithIdentifier:@"MoodlePasswordCells"];
                     password = [cell viewWithTag:102];
                     password.text = moodle.password;
+                    if(moodle.account)
+                        [password setEnabled:NO];
                     break;
                 default:
                     return nil;

@@ -40,6 +40,9 @@
                                 <rect key="frame" x="251" y="181" width="124" height="84.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="掛斷"/>
+                                <connections>
+                                    <action selector="hangup" destination="Zep-BD-nAv" eventType="touchUpInside" id="2V1-Du-G9L"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xT4-Hf-zdx">
                                 <rect key="frame" x="0.0" y="273" width="124" height="84"/>

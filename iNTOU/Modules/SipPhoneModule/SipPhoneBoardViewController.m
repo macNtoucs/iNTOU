@@ -14,18 +14,39 @@
 
 @implementation SipPhoneBoardViewController
 
+//為了在c function內能call objc function 需要一個類似於self的指標
+id thisObj;
+
+static char* diagBoard;
+
+-(instancetype)initWithCoder:(NSCoder *)c {
+    self = [super initWithCoder:c];
+    if(self) {
+        if(!diagBoard)
+            diagBoard = "123456789*0#";
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    thisObj = self;
+    m_current_call = PJSUA_INVALID_ID;
+    
+    for(int i=0;i<12;i++)
+        [((UIButton*)[self.view viewWithTag:101 + i]) addTarget:self action:@selector(pressedBoardButton:) forControlEvents:UIControlEventTouchUpInside];
     
     [self pjsuaStart];
     [self addNTOUAccount];
-    
-    [self callToNtou];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)pressedBoardButton:(UIButton*)sender {
+    [self sendDtmf:diagBoard[sender.tag - 101] toCurrent_call:m_current_call];
 }
 
 #pragma mark - pjsip
@@ -63,18 +84,13 @@
     
 }
 
--(void)sendDtmf:(NSString*)dtmf toCurrent_call:(int)current_call {
-    NSRange range;
-    range.location = 0;
-    range.length = 1;
-    
-    char temp[2];
-    while(range.location < dtmf.length){
-        strcpy(temp,[[dtmf substringWithRange:range]UTF8String]);
-        pj_str_t diag = pj_str(temp);
+-(void)sendDtmf:(char)dtmf toCurrent_call:(int)current_call {
+    if(m_current_call != PJSUA_INVALID_ID) {
+        char dtmf_string[2];
+        dtmf_string[0] = dtmf;
+        dtmf_string[1] = '\0';
+        pj_str_t diag = pj_str(dtmf_string);
         pjsua_call_dial_dtmf(current_call,&diag);
-        
-        range.location ++;
     }
 }
 
@@ -95,17 +111,22 @@
 }
 
 -(IBAction)callToNtou {
-    pj_str_t NtouUri = pj_str("sip:16877@140.121.99.170"); //海大server
-    
-    pjsua_call_make_call(m_acc_id,&NtouUri,0,0,0,&m_current_call);
-    
-    pjsua_call_info ci;
-    pjsua_call_get_info(m_current_call, &ci);
+    if(m_current_call == PJSUA_INVALID_ID) {
+        pj_str_t NtouUri = pj_str("sip:16877@140.121.99.170"); //海大server
+        
+        pjsua_call_make_call(m_acc_id,&NtouUri,0,0,0,&m_current_call);
+        
+        pjsua_call_info ci;
+        pjsua_call_get_info(m_current_call, &ci);
+    }
 }
 
--(void)hangup {
-    
+-(IBAction)hangup {
+    pjsua_call_hangup_all();
+    m_current_call = PJSUA_INVALID_ID;
 }
+
+
 
 void on_call_media_state(pjsua_call_id call_id) // a special c-function called by pjsua, go to pjsip Documentations see more function like this
 {
@@ -120,7 +141,7 @@ void on_call_media_state(pjsua_call_id call_id) // a special c-function called b
 
 void on_stream_destroyed(pjsua_call_id call_id, pjmedia_stream *strm, unsigned stream_idx)
 {
-    
+    [thisObj hangup];
 }
 
 @end
