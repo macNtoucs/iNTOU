@@ -78,8 +78,27 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
-    return [routeData[@"routeInfo"] count];
+    
+    //有資料的狀況
+    if([routeData[@"routeInfo"] count] != 0) {
+        self.tableView.backgroundView = nil;
+        self.tableView.separatorStyle = UITableViewStylePlain;
+        return [routeData[@"routeInfo"] count];
+    }
+    
+    //網路不穩的狀況
+    UILabel* messageLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.height, self.view.bounds.size.height)];
+    messageLabel.text = @"連線中！";
+    messageLabel.numberOfLines = 0;
+    messageLabel.textAlignment = NSTextAlignmentCenter;
+    self.tableView.backgroundView = messageLabel;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    //這個方向沒有資料
+    goBack = !goBack;
+    [self downloadDataFromServer];
+    
+    return 0;
 }
 
 

@@ -60,10 +60,10 @@
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     if([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortrait){
         if(view_width > view_height){
-            return CGSizeMake(view_height/2, view_height/2);
+            return CGSizeMake(view_height/2 - 10, view_height/2 - 10);
         }
         else{
-            return CGSizeMake(view_width/2,view_width/2);
+            return CGSizeMake(view_width/2 - 10,view_width/2 - 10);
         }
     }
     else {
@@ -74,7 +74,7 @@
 - (CGFloat)collectionView:(UICollectionView *)collectionView
                    layout:(UICollectionViewLayout *)collectionViewLayout
 minimumLineSpacingForSectionAtIndex:(NSInteger)section {
-    return 0;
+    return 10;
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView
