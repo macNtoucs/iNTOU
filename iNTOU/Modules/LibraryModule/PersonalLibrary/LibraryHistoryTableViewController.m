@@ -98,6 +98,16 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
+    if(!libraryHistoryData) {
+        UILabel* messageLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.height, self.view.bounds.size.height)];
+        messageLabel.text = @"連線中！";
+        messageLabel.numberOfLines = 0;
+        messageLabel.textAlignment = NSTextAlignmentCenter;
+        self.tableView.backgroundView = messageLabel;
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        return 0;
+    }
+    
     if([libraryHistoryData count] != 0) {
         self.tableView.backgroundView = nil;
         self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
@@ -110,8 +120,8 @@
         messageLabel.textAlignment = NSTextAlignmentCenter;
         self.tableView.backgroundView = messageLabel;
         self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        return 0;
     }
-    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

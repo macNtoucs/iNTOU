@@ -645,11 +645,11 @@
         <scene sceneID="YFt-cO-XcF">
             <objects>
                 <tableViewController title="公車" id="ZSP-WL-BjW" customClass="TrafficBusTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="vRi-fR-8Qb">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="77" sectionHeaderHeight="28" sectionFooterHeight="28" id="vRi-fR-8Qb">
                         <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="線上搜尋 - 輸入站牌或路線" id="Mta-vI-QeT">
+                        <searchBar key="tableHeaderView" contentMode="redraw" text="" placeholder="線上搜尋 - 輸入站牌名稱或路線名稱" id="Mta-vI-QeT">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
@@ -658,31 +658,46 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="TrafficBusCells" textLabel="SgM-LV-API" detailTextLabel="alW-sF-Jvh" style="IBUITableViewCellStyleSubtitle" id="gEu-2Q-vOt">
-                                <rect key="frame" x="0.0" y="72" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="TrafficBusCells" rowHeight="77" id="gEu-2Q-vOt">
+                                <rect key="frame" x="0.0" y="72" width="414" height="77"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gEu-2Q-vOt" id="MPt-OO-mtt">
-                                    <rect key="frame" x="0.0" y="0.0" width="381" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="381" height="76.666666666666671"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SgM-LV-API">
-                                            <rect key="frame" x="15" y="5" width="33.333333333333336" height="20.333333333333332"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="tag101" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5p-YD-Uig">
+                                            <rect key="frame" x="8" y="8" width="365" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="alW-sF-Jvh">
-                                            <rect key="frame" x="15" y="25.333333333333332" width="32.666666666666664" height="14.333333333333334"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tag102" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Me-p0-6Kl">
+                                            <rect key="frame" x="8" y="29" width="365" height="39"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="7Me-p0-6Kl" firstAttribute="top" secondItem="b5p-YD-Uig" secondAttribute="bottom" id="AO4-lx-c6E"/>
+                                        <constraint firstItem="b5p-YD-Uig" firstAttribute="leading" secondItem="MPt-OO-mtt" secondAttribute="leadingMargin" id="Hod-LE-4UW"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="7Me-p0-6Kl" secondAttribute="bottom" id="LfA-kr-RZC"/>
+                                        <constraint firstItem="b5p-YD-Uig" firstAttribute="top" secondItem="MPt-OO-mtt" secondAttribute="topMargin" id="N0t-oe-lor"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="b5p-YD-Uig" secondAttribute="trailing" id="XQQ-t2-Hvj"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="7Me-p0-6Kl" secondAttribute="trailing" id="beH-0Z-VxF"/>
+                                        <constraint firstItem="7Me-p0-6Kl" firstAttribute="leading" secondItem="MPt-OO-mtt" secondAttribute="leadingMargin" id="kwf-Oa-a2p"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rowHeight">
+                                <integer key="value" value="-1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="estimatedRowHeight">
+                                <integer key="value" value="44"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                         <connections>
                             <outlet property="dataSource" destination="ZSP-WL-BjW" id="TUb-aI-HZP"/>
                             <outlet property="delegate" destination="ZSP-WL-BjW" id="CVE-nb-mkh"/>
@@ -708,7 +723,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u7B-Qa-ptE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1214" y="-854"/>
+            <point key="canvasLocation" x="1213.0434782608697" y="-854.34782608695662"/>
         </scene>
         <!--站牌-->
         <scene sceneID="EAV-xv-V3o">
@@ -835,7 +850,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Gz8-sZ-ayh">
-                        <nil key="title"/>
                         <view key="titleView" contentMode="scaleToFill" id="OTd-UQ-KFV">
                             <rect key="frame" x="124.5" y="5.5" width="165" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

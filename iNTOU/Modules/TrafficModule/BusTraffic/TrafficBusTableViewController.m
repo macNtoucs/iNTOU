@@ -83,12 +83,12 @@ static NSArray* cityName;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TrafficBusCells" forIndexPath:indexPath];
     
-    cell.textLabel.text = searchResult[city[indexPath.section]][indexPath.row][@"nameZh"];
+    ((UILabel*)[cell viewWithTag:101]).text = searchResult[city[indexPath.section]][indexPath.row][@"nameZh"];
     
     if(searchResult[city[indexPath.section]][indexPath.row][@"Id"])
-        cell.detailTextLabel.text = [[NSString alloc] initWithFormat:@"%@->%@",searchResult[city[indexPath.section]][indexPath.row][@"departureZh"],searchResult[city[indexPath.section]][indexPath.row][@"destinationZh"]];
+        ((UILabel*)[cell viewWithTag:102]).text = [[NSString alloc] initWithFormat:@"%@->%@",searchResult[city[indexPath.section]][indexPath.row][@"departureZh"],searchResult[city[indexPath.section]][indexPath.row][@"destinationZh"]];
     else
-        cell.detailTextLabel.text = @"站牌";
+        ((UILabel*)[cell viewWithTag:102]).text = @"站牌";
     
     return cell;
 }

@@ -9,7 +9,6 @@
 #import "StellarFileViewController.h"
 #import "StellarClassViewController.h"
 #import "Moodle.h"
-#import <SafariServices/SafariServices.h>
 
 @interface StellarFileViewController ()
 
@@ -126,6 +125,16 @@ static NSArray* types;
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     
+    if(!cellData) {
+        UILabel* messageLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.height, self.view.bounds.size.height)];
+        messageLabel.text = @"連線中！";
+        messageLabel.numberOfLines = 0;
+        messageLabel.textAlignment = NSTextAlignmentCenter;
+        fileTableView.backgroundView = messageLabel;
+        fileTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        return 0;
+    }
+    
     if([cellData count] != 0) {
         fileTableView.backgroundView = nil;
         fileTableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
@@ -138,8 +147,8 @@ static NSArray* types;
         messageLabel.textAlignment = NSTextAlignmentCenter;
         fileTableView.backgroundView = messageLabel;
         fileTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        return 0;
     }
-    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -159,11 +168,25 @@ static NSArray* types;
 {
     if([cellData count] != 0) {
         NSString* urlString = [[NSString alloc]initWithFormat:@"http://moodle.ntou.edu.tw/file.php/%@/%@/%@",moodleid,types[selected],cellData[indexPath.row]];
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"動作" message:urlString preferredStyle:UIAlertControllerStyleActionSheet];
+        
         //ios 不支援網址中有中文，用下行重新encoding
         urlString = [urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
         
-        SFSafariViewController* safari = [[SFSafariViewController alloc]initWithURL:[NSURL URLWithString:urlString]];
-        [self presentViewController:safari animated:YES completion:nil];
+        UIAlertAction* goToSafari = [UIAlertAction actionWithTitle:@"使用Safari開啟" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action){
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];
+        }];
+        UIAlertAction* copyAction = [UIAlertAction actionWithTitle:@"複製網址" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action){
+            UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+            pasteboard.string = urlString;
+        }];
+
+        UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+        [alert addAction: goToSafari];
+        [alert addAction: copyAction];
+        [alert addAction: cancel];
+        
+        [self presentViewController:alert animated:YES completion:nil];
     }
 }
 
