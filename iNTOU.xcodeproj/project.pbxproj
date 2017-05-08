@@ -440,6 +440,8 @@
 				91E09BAA1E5A6EFE001A1A02 /* PersonalLibrary */,
 				91477FA11E55C06E00EC94C1 /* AboutLibrary */,
 				91477F9D1E55A98E00EC94C1 /* LibraryModule.storyboard */,
+				91E317EA1E5706BB005E24EB /* LibraryNewsTableViewController.h */,
+				91E317EB1E5706BB005E24EB /* LibraryNewsTableViewController.m */,
 				912B68C81E8292D70038D261 /* LibraryMedia.xcassets */,
 			);
 			name = LibraryModule;
@@ -454,8 +456,6 @@
 				91477FA61E55C64C00EC94C1 /* LibraryConInfoTableViewController.m */,
 				91477FA81E55F5D500EC94C1 /* LibraryOpenTimeTableViewController.h */,
 				91477FA91E55F5D500EC94C1 /* LibraryOpenTimeTableViewController.m */,
-				91E317EA1E5706BB005E24EB /* LibraryNewsTableViewController.h */,
-				91E317EB1E5706BB005E24EB /* LibraryNewsTableViewController.m */,
 			);
 			name = AboutLibrary;
 			sourceTree = "<group>";

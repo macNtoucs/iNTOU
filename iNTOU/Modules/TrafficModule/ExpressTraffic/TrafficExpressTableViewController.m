@@ -94,6 +94,7 @@
         
         NSURLSession* session = [NSURLSession sharedSession];
         NSURLSessionDataTask* task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+            searchResult = nil;
             if(data)
             {
                 NSDictionary* temp = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
@@ -105,6 +106,22 @@
                     }
                 });
                 
+            }
+            else
+            {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self.tableView reloadData];
+                    if(!messageTag)
+                    {
+                        messageTag = true;
+                        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"錯誤" message:@"無法取得連線！" preferredStyle:UIAlertControllerStyleAlert];
+                        UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"確定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action){
+                            messageTag = false;
+                        }];
+                        [alert addAction:cancel];
+                        [self presentViewController:alert animated:YES completion:nil];
+                    }
+                });
             }
         }];
         [task resume];

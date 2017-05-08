@@ -169,7 +169,22 @@ sectionForSectionIndexTitle:(NSString *)title
                             [self.tableView reloadData];
                         }
                     });
-                    
+                }
+                else
+                {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [self.tableView reloadData];
+                        if(!messageTag)
+                        {
+                            messageTag = true;
+                            UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"錯誤" message:@"無法取得連線！" preferredStyle:UIAlertControllerStyleAlert];
+                            UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"確定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action){
+                                messageTag = false;
+                            }];
+                            [alert addAction:cancel];
+                            [self presentViewController:alert animated:YES completion:nil];
+                        }
+                    });
                 }
             }];
             [task resume];

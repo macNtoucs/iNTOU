@@ -12,6 +12,7 @@
 {
     NSMutableDictionary* searchResult;
     NSMutableArray* usuallyUse;
+    Boolean messageTag;
 }
 
 @property (weak, nonatomic) IBOutlet UISearchBar *busSearchBar;

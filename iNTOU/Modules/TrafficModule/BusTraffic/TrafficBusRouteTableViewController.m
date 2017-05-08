@@ -37,13 +37,12 @@
     
     NSURLSession* session = [NSURLSession sharedSession];
     NSURLSessionDataTask* task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        routeData = nil;
         if(data)
-        {
             routeData = [[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil] copy];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self.tableView reloadData];
-            });
-        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+        });
     }];
     [task resume];
 }
@@ -74,16 +73,19 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
     //有資料的狀況
-    if([routeData[@"routeInfo"] count] != 0) {
-        self.tableView.backgroundView = nil;
-        self.tableView.separatorStyle = UITableViewStylePlain;
-        return [routeData[@"routeInfo"] count];
+    if(routeData) {
+        if([routeData[@"routeInfo"] count] != 0) {
+            self.tableView.backgroundView = nil;
+            self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+            return 1;
+        }
+        else {
+            //這個方向沒有資料
+            goBack = !goBack;
+            [self downloadDataFromServer];
+        }
+        
     }
     
     //網路不穩的狀況
@@ -94,11 +96,12 @@
     self.tableView.backgroundView = messageLabel;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
-    //這個方向沒有資料
-    goBack = !goBack;
-    [self downloadDataFromServer];
-    
     return 0;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+
+    return [routeData[@"routeInfo"] count];
 }
 
 

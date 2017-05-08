@@ -160,12 +160,12 @@ static NSArray* className;
 
 -(void)checkScrollButton:(CGFloat)x{
 
-    if(x == 0)
+    if(x <= 0)
        [self.leftScrollButton setHidden:YES];
     else
         [self.leftScrollButton setHidden:NO];
     
-    if(x == [className count] * 80 - self.scrollBar.frame.size.width)
+    if(x >= [className count] * 80 - self.scrollBar.frame.size.width)
        [self.rightScrollButton setHidden:YES];
     else
         [self.rightScrollButton setHidden:NO];

@@ -34,14 +34,12 @@
     
     NSURLSession* session = [NSURLSession sharedSession];
     NSURLSessionDataTask* task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        stopData = nil;
         if(data)
-        {
-            stopData = [[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil] copy];
-            NSLog(@"%@",stopData);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self.tableView reloadData];
-            });
-        }
+            stopData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+        });
     }];
     [task resume];
 }
@@ -68,16 +66,19 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
     //有資料的狀況
-    if([stopData[@"stopInfo"] count] != 0) {
-        self.tableView.backgroundView = nil;
-        self.tableView.separatorStyle = UITableViewStylePlain;
-        return [stopData[@"stopInfo"] count];
+    if(stopData) {
+        if([stopData[@"stopInfo"] count] != 0) {
+            self.tableView.backgroundView = nil;
+            self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+            return 1;
+        }
+        else {
+            //這個方向沒有資料
+            goBack = !goBack;
+            [self downloadDataFromServer];
+        }
+        
     }
     
     //網路不穩的狀況
@@ -88,11 +89,11 @@
     self.tableView.backgroundView = messageLabel;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
-    //這個方向沒有資料
-    goBack = !goBack;
-    [self downloadDataFromServer];
-    
     return 0;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [stopData[@"stopInfo"] count];
 }
 
 

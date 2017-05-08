@@ -41,8 +41,31 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    
+    if(!libraryOpenTimeData) {
+        UILabel* messageLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.height, self.view.bounds.size.height)];
+        messageLabel.text = @"無法連線！下拉重新整理！";
+        messageLabel.numberOfLines = 0;
+        messageLabel.textAlignment = NSTextAlignmentCenter;
+        self.tableView.backgroundView = messageLabel;
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        return 0;
+    }
 
-    return [libraryOpenTimeData count];
+    if([libraryOpenTimeData count]) {
+        self.tableView.backgroundView = nil;
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+        return [libraryOpenTimeData count];
+    }
+    else {
+        UILabel* messageLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.height, self.view.bounds.size.height)];
+        messageLabel.text = @"沒有資料！";
+        messageLabel.numberOfLines = 0;
+        messageLabel.textAlignment = NSTextAlignmentCenter;
+        self.tableView.backgroundView = messageLabel;
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        return 0;
+    }
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -102,24 +125,20 @@
         NSURL* url = [[NSURL alloc]initWithString:urlString];
         NSURLRequest* request = [[NSURLRequest alloc]initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:30.0];
         
-        dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
-        
         NSURLSession* session = [NSURLSession sharedSession];
         NSURLSessionDataTask* task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+            libraryOpenTimeData = nil;
             if(data) {
                 NSXMLParser* parser = [[NSXMLParser alloc]initWithData:data];
                 parser.delegate = self;
                 [parser parse];
             }
-            dispatch_semaphore_signal(semaphore);
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.tableView reloadData];
+                [refresh endRefreshing];
+            });
         }];
         [task resume];
-        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.tableView reloadData];
-            [refresh endRefreshing];
-        });
     });
 }
 
