@@ -116,6 +116,8 @@ static NSArray* types;
     selected = (unsigned int)[sender tag];
     refresh.tag = (int)[sender tag];
     [(UIButton*)buttons[selected] setEnabled:NO];
+    cellData = nil;
+    [fileTableView reloadData];
     [self downloadDataFromServer:(int)[sender tag]];
     [fileTableView setContentOffset:CGPointMake(0,-refresh.frame.size.height) animated:YES];
 }

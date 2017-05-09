@@ -117,7 +117,9 @@ sectionForSectionIndexTitle:(NSString *)title
     if(![busSearchBar.text isEqualToString:@""])
         if(![usuallyUse containsObject:searchResult[city[indexPath.section]][indexPath.row] ])
         {
-            [usuallyUse insertObject:searchResult[city[indexPath.section]][indexPath.row] atIndex:0];
+            NSMutableDictionary* saveTarget = [searchResult[city[indexPath.section]][indexPath.row] mutableCopy];
+            [saveTarget setObject:city[indexPath.section] forKey:@"city"];
+            [usuallyUse insertObject:[saveTarget copy] atIndex:0];
             [[NSUserDefaults standardUserDefaults] setObject:usuallyUse forKey:@"TrafficBusUsuallyUse"];
         }
 }
@@ -130,7 +132,12 @@ sectionForSectionIndexTitle:(NSString *)title
     NSIndexPath* indexPath = sender;
     
     [page setValue:searchResult[city[indexPath.section]][indexPath.row][@"nameZh"] forKey:@"name"];
-    [page setValue:city[indexPath.section] forKey:@"city"];
+    
+    //在歷史紀錄中，是會有city值的
+    if(searchResult[city[indexPath.section]][indexPath.row][@"city"])
+        [page setValue:searchResult[city[indexPath.section]][indexPath.row][@"city"] forKey:@"city"];
+    else
+        [page setValue:city[indexPath.section] forKey:@"city"];
     
     if(searchResult[city[indexPath.section]][indexPath.row][@"Id"])
     {
