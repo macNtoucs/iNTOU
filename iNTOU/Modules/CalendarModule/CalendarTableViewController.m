@@ -68,8 +68,15 @@ static NSArray* monthNum;
     NSDate* DtEnd = [formatter dateFromString:cellData[@"DtEnd"]];
     [formatter setDateFormat:@"MM/dd(E)"];
     
+    //DtEnd - 1天 ???
+    NSDateComponents *dayComponent = [[NSDateComponents alloc] init];
+    dayComponent.day = -1;
+    
+    NSCalendar *theCalendar = [NSCalendar currentCalendar];
+    DtEnd = [theCalendar dateByAddingComponents:dayComponent toDate:DtEnd options:0];
+    
     //判斷有無同天發生
-    if([cellData[@"DtStart"] isEqualToString:cellData[@"DtEnd"]])
+    if([[formatter stringFromDate:DtStart] isEqualToString:[formatter stringFromDate:DtEnd]])
         ((UILabel*)[cell viewWithTag:101]).text = [formatter stringFromDate:DtStart];
     else
         ((UILabel*)[cell viewWithTag:101]).text = [[NSString alloc]initWithFormat:@"%@ ～ %@",[formatter stringFromDate:DtStart],[formatter stringFromDate:DtEnd]];
