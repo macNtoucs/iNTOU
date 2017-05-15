@@ -90,7 +90,17 @@ static char* diagBoard;
         dtmf_string[0] = dtmf;
         dtmf_string[1] = '\0';
         pj_str_t diag = pj_str(dtmf_string);
-        pjsua_call_dial_dtmf(current_call,&diag);
+        pj_status_t dtmfStatus = pjsua_call_dial_dtmf(current_call,&diag);
+        if(dtmfStatus == PJ_SUCCESS)
+        {
+            [sendDtmfString appendString:[NSString stringWithFormat:@"%c" , dtmf]];
+            self.statusLabel.text = [sendDtmfString copy];
+        }
+        else
+        {
+            self.statusLabel.text = @"傳送分機號碼失敗！";
+
+        }
     }
 }
 
@@ -108,22 +118,39 @@ static char* diagBoard;
     acc.cred_info[0].data = pj_str("12345678");
     
     pjsua_acc_add(&acc, PJ_TRUE, &m_acc_id);
+    
 }
 
 -(IBAction)callToNtou {
-    if(m_current_call == PJSUA_INVALID_ID) {
-        pj_str_t NtouUri = pj_str("sip:16877@140.121.99.170"); //海大server
-        
-        pjsua_call_make_call(m_acc_id,&NtouUri,0,0,0,&m_current_call);
-        
-        pjsua_call_info ci;
-        pjsua_call_get_info(m_current_call, &ci);
+    if(pjsua_acc_is_valid(m_acc_id))
+    {
+        if(m_current_call == PJSUA_INVALID_ID) {
+            pj_str_t NtouUri = pj_str("sip:16877@140.121.99.170"); //海大server
+            
+            pj_status_t callStatus = pjsua_call_make_call(m_acc_id,&NtouUri,0,0,0,&m_current_call);
+            
+            if(callStatus == PJ_SUCCESS)
+            {
+                self.statusLabel.text = @"輸入分機號碼";
+                
+                sendDtmfString = [NSMutableString new];
+                
+                pjsua_call_info ci;
+                pjsua_call_get_info(m_current_call, &ci);
+            }
+            else
+            {
+                self.statusLabel.text = @"無法成功撥打！";
+            }
+        }
     }
 }
 
 -(IBAction)hangup {
     pjsua_call_hangup_all();
     m_current_call = PJSUA_INVALID_ID;
+    
+    self.statusLabel.text = @"請先點選撥打撥號至海洋大學";
 }
 
 
@@ -137,6 +164,7 @@ void on_call_media_state(pjsua_call_id call_id) // a special c-function called b
         pjsua_conf_connect(ci.conf_slot, 0);
         pjsua_conf_connect(0, ci.conf_slot);
     }
+    
 }
 
 void on_stream_destroyed(pjsua_call_id call_id, pjmedia_stream *strm, unsigned stream_idx)

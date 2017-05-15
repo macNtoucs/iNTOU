@@ -30,7 +30,7 @@
         [modulesArrayTemp addObject:[Module setDisplayName:@"圖書館" AndModuleName:@"LibraryModule"]];
         [modulesArrayTemp addObject:[Module setDisplayName:@"行事曆" AndModuleName:@"CalendarModule"]];
         [modulesArrayTemp addObject:[Module setDisplayName:@"緊急連絡" AndModuleName:@"EmergencyModule"]];
-        //[modulesArrayTemp addObject:[Module setDisplayName:@"網路電話" AndModuleName:@"SipPhoneModule"]];
+        [modulesArrayTemp addObject:[Module setDisplayName:@"網路電話" AndModuleName:@"SipPhoneModule"]];
         [modulesArrayTemp addObject:[Module setDisplayName:@"設定" AndModuleName:@"SettingModule"]];
         [modulesArrayTemp addObject:[Module setDisplayName:@"關於" AndModuleName:@"AboutModule"]];
         [modulesArrayTemp addObject:[Module setDisplayName:@"其他連結" AndModuleName:@"OtherLinkModule"]];

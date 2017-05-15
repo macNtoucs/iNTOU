@@ -12,6 +12,9 @@
 @interface SipPhoneBoardViewController : UIViewController {
     pjsua_acc_id m_acc_id;
     pjsua_call_id m_current_call;
+    NSMutableString* sendDtmfString;
 }
+
+@property (weak, nonatomic) IBOutlet UILabel *statusLabel;
 
 @end

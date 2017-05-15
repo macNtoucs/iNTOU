@@ -91,6 +91,18 @@
 		91E732631E31276400A54B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E732621E31276400A54B9A /* Assets.xcassets */; };
 		91E732661E31276400A54B9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E732641E31276400A54B9A /* LaunchScreen.storyboard */; };
 		91E7326F1E3127E200A54B9A /* MainCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E7326E1E3127E200A54B9A /* MainCollectionViewController.m */; };
+		91EAE52F1EC97DBC00EDC7ED /* Dtmf-#.wav in Resources */ = {isa = PBXBuildFile; fileRef = 91EAE5231EC97DBC00EDC7ED /* Dtmf-#.wav */; };
+		91EAE5301EC97DBC00EDC7ED /* Dtmf-*.wav in Resources */ = {isa = PBXBuildFile; fileRef = 91EAE5241EC97DBC00EDC7ED /* Dtmf-*.wav */; };
+		91EAE5311EC97DBC00EDC7ED /* Dtmf-0.wav in Resources */ = {isa = PBXBuildFile; fileRef = 91EAE5251EC97DBC00EDC7ED /* Dtmf-0.wav */; };
+		91EAE5321EC97DBC00EDC7ED /* Dtmf-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 91EAE5261EC97DBC00EDC7ED /* Dtmf-1.wav */; };
+		91EAE5331EC97DBC00EDC7ED /* Dtmf-2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 91EAE5271EC97DBC00EDC7ED /* Dtmf-2.wav */; };
+		91EAE5341EC97DBC00EDC7ED /* Dtmf-3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 91EAE5281EC97DBC00EDC7ED /* Dtmf-3.wav */; };
+		91EAE5351EC97DBC00EDC7ED /* Dtmf-4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 91EAE5291EC97DBC00EDC7ED /* Dtmf-4.wav */; };
+		91EAE5361EC97DBC00EDC7ED /* Dtmf-5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 91EAE52A1EC97DBC00EDC7ED /* Dtmf-5.wav */; };
+		91EAE5371EC97DBC00EDC7ED /* Dtmf-6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 91EAE52B1EC97DBC00EDC7ED /* Dtmf-6.wav */; };
+		91EAE5381EC97DBC00EDC7ED /* Dtmf-7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 91EAE52C1EC97DBC00EDC7ED /* Dtmf-7.wav */; };
+		91EAE5391EC97DBC00EDC7ED /* Dtmf-8.wav in Resources */ = {isa = PBXBuildFile; fileRef = 91EAE52D1EC97DBC00EDC7ED /* Dtmf-8.wav */; };
+		91EAE53A1EC97DBC00EDC7ED /* Dtmf-9.wav in Resources */ = {isa = PBXBuildFile; fileRef = 91EAE52E1EC97DBC00EDC7ED /* Dtmf-9.wav */; };
 		91EC9CD01E4C8AEA007BB413 /* StellarModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91EC9CCF1E4C8AEA007BB413 /* StellarModule.storyboard */; };
 		91EE91FE1E4AB94D00B2DFD1 /* CalendarModule.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91EE91FD1E4AB94D00B2DFD1 /* CalendarModule.plist */; };
 		91EE92011E4AD6AD00B2DFD1 /* EmergencyModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91EE92001E4AD6AD00B2DFD1 /* EmergencyModule.storyboard */; };
@@ -255,6 +267,18 @@
 		91E732671E31276400A54B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91E7326D1E3127E200A54B9A /* MainCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainCollectionViewController.h; sourceTree = "<group>"; };
 		91E7326E1E3127E200A54B9A /* MainCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainCollectionViewController.m; sourceTree = "<group>"; };
+		91EAE5231EC97DBC00EDC7ED /* Dtmf-#.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Dtmf-#.wav"; sourceTree = "<group>"; };
+		91EAE5241EC97DBC00EDC7ED /* Dtmf-*.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Dtmf-*.wav"; sourceTree = "<group>"; };
+		91EAE5251EC97DBC00EDC7ED /* Dtmf-0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Dtmf-0.wav"; sourceTree = "<group>"; };
+		91EAE5261EC97DBC00EDC7ED /* Dtmf-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Dtmf-1.wav"; sourceTree = "<group>"; };
+		91EAE5271EC97DBC00EDC7ED /* Dtmf-2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Dtmf-2.wav"; sourceTree = "<group>"; };
+		91EAE5281EC97DBC00EDC7ED /* Dtmf-3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Dtmf-3.wav"; sourceTree = "<group>"; };
+		91EAE5291EC97DBC00EDC7ED /* Dtmf-4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Dtmf-4.wav"; sourceTree = "<group>"; };
+		91EAE52A1EC97DBC00EDC7ED /* Dtmf-5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Dtmf-5.wav"; sourceTree = "<group>"; };
+		91EAE52B1EC97DBC00EDC7ED /* Dtmf-6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Dtmf-6.wav"; sourceTree = "<group>"; };
+		91EAE52C1EC97DBC00EDC7ED /* Dtmf-7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Dtmf-7.wav"; sourceTree = "<group>"; };
+		91EAE52D1EC97DBC00EDC7ED /* Dtmf-8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Dtmf-8.wav"; sourceTree = "<group>"; };
+		91EAE52E1EC97DBC00EDC7ED /* Dtmf-9.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Dtmf-9.wav"; sourceTree = "<group>"; };
 		91EC9CCF1E4C8AEA007BB413 /* StellarModule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = StellarModule.storyboard; path = Modules/StellarModule/StellarModule.storyboard; sourceTree = "<group>"; };
 		91EE91FD1E4AB94D00B2DFD1 /* CalendarModule.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = CalendarModule.plist; path = Resource/CalendarModule.plist; sourceTree = "<group>"; };
 		91EE92001E4AD6AD00B2DFD1 /* EmergencyModule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = EmergencyModule.storyboard; path = Modules/EmergencyModule/EmergencyModule.storyboard; sourceTree = "<group>"; };
@@ -505,6 +529,7 @@
 		91A3DC3D1EB71E46002766BD /* SipPhoneModule */ = {
 			isa = PBXGroup;
 			children = (
+				91EAE5221EC97DBC00EDC7ED /* SipSound */,
 				91A3DC3E1EB72018002766BD /* SipPhoneModule.storyboard */,
 				91A3DC401EB72A5C002766BD /* SipPhoneBoardViewController.h */,
 				91A3DC411EB72A5C002766BD /* SipPhoneBoardViewController.m */,
@@ -638,6 +663,26 @@
 				9100EFE71E33449300756AE5 /* ModuleManager.m */,
 			);
 			name = Modules;
+			sourceTree = "<group>";
+		};
+		91EAE5221EC97DBC00EDC7ED /* SipSound */ = {
+			isa = PBXGroup;
+			children = (
+				91EAE5231EC97DBC00EDC7ED /* Dtmf-#.wav */,
+				91EAE5241EC97DBC00EDC7ED /* Dtmf-*.wav */,
+				91EAE5251EC97DBC00EDC7ED /* Dtmf-0.wav */,
+				91EAE5261EC97DBC00EDC7ED /* Dtmf-1.wav */,
+				91EAE5271EC97DBC00EDC7ED /* Dtmf-2.wav */,
+				91EAE5281EC97DBC00EDC7ED /* Dtmf-3.wav */,
+				91EAE5291EC97DBC00EDC7ED /* Dtmf-4.wav */,
+				91EAE52A1EC97DBC00EDC7ED /* Dtmf-5.wav */,
+				91EAE52B1EC97DBC00EDC7ED /* Dtmf-6.wav */,
+				91EAE52C1EC97DBC00EDC7ED /* Dtmf-7.wav */,
+				91EAE52D1EC97DBC00EDC7ED /* Dtmf-8.wav */,
+				91EAE52E1EC97DBC00EDC7ED /* Dtmf-9.wav */,
+			);
+			name = SipSound;
+			path = Modules/SipPhoneModule/SipSound;
 			sourceTree = "<group>";
 		};
 		91EC9CCE1E4C72F3007BB413 /* StellarModule */ = {
@@ -792,6 +837,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				912B68C91E8292D70038D261 /* LibraryMedia.xcassets in Resources */,
+				91EAE5381EC97DBC00EDC7ED /* Dtmf-7.wav in Resources */,
+				91EAE5361EC97DBC00EDC7ED /* Dtmf-5.wav in Resources */,
+				91EAE5321EC97DBC00EDC7ED /* Dtmf-1.wav in Resources */,
+				91EAE5311EC97DBC00EDC7ED /* Dtmf-0.wav in Resources */,
 				912B68921E7BA3280038D261 /* TrainStationList.plist in Resources */,
 				91E732661E31276400A54B9A /* LaunchScreen.storyboard in Resources */,
 				91531E391E53309E005D2CAF /* GuideModule.storyboard in Resources */,
@@ -799,15 +848,23 @@
 				91477F9E1E55A98E00EC94C1 /* LibraryModule.storyboard in Resources */,
 				913D650E1E5D348200888676 /* TrafficModule.storyboard in Resources */,
 				91D7A1321E977FD700B79396 /* OtherLinkModule.storyboard in Resources */,
+				91EAE5371EC97DBC00EDC7ED /* Dtmf-6.wav in Resources */,
 				913D65121E5D380600888676 /* LifeMedia.xcassets in Resources */,
+				91EAE52F1EC97DBC00EDC7ED /* Dtmf-#.wav in Resources */,
 				912B68CD1E8294FF0038D261 /* StellarMedia.xcassets in Resources */,
 				91053ABD1E51978300ACEA8D /* LifeModule.storyboard in Resources */,
+				91EAE53A1EC97DBC00EDC7ED /* Dtmf-9.wav in Resources */,
 				91E732611E31276400A54B9A /* Main.storyboard in Resources */,
 				91EE92131E4B088300B2DFD1 /* SettingModule.storyboard in Resources */,
+				91EAE5351EC97DBC00EDC7ED /* Dtmf-4.wav in Resources */,
 				91477FA01E55BFD500EC94C1 /* LibraryModuleFloor.plist in Resources */,
+				91EAE5341EC97DBC00EDC7ED /* Dtmf-3.wav in Resources */,
 				91EE92011E4AD6AD00B2DFD1 /* EmergencyModule.storyboard in Resources */,
+				91EAE5301EC97DBC00EDC7ED /* Dtmf-*.wav in Resources */,
+				91EAE5391EC97DBC00EDC7ED /* Dtmf-8.wav in Resources */,
 				91EE92101E4AE1B700B2DFD1 /* EmergencyModule.plist in Resources */,
 				912B68BF1E8005C20038D261 /* HSRStationList.plist in Resources */,
+				91EAE5331EC97DBC00EDC7ED /* Dtmf-2.wav in Resources */,
 				91678F911E3A6CFA00BE9AF0 /* NewsModule.storyboard in Resources */,
 				911B7CB61E476B15001A5328 /* CalendarModule.storyboard in Resources */,
 				91EE91FE1E4AB94D00B2DFD1 /* CalendarModule.plist in Resources */,
