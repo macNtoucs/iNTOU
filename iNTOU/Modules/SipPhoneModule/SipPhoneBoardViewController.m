@@ -38,6 +38,7 @@ static char* diagBoard;
     
     [self pjsuaStart];
     [self addNTOUAccount];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -73,6 +74,11 @@ static char* diagBoard;
     transport_config.port = 44987;
     status = pjsua_transport_create(PJSIP_TRANSPORT_UDP,&transport_config,NULL);
     
+    while (status != PJ_SUCCESS) {
+        transport_config.port = rand()%65536;
+        status = pjsua_transport_create(PJSIP_TRANSPORT_UDP,&transport_config,NULL);
+    }
+    
     pjsua_transport_config_default(&transport_config);
     
     status = pjsua_start(); //start pjsua
@@ -91,8 +97,14 @@ static char* diagBoard;
         dtmf_string[1] = '\0';
         pj_str_t diag = pj_str(dtmf_string);
         pj_status_t dtmfStatus = pjsua_call_dial_dtmf(current_call,&diag);
+        
+        NSString* soundFile = [[NSBundle mainBundle]pathForResource: [@"Dtmf-" stringByAppendingString:[[NSString alloc] initWithFormat:@"%c",dtmf]] ofType:@"wav"];
+        
         if(dtmfStatus == PJ_SUCCESS)
         {
+            char soundFile_c[300];
+            strcpy(soundFile_c, [soundFile UTF8String]);
+            play_sound_during_call(pj_str(soundFile_c));
             [sendDtmfString appendString:[NSString stringWithFormat:@"%c" , dtmf]];
             self.statusLabel.text = [sendDtmfString copy];
         }
@@ -113,7 +125,14 @@ static char* diagBoard;
     acc.cred_count = 1;
     acc.cred_info[0].realm = pj_str("*");
     acc.cred_info[0].scheme = pj_str("digest");
-    acc.cred_info[0].username = pj_str("602");
+    
+    //可使用的accound ID 從 600 ~ 605
+    char user[4];
+    int userId = 601 + rand()%5;
+    sprintf(user, "%d", userId);
+    user[3] = '\0';
+    
+    acc.cred_info[0].username = pj_str(user);
     acc.cred_info[0].data_type = 0;
     acc.cred_info[0].data = pj_str("12345678");
     
@@ -125,6 +144,7 @@ static char* diagBoard;
     if(pjsua_acc_is_valid(m_acc_id))
     {
         if(m_current_call == PJSUA_INVALID_ID) {
+            [self.callButton setEnabled:NO];
             pj_str_t NtouUri = pj_str("sip:16877@140.121.99.170"); //海大server
             
             pj_status_t callStatus = pjsua_call_make_call(m_acc_id,&NtouUri,0,0,0,&m_current_call);
@@ -132,6 +152,7 @@ static char* diagBoard;
             if(callStatus == PJ_SUCCESS)
             {
                 self.statusLabel.text = @"輸入分機號碼";
+                [self.hangUpButton setEnabled:YES];
                 
                 sendDtmfString = [NSMutableString new];
                 
@@ -140,6 +161,7 @@ static char* diagBoard;
             }
             else
             {
+                [self.callButton setEnabled:YES];
                 self.statusLabel.text = @"無法成功撥打！";
             }
         }
@@ -150,7 +172,12 @@ static char* diagBoard;
     pjsua_call_hangup_all();
     m_current_call = PJSUA_INVALID_ID;
     
-    self.statusLabel.text = @"請先點選撥打撥號至海洋大學";
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.callButton setEnabled:YES];
+        [self.hangUpButton setEnabled:NO];
+        
+        self.statusLabel.text = @"請先點選撥打撥號至海洋大學";
+    });
 }
 
 
@@ -164,12 +191,68 @@ void on_call_media_state(pjsua_call_id call_id) // a special c-function called b
         pjsua_conf_connect(ci.conf_slot, 0);
         pjsua_conf_connect(0, ci.conf_slot);
     }
-    
 }
 
 void on_stream_destroyed(pjsua_call_id call_id, pjmedia_stream *strm, unsigned stream_idx)
 {
     [thisObj hangup];
+}
+
+#pragma mark - pjsip diag sound
+
+struct pjsua_player_eof_data
+{
+    pj_pool_t          *pool;
+    pjsua_player_id player_id;
+};
+
+pj_status_t play_sound_during_call(pj_str_t sound_file)
+{
+    pjsua_player_id player_id;
+    pj_status_t status;
+    status = pjsua_player_create(&sound_file, 0, &player_id);
+    if (status != PJ_SUCCESS)
+        return status;
+    
+    pjmedia_port *player_media_port;
+    
+    status = pjsua_player_get_port(player_id, &player_media_port);
+    if (status != PJ_SUCCESS)
+    {
+        return status;
+    }
+    
+    pj_pool_t *pool = pjsua_pool_create("my_eof_data", 512, 512);
+    struct pjsua_player_eof_data *eof_data = PJ_POOL_ZALLOC_T(pool, struct pjsua_player_eof_data);
+    eof_data->pool = pool;
+    eof_data->player_id = player_id;
+    
+    pjmedia_wav_player_set_eof_cb(player_media_port, eof_data, &on_pjsua_wav_file_end_callback);
+    
+    status = pjsua_conf_connect(pjsua_player_get_conf_port(player_id), 0);
+    
+    if (status != PJ_SUCCESS)
+    {
+        return status;
+    }
+    
+    return status;
+}
+
+static PJ_DEF(pj_status_t) on_pjsua_wav_file_end_callback(pjmedia_port* media_port, void* args)
+{
+    pj_status_t status;
+    
+    struct pjsua_player_eof_data *eof_data = (struct pjsua_player_eof_data *)args;
+    
+    status = pjsua_player_destroy(eof_data->player_id);
+    
+    if (status == PJ_SUCCESS)
+    {
+        return -1;// Here it is important to return a value other than PJ_SUCCESS
+    }
+    
+    return PJ_SUCCESS;
 }
 
 @end

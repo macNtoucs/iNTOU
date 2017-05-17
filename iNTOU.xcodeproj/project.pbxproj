@@ -651,8 +651,8 @@
 				913D650C1E5D345A00888676 /* TrafficModule */,
 				91477F9A1E55A7BD00EC94C1 /* LibraryModule */,
 				91531E2D1E53072B005D2CAF /* GuideModule */,
-				91053ABB1E51977500ACEA8D /* LifeModule */,
 				91EC9CCE1E4C72F3007BB413 /* StellarModule */,
+				91053ABB1E51977500ACEA8D /* LifeModule */,
 				91EE92111E4B085300B2DFD1 /* SettingModule */,
 				91EE91FF1E4AD61000B2DFD1 /* EmergencyModule */,
 				911B7CB41E476AFE001A5328 /* CalendarModule */,
@@ -804,7 +804,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
-								enabled = 0;
+								enabled = 1;
 							};
 							com.apple.InterAppAudio = {
 								enabled = 0;

@@ -68,7 +68,7 @@ static NSArray* monthNum;
     NSDate* DtEnd = [formatter dateFromString:cellData[@"DtEnd"]];
     [formatter setDateFormat:@"MM/dd(E)"];
     
-    //DtEnd - 1天 ？？？
+    //DtEnd - 1天
     NSDateComponents *dayComponent = [NSDateComponents new];
     dayComponent.day = -1;
     

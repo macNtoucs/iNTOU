@@ -36,7 +36,7 @@
                                     <action selector="callToNtou" destination="Zep-BD-nAv" eventType="touchUpInside" id="bSb-ci-nYt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mc-kq-0Iv">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mc-kq-0Iv">
                                 <rect key="frame" x="251" y="181" width="124" height="84.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="掛斷"/>
@@ -171,6 +171,8 @@
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
+                        <outlet property="callButton" destination="0vx-mo-0Xx" id="y1z-hR-90M"/>
+                        <outlet property="hangUpButton" destination="0Mc-kq-0Iv" id="vI7-sK-cgp"/>
                         <outlet property="statusLabel" destination="sy0-ju-Ovb" id="l7r-l3-YLI"/>
                     </connections>
                 </viewController>
