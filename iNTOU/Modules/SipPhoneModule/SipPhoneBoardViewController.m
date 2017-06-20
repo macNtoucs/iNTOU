@@ -13,7 +13,7 @@
 @end
 
 @implementation SipPhoneBoardViewController
-
+@synthesize statusLabel;
 //為了在c function內能call objc function 需要一個類似於self的指標
 id thisObj;
 
@@ -151,7 +151,6 @@ static char* diagBoard;
             
             if(callStatus == PJ_SUCCESS)
             {
-                self.statusLabel.text = @"輸入分機號碼";
                 [self.hangUpButton setEnabled:YES];
                 
                 sendDtmfString = [NSMutableString new];
@@ -190,6 +189,10 @@ void on_call_media_state(pjsua_call_id call_id) // a special c-function called b
     if (ci.media_status == PJSUA_CALL_MEDIA_ACTIVE) { // when answering the phone,open sound outbound
         pjsua_conf_connect(ci.conf_slot, 0);
         pjsua_conf_connect(0, ci.conf_slot);
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            ((SipPhoneBoardViewController*)thisObj).statusLabel.text = @"輸入分機號碼";
+        });
     }
 }
 

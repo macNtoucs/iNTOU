@@ -25,8 +25,8 @@ static NSArray* className;
     self = [super initWithCoder:c];
     if(self) {
         //在這裡新增新的class type
-        classType = @[@"focus",@"announce",@"symposium",@"admissions",@"information",@"art",@"lecture"];
-        className = @[@"校園焦點",@"學校公告",@"研討會",@"招生資訊",@"校外公告",@"藝文活動",@"演講公告"];
+        classType = @[@"focus",@"announce",@"symposium",@"admissions",@"information",@"activity",@"lecture"];
+        className = @[@"校園焦點",@"學校公告",@"研討會",@"招生資訊",@"校外公告",@"活動情報",@"演講公告"];
         
         //製造對應數量的NewsClassData來儲存資料
         NSMutableArray* tempArray = [NSMutableArray new];
