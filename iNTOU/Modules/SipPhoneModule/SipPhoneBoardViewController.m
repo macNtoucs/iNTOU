@@ -120,19 +120,13 @@ static char* diagBoard;
     pjsua_acc_config acc;
     
     pjsua_acc_config_default(&acc);
-    acc.id = pj_str("<sip:601@140.121.99.170>");
+    acc.id = pj_str("<sip:602@140.121.99.170>");
     acc.reg_uri = pj_str("sip:140.121.99.170");
     acc.cred_count = 1;
     acc.cred_info[0].realm = pj_str("*");
     acc.cred_info[0].scheme = pj_str("digest");
     
-    //可使用的accound ID 從 600 ~ 605
-    char user[4];
-    int userId = 601 + rand()%5;
-    sprintf(user, "%d", userId);
-    user[3] = '\0';
-    
-    acc.cred_info[0].username = pj_str(user);
+    acc.cred_info[0].username = pj_str("602");
     acc.cred_info[0].data_type = 0;
     acc.cred_info[0].data = pj_str("12345678");
     
@@ -145,9 +139,9 @@ static char* diagBoard;
     {
         if(m_current_call == PJSUA_INVALID_ID) {
             [self.callButton setEnabled:NO];
-            pj_str_t NtouUri = pj_str("sip:16877@140.121.99.170"); //海大server
+            pj_str_t NtouUri = pj_str("sip:601@140.121.99.170"); //海大server
             
-            pj_status_t callStatus = pjsua_call_make_call(m_acc_id,&NtouUri,0,0,0,&m_current_call);
+            pj_status_t callStatus = pjsua_call_make_call(m_acc_id,&NtouUri,0,NULL,NULL,&m_current_call);
             
             if(callStatus == PJ_SUCCESS)
             {

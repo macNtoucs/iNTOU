@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iNTOU/Modules/LibraryModule/AboutLibrary/LibraryOpenTimeTableViewController.m"
-            timestampString = "515912089.49326"
+            timestampString = "520952651.475112"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
@@ -62,7 +62,9 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "3"
-            endingLineNumber = "3">
+            endingLineNumber = "3"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -452,7 +454,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iNTOU/Modules/SipPhoneModule/SipPhoneBoardViewController.m"
-            timestampString = "516692919.645178"
+            timestampString = "520962660.361617"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "84"

@@ -32,7 +32,6 @@
 		912B68C91E8292D70038D261 /* LibraryMedia.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 912B68C81E8292D70038D261 /* LibraryMedia.xcassets */; };
 		912B68CD1E8294FF0038D261 /* StellarMedia.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 912B68CC1E8294FF0038D261 /* StellarMedia.xcassets */; };
 		912B68D41E838D7D0038D261 /* NTOUBusTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B68D31E838D7D0038D261 /* NTOUBusTableViewController.m */; };
-		912B68D71E8393650038D261 /* NTOUToMRTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B68D61E8393650038D261 /* NTOUToMRTTableViewController.m */; };
 		912B68DA1E839FBE0038D261 /* NTOU1800TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B68D91E839FBE0038D261 /* NTOU1800TableViewController.m */; };
 		912B68DD1E83A3100038D261 /* NTOUBadouziTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B68DC1E83A3100038D261 /* NTOUBadouziTableViewController.m */; };
 		912B68E01E83AF420038D261 /* NTOUR66TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B68DF1E83AF420038D261 /* NTOUR66TableViewController.m */; };
@@ -161,8 +160,6 @@
 		912B68CC1E8294FF0038D261 /* StellarMedia.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = StellarMedia.xcassets; path = Modules/StellarModule/StellarMedia.xcassets; sourceTree = "<group>"; };
 		912B68D21E838D7D0038D261 /* NTOUBusTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NTOUBusTableViewController.h; path = Modules/TrafficModule/NTOUBus/NTOUBusTableViewController.h; sourceTree = "<group>"; };
 		912B68D31E838D7D0038D261 /* NTOUBusTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NTOUBusTableViewController.m; path = Modules/TrafficModule/NTOUBus/NTOUBusTableViewController.m; sourceTree = "<group>"; };
-		912B68D51E8393650038D261 /* NTOUToMRTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NTOUToMRTTableViewController.h; path = Modules/TrafficModule/NTOUBus/NTOUToMRTTableViewController.h; sourceTree = "<group>"; };
-		912B68D61E8393650038D261 /* NTOUToMRTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NTOUToMRTTableViewController.m; path = Modules/TrafficModule/NTOUBus/NTOUToMRTTableViewController.m; sourceTree = "<group>"; };
 		912B68D81E839FBE0038D261 /* NTOU1800TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NTOU1800TableViewController.h; path = Modules/TrafficModule/NTOUBus/NTOU1800TableViewController.h; sourceTree = "<group>"; };
 		912B68D91E839FBE0038D261 /* NTOU1800TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NTOU1800TableViewController.m; path = Modules/TrafficModule/NTOUBus/NTOU1800TableViewController.m; sourceTree = "<group>"; };
 		912B68DB1E83A3100038D261 /* NTOUBadouziTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NTOUBadouziTableViewController.h; path = Modules/TrafficModule/NTOUBus/NTOUBadouziTableViewController.h; sourceTree = "<group>"; };
@@ -414,8 +411,6 @@
 			children = (
 				912B68D21E838D7D0038D261 /* NTOUBusTableViewController.h */,
 				912B68D31E838D7D0038D261 /* NTOUBusTableViewController.m */,
-				912B68D51E8393650038D261 /* NTOUToMRTTableViewController.h */,
-				912B68D61E8393650038D261 /* NTOUToMRTTableViewController.m */,
 				912B68D81E839FBE0038D261 /* NTOU1800TableViewController.h */,
 				912B68D91E839FBE0038D261 /* NTOU1800TableViewController.m */,
 				912B68DB1E83A3100038D261 /* NTOUBadouziTableViewController.h */,
@@ -979,7 +974,6 @@
 				91D7A13E1E978AF800B79396 /* AboutDeveloperTableViewController.m in Sources */,
 				91342BB01EA4713E004F7422 /* StellarViewLayout.m in Sources */,
 				91A3DC3C1EAF53CD002766BD /* CalendarPageViewController.m in Sources */,
-				912B68D71E8393650038D261 /* NTOUToMRTTableViewController.m in Sources */,
 				91F8DBE81E54D33300D45684 /* StellarGradeTableViewController.m in Sources */,
 				9100EFE81E33449300756AE5 /* ModuleManager.m in Sources */,
 				91F8DBEE1E54EDF100D45684 /* StellarFileViewController.m in Sources */,

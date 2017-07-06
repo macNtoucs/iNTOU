@@ -38,6 +38,69 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)downloadDataFromServer {
+    [refresh beginRefreshing];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSString* urlString = @"http://lib.ntou.edu.tw/mobil_client/lib_open_xml.php";
+        NSURL* url = [[NSURL alloc]initWithString:urlString];
+        NSURLRequest* request = [[NSURLRequest alloc]initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:30.0];
+        
+        NSURLSession* session = [NSURLSession sharedSession];
+        NSURLSessionDataTask* task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+            libraryOpenTimeData = nil;
+            if(data) {
+                NSXMLParser* parser = [[NSXMLParser alloc]initWithData:data];
+                parser.delegate = self;
+                [parser parse];
+            }
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.tableView reloadData];
+                [refresh endRefreshing];
+                [self jumpToToday];
+            });
+        }];
+        [task resume];
+    });
+}
+
+-(void)jumpToToday {
+    if(libraryOpenTimeData) {
+        NSDate* now  = [NSDate new];
+        int i;
+        for(i = 0 ; i < [libraryOpenTimeData count] ; i++ ) {
+            NSRange range;
+            range = [libraryOpenTimeData[i][@"tagTitle"] rangeOfString:@"學期"];
+            if(range.location == NSNotFound)
+                range = [libraryOpenTimeData[i][@"tagTitle"] rangeOfString:@"時間"];
+            if(range.location != NSNotFound) {
+                NSString* dateString = [libraryOpenTimeData[i][@"tagTitle"] substringFromIndex:range.location + 2];
+                range = [dateString rangeOfString:@"~"];
+                dateString = [dateString substringToIndex:range.location];
+                
+                NSDateFormatter* formatter = [NSDateFormatter new];
+                [formatter setDateFormat:@"yyyy/MM/dd"];
+                range = [dateString rangeOfString:@"年"];
+                int year = [[dateString substringToIndex:range.location] intValue] + 1911;
+                dateString = [dateString substringFromIndex:range.location + 1];
+                range = [dateString rangeOfString:@"月"];
+                int month = [[dateString substringToIndex:range.location] intValue];
+                dateString = [dateString substringFromIndex:range.location + 1];
+                range = [dateString rangeOfString:@"日"];
+                int date = [[dateString substringToIndex:range.location] intValue];
+                dateString = [[NSString alloc] initWithFormat:@"%d/%d/%d",year,month,date];
+                NSDate* tagDate = [formatter dateFromString:dateString];
+                
+                if([tagDate compare:now] == NSOrderedDescending)
+                    break;
+            }
+        }
+        i --;
+        if(i<0)
+            i=0;
+        [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:i] atScrollPosition:UITableViewScrollPositionTop animated:YES];
+    }
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -118,29 +181,6 @@
 }
 
 
--(void)downloadDataFromServer {
-    [refresh beginRefreshing];
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSString* urlString = @"http://lib.ntou.edu.tw/mobil_client/lib_open_xml.php";
-        NSURL* url = [[NSURL alloc]initWithString:urlString];
-        NSURLRequest* request = [[NSURLRequest alloc]initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:30.0];
-        
-        NSURLSession* session = [NSURLSession sharedSession];
-        NSURLSessionDataTask* task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-            libraryOpenTimeData = nil;
-            if(data) {
-                NSXMLParser* parser = [[NSXMLParser alloc]initWithData:data];
-                parser.delegate = self;
-                [parser parse];
-            }
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self.tableView reloadData];
-                [refresh endRefreshing];
-            });
-        }];
-        [task resume];
-    });
-}
 
 #pragma mark - NSXMLParserDelegate
 

@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    busData = @[@[@"海洋大學 -> 捷運劍潭站",@"捷運劍潭站 -> 海洋大學",@"1800海洋大學 -> 中崙",@"1800中崙 -> 海洋大學"]
+    busData = @[@[@"1800海洋大學 -> 中崙",@"1800中崙 -> 海洋大學"]
                 ,@[@"八斗子 -> 海大 -> 火車站",@"火車站 -> 海大 -> 八斗子",@"R66 (海科館/七堵車站)"]];
 }
 
@@ -67,8 +67,6 @@
     switch (indexPath.section) {
         case 0:
             if(indexPath.row == 0 || indexPath.row == 1)
-                [self performSegueWithIdentifier:@"捷運劍潭站" sender:indexPath];
-            if(indexPath.row == 2 || indexPath.row == 3)
                 [self performSegueWithIdentifier:@"NTOU1800" sender:indexPath];
             break;
             
@@ -100,7 +98,7 @@
     }
     if([segue.identifier isEqualToString:@"NTOU1800"])
     {
-        if([sender row] == 2)
+        if([sender row] == 0)
             [page setValue:@0 forKey:@"goBack"];
         else
             [page setValue:@1 forKey:@"goBack"];
