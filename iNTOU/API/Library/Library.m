@@ -39,7 +39,7 @@
     NSURLSessionDataTask* task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
         returnValue = data;
-        
+        NSLog(@"%@",returnValue);
         dispatch_semaphore_signal(semaphore);
     }];
     [task resume];

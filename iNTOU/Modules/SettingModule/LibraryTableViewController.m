@@ -85,7 +85,7 @@
             
         case 1:
             cell = [tableView dequeueReusableCellWithIdentifier:@"LibraryInfoCells"];
-            ((UITextView*)[cell viewWithTag:103]).text = @"帳號：請輸入學號，教職員證號或本館借書證號\n密碼：您的身分證字號（預設值）\n\n    若無法使用，請將您的《姓名》、《讀者證號》、《身份證號》 E-mail至hwa重新設定！\n    若您的證件曾經補發過一次，請在讀者證號後加二位數字01；補發二次，請加02；其餘類推。";
+            ((UITextView*)[cell viewWithTag:103]).text = @"帳號：請輸入學號，教職員證號或本館借書證號\n密碼：您的身分證字號（預設值）\n\n若您的證件曾經補發過一次，請在讀者證號後加二位數字01；補發二次，請加02；其餘類推。";
             break;
             
         default:

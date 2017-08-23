@@ -67,6 +67,20 @@ static NSArray* dayTag;
         self.baseViewWidth.constant = (self.view.bounds.size.width - 7)/8;
     
 }
+- (IBAction)TronClassButtonAction:(id)sender {
+    NSString *customURL = @"tencent1104358913://";
+    
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:customURL]])
+    {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:customURL]];
+    }
+    else
+    {
+        //開啟app store
+        NSString *iTunesLink = @"itms-apps://itunes.apple.com/us/app/apple-store/id973028199?mt=8";
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:iTunesLink]];
+    }
+}
 
 - (IBAction)refresh:(id)sender {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{

@@ -49,5 +49,9 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>tencent1104358913</string>
+	</array>
 </dict>
 </plist>

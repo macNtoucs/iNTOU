@@ -62,9 +62,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "3"
-            endingLineNumber = "3"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            endingLineNumber = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -294,7 +292,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iNTOU/Modules/StellarModule/StellarViewController.m"
-            timestampString = "514103448.623997"
+            timestampString = "525186135.744592"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
@@ -358,12 +356,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iNTOU/Modules/StellarModule/StellarViewController.m"
-            timestampString = "514098198.00087"
+            timestampString = "525186135.745055"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "15"
             endingLineNumber = "15"
-            landmarkName = "@implementation StellarViewController"
+            landmarkName = "StellarViewController"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
@@ -411,8 +409,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
             endingLineNumber = "19"
-            landmarkName = "baseViewHeight"
-            landmarkType = "24">
+            landmarkName = "StellarViewController"
+            landmarkType = "2">
             <Locations>
                <Location
                   shouldBeEnabled = "No"

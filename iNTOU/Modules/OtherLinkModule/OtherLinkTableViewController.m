@@ -46,6 +46,18 @@
             [self presentViewController:safari animated:YES completion:nil];
             break;
         }
+        case 2:
+        {
+            SFSafariViewController* safari = [[SFSafariViewController alloc]initWithURL:[NSURL URLWithString:@"http://www.stu.ntou.edu.tw/sm/Page_Show.asp?Page_ID=9551"]];
+            [self presentViewController:safari animated:YES completion:nil];
+            break;
+        }
+        case 3:
+        {
+            SFSafariViewController* safari = [[SFSafariViewController alloc]initWithURL:[NSURL URLWithString:@"http://www.stu.ntou.edu.tw/sm/Page_Show.asp?Page_ID=23437"]];
+            [self presentViewController:safari animated:YES completion:nil];
+            break;
+        }
         default:
             break;
     }
