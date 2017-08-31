@@ -68,7 +68,7 @@ static NSArray* dayTag;
     
 }
 - (IBAction)TronClassButtonAction:(id)sender {
-    NSString *customURL = @"tencent1104358913://";
+    NSString *customURL = @"tencent1104342231://";
     
     if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:customURL]])
     {

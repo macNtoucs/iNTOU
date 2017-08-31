@@ -7,7 +7,6 @@
 //
 
 #import "StellarCourseInfoTableViewController.h"
-#import "StellarClassViewController.h"
 #import "Moodle.h"
 
 @interface StellarCourseInfoTableViewController ()
@@ -38,7 +37,7 @@ static NSDictionary* mustType;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    classData = ((StellarClassViewController*)self.tabBarController).classData;
+    self.title = classData[@"name"];
     //刷新鈕
     refresh =[UIRefreshControl new];
     [refresh addTarget:self action:@selector(downloadDataFromServer) forControlEvents:UIControlEventValueChanged];

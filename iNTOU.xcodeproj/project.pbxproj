@@ -109,7 +109,6 @@
 		91EE92101E4AE1B700B2DFD1 /* EmergencyModule.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91EE920F1E4AE1B700B2DFD1 /* EmergencyModule.plist */; };
 		91EE92131E4B088300B2DFD1 /* SettingModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91EE92121E4B088300B2DFD1 /* SettingModule.storyboard */; };
 		91F8DBD81E5445F000D45684 /* GoogleMapStreetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F8DBD71E5445F000D45684 /* GoogleMapStreetViewController.m */; };
-		91F8DBDB1E54659400D45684 /* StellarClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F8DBDA1E54659400D45684 /* StellarClassViewController.m */; };
 		91F8DBE21E54899400D45684 /* StellarCourseInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F8DBE11E54899400D45684 /* StellarCourseInfoTableViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -282,8 +281,6 @@
 		91EE92121E4B088300B2DFD1 /* SettingModule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SettingModule.storyboard; path = Modules/SettingModule/SettingModule.storyboard; sourceTree = "<group>"; };
 		91F8DBD61E5445F000D45684 /* GoogleMapStreetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoogleMapStreetViewController.h; path = API/GoogleMapsView/GoogleMapStreetViewController.h; sourceTree = "<group>"; };
 		91F8DBD71E5445F000D45684 /* GoogleMapStreetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoogleMapStreetViewController.m; path = API/GoogleMapsView/GoogleMapStreetViewController.m; sourceTree = "<group>"; };
-		91F8DBD91E54659400D45684 /* StellarClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StellarClassViewController.h; path = Modules/StellarModule/StellarClassViewController.h; sourceTree = "<group>"; };
-		91F8DBDA1E54659400D45684 /* StellarClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StellarClassViewController.m; path = Modules/StellarModule/StellarClassViewController.m; sourceTree = "<group>"; };
 		91F8DBE01E54899400D45684 /* StellarCourseInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StellarCourseInfoTableViewController.h; path = Modules/StellarModule/StellarClass/StellarCourseInfoTableViewController.h; sourceTree = "<group>"; };
 		91F8DBE11E54899400D45684 /* StellarCourseInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StellarCourseInfoTableViewController.m; path = Modules/StellarModule/StellarClass/StellarCourseInfoTableViewController.m; sourceTree = "<group>"; };
 		E99A426054C1B94E5B7E0441 /* Pods-iNTOU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iNTOU.release.xcconfig"; path = "Pods/Target Support Files/Pods-iNTOU/Pods-iNTOU.release.xcconfig"; sourceTree = "<group>"; };
@@ -683,9 +680,8 @@
 				91742CA71E9E3DC40064D5A3 /* StellarWeekBar.m */,
 				91742CA91E9E44250064D5A3 /* StellarClassBar.h */,
 				91742CAA1E9E44250064D5A3 /* StellarClassBar.m */,
-				91F8DBDC1E546A6200D45684 /* StellarClass */,
-				91F8DBD91E54659400D45684 /* StellarClassViewController.h */,
-				91F8DBDA1E54659400D45684 /* StellarClassViewController.m */,
+				91F8DBE01E54899400D45684 /* StellarCourseInfoTableViewController.h */,
+				91F8DBE11E54899400D45684 /* StellarCourseInfoTableViewController.m */,
 				912B68CC1E8294FF0038D261 /* StellarMedia.xcassets */,
 			);
 			name = StellarModule;
@@ -725,15 +721,6 @@
 				91853B451E594122007C37AB /* MoodleTableViewController.m */,
 			);
 			name = SettingModule;
-			sourceTree = "<group>";
-		};
-		91F8DBDC1E546A6200D45684 /* StellarClass */ = {
-			isa = PBXGroup;
-			children = (
-				91F8DBE01E54899400D45684 /* StellarCourseInfoTableViewController.h */,
-				91F8DBE11E54899400D45684 /* StellarCourseInfoTableViewController.m */,
-			);
-			name = StellarClass;
 			sourceTree = "<group>";
 		};
 		BBBEF53220F5D91806C472CB /* Pods */ = {
@@ -975,7 +962,6 @@
 				912B68981E7BABD60038D261 /* TrafficTrainDepartureTableViewController.m in Sources */,
 				91DAFED21E43934000745C2F /* NewsClassData.m in Sources */,
 				91EE920E1E4ADFB400B2DFD1 /* EmergencyTableViewController.m in Sources */,
-				91F8DBDB1E54659400D45684 /* StellarClassViewController.m in Sources */,
 				91CDBF4F1E5AC0A30085514E /* LibraryHistoryTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

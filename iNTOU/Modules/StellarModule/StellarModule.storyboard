@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7pc-X9-Rft">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7pc-X9-Rft">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,7 +20,7 @@
                         <viewControllerLayoutGuide type="bottom" id="pxQ-Z6-ED1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="AfC-aW-4Xa">
-                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tMO-fY-CsJ">
@@ -196,39 +197,19 @@
                         <outlet property="classScrollView" destination="EAt-vO-XdX" id="RGE-hy-T1j"/>
                         <outlet property="mainScrollView" destination="Q2e-sv-Enx" id="kri-rg-mWW"/>
                         <outlet property="weekScrollView" destination="S6w-jn-Q9y" id="afZ-Ex-0jQ"/>
-                        <segue destination="Stq-El-0dP" kind="show" identifier="Action" id="UmI-lL-jeM"/>
+                        <segue destination="7UU-OZ-zlP" kind="show" identifier="Action" id="rUv-Gx-3jL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ER4-xT-Nst" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-75" y="-655"/>
         </scene>
-        <!--Stellar Class View Controller-->
-        <scene sceneID="hOm-xi-Fzq">
-            <objects>
-                <tabBarController id="Stq-El-0dP" customClass="StellarClassViewController" sceneMemberID="viewController">
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="XQi-vE-x99">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="7UU-OZ-zlP" kind="relationship" relationship="viewControllers" id="jhd-ba-ZHo"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qbt-KY-C41" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1013" y="-390"/>
-        </scene>
         <!--課程資訊-->
         <scene sceneID="1x7-nb-k4I">
             <objects>
-                <tableViewController automaticallyAdjustsScrollViewInsets="NO" id="7UU-OZ-zlP" customClass="StellarCourseInfoTableViewController" sceneMemberID="viewController">
+                <tableViewController id="7UU-OZ-zlP" customClass="StellarCourseInfoTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="93" sectionHeaderHeight="18" sectionFooterHeight="18" id="KNh-XJ-zHc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
@@ -285,7 +266,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AaW-Ba-oZ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1937.68115942029" y="-1038.5869565217392"/>
+            <point key="canvasLocation" x="1165" y="-698"/>
         </scene>
     </scenes>
     <resources>
