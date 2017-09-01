@@ -44,7 +44,11 @@ static NSArray* monthNum;
         calenderData = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"CalendarModule" ofType:@"plist"]];
     
     [self setCalendarData];
-    [self setViewControllers:@[pages[0]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+    
+    if([pages count] >= 1)
+        [self setViewControllers:@[pages[1]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+    else
+        [self setViewControllers:@[pages[0]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
     
     //下載檔案
     [self downloadDataFromServer];
@@ -57,10 +61,6 @@ static NSArray* monthNum;
 }
 
 -(void)setCalendarData {
-    //找出最大的年份
-    NSArray* target = calenderData[@"event"];
-    max_year = [[[target  valueForKeyPath:@"@max.DtStart"] substringToIndex:4] intValue];
-    
     //讀取現在年份
     NSDateFormatter* formatter = [NSDateFormatter new];
     NSDate* now = [NSDate date];
@@ -74,13 +74,9 @@ static NSArray* monthNum;
     if(nowMon >= 8)
         now_year++;
     
-    //相差太多年只列出三年份
-    if(max_year - now_year > 3 || max_year - now_year < 0)
-        now_year = max_year - 3;
-    
-    //做出年份字串陣列
+    //做出年份字串陣列 去年 今年 明年
     NSMutableArray* yearsTemp = [NSMutableArray new];
-    for(int i = 0 ; i <= max_year - now_year ; i++)
+    for(int i = -1 ; i <= 1 ; i++)
     {
         [yearsTemp addObject:[[NSString alloc] initWithFormat:@"%d",now_year + i]];
     }
@@ -92,7 +88,7 @@ static NSArray* monthNum;
     {
         CalendarTableViewController* page = [self.storyboard instantiateViewControllerWithIdentifier:@"CalendarTable"];
         
-        page.year = now_year + j;
+        page.year = [years[j] intValue];
         //填入當年資料
         NSMutableArray* sectionData = [NSMutableArray new];
         for(int i = 0 ; i < [month count] ; i++)
@@ -100,9 +96,9 @@ static NSArray* monthNum;
             //年月份的漏斗 例：201706
             NSString* sortKey;
             if(i < 5) // 8 ~ 12 月
-                sortKey = [[NSString alloc]initWithFormat:@"%d%02d",now_year + j - 1,[monthNum[i] intValue]];
+                sortKey = [[NSString alloc]initWithFormat:@"%d%02d",page.year - 1,[monthNum[i] intValue]];
             else
-                sortKey = [[NSString alloc]initWithFormat:@"%d%02d",now_year + j,[monthNum[i] intValue]];
+                sortKey = [[NSString alloc]initWithFormat:@"%d%02d",page.year,[monthNum[i] intValue]];
             NSPredicate *filter = [NSPredicate predicateWithFormat:@"SELF['DtStart'] CONTAINS %@",sortKey];
             
             //排序工具 優先順序 DtStart > DtEnd
@@ -115,7 +111,9 @@ static NSArray* monthNum;
         }
         page.sectionData = [sectionData copy];
         
-        [pagesTemp addObject:page];
+        //當年八月有無資料
+        if([page.sectionData[0] count] > 0)
+            [pagesTemp addObject:page];
     }
     pages = [pagesTemp copy];
 }
@@ -170,12 +168,13 @@ static NSArray* monthNum;
 
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController {
     
-    return [years count];
+    return [pages count];
 }
 
 - (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController
 {
-    
+    if([pages count] >=1)
+        return 1;
     return 0;
 }
 

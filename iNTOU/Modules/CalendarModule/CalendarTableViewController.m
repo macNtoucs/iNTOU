@@ -36,7 +36,11 @@ static NSArray* monthNum;
     NSDateFormatter* formatter = [NSDateFormatter new];
     NSDate* now = [NSDate date];
     [formatter setDateFormat:@"MM"];
-    [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:([[formatter stringFromDate:now] intValue] + 4) % 12] atScrollPosition:UITableViewScrollPositionTop animated:YES];
+    int scrolledSection = ([[formatter stringFromDate:now] intValue] + 4) % 12;
+    
+    if([sectionData[scrolledSection] count] > 0)
+        [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:scrolledSection] atScrollPosition:UITableViewScrollPositionTop animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning {

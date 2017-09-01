@@ -14,7 +14,6 @@
     NSArray* years;
     NSArray* pages;
     int now_year;
-    int max_year;
 }
 
 @end
