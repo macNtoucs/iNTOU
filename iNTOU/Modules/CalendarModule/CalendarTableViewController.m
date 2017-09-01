@@ -68,8 +68,8 @@ static NSArray* monthNum;
     //格式轉換
     NSDateFormatter* formatter = [NSDateFormatter new];
     [formatter setDateFormat:@"YYYYMMdd"];
-    NSDate* DtStart = [formatter dateFromString:cellData[@"DtStart"]];
-    NSDate* DtEnd = [formatter dateFromString:cellData[@"DtEnd"]];
+    NSDate* DtStart = [formatter dateFromString:[cellData[@"DtStart"] substringToIndex:8]];
+    NSDate* DtEnd = [formatter dateFromString:[cellData[@"DtEnd"] substringToIndex:8]];
     [formatter setDateFormat:@"MM/dd(E)"];
     
     //DtEnd - 1天
@@ -80,10 +80,10 @@ static NSArray* monthNum;
     DtEnd = [theCalendar dateByAddingComponents:dayComponent toDate:DtEnd options:0];
     
     //判斷有無同天發生
-    if([[formatter stringFromDate:DtStart] isEqualToString:[formatter stringFromDate:DtEnd]])
-        ((UILabel*)[cell viewWithTag:101]).text = [formatter stringFromDate:DtStart];
-    else
+    if([DtStart compare: DtEnd] == NSOrderedAscending)
         ((UILabel*)[cell viewWithTag:101]).text = [[NSString alloc]initWithFormat:@"%@ ～ %@",[formatter stringFromDate:DtStart],[formatter stringFromDate:DtEnd]];
+    else
+        ((UILabel*)[cell viewWithTag:101]).text = [formatter stringFromDate:DtStart];
     
     //事件內容
     ((UILabel*)[cell viewWithTag:102]).text = cellData[@"Summary"];
