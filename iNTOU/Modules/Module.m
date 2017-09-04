@@ -22,9 +22,9 @@
     return self;
 }
 
--(instancetype)setDisplayName:(NSString*)displayName AndModuleName:(NSString*)moduleName {
-    self.displayName = displayName;
-    self.moduleName = moduleName;
+-(instancetype)setDisplayName:(NSString*)dName AndModuleName:(NSString*)mName {
+    self.displayName = dName;
+    self.moduleName = mName;
     
     return self;
 }
