@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -172,23 +171,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="個人課程" id="Xa6-A8-FVy">
-                        <rightBarButtonItems>
-                            <barButtonItem systemItem="refresh" id="jCW-sW-q5N">
-                                <connections>
-                                    <action selector="refresh:" destination="7pc-X9-Rft" id="xhg-Vc-o49"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem style="plain" id="NFt-E3-HaG">
-                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CnD-bd-4Cr">
-                                    <rect key="frame" x="265" y="7" width="92" height="30"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="TronClass"/>
-                                    <connections>
-                                        <action selector="TronClassButtonAction:" destination="7pc-X9-Rft" eventType="touchUpInside" id="rmX-Sz-ZKp"/>
-                                    </connections>
-                                </button>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="jCW-sW-q5N">
+                            <connections>
+                                <action selector="refresh:" destination="7pc-X9-Rft" id="xhg-Vc-o49"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>

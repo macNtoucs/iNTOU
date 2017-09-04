@@ -24,9 +24,6 @@ static NSString * const reuseIdentifier = @"mainCells";
     [super viewDidLoad];
     
     moduleManager = [ModuleManager new];
-    
-    fontSize = [self getFontSize];
-    
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -50,14 +47,19 @@ static NSString * const reuseIdentifier = @"mainCells";
     // Dispose of any resources that can be recreated.
 }
 
--(float)getFontSize {
+-(float)getFontSize:(NSString*)string {
     //找出字體最符合的大小
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, view_width*0.15, 17)]; //高度固定17 但是寬度不固定
-    label.text = @"四個字喔"; //這裡設定字串長度
+    label.text = string; //這裡輸入字串
+    
+    if(label.text.length < 4)
+        label.text = @"四個字喔";
+    
     float fontSizeTemp = 17;
+    
     while ([label.text sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:fontSizeTemp]}].width > view_width*0.15)
     {
-        fontSizeTemp--;
+        fontSizeTemp-=0.5;
     }
     return fontSizeTemp;
 }
@@ -80,6 +82,7 @@ static NSString * const reuseIdentifier = @"mainCells";
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     ((UILabel*)[cell viewWithTag:101]).text = [moduleManager displayNameAtIndexPath:indexPath];
+    float fontSize = [self getFontSize: ((UILabel*)[cell viewWithTag:101]).text];
     [((UILabel*)[cell viewWithTag:101]) setFont:[((UILabel*)[cell viewWithTag:101]).font fontWithSize:fontSize]];
     ((UIImageView*)[cell viewWithTag:102]).image = [UIImage imageNamed:[moduleManager moduleNameAtIndexPath:indexPath]];
     return cell;
@@ -89,8 +92,11 @@ static NSString * const reuseIdentifier = @"mainCells";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    [self showViewController:[[moduleManager moduleAtIndexPath:indexPath]getViewController] sender:nil];
+    UIViewController* viewController = [[moduleManager moduleAtIndexPath:indexPath] getViewController];
     
+    if(viewController != nil) {
+        [self showViewController:viewController sender:nil];
+    }
 }
 
 

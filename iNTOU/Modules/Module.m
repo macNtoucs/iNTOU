@@ -22,11 +22,11 @@
     return self;
 }
 
-+(instancetype)setDisplayName:(NSString*)displayName AndModuleName:(NSString*)moduleName {
-    Module* temp = [Module new];
-    temp.displayName = displayName;
-    temp.moduleName = moduleName;
-    return temp;
+-(instancetype)setDisplayName:(NSString*)displayName AndModuleName:(NSString*)moduleName {
+    self.displayName = displayName;
+    self.moduleName = moduleName;
+    
+    return self;
 }
 
 -(UIViewController*)getViewController {

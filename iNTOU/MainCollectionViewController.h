@@ -12,7 +12,6 @@
 @interface MainCollectionViewController : UICollectionViewController
 {
     ModuleManager* moduleManager;
-    float fontSize;
 }
 
 @end

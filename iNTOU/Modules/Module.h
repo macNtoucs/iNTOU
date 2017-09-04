@@ -18,7 +18,7 @@
 
 
 -(instancetype)init;
-+(instancetype)setDisplayName:(NSString*)displayName AndModuleName:(NSString*)moduleName; //用在moduleManager上做初始化
+-(instancetype)setDisplayName:(NSString*)displayName AndModuleName:(NSString*)moduleName; //用在moduleManager上做初始化
 -(UIViewController*)getViewController; //取得storyboard的初始view controller
 -(void)clearViewController;
 

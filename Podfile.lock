@@ -6,23 +6,17 @@ PODS:
   - GoogleMaps/Maps (2.2.0):
     - GoogleMaps/Base
   - MBProgressHUD (1.0.0)
-  - OpenSSL-Universal (1.0.1.19)
-  - pjsip (2.5.5.2):
-    - OpenSSL-Universal (= 1.0.1.19)
 
 DEPENDENCIES:
   - FSCalendar
   - GoogleMaps
   - MBProgressHUD
-  - pjsip
 
 SPEC CHECKSUMS:
   FSCalendar: 6200ef796dfe85005ff2fb19bbd429f8be742f86
   GoogleMaps: 104c418d61ab8a05dff06ed0784c25ea9d37da45
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
-  OpenSSL-Universal: 07489b0316f0f4f53c928e402e2ecbbedf96d93b
-  pjsip: ecfdeef822209118bc343a8f6a858f79cd66c10a
 
-PODFILE CHECKSUM: 5328e2d2359d49be1f2c78ce1b12de21da4e1246
+PODFILE CHECKSUM: 0e9940b0cf1f55f33899f5c2fa2e95693814967f
 
 COCOAPODS: 1.2.0
