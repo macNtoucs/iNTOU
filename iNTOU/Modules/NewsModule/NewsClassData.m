@@ -12,7 +12,7 @@
 @synthesize classType,threadLock,classData,status,MaxPage;
 
 -(void)downloadDataFromServer:(int)page {
-        NSString* urlString = [[NSString alloc]initWithFormat:@"http://140.121.81.93/api/ntou_app.php?page=%d&count=10&class=",page];
+        NSString* urlString = [[NSString alloc]initWithFormat:@"https://api.ntou.edu.tw/api/ntou_app.php?page=%d&count=10&class=",page];
         urlString = [urlString stringByAppendingString:classType];
         NSURL* url = [[NSURL alloc]initWithString:urlString];
         NSURLRequest* request = [[NSURLRequest alloc]initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:30.0];
@@ -29,8 +29,6 @@
         
         if(dataSource) {
             NSString* dataSouceString = [[NSString alloc]initWithData:dataSource encoding:NSUTF8StringEncoding];
-            dataSouceString = [dataSouceString stringByReplacingOccurrencesOfString:@"<br />" withString:@"\n"];
-            dataSouceString = [dataSouceString stringByReplacingOccurrencesOfString:@"&" withString:@"&amp;"];
             dataSource = [dataSouceString dataUsingEncoding:NSUTF8StringEncoding];
             
             if(![self parse:dataSource]) {
@@ -93,7 +91,7 @@ foundCharacters:(NSString *)string {
 }
 
 //XML CDATABlock
-- (void)parser:(NSXMLParser *)parser
+- (void)parser:(NSXMLParser *)parses
     foundCDATA:(NSData *)CDATABlock {
     NSString* templateString = [[NSString alloc]initWithData:CDATABlock encoding:NSUTF8StringEncoding];
     [parseStringTemp appendString:templateString];
@@ -107,6 +105,7 @@ foundCharacters:(NSString *)string {
     if(![elementName isEqualToString:@"ntou"])
     {
         NSString* parseString = [parseStringTemp copy];
+        
         
         parseString = [parseString stringByReplacingOccurrencesOfString:@"&amp;" withString:@"&"];
         parseString = [parseString stringByReplacingOccurrencesOfString:@"&quot;" withString:@"\""];
@@ -131,13 +130,13 @@ foundCharacters:(NSString *)string {
         
         if([elementName isEqualToString:@"title"]) {
             parseString = [parseString stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-            parseString = [parseString stringByReplacingOccurrencesOfString:@"　" withString:@""];
         }
         
         if(![elementName isEqualToString:@"notice"])
             [dataElemetTemp setObject:parseString forKey:elementName];
     }
 }
+
 
 //XML結束
 - (void)parserDidEndDocument:(NSXMLParser *)parser {

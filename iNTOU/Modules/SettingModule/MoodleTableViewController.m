@@ -85,7 +85,7 @@
             
         case 1:
             cell = [tableView dequeueReusableCellWithIdentifier:@"MoodleInfoCells"];
-            ((UITextView*)[cell viewWithTag:103]).text = @"帳號：海大mail帳號 (預設為學號或教職員證號)\n密碼：海大mail密碼 (預設為身分證字號)\n若忘記密碼，請與圖資處校園網路組聯繫。";
+            ((UITextView*)[cell viewWithTag:103]).text = @"帳號：海大mail帳號 (預設為學號或教職員證號)\n密碼：海大mail密碼 (預設為身分證字號)\n若忘記密碼，請與圖資處圖書系統組聯繫。";
             break;
             
         default:

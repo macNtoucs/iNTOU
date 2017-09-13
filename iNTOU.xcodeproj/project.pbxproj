@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6EE67C7430399DF9C4E0BEED /* Pods_iNTOU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D058C77D855CA05A140962 /* Pods_iNTOU.framework */; };
 		9100EFE81E33449300756AE5 /* ModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9100EFE71E33449300756AE5 /* ModuleManager.m */; };
 		91053ABD1E51978300ACEA8D /* LifeModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91053ABC1E51978300ACEA8D /* LifeModule.storyboard */; };
 		91053AC21E51995800ACEA8D /* LifeModule.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91053AC11E51995800ACEA8D /* LifeModule.plist */; };
@@ -97,11 +96,13 @@
 		91EE92131E4B088300B2DFD1 /* SettingModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91EE92121E4B088300B2DFD1 /* SettingModule.storyboard */; };
 		91F8DBD81E5445F000D45684 /* GoogleMapStreetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F8DBD71E5445F000D45684 /* GoogleMapStreetViewController.m */; };
 		91F8DBE21E54899400D45684 /* StellarCourseInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F8DBE11E54899400D45684 /* StellarCourseInfoTableViewController.m */; };
+		B080A1F9846B3FCA6F65A986 /* Pods_iNTOU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC0DD9C55F06082BF1F23F6 /* Pods_iNTOU.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04D058C77D855CA05A140962 /* Pods_iNTOU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iNTOU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EB29B29DE07FAB35EB3ACA0 /* Pods-iNTOU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iNTOU.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iNTOU/Pods-iNTOU.debug.xcconfig"; sourceTree = "<group>"; };
+		2D1D60F210C0C5DB3C2E9D2D /* Pods-iNTOU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iNTOU.release.xcconfig"; path = "Pods/Target Support Files/Pods-iNTOU/Pods-iNTOU.release.xcconfig"; sourceTree = "<group>"; };
+		2DC0DD9C55F06082BF1F23F6 /* Pods_iNTOU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iNTOU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78DB6F4B656D2BDED7757C0D /* Pods-iNTOU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iNTOU.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iNTOU/Pods-iNTOU.debug.xcconfig"; sourceTree = "<group>"; };
 		9100EFE61E33449300756AE5 /* ModuleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModuleManager.h; path = Modules/ModuleManager.h; sourceTree = "<group>"; };
 		9100EFE71E33449300756AE5 /* ModuleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModuleManager.m; path = Modules/ModuleManager.m; sourceTree = "<group>"; };
 		91053ABC1E51978300ACEA8D /* LifeModule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LifeModule.storyboard; sourceTree = "<group>"; };
@@ -257,7 +258,6 @@
 		91F8DBD71E5445F000D45684 /* GoogleMapStreetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoogleMapStreetViewController.m; path = API/GoogleMapsView/GoogleMapStreetViewController.m; sourceTree = "<group>"; };
 		91F8DBE01E54899400D45684 /* StellarCourseInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StellarCourseInfoTableViewController.h; path = Modules/StellarModule/StellarClass/StellarCourseInfoTableViewController.h; sourceTree = "<group>"; };
 		91F8DBE11E54899400D45684 /* StellarCourseInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StellarCourseInfoTableViewController.m; path = Modules/StellarModule/StellarClass/StellarCourseInfoTableViewController.m; sourceTree = "<group>"; };
-		E99A426054C1B94E5B7E0441 /* Pods-iNTOU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iNTOU.release.xcconfig"; path = "Pods/Target Support Files/Pods-iNTOU/Pods-iNTOU.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,17 +265,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EE67C7430399DF9C4E0BEED /* Pods_iNTOU.framework in Frameworks */,
+				B080A1F9846B3FCA6F65A986 /* Pods_iNTOU.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5816CAA05F1BCFAA22623DB6 /* Frameworks */ = {
+		400EA550901BAC976A8A45CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				04D058C77D855CA05A140962 /* Pods_iNTOU.framework */,
+				2DC0DD9C55F06082BF1F23F6 /* Pods_iNTOU.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -556,8 +556,8 @@
 			children = (
 				91E732551E31276400A54B9A /* iNTOU */,
 				91E732541E31276400A54B9A /* Products */,
-				BBBEF53220F5D91806C472CB /* Pods */,
-				5816CAA05F1BCFAA22623DB6 /* Frameworks */,
+				D88119DD90381D3F4B437F32 /* Pods */,
+				400EA550901BAC976A8A45CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -675,11 +675,11 @@
 			name = SettingModule;
 			sourceTree = "<group>";
 		};
-		BBBEF53220F5D91806C472CB /* Pods */ = {
+		D88119DD90381D3F4B437F32 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1EB29B29DE07FAB35EB3ACA0 /* Pods-iNTOU.debug.xcconfig */,
-				E99A426054C1B94E5B7E0441 /* Pods-iNTOU.release.xcconfig */,
+				78DB6F4B656D2BDED7757C0D /* Pods-iNTOU.debug.xcconfig */,
+				2D1D60F210C0C5DB3C2E9D2D /* Pods-iNTOU.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -691,12 +691,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91E7326A1E31276400A54B9A /* Build configuration list for PBXNativeTarget "iNTOU" */;
 			buildPhases = (
-				0D9439D271E943E69B07C29C /* [CP] Check Pods Manifest.lock */,
+				B0DF438CDBBCDEFE13BE8635 /* [CP] Check Pods Manifest.lock */,
 				91E7324F1E31276400A54B9A /* Sources */,
 				91E732501E31276400A54B9A /* Frameworks */,
 				91E732511E31276400A54B9A /* Resources */,
-				EE3D9BCCF3D3DD1778513834 /* [CP] Embed Pods Frameworks */,
-				CF8E89279F04A9047111B2AA /* [CP] Copy Pods Resources */,
+				E23CECAD719F686DE4040891 /* [CP] Embed Pods Frameworks */,
+				29972BACA35F98F64E0D8D4E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -786,22 +786,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0D9439D271E943E69B07C29C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		CF8E89279F04A9047111B2AA /* [CP] Copy Pods Resources */ = {
+		29972BACA35F98F64E0D8D4E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -816,7 +801,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iNTOU/Pods-iNTOU-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EE3D9BCCF3D3DD1778513834 /* [CP] Embed Pods Frameworks */ = {
+		B0DF438CDBBCDEFE13BE8635 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E23CECAD719F686DE4040891 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1029,15 +1029,12 @@
 		};
 		91E7326B1E31276400A54B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1EB29B29DE07FAB35EB3ACA0 /* Pods-iNTOU.debug.xcconfig */;
+			baseConfigurationReference = 78DB6F4B656D2BDED7757C0D /* Pods-iNTOU.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q97ZWS4P33;
 				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Pods/Vialer-pjsip-iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = iNTOU/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1049,15 +1046,12 @@
 		};
 		91E7326C1E31276400A54B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E99A426054C1B94E5B7E0441 /* Pods-iNTOU.release.xcconfig */;
+			baseConfigurationReference = 2D1D60F210C0C5DB3C2E9D2D /* Pods-iNTOU.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q97ZWS4P33;
 				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Pods/Vialer-pjsip-iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = iNTOU/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
