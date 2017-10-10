@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9100EFE81E33449300756AE5 /* ModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9100EFE71E33449300756AE5 /* ModuleManager.m */; };
-		91053ABD1E51978300ACEA8D /* LifeModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91053ABC1E51978300ACEA8D /* LifeModule.storyboard */; };
 		91053AC21E51995800ACEA8D /* LifeModule.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91053AC11E51995800ACEA8D /* LifeModule.plist */; };
 		911B7CB61E476B15001A5328 /* CalendarModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 911B7CB51E476B15001A5328 /* CalendarModule.storyboard */; };
 		912B68851E717E460038D261 /* TrafficBusStopTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B68841E717E460038D261 /* TrafficBusStopTableViewController.m */; };
@@ -94,6 +93,8 @@
 		91EE920E1E4ADFB400B2DFD1 /* EmergencyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EE920D1E4ADFB400B2DFD1 /* EmergencyTableViewController.m */; };
 		91EE92101E4AE1B700B2DFD1 /* EmergencyModule.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91EE920F1E4AE1B700B2DFD1 /* EmergencyModule.plist */; };
 		91EE92131E4B088300B2DFD1 /* SettingModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91EE92121E4B088300B2DFD1 /* SettingModule.storyboard */; };
+		91EEADDB1F8C698B00352890 /* TeacherAndStudentModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91EEADDA1F8C698B00352890 /* TeacherAndStudentModule.storyboard */; };
+		91EEADDE1F8C6DA000352890 /* TeacherAndStudentPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EEADDD1F8C6DA000352890 /* TeacherAndStudentPageViewController.m */; };
 		91F8DBD81E5445F000D45684 /* GoogleMapStreetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F8DBD71E5445F000D45684 /* GoogleMapStreetViewController.m */; };
 		91F8DBE21E54899400D45684 /* StellarCourseInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F8DBE11E54899400D45684 /* StellarCourseInfoTableViewController.m */; };
 		B080A1F9846B3FCA6F65A986 /* Pods_iNTOU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC0DD9C55F06082BF1F23F6 /* Pods_iNTOU.framework */; };
@@ -105,7 +106,6 @@
 		78DB6F4B656D2BDED7757C0D /* Pods-iNTOU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iNTOU.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iNTOU/Pods-iNTOU.debug.xcconfig"; sourceTree = "<group>"; };
 		9100EFE61E33449300756AE5 /* ModuleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModuleManager.h; path = Modules/ModuleManager.h; sourceTree = "<group>"; };
 		9100EFE71E33449300756AE5 /* ModuleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModuleManager.m; path = Modules/ModuleManager.m; sourceTree = "<group>"; };
-		91053ABC1E51978300ACEA8D /* LifeModule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LifeModule.storyboard; sourceTree = "<group>"; };
 		91053AC11E51995800ACEA8D /* LifeModule.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = LifeModule.plist; path = Resource/LifeModule.plist; sourceTree = "<group>"; };
 		911B7CB51E476B15001A5328 /* CalendarModule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CalendarModule.storyboard; path = Modules/CalendarModule/CalendarModule.storyboard; sourceTree = "<group>"; };
 		912B68831E717E460038D261 /* TrafficBusStopTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrafficBusStopTableViewController.h; path = Modules/TrafficModule/BusTraffic/TrafficBusStopTableViewController.h; sourceTree = "<group>"; };
@@ -254,6 +254,10 @@
 		91EE920D1E4ADFB400B2DFD1 /* EmergencyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmergencyTableViewController.m; path = Modules/EmergencyModule/EmergencyTableViewController.m; sourceTree = "<group>"; };
 		91EE920F1E4AE1B700B2DFD1 /* EmergencyModule.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = EmergencyModule.plist; path = Resource/EmergencyModule.plist; sourceTree = "<group>"; };
 		91EE92121E4B088300B2DFD1 /* SettingModule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SettingModule.storyboard; path = Modules/SettingModule/SettingModule.storyboard; sourceTree = "<group>"; };
+		91EEADDA1F8C698B00352890 /* TeacherAndStudentModule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = TeacherAndStudentModule.storyboard; path = Modules/TeacherAndStudentModule/TeacherAndStudentModule.storyboard; sourceTree = "<group>"; };
+		91EEADDC1F8C6DA000352890 /* TeacherAndStudentPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TeacherAndStudentPageViewController.h; path = Modules/TeacherAndStudentModule/TeacherAndStudentPageViewController.h; sourceTree = "<group>"; };
+		91EEADDD1F8C6DA000352890 /* TeacherAndStudentPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TeacherAndStudentPageViewController.m; path = Modules/TeacherAndStudentModule/TeacherAndStudentPageViewController.m; sourceTree = "<group>"; };
+		91EEADE01F8C6F4800352890 /* LifeModule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LifeModule.storyboard; path = Modules/LifeModule/LifeModule.storyboard; sourceTree = "<group>"; };
 		91F8DBD61E5445F000D45684 /* GoogleMapStreetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoogleMapStreetViewController.h; path = API/GoogleMapsView/GoogleMapStreetViewController.h; sourceTree = "<group>"; };
 		91F8DBD71E5445F000D45684 /* GoogleMapStreetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoogleMapStreetViewController.m; path = API/GoogleMapsView/GoogleMapStreetViewController.m; sourceTree = "<group>"; };
 		91F8DBE01E54899400D45684 /* StellarCourseInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StellarCourseInfoTableViewController.h; path = Modules/StellarModule/StellarClass/StellarCourseInfoTableViewController.h; sourceTree = "<group>"; };
@@ -297,7 +301,7 @@
 		91053ABB1E51977500ACEA8D /* LifeModule */ = {
 			isa = PBXGroup;
 			children = (
-				91053ABC1E51978300ACEA8D /* LifeModule.storyboard */,
+				91EEADE01F8C6F4800352890 /* LifeModule.storyboard */,
 				91B8412B1E51F587000B4AAE /* LifeViewController.h */,
 				91B8412C1E51F587000B4AAE /* LifeViewController.m */,
 				91B8412E1E5223F1000B4AAE /* LifeStreetViewController.h */,
@@ -600,6 +604,7 @@
 		91E732961E31399A00A54B9A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				91EEADD91F8C63BF00352890 /* TeacherAndStudentModule */,
 				918843361F5D7BA700C37E74 /* TronClassModule */,
 				91D7A1361E9781D000B79396 /* AboutModule */,
 				91D7A12E1E977C7400B79396 /* OtherLinkModule */,
@@ -673,6 +678,16 @@
 				91853B451E594122007C37AB /* MoodleTableViewController.m */,
 			);
 			name = SettingModule;
+			sourceTree = "<group>";
+		};
+		91EEADD91F8C63BF00352890 /* TeacherAndStudentModule */ = {
+			isa = PBXGroup;
+			children = (
+				91EEADDA1F8C698B00352890 /* TeacherAndStudentModule.storyboard */,
+				91EEADDC1F8C6DA000352890 /* TeacherAndStudentPageViewController.h */,
+				91EEADDD1F8C6DA000352890 /* TeacherAndStudentPageViewController.m */,
+			);
+			name = TeacherAndStudentModule;
 			sourceTree = "<group>";
 		};
 		D88119DD90381D3F4B437F32 /* Pods */ = {
@@ -765,7 +780,6 @@
 				91D7A1321E977FD700B79396 /* OtherLinkModule.storyboard in Resources */,
 				913D65121E5D380600888676 /* LifeMedia.xcassets in Resources */,
 				912B68CD1E8294FF0038D261 /* StellarMedia.xcassets in Resources */,
-				91053ABD1E51978300ACEA8D /* LifeModule.storyboard in Resources */,
 				91E732611E31276400A54B9A /* Main.storyboard in Resources */,
 				91EE92131E4B088300B2DFD1 /* SettingModule.storyboard in Resources */,
 				91477FA01E55BFD500EC94C1 /* LibraryModuleFloor.plist in Resources */,
@@ -777,6 +791,7 @@
 				91EE91FE1E4AB94D00B2DFD1 /* CalendarModule.plist in Resources */,
 				91EC9CD01E4C8AEA007BB413 /* StellarModule.storyboard in Resources */,
 				913D65101E5D37E700888676 /* TrafficMedia.xcassets in Resources */,
+				91EEADDB1F8C698B00352890 /* TeacherAndStudentModule.storyboard in Resources */,
 				91053AC21E51995800ACEA8D /* LifeModule.plist in Resources */,
 				91D7A1381E97820700B79396 /* AboutModule.storyboard in Resources */,
 				91531E341E53304E005D2CAF /* GuideModule.plist in Resources */,
@@ -845,6 +860,7 @@
 				91CDBF581E5AE01F0085514E /* LibrarySearchViewController.m in Sources */,
 				912B68C61E8007D80038D261 /* TrafficHSRDateViewController.m in Sources */,
 				91E7325B1E31276400A54B9A /* AppDelegate.m in Sources */,
+				91EEADDE1F8C6DA000352890 /* TeacherAndStudentPageViewController.m in Sources */,
 				91B72FA21E422B4B00896AF3 /* NewsContentViewController.m in Sources */,
 				91742CA21E9E3BC00064D5A3 /* StellarViewController.m in Sources */,
 				91D7A1351E97811700B79396 /* OtherLinkTableViewController.m in Sources */,

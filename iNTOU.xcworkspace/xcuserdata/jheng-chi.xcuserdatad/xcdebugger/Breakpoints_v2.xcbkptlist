@@ -363,7 +363,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "15"
             endingLineNumber = "15"
-            landmarkName = "StellarViewController"
+            landmarkName = "@implementation StellarViewController"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
@@ -411,8 +411,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
             endingLineNumber = "19"
-            landmarkName = "StellarViewController"
-            landmarkType = "2">
+            landmarkName = "baseViewHeight"
+            landmarkType = "24">
             <Locations>
                <Location
                   shouldBeEnabled = "No"

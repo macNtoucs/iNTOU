@@ -28,6 +28,7 @@
         [modulesArrayTemp addObject:[[Module new] setDisplayName:@"交通資訊" AndModuleName:@"TrafficModule"]];
         [modulesArrayTemp addObject:[[Module new] setDisplayName:@"生活圈" AndModuleName:@"LifeModule"]];
         [modulesArrayTemp addObject:[[Module new] setDisplayName:@"個人課程" AndModuleName:@"StellarModule"]];
+        [modulesArrayTemp addObject:[[Module new] setDisplayName:@"導生系統" AndModuleName:@"TeacherAndStudentModule"]];
         [modulesArrayTemp addObject:[[TronClassModule new] setDisplayName:@"TronClass" AndModuleName:@"TronClassModule"]];
         [modulesArrayTemp addObject:[[Module new] setDisplayName:@"圖書館" AndModuleName:@"LibraryModule"]];
         [modulesArrayTemp addObject:[[Module new] setDisplayName:@"行事曆" AndModuleName:@"CalendarModule"]];
