@@ -12,7 +12,7 @@
     UIRefreshControl* refresh;
 }
 
-@property (weak,nonatomic)NSDictionary* classData;
+@property (strong,nonatomic)NSDictionary* classData;
 @property (strong,nonatomic)NSDictionary* courseInfoData;
 
 @end

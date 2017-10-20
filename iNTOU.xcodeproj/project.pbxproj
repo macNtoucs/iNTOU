@@ -69,6 +69,12 @@
 		91B72FA21E422B4B00896AF3 /* NewsContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B72FA11E422B4B00896AF3 /* NewsContentViewController.m */; };
 		91B8412D1E51F587000B4AAE /* LifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B8412C1E51F587000B4AAE /* LifeViewController.m */; };
 		91B841301E5223F1000B4AAE /* LifeStreetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B8412F1E5223F1000B4AAE /* LifeStreetViewController.m */; };
+		91BFE13E1F93ECBE00B75599 /* TeacherAndStudentModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91BFE13D1F93ECBE00B75599 /* TeacherAndStudentModule.storyboard */; };
+		91BFE1411F93ED0D00B75599 /* TeacherAndStudentListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BFE1401F93ED0D00B75599 /* TeacherAndStudentListTableViewController.m */; };
+		91BFE1441F940BEF00B75599 /* TeacherAndStudentGradeListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BFE1431F940BEF00B75599 /* TeacherAndStudentGradeListTableViewController.m */; };
+		91BFE1471F941AE000B75599 /* TeacherAndStudentPersonalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BFE1461F941AE000B75599 /* TeacherAndStudentPersonalTableViewController.m */; };
+		91BFE14A1F94244500B75599 /* TeacherClassListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BFE1491F94244500B75599 /* TeacherClassListTableViewController.m */; };
+		91BFE14D1F94285500B75599 /* TeacherClassStudentListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BFE14C1F94285500B75599 /* TeacherClassStudentListTableViewController.m */; };
 		91CDBF4F1E5AC0A30085514E /* LibraryHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CDBF4E1E5AC0A30085514E /* LibraryHistoryTableViewController.m */; };
 		91CDBF581E5AE01F0085514E /* LibrarySearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CDBF571E5AE01F0085514E /* LibrarySearchViewController.m */; };
 		91CDBF5B1E5AE4260085514E /* LibrarySearchResultTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CDBF5A1E5AE4260085514E /* LibrarySearchResultTableViewController.m */; };
@@ -93,8 +99,9 @@
 		91EE920E1E4ADFB400B2DFD1 /* EmergencyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EE920D1E4ADFB400B2DFD1 /* EmergencyTableViewController.m */; };
 		91EE92101E4AE1B700B2DFD1 /* EmergencyModule.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91EE920F1E4AE1B700B2DFD1 /* EmergencyModule.plist */; };
 		91EE92131E4B088300B2DFD1 /* SettingModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91EE92121E4B088300B2DFD1 /* SettingModule.storyboard */; };
-		91EEADDB1F8C698B00352890 /* TeacherAndStudentModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91EEADDA1F8C698B00352890 /* TeacherAndStudentModule.storyboard */; };
-		91EEADDE1F8C6DA000352890 /* TeacherAndStudentPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EEADDD1F8C6DA000352890 /* TeacherAndStudentPageViewController.m */; };
+		91EEADE11F8C704300352890 /* LifeModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91EEADE01F8C6F4800352890 /* LifeModule.storyboard */; };
+		91F8D7EB1F972B400080AB39 /* AcademicInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F8D7EA1F972B400080AB39 /* AcademicInformation.m */; };
+		91F8D7EE1F972E490080AB39 /* AcademicInformationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F8D7ED1F972E490080AB39 /* AcademicInformationTableViewController.m */; };
 		91F8DBD81E5445F000D45684 /* GoogleMapStreetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F8DBD71E5445F000D45684 /* GoogleMapStreetViewController.m */; };
 		91F8DBE21E54899400D45684 /* StellarCourseInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F8DBE11E54899400D45684 /* StellarCourseInfoTableViewController.m */; };
 		B080A1F9846B3FCA6F65A986 /* Pods_iNTOU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC0DD9C55F06082BF1F23F6 /* Pods_iNTOU.framework */; };
@@ -216,6 +223,17 @@
 		91B8412C1E51F587000B4AAE /* LifeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LifeViewController.m; path = Modules/LifeModule/LifeViewController.m; sourceTree = "<group>"; };
 		91B8412E1E5223F1000B4AAE /* LifeStreetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LifeStreetViewController.h; path = Modules/LifeModule/LifeStreetViewController.h; sourceTree = "<group>"; };
 		91B8412F1E5223F1000B4AAE /* LifeStreetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LifeStreetViewController.m; path = Modules/LifeModule/LifeStreetViewController.m; sourceTree = "<group>"; };
+		91BFE13D1F93ECBE00B75599 /* TeacherAndStudentModule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = TeacherAndStudentModule.storyboard; path = Modules/TeacherAndStudentModule/TeacherAndStudentModule.storyboard; sourceTree = "<group>"; };
+		91BFE13F1F93ED0D00B75599 /* TeacherAndStudentListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TeacherAndStudentListTableViewController.h; path = Modules/TeacherAndStudentModule/TeacherAndStudentListTableViewController.h; sourceTree = "<group>"; };
+		91BFE1401F93ED0D00B75599 /* TeacherAndStudentListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TeacherAndStudentListTableViewController.m; path = Modules/TeacherAndStudentModule/TeacherAndStudentListTableViewController.m; sourceTree = "<group>"; };
+		91BFE1421F940BEF00B75599 /* TeacherAndStudentGradeListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TeacherAndStudentGradeListTableViewController.h; path = Modules/TeacherAndStudentModule/TeacherAndStudentGradeListTableViewController.h; sourceTree = "<group>"; };
+		91BFE1431F940BEF00B75599 /* TeacherAndStudentGradeListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TeacherAndStudentGradeListTableViewController.m; path = Modules/TeacherAndStudentModule/TeacherAndStudentGradeListTableViewController.m; sourceTree = "<group>"; };
+		91BFE1451F941AE000B75599 /* TeacherAndStudentPersonalTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TeacherAndStudentPersonalTableViewController.h; path = Modules/TeacherAndStudentModule/TeacherAndStudentPersonalTableViewController.h; sourceTree = "<group>"; };
+		91BFE1461F941AE000B75599 /* TeacherAndStudentPersonalTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TeacherAndStudentPersonalTableViewController.m; path = Modules/TeacherAndStudentModule/TeacherAndStudentPersonalTableViewController.m; sourceTree = "<group>"; };
+		91BFE1481F94244500B75599 /* TeacherClassListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TeacherClassListTableViewController.h; path = Modules/TeacherAndStudentModule/TeacherClassListTableViewController.h; sourceTree = "<group>"; };
+		91BFE1491F94244500B75599 /* TeacherClassListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TeacherClassListTableViewController.m; path = Modules/TeacherAndStudentModule/TeacherClassListTableViewController.m; sourceTree = "<group>"; };
+		91BFE14B1F94285500B75599 /* TeacherClassStudentListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TeacherClassStudentListTableViewController.h; path = Modules/TeacherAndStudentModule/TeacherClassStudentListTableViewController.h; sourceTree = "<group>"; };
+		91BFE14C1F94285500B75599 /* TeacherClassStudentListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TeacherClassStudentListTableViewController.m; path = Modules/TeacherAndStudentModule/TeacherClassStudentListTableViewController.m; sourceTree = "<group>"; };
 		91CDBF4D1E5AC0A30085514E /* LibraryHistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LibraryHistoryTableViewController.h; path = Modules/LibraryModule/PersonalLibrary/LibraryHistoryTableViewController.h; sourceTree = "<group>"; };
 		91CDBF4E1E5AC0A30085514E /* LibraryHistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LibraryHistoryTableViewController.m; path = Modules/LibraryModule/PersonalLibrary/LibraryHistoryTableViewController.m; sourceTree = "<group>"; };
 		91CDBF561E5AE01F0085514E /* LibrarySearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LibrarySearchViewController.h; path = Modules/LibraryModule/SearchLibrary/LibrarySearchViewController.h; sourceTree = "<group>"; };
@@ -254,10 +272,11 @@
 		91EE920D1E4ADFB400B2DFD1 /* EmergencyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmergencyTableViewController.m; path = Modules/EmergencyModule/EmergencyTableViewController.m; sourceTree = "<group>"; };
 		91EE920F1E4AE1B700B2DFD1 /* EmergencyModule.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = EmergencyModule.plist; path = Resource/EmergencyModule.plist; sourceTree = "<group>"; };
 		91EE92121E4B088300B2DFD1 /* SettingModule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SettingModule.storyboard; path = Modules/SettingModule/SettingModule.storyboard; sourceTree = "<group>"; };
-		91EEADDA1F8C698B00352890 /* TeacherAndStudentModule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = TeacherAndStudentModule.storyboard; path = Modules/TeacherAndStudentModule/TeacherAndStudentModule.storyboard; sourceTree = "<group>"; };
-		91EEADDC1F8C6DA000352890 /* TeacherAndStudentPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TeacherAndStudentPageViewController.h; path = Modules/TeacherAndStudentModule/TeacherAndStudentPageViewController.h; sourceTree = "<group>"; };
-		91EEADDD1F8C6DA000352890 /* TeacherAndStudentPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TeacherAndStudentPageViewController.m; path = Modules/TeacherAndStudentModule/TeacherAndStudentPageViewController.m; sourceTree = "<group>"; };
 		91EEADE01F8C6F4800352890 /* LifeModule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LifeModule.storyboard; path = Modules/LifeModule/LifeModule.storyboard; sourceTree = "<group>"; };
+		91F8D7E91F972B400080AB39 /* AcademicInformation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AcademicInformation.h; path = API/AcademicInformation/AcademicInformation.h; sourceTree = "<group>"; };
+		91F8D7EA1F972B400080AB39 /* AcademicInformation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AcademicInformation.m; path = API/AcademicInformation/AcademicInformation.m; sourceTree = "<group>"; };
+		91F8D7EC1F972E490080AB39 /* AcademicInformationTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AcademicInformationTableViewController.h; path = Modules/SettingModule/AcademicInformationTableViewController.h; sourceTree = "<group>"; };
+		91F8D7ED1F972E490080AB39 /* AcademicInformationTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AcademicInformationTableViewController.m; path = Modules/SettingModule/AcademicInformationTableViewController.m; sourceTree = "<group>"; };
 		91F8DBD61E5445F000D45684 /* GoogleMapStreetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoogleMapStreetViewController.h; path = API/GoogleMapsView/GoogleMapStreetViewController.h; sourceTree = "<group>"; };
 		91F8DBD71E5445F000D45684 /* GoogleMapStreetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoogleMapStreetViewController.m; path = API/GoogleMapsView/GoogleMapStreetViewController.m; sourceTree = "<group>"; };
 		91F8DBE01E54899400D45684 /* StellarCourseInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StellarCourseInfoTableViewController.h; path = Modules/StellarModule/StellarClass/StellarCourseInfoTableViewController.h; sourceTree = "<group>"; };
@@ -471,6 +490,7 @@
 		91531E3E1E53437B005D2CAF /* API */ = {
 			isa = PBXGroup;
 			children = (
+				91F8D7E81F972AA20080AB39 /* AcademicInformation */,
 				91853B401E592DAC007C37AB /* Library */,
 				91CBDB811E4C49AF002AC913 /* Moodle */,
 				91531E3D1E5342F6005D2CAF /* GoogleMapsView */,
@@ -676,6 +696,8 @@
 				91853B421E593DAB007C37AB /* LibraryTableViewController.m */,
 				91853B441E594122007C37AB /* MoodleTableViewController.h */,
 				91853B451E594122007C37AB /* MoodleTableViewController.m */,
+				91F8D7EC1F972E490080AB39 /* AcademicInformationTableViewController.h */,
+				91F8D7ED1F972E490080AB39 /* AcademicInformationTableViewController.m */,
 			);
 			name = SettingModule;
 			sourceTree = "<group>";
@@ -683,11 +705,28 @@
 		91EEADD91F8C63BF00352890 /* TeacherAndStudentModule */ = {
 			isa = PBXGroup;
 			children = (
-				91EEADDA1F8C698B00352890 /* TeacherAndStudentModule.storyboard */,
-				91EEADDC1F8C6DA000352890 /* TeacherAndStudentPageViewController.h */,
-				91EEADDD1F8C6DA000352890 /* TeacherAndStudentPageViewController.m */,
+				91BFE13D1F93ECBE00B75599 /* TeacherAndStudentModule.storyboard */,
+				91BFE13F1F93ED0D00B75599 /* TeacherAndStudentListTableViewController.h */,
+				91BFE1401F93ED0D00B75599 /* TeacherAndStudentListTableViewController.m */,
+				91BFE1421F940BEF00B75599 /* TeacherAndStudentGradeListTableViewController.h */,
+				91BFE1431F940BEF00B75599 /* TeacherAndStudentGradeListTableViewController.m */,
+				91BFE1451F941AE000B75599 /* TeacherAndStudentPersonalTableViewController.h */,
+				91BFE1461F941AE000B75599 /* TeacherAndStudentPersonalTableViewController.m */,
+				91BFE1481F94244500B75599 /* TeacherClassListTableViewController.h */,
+				91BFE1491F94244500B75599 /* TeacherClassListTableViewController.m */,
+				91BFE14B1F94285500B75599 /* TeacherClassStudentListTableViewController.h */,
+				91BFE14C1F94285500B75599 /* TeacherClassStudentListTableViewController.m */,
 			);
 			name = TeacherAndStudentModule;
+			sourceTree = "<group>";
+		};
+		91F8D7E81F972AA20080AB39 /* AcademicInformation */ = {
+			isa = PBXGroup;
+			children = (
+				91F8D7E91F972B400080AB39 /* AcademicInformation.h */,
+				91F8D7EA1F972B400080AB39 /* AcademicInformation.m */,
+			);
+			name = AcademicInformation;
 			sourceTree = "<group>";
 		};
 		D88119DD90381D3F4B437F32 /* Pods */ = {
@@ -770,6 +809,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91EEADE11F8C704300352890 /* LifeModule.storyboard in Resources */,
 				912B68C91E8292D70038D261 /* LibraryMedia.xcassets in Resources */,
 				912B68921E7BA3280038D261 /* TrainStationList.plist in Resources */,
 				91E732661E31276400A54B9A /* LaunchScreen.storyboard in Resources */,
@@ -784,6 +824,7 @@
 				91EE92131E4B088300B2DFD1 /* SettingModule.storyboard in Resources */,
 				91477FA01E55BFD500EC94C1 /* LibraryModuleFloor.plist in Resources */,
 				91EE92011E4AD6AD00B2DFD1 /* EmergencyModule.storyboard in Resources */,
+				91BFE13E1F93ECBE00B75599 /* TeacherAndStudentModule.storyboard in Resources */,
 				91EE92101E4AE1B700B2DFD1 /* EmergencyModule.plist in Resources */,
 				912B68BF1E8005C20038D261 /* HSRStationList.plist in Resources */,
 				91678F911E3A6CFA00BE9AF0 /* NewsModule.storyboard in Resources */,
@@ -791,7 +832,6 @@
 				91EE91FE1E4AB94D00B2DFD1 /* CalendarModule.plist in Resources */,
 				91EC9CD01E4C8AEA007BB413 /* StellarModule.storyboard in Resources */,
 				913D65101E5D37E700888676 /* TrafficMedia.xcassets in Resources */,
-				91EEADDB1F8C698B00352890 /* TeacherAndStudentModule.storyboard in Resources */,
 				91053AC21E51995800ACEA8D /* LifeModule.plist in Resources */,
 				91D7A1381E97820700B79396 /* AboutModule.storyboard in Resources */,
 				91531E341E53304E005D2CAF /* GuideModule.plist in Resources */,
@@ -860,16 +900,17 @@
 				91CDBF581E5AE01F0085514E /* LibrarySearchViewController.m in Sources */,
 				912B68C61E8007D80038D261 /* TrafficHSRDateViewController.m in Sources */,
 				91E7325B1E31276400A54B9A /* AppDelegate.m in Sources */,
-				91EEADDE1F8C6DA000352890 /* TeacherAndStudentPageViewController.m in Sources */,
 				91B72FA21E422B4B00896AF3 /* NewsContentViewController.m in Sources */,
 				91742CA21E9E3BC00064D5A3 /* StellarViewController.m in Sources */,
 				91D7A1351E97811700B79396 /* OtherLinkTableViewController.m in Sources */,
 				912B68DD1E83A3100038D261 /* NTOUBadouziTableViewController.m in Sources */,
+				91BFE1471F941AE000B75599 /* TeacherAndStudentPersonalTableViewController.m in Sources */,
 				91531E411E5343A0005D2CAF /* Moodle.m in Sources */,
 				919BC24E1E31DA4400451426 /* Module.m in Sources */,
 				91477FA71E55C64C00EC94C1 /* LibraryConInfoTableViewController.m in Sources */,
 				91531E461E53449B005D2CAF /* GoogleMapViewController.m in Sources */,
 				912B689E1E7BB7460038D261 /* TrafficTrainDateViewController.m in Sources */,
+				91F8D7EB1F972B400080AB39 /* AcademicInformation.m in Sources */,
 				912B68951E7BA3AC0038D261 /* TrafficExpressDetailTableViewController.m in Sources */,
 				916AAEB81E9B5064008A3F1B /* CalendarTableViewController.m in Sources */,
 				912B68881E780CE50038D261 /* TrafficBusRouteTableViewController.m in Sources */,
@@ -878,19 +919,24 @@
 				912B68B11E80009C0038D261 /* TrafficHSRTabBarController.m in Sources */,
 				917072561E534B2B0065F20F /* LifeButton.m in Sources */,
 				91B8412D1E51F587000B4AAE /* LifeViewController.m in Sources */,
+				91BFE14A1F94244500B75599 /* TeacherClassListTableViewController.m in Sources */,
 				91742CAB1E9E44250064D5A3 /* StellarClassBar.m in Sources */,
 				91D7A13B1E97899500B79396 /* AboutTableViewController.m in Sources */,
 				912B68E01E83AF420038D261 /* NTOUR66TableViewController.m in Sources */,
+				91F8D7EE1F972E490080AB39 /* AcademicInformationTableViewController.m in Sources */,
 				91E732581E31276400A54B9A /* main.m in Sources */,
 				912B68A71E7BC9700038D261 /* TrafficTrainTabBarController.m in Sources */,
+				91BFE14D1F94285500B75599 /* TeacherClassStudentListTableViewController.m in Sources */,
 				91531E3C1E53364F005D2CAF /* GuideLocationsTableViewController.m in Sources */,
 				912B68901E7949DD0038D261 /* TrafficExpressTableViewController.m in Sources */,
 				91F8DBE21E54899400D45684 /* StellarCourseInfoTableViewController.m in Sources */,
 				91853B3F1E592DA7007C37AB /* Library.m in Sources */,
 				91E317EC1E5706BB005E24EB /* LibraryNewsTableViewController.m in Sources */,
 				91853B461E594122007C37AB /* MoodleTableViewController.m in Sources */,
+				91BFE1411F93ED0D00B75599 /* TeacherAndStudentListTableViewController.m in Sources */,
 				913D65191E5D908000888676 /* TrafficClassViewController.m in Sources */,
 				912B68AA1E7FC9E40038D261 /* TrafficTrainTimeTableViewController.m in Sources */,
+				91BFE1441F940BEF00B75599 /* TeacherAndStudentGradeListTableViewController.m in Sources */,
 				918896341E40137800DDC82C /* NewsViewController.m in Sources */,
 				91CDBF5B1E5AE4260085514E /* LibrarySearchResultTableViewController.m in Sources */,
 				91853B431E593DAB007C37AB /* LibraryTableViewController.m in Sources */,

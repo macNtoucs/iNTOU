@@ -73,7 +73,7 @@ static NSDictionary* mustType;
                     courseInfoData = [moodle getCourseInfoWithCosid:classData[@"id"] Clsid:classData[@"open_clsid"]];
                 }
                 else {
-                    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"錯誤" message:@"Moodle帳號密碼錯誤或連線失敗！" preferredStyle:UIAlertControllerStyleAlert];
+                    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"錯誤" message:@"帳號密碼錯誤或連線失敗！" preferredStyle:UIAlertControllerStyleAlert];
                     UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"確定" style:UIAlertActionStyleCancel handler:nil];
                     [alert addAction:cancel];
                     [self presentViewController:alert animated:YES completion:nil];
@@ -87,7 +87,7 @@ static NSDictionary* mustType;
         }
         else {
             [refresh endRefreshing];
-            UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"錯誤" message:@"沒有登入的Moodle帳戶，請前往設定登入！" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"錯誤" message:@"沒有登入的帳戶，請前往設定登入！" preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"確定" style:UIAlertActionStyleCancel handler:nil];
             [alert addAction:cancel];
             [self presentViewController:alert animated:YES completion:nil];
