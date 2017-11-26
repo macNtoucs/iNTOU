@@ -15,11 +15,11 @@
 
 @property (nonatomic,strong)NSString* displayName; //用來顯示在螢幕上的名字
 @property (nonatomic,strong)NSString* moduleName; //這會讀取相同名字的storyboard和image(顯示在displayName上方的圖案)
-
+@property (nonatomic)Boolean m_reuse; //是否重用
 
 -(instancetype)init;
--(instancetype)setDisplayName:(NSString*)displayName AndModuleName:(NSString*)moduleName; //用在moduleManager上做初始化
--(UIViewController*)getViewController; //取得storyboard的初始view controller
+-(instancetype)setDisplayName:(NSString*)displayName AndModuleName:(NSString*)moduleName AndReuse:(Boolean)reuse; //用在moduleManager上做初始化
+-(UIViewController*)getViewController; //取得storyboard的view controller
 -(void)clearViewController;
 
 @end

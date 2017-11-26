@@ -46,6 +46,41 @@
 		91477FA41E55C0AE00EC94C1 /* LibraryFloorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91477FA31E55C0AE00EC94C1 /* LibraryFloorTableViewController.m */; };
 		91477FA71E55C64C00EC94C1 /* LibraryConInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91477FA61E55C64C00EC94C1 /* LibraryConInfoTableViewController.m */; };
 		91477FAA1E55F5D500EC94C1 /* LibraryOpenTimeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91477FA91E55F5D500EC94C1 /* LibraryOpenTimeTableViewController.m */; };
+		914E92901FCA9E7C009B9E55 /* SipPhoneModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 914E928F1FCA9E7C009B9E55 /* SipPhoneModule.storyboard */; };
+		914E92BF1FCAA061009B9E55 /* JCaudioQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E92931FCAA061009B9E55 /* JCaudioQueue.m */; };
+		914E92C01FCAA061009B9E55 /* JCaudioRecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E92951FCAA061009B9E55 /* JCaudioRecoder.m */; };
+		914E92C11FCAA061009B9E55 /* JCG729.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E92971FCAA061009B9E55 /* JCG729.m */; };
+		914E92C21FCAA061009B9E55 /* JCsip.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E92991FCAA061009B9E55 /* JCsip.m */; };
+		914E92C31FCAA061009B9E55 /* JCsipAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E929B1FCAA061009B9E55 /* JCsipAccount.m */; };
+		914E92C41FCAA061009B9E55 /* JCsocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E929D1FCAA061009B9E55 /* JCsocket.m */; };
+		914E92C51FCAA061009B9E55 /* acelp_co.c in Sources */ = {isa = PBXBuildFile; fileRef = 914E929F1FCAA061009B9E55 /* acelp_co.c */; };
+		914E92C61FCAA061009B9E55 /* basic_op.c in Sources */ = {isa = PBXBuildFile; fileRef = 914E92A01FCAA061009B9E55 /* basic_op.c */; };
+		914E92C71FCAA061009B9E55 /* bits.c in Sources */ = {isa = PBXBuildFile; fileRef = 914E92A21FCAA061009B9E55 /* bits.c */; };
+		914E92C81FCAA061009B9E55 /* cod_ld8k.c in Sources */ = {isa = PBXBuildFile; fileRef = 914E92A31FCAA061009B9E55 /* cod_ld8k.c */; };
+		914E92C91FCAA061009B9E55 /* de_acelp.c in Sources */ = {isa = PBXBuildFile; fileRef = 914E92A41FCAA061009B9E55 /* de_acelp.c */; };
+		914E92CA1FCAA061009B9E55 /* dec_gain.c in Sources */ = {isa = PBXBuildFile; fileRef = 914E92A51FCAA061009B9E55 /* dec_gain.c */; };
+		914E92CB1FCAA061009B9E55 /* dec_lag3.c in Sources */ = {isa = PBXBuildFile; fileRef = 914E92A61FCAA061009B9E55 /* dec_lag3.c */; };
+		914E92CC1FCAA061009B9E55 /* dec_ld8k.c in Sources */ = {isa = PBXBuildFile; fileRef = 914E92A71FCAA061009B9E55 /* dec_ld8k.c */; };
+		914E92CD1FCAA061009B9E55 /* dspfunc.c in Sources */ = {isa = PBXBuildFile; fileRef = 914E92A81FCAA061009B9E55 /* dspfunc.c */; };
+		914E92CE1FCAA061009B9E55 /* filter.c in Sources */ = {isa = PBXBuildFile; fileRef = 914E92A91FCAA061009B9E55 /* filter.c */; };
+		914E92CF1FCAA061009B9E55 /* gainpred.c in Sources */ = {isa = PBXBuildFile; fileRef = 914E92AA1FCAA061009B9E55 /* gainpred.c */; };
+		914E92D01FCAA061009B9E55 /* lpc.c in Sources */ = {isa = PBXBuildFile; fileRef = 914E92AC1FCAA061009B9E55 /* lpc.c */; };
+		914E92D11FCAA061009B9E55 /* lpcfunc.c in Sources */ = {isa = PBXBuildFile; fileRef = 914E92AD1FCAA061009B9E55 /* lpcfunc.c */; };
+		914E92D21FCAA061009B9E55 /* lspdec.c in Sources */ = {isa = PBXBuildFile; fileRef = 914E92AE1FCAA061009B9E55 /* lspdec.c */; };
+		914E92D31FCAA061009B9E55 /* lspgetq.c in Sources */ = {isa = PBXBuildFile; fileRef = 914E92AF1FCAA061009B9E55 /* lspgetq.c */; };
+		914E92D41FCAA061009B9E55 /* oper_32b.c in Sources */ = {isa = PBXBuildFile; fileRef = 914E92B01FCAA061009B9E55 /* oper_32b.c */; };
+		914E92D51FCAA061009B9E55 /* p_parity.c in Sources */ = {isa = PBXBuildFile; fileRef = 914E92B21FCAA061009B9E55 /* p_parity.c */; };
+		914E92D61FCAA061009B9E55 /* pitch.c in Sources */ = {isa = PBXBuildFile; fileRef = 914E92B31FCAA061009B9E55 /* pitch.c */; };
+		914E92D71FCAA061009B9E55 /* post_pro.c in Sources */ = {isa = PBXBuildFile; fileRef = 914E92B41FCAA061009B9E55 /* post_pro.c */; };
+		914E92D81FCAA061009B9E55 /* pre_proc.c in Sources */ = {isa = PBXBuildFile; fileRef = 914E92B51FCAA061009B9E55 /* pre_proc.c */; };
+		914E92D91FCAA061009B9E55 /* pred_lt3.c in Sources */ = {isa = PBXBuildFile; fileRef = 914E92B61FCAA061009B9E55 /* pred_lt3.c */; };
+		914E92DA1FCAA061009B9E55 /* pst.c in Sources */ = {isa = PBXBuildFile; fileRef = 914E92B71FCAA061009B9E55 /* pst.c */; };
+		914E92DB1FCAA061009B9E55 /* pwf.c in Sources */ = {isa = PBXBuildFile; fileRef = 914E92B81FCAA061009B9E55 /* pwf.c */; };
+		914E92DC1FCAA061009B9E55 /* qua_gain.c in Sources */ = {isa = PBXBuildFile; fileRef = 914E92B91FCAA061009B9E55 /* qua_gain.c */; };
+		914E92DD1FCAA061009B9E55 /* qua_lsp.c in Sources */ = {isa = PBXBuildFile; fileRef = 914E92BA1FCAA061009B9E55 /* qua_lsp.c */; };
+		914E92DE1FCAA061009B9E55 /* tab_ld8k.c in Sources */ = {isa = PBXBuildFile; fileRef = 914E92BB1FCAA061009B9E55 /* tab_ld8k.c */; };
+		914E92DF1FCAA061009B9E55 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 914E92BE1FCAA061009B9E55 /* util.c */; };
+		914E92E21FCAAC74009B9E55 /* SipPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E92E11FCAAC74009B9E55 /* SipPhoneViewController.m */; };
 		91531E341E53304E005D2CAF /* GuideModule.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91531E331E53304E005D2CAF /* GuideModule.plist */; };
 		91531E371E53307C005D2CAF /* GuideTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91531E361E53307C005D2CAF /* GuideTableViewController.m */; };
 		91531E391E53309E005D2CAF /* GuideModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91531E381E53309E005D2CAF /* GuideModule.storyboard */; };
@@ -179,6 +214,53 @@
 		91477FA61E55C64C00EC94C1 /* LibraryConInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LibraryConInfoTableViewController.m; path = Modules/LibraryModule/AboutLibrary/LibraryConInfoTableViewController.m; sourceTree = "<group>"; };
 		91477FA81E55F5D500EC94C1 /* LibraryOpenTimeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LibraryOpenTimeTableViewController.h; path = Modules/LibraryModule/AboutLibrary/LibraryOpenTimeTableViewController.h; sourceTree = "<group>"; };
 		91477FA91E55F5D500EC94C1 /* LibraryOpenTimeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LibraryOpenTimeTableViewController.m; path = Modules/LibraryModule/AboutLibrary/LibraryOpenTimeTableViewController.m; sourceTree = "<group>"; };
+		914E928F1FCA9E7C009B9E55 /* SipPhoneModule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = SipPhoneModule.storyboard; path = Modules/SipPhoneModule/SipPhoneModule.storyboard; sourceTree = "<group>"; };
+		914E92921FCAA061009B9E55 /* JCaudioQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCaudioQueue.h; sourceTree = "<group>"; };
+		914E92931FCAA061009B9E55 /* JCaudioQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCaudioQueue.m; sourceTree = "<group>"; };
+		914E92941FCAA061009B9E55 /* JCaudioRecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCaudioRecoder.h; sourceTree = "<group>"; };
+		914E92951FCAA061009B9E55 /* JCaudioRecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCaudioRecoder.m; sourceTree = "<group>"; };
+		914E92961FCAA061009B9E55 /* JCG729.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCG729.h; sourceTree = "<group>"; };
+		914E92971FCAA061009B9E55 /* JCG729.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCG729.m; sourceTree = "<group>"; };
+		914E92981FCAA061009B9E55 /* JCsip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCsip.h; sourceTree = "<group>"; };
+		914E92991FCAA061009B9E55 /* JCsip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCsip.m; sourceTree = "<group>"; };
+		914E929A1FCAA061009B9E55 /* JCsipAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCsipAccount.h; sourceTree = "<group>"; };
+		914E929B1FCAA061009B9E55 /* JCsipAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCsipAccount.m; sourceTree = "<group>"; };
+		914E929C1FCAA061009B9E55 /* JCsocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCsocket.h; sourceTree = "<group>"; };
+		914E929D1FCAA061009B9E55 /* JCsocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCsocket.m; sourceTree = "<group>"; };
+		914E929F1FCAA061009B9E55 /* acelp_co.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = acelp_co.c; sourceTree = "<group>"; };
+		914E92A01FCAA061009B9E55 /* basic_op.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = basic_op.c; sourceTree = "<group>"; };
+		914E92A11FCAA061009B9E55 /* basic_op.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = basic_op.h; sourceTree = "<group>"; };
+		914E92A21FCAA061009B9E55 /* bits.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bits.c; sourceTree = "<group>"; };
+		914E92A31FCAA061009B9E55 /* cod_ld8k.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cod_ld8k.c; sourceTree = "<group>"; };
+		914E92A41FCAA061009B9E55 /* de_acelp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = de_acelp.c; sourceTree = "<group>"; };
+		914E92A51FCAA061009B9E55 /* dec_gain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dec_gain.c; sourceTree = "<group>"; };
+		914E92A61FCAA061009B9E55 /* dec_lag3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dec_lag3.c; sourceTree = "<group>"; };
+		914E92A71FCAA061009B9E55 /* dec_ld8k.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dec_ld8k.c; sourceTree = "<group>"; };
+		914E92A81FCAA061009B9E55 /* dspfunc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dspfunc.c; sourceTree = "<group>"; };
+		914E92A91FCAA061009B9E55 /* filter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = filter.c; sourceTree = "<group>"; };
+		914E92AA1FCAA061009B9E55 /* gainpred.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gainpred.c; sourceTree = "<group>"; };
+		914E92AB1FCAA061009B9E55 /* ld8k.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ld8k.h; sourceTree = "<group>"; };
+		914E92AC1FCAA061009B9E55 /* lpc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpc.c; sourceTree = "<group>"; };
+		914E92AD1FCAA061009B9E55 /* lpcfunc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpcfunc.c; sourceTree = "<group>"; };
+		914E92AE1FCAA061009B9E55 /* lspdec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lspdec.c; sourceTree = "<group>"; };
+		914E92AF1FCAA061009B9E55 /* lspgetq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lspgetq.c; sourceTree = "<group>"; };
+		914E92B01FCAA061009B9E55 /* oper_32b.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = oper_32b.c; sourceTree = "<group>"; };
+		914E92B11FCAA061009B9E55 /* oper_32b.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oper_32b.h; sourceTree = "<group>"; };
+		914E92B21FCAA061009B9E55 /* p_parity.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = p_parity.c; sourceTree = "<group>"; };
+		914E92B31FCAA061009B9E55 /* pitch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pitch.c; sourceTree = "<group>"; };
+		914E92B41FCAA061009B9E55 /* post_pro.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = post_pro.c; sourceTree = "<group>"; };
+		914E92B51FCAA061009B9E55 /* pre_proc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pre_proc.c; sourceTree = "<group>"; };
+		914E92B61FCAA061009B9E55 /* pred_lt3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pred_lt3.c; sourceTree = "<group>"; };
+		914E92B71FCAA061009B9E55 /* pst.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pst.c; sourceTree = "<group>"; };
+		914E92B81FCAA061009B9E55 /* pwf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pwf.c; sourceTree = "<group>"; };
+		914E92B91FCAA061009B9E55 /* qua_gain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qua_gain.c; sourceTree = "<group>"; };
+		914E92BA1FCAA061009B9E55 /* qua_lsp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qua_lsp.c; sourceTree = "<group>"; };
+		914E92BB1FCAA061009B9E55 /* tab_ld8k.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tab_ld8k.c; sourceTree = "<group>"; };
+		914E92BC1FCAA061009B9E55 /* tab_ld8k.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tab_ld8k.h; sourceTree = "<group>"; };
+		914E92BD1FCAA061009B9E55 /* typedef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typedef.h; sourceTree = "<group>"; };
+		914E92BE1FCAA061009B9E55 /* util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = util.c; sourceTree = "<group>"; };
+		914E92E01FCAAC74009B9E55 /* SipPhoneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SipPhoneViewController.h; path = Modules/SipPhoneModule/SipPhoneViewController.h; sourceTree = "<group>"; };
+		914E92E11FCAAC74009B9E55 /* SipPhoneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SipPhoneViewController.m; path = Modules/SipPhoneModule/SipPhoneViewController.m; sourceTree = "<group>"; };
 		91531E331E53304E005D2CAF /* GuideModule.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = GuideModule.plist; path = Resource/GuideModule.plist; sourceTree = "<group>"; };
 		91531E351E53307C005D2CAF /* GuideTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuideTableViewController.h; path = Modules/GuideModule/GuideTableViewController.h; sourceTree = "<group>"; };
 		91531E361E53307C005D2CAF /* GuideTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GuideTableViewController.m; path = Modules/GuideModule/GuideTableViewController.m; sourceTree = "<group>"; };
@@ -464,6 +546,78 @@
 			name = AboutLibrary;
 			sourceTree = "<group>";
 		};
+		914E923B1FCA9CBE009B9E55 /* SipPhoneModule */ = {
+			isa = PBXGroup;
+			children = (
+				914E929E1FCAA061009B9E55 /* G729_ITU_T */,
+				914E92911FCAA061009B9E55 /* JCsip */,
+				914E928F1FCA9E7C009B9E55 /* SipPhoneModule.storyboard */,
+				914E92E01FCAAC74009B9E55 /* SipPhoneViewController.h */,
+				914E92E11FCAAC74009B9E55 /* SipPhoneViewController.m */,
+			);
+			name = SipPhoneModule;
+			sourceTree = "<group>";
+		};
+		914E92911FCAA061009B9E55 /* JCsip */ = {
+			isa = PBXGroup;
+			children = (
+				914E92921FCAA061009B9E55 /* JCaudioQueue.h */,
+				914E92931FCAA061009B9E55 /* JCaudioQueue.m */,
+				914E92941FCAA061009B9E55 /* JCaudioRecoder.h */,
+				914E92951FCAA061009B9E55 /* JCaudioRecoder.m */,
+				914E92961FCAA061009B9E55 /* JCG729.h */,
+				914E92971FCAA061009B9E55 /* JCG729.m */,
+				914E92981FCAA061009B9E55 /* JCsip.h */,
+				914E92991FCAA061009B9E55 /* JCsip.m */,
+				914E929A1FCAA061009B9E55 /* JCsipAccount.h */,
+				914E929B1FCAA061009B9E55 /* JCsipAccount.m */,
+				914E929C1FCAA061009B9E55 /* JCsocket.h */,
+				914E929D1FCAA061009B9E55 /* JCsocket.m */,
+			);
+			name = JCsip;
+			path = Modules/SipPhoneModule/JCsip;
+			sourceTree = "<group>";
+		};
+		914E929E1FCAA061009B9E55 /* G729_ITU_T */ = {
+			isa = PBXGroup;
+			children = (
+				914E929F1FCAA061009B9E55 /* acelp_co.c */,
+				914E92A01FCAA061009B9E55 /* basic_op.c */,
+				914E92A11FCAA061009B9E55 /* basic_op.h */,
+				914E92A21FCAA061009B9E55 /* bits.c */,
+				914E92A31FCAA061009B9E55 /* cod_ld8k.c */,
+				914E92A41FCAA061009B9E55 /* de_acelp.c */,
+				914E92A51FCAA061009B9E55 /* dec_gain.c */,
+				914E92A61FCAA061009B9E55 /* dec_lag3.c */,
+				914E92A71FCAA061009B9E55 /* dec_ld8k.c */,
+				914E92A81FCAA061009B9E55 /* dspfunc.c */,
+				914E92A91FCAA061009B9E55 /* filter.c */,
+				914E92AA1FCAA061009B9E55 /* gainpred.c */,
+				914E92AB1FCAA061009B9E55 /* ld8k.h */,
+				914E92AC1FCAA061009B9E55 /* lpc.c */,
+				914E92AD1FCAA061009B9E55 /* lpcfunc.c */,
+				914E92AE1FCAA061009B9E55 /* lspdec.c */,
+				914E92AF1FCAA061009B9E55 /* lspgetq.c */,
+				914E92B01FCAA061009B9E55 /* oper_32b.c */,
+				914E92B11FCAA061009B9E55 /* oper_32b.h */,
+				914E92B21FCAA061009B9E55 /* p_parity.c */,
+				914E92B31FCAA061009B9E55 /* pitch.c */,
+				914E92B41FCAA061009B9E55 /* post_pro.c */,
+				914E92B51FCAA061009B9E55 /* pre_proc.c */,
+				914E92B61FCAA061009B9E55 /* pred_lt3.c */,
+				914E92B71FCAA061009B9E55 /* pst.c */,
+				914E92B81FCAA061009B9E55 /* pwf.c */,
+				914E92B91FCAA061009B9E55 /* qua_gain.c */,
+				914E92BA1FCAA061009B9E55 /* qua_lsp.c */,
+				914E92BB1FCAA061009B9E55 /* tab_ld8k.c */,
+				914E92BC1FCAA061009B9E55 /* tab_ld8k.h */,
+				914E92BD1FCAA061009B9E55 /* typedef.h */,
+				914E92BE1FCAA061009B9E55 /* util.c */,
+			);
+			name = G729_ITU_T;
+			path = Modules/SipPhoneModule/G729_ITU_T;
+			sourceTree = "<group>";
+		};
 		91531E2D1E53072B005D2CAF /* GuideModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -624,6 +778,7 @@
 		91E732961E31399A00A54B9A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				914E923B1FCA9CBE009B9E55 /* SipPhoneModule */,
 				91EEADD91F8C63BF00352890 /* TeacherAndStudentModule */,
 				918843361F5D7BA700C37E74 /* TronClassModule */,
 				91D7A1361E9781D000B79396 /* AboutModule */,
@@ -810,6 +965,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91EEADE11F8C704300352890 /* LifeModule.storyboard in Resources */,
+				914E92901FCA9E7C009B9E55 /* SipPhoneModule.storyboard in Resources */,
 				912B68C91E8292D70038D261 /* LibraryMedia.xcassets in Resources */,
 				912B68921E7BA3280038D261 /* TrainStationList.plist in Resources */,
 				91E732661E31276400A54B9A /* LaunchScreen.storyboard in Resources */,
@@ -893,9 +1049,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				914E92C91FCAA061009B9E55 /* de_acelp.c in Sources */,
 				912B68E31E83DE140038D261 /* NTOUR66PictureViewController.m in Sources */,
 				91477FA41E55C0AE00EC94C1 /* LibraryFloorTableViewController.m in Sources */,
 				912B68D41E838D7D0038D261 /* NTOUBusTableViewController.m in Sources */,
+				914E92C81FCAA061009B9E55 /* cod_ld8k.c in Sources */,
+				914E92CF1FCAA061009B9E55 /* gainpred.c in Sources */,
 				912B68851E717E460038D261 /* TrafficBusStopTableViewController.m in Sources */,
 				91CDBF581E5AE01F0085514E /* LibrarySearchViewController.m in Sources */,
 				912B68C61E8007D80038D261 /* TrafficHSRDateViewController.m in Sources */,
@@ -903,36 +1062,57 @@
 				91B72FA21E422B4B00896AF3 /* NewsContentViewController.m in Sources */,
 				91742CA21E9E3BC00064D5A3 /* StellarViewController.m in Sources */,
 				91D7A1351E97811700B79396 /* OtherLinkTableViewController.m in Sources */,
+				914E92DF1FCAA061009B9E55 /* util.c in Sources */,
+				914E92C41FCAA061009B9E55 /* JCsocket.m in Sources */,
 				912B68DD1E83A3100038D261 /* NTOUBadouziTableViewController.m in Sources */,
 				91BFE1471F941AE000B75599 /* TeacherAndStudentPersonalTableViewController.m in Sources */,
 				91531E411E5343A0005D2CAF /* Moodle.m in Sources */,
+				914E92D71FCAA061009B9E55 /* post_pro.c in Sources */,
 				919BC24E1E31DA4400451426 /* Module.m in Sources */,
 				91477FA71E55C64C00EC94C1 /* LibraryConInfoTableViewController.m in Sources */,
 				91531E461E53449B005D2CAF /* GoogleMapViewController.m in Sources */,
+				914E92CE1FCAA061009B9E55 /* filter.c in Sources */,
+				914E92D51FCAA061009B9E55 /* p_parity.c in Sources */,
 				912B689E1E7BB7460038D261 /* TrafficTrainDateViewController.m in Sources */,
+				914E92D31FCAA061009B9E55 /* lspgetq.c in Sources */,
 				91F8D7EB1F972B400080AB39 /* AcademicInformation.m in Sources */,
 				912B68951E7BA3AC0038D261 /* TrafficExpressDetailTableViewController.m in Sources */,
 				916AAEB81E9B5064008A3F1B /* CalendarTableViewController.m in Sources */,
 				912B68881E780CE50038D261 /* TrafficBusRouteTableViewController.m in Sources */,
+				914E92D01FCAA061009B9E55 /* lpc.c in Sources */,
+				914E92C21FCAA061009B9E55 /* JCsip.m in Sources */,
+				914E92C01FCAA061009B9E55 /* JCaudioRecoder.m in Sources */,
+				914E92C61FCAA061009B9E55 /* basic_op.c in Sources */,
+				914E92DA1FCAA061009B9E55 /* pst.c in Sources */,
+				914E92C71FCAA061009B9E55 /* bits.c in Sources */,
+				914E92D11FCAA061009B9E55 /* lpcfunc.c in Sources */,
 				91F8DBD81E5445F000D45684 /* GoogleMapStreetViewController.m in Sources */,
 				91742CA81E9E3DC40064D5A3 /* StellarWeekBar.m in Sources */,
 				912B68B11E80009C0038D261 /* TrafficHSRTabBarController.m in Sources */,
+				914E92D81FCAA061009B9E55 /* pre_proc.c in Sources */,
 				917072561E534B2B0065F20F /* LifeButton.m in Sources */,
+				914E92DD1FCAA061009B9E55 /* qua_lsp.c in Sources */,
 				91B8412D1E51F587000B4AAE /* LifeViewController.m in Sources */,
 				91BFE14A1F94244500B75599 /* TeacherClassListTableViewController.m in Sources */,
 				91742CAB1E9E44250064D5A3 /* StellarClassBar.m in Sources */,
+				914E92CD1FCAA061009B9E55 /* dspfunc.c in Sources */,
 				91D7A13B1E97899500B79396 /* AboutTableViewController.m in Sources */,
 				912B68E01E83AF420038D261 /* NTOUR66TableViewController.m in Sources */,
 				91F8D7EE1F972E490080AB39 /* AcademicInformationTableViewController.m in Sources */,
 				91E732581E31276400A54B9A /* main.m in Sources */,
 				912B68A71E7BC9700038D261 /* TrafficTrainTabBarController.m in Sources */,
+				914E92DC1FCAA061009B9E55 /* qua_gain.c in Sources */,
+				914E92D41FCAA061009B9E55 /* oper_32b.c in Sources */,
 				91BFE14D1F94285500B75599 /* TeacherClassStudentListTableViewController.m in Sources */,
 				91531E3C1E53364F005D2CAF /* GuideLocationsTableViewController.m in Sources */,
+				914E92DE1FCAA061009B9E55 /* tab_ld8k.c in Sources */,
 				912B68901E7949DD0038D261 /* TrafficExpressTableViewController.m in Sources */,
 				91F8DBE21E54899400D45684 /* StellarCourseInfoTableViewController.m in Sources */,
+				914E92BF1FCAA061009B9E55 /* JCaudioQueue.m in Sources */,
 				91853B3F1E592DA7007C37AB /* Library.m in Sources */,
 				91E317EC1E5706BB005E24EB /* LibraryNewsTableViewController.m in Sources */,
 				91853B461E594122007C37AB /* MoodleTableViewController.m in Sources */,
+				914E92DB1FCAA061009B9E55 /* pwf.c in Sources */,
 				91BFE1411F93ED0D00B75599 /* TeacherAndStudentListTableViewController.m in Sources */,
 				913D65191E5D908000888676 /* TrafficClassViewController.m in Sources */,
 				912B68AA1E7FC9E40038D261 /* TrafficTrainTimeTableViewController.m in Sources */,
@@ -944,26 +1124,36 @@
 				91E7326F1E3127E200A54B9A /* MainCollectionViewController.m in Sources */,
 				912B68B41E8000FA0038D261 /* TrafficHSRDepartureTableViewController.m in Sources */,
 				91D7A13E1E978AF800B79396 /* AboutDeveloperTableViewController.m in Sources */,
+				914E92D61FCAA061009B9E55 /* pitch.c in Sources */,
 				91342BB01EA4713E004F7422 /* StellarViewLayout.m in Sources */,
 				91A3DC3C1EAF53CD002766BD /* CalendarPageViewController.m in Sources */,
 				9100EFE81E33449300756AE5 /* ModuleManager.m in Sources */,
 				918843391F5D7BF500C37E74 /* TronClassModule.m in Sources */,
+				914E92D91FCAA061009B9E55 /* pred_lt3.c in Sources */,
 				912B68A11E7BC43C0038D261 /* TrafficTrainCarClassTableViewController.m in Sources */,
 				912B689B1E7BB4460038D261 /* TrafficTrainDestinationTableViewController.m in Sources */,
 				912B68C11E8007CB0038D261 /* TrafficHSRDestinationTableViewController.m in Sources */,
 				91531E371E53307C005D2CAF /* GuideTableViewController.m in Sources */,
+				914E92D21FCAA061009B9E55 /* lspdec.c in Sources */,
 				912B68DA1E839FBE0038D261 /* NTOU1800TableViewController.m in Sources */,
+				914E92CC1FCAA061009B9E55 /* dec_ld8k.c in Sources */,
+				914E92C31FCAA061009B9E55 /* JCsipAccount.m in Sources */,
+				914E92CB1FCAA061009B9E55 /* dec_lag3.c in Sources */,
 				91477FAA1E55F5D500EC94C1 /* LibraryOpenTimeTableViewController.m in Sources */,
 				913D65161E5D44C600888676 /* TrafficBusTableViewController.m in Sources */,
 				91E09BAD1E5A6F8D001A1A02 /* LibraryBorrowTableViewController.m in Sources */,
 				918237AF1E88EEA3002E2464 /* LibraryBarCodeViewController.m in Sources */,
+				914E92C51FCAA061009B9E55 /* acelp_co.c in Sources */,
 				912B68C71E8007D80038D261 /* TrafficHSRTimeTableViewController.m in Sources */,
 				91E09BB01E5A8421001A1A02 /* LibraryCurrentHoldTableViewController.m in Sources */,
 				913D65071E5C25DE00888676 /* LibrarySearchResultDetailTableViewController.m in Sources */,
 				912B68981E7BABD60038D261 /* TrafficTrainDepartureTableViewController.m in Sources */,
 				91DAFED21E43934000745C2F /* NewsClassData.m in Sources */,
+				914E92E21FCAAC74009B9E55 /* SipPhoneViewController.m in Sources */,
 				91EE920E1E4ADFB400B2DFD1 /* EmergencyTableViewController.m in Sources */,
 				91CDBF4F1E5AC0A30085514E /* LibraryHistoryTableViewController.m in Sources */,
+				914E92C11FCAA061009B9E55 /* JCG729.m in Sources */,
+				914E92CA1FCAA061009B9E55 /* dec_gain.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

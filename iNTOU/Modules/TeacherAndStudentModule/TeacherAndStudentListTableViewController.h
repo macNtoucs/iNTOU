@@ -11,6 +11,7 @@
 
 @interface TeacherAndStudentListTableViewController : UITableViewController
 {
+    UIRefreshControl* refresh;
     Moodle* moodle;
     NSDictionary* listData;
     NSDictionary* typeData;

@@ -111,31 +111,33 @@
     [account setEnabled:NO];
     [password setEnabled:NO];
     
+    NSString* accountTemp = account.text;
+    NSString* passwordTemp = password.text;
     
-        dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
-                [moodle loginAccount:account.text AndPassword:password.text];
+    dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+        [moodle loginAccount:accountTemp AndPassword:passwordTemp];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [MBProgressHUD hideHUDForView:self.view animated:YES];
             
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [MBProgressHUD hideHUDForView:self.view animated:YES];
+            [button setEnabled:YES];
+            
+            if([moodle checkLogin]) {
+                [button setTitle:@"登出" forState:UIControlStateNormal];
+                [button removeTarget:self action:@selector(login) forControlEvents:UIControlEventTouchDown];
+                [button addTarget:self action:@selector(logout) forControlEvents:UIControlEventTouchDown];
+            }
+            else {
+                [account setEnabled:YES];
+                [password setEnabled:YES];
+                UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"錯誤" message:@"登入失敗！" preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"確定" style:UIAlertActionStyleCancel handler:nil];
                 
-                [button setEnabled:YES];
-                
-                if([moodle checkLogin]) {
-                    [button setTitle:@"登出" forState:UIControlStateNormal];
-                    [button removeTarget:self action:@selector(login) forControlEvents:UIControlEventTouchDown];
-                    [button addTarget:self action:@selector(logout) forControlEvents:UIControlEventTouchDown];
-                }
-                else {
-                    [account setEnabled:YES];
-                    [password setEnabled:YES];
-                    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"錯誤" message:@"登入失敗！" preferredStyle:UIAlertControllerStyleAlert];
-                    UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"確定" style:UIAlertActionStyleCancel handler:nil];
-                    
-                    [alert addAction:cancel];
-                    [self presentViewController:alert animated:YES completion:nil];
-                }
-            });
+                [alert addAction:cancel];
+                [self presentViewController:alert animated:YES completion:nil];
+            }
         });
+    });
 }
 
 -(void)logout {

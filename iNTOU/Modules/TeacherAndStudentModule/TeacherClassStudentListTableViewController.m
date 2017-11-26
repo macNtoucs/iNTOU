@@ -199,6 +199,7 @@
     UIActivityIndicatorView* indicator = ((UIActivityIndicatorView*)[cell viewWithTag:103]);
     UILabel* pictureLabel = ((UILabel*)[cell viewWithTag:104]);
     NSString* STNO = showData[indexPath.row][@"STNO"];
+    ((UIImageView*)[cell viewWithTag:102]).image = nil;
     
     pictureLabel.text = @"";
     [indicator stopAnimating];

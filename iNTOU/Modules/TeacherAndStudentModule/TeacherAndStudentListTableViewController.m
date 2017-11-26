@@ -37,13 +37,28 @@ static NSArray* studentFunc;
          self.title = customTitle;
     else
         self.title = @"導生系統";
+    
+    refresh =[UIRefreshControl new];
+    [refresh addTarget:self action:@selector(checkType) forControlEvents:UIControlEventValueChanged];
+    self.tableView.refreshControl = refresh;
 }
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    if(!typeData)
-        [self checkType];
+    if([moodle checkLogin])
+    {
+        if(!typeData)
+            [self checkType];
+    }
+    else
+    {
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"錯誤" message:@"沒有登入的帳戶，請前往設定登入個人課程！" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"確定" style:UIAlertActionStyleCancel handler:nil];
+        [alert addAction:cancel];
+        [self presentViewController:alert animated:YES completion:nil];
+        [self.tableView reloadData];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,6 +67,9 @@ static NSArray* studentFunc;
 }
 
 -(void)checkType {
+    listData = nil;
+    typeData = nil;
+    [self.tableView reloadData];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSString* urlString = [[NSString alloc]initWithFormat:@"http://140.121.91.62:8080/NTOUAPI/IsTeacher?stid=%@&password=%@",moodle.account,moodle.password];
         if(stidTarget)
@@ -61,7 +79,6 @@ static NSArray* studentFunc;
         NSURLRequest* request = [[NSURLRequest alloc]initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:30.0];
         
         NSURLSession* session = [NSURLSession sharedSession];
-        dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
         NSURLSessionDataTask* task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
             if(data)
             {
@@ -91,10 +108,8 @@ static NSArray* studentFunc;
                     [self presentViewController:alert animated:YES completion:nil];
                 });
             }
-            dispatch_semaphore_signal(semaphore);
         }];
         [task resume];
-        dispatch_wait(semaphore, DISPATCH_TIME_FOREVER);
     });
     
 }
@@ -132,6 +147,9 @@ static NSArray* studentFunc;
                     [self presentViewController:alert animated:YES completion:nil];
                 });
             }
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [refresh endRefreshing];
+            });
         }];
         [task resume];
     });
@@ -154,6 +172,17 @@ static NSArray* studentFunc;
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    if(![moodle checkLogin])
+    {
+        UILabel* label = [UILabel new];
+        label.text = @"沒有登入的帳號";
+        label.center = self.view.center;
+        label.textAlignment = NSTextAlignmentCenter;
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        self.tableView.backgroundView = label;
+        return 0;
+    }
+    
     if(!typeData || !listData)
     {
         self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;

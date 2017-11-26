@@ -10,7 +10,7 @@
 
 @implementation Module
 
-@synthesize displayName,moduleName,viewController;
+@synthesize displayName,moduleName,viewController,m_reuse;
 
 -(instancetype)init{
     self = [super init];
@@ -22,9 +22,10 @@
     return self;
 }
 
--(instancetype)setDisplayName:(NSString*)dName AndModuleName:(NSString*)mName {
-    self.displayName = dName;
-    self.moduleName = mName;
+-(instancetype)setDisplayName:(NSString*)dName AndModuleName:(NSString*)mName AndReuse:(Boolean)reuse {
+    displayName = dName;
+    moduleName = mName;
+    m_reuse = reuse;
     
     return self;
 }
@@ -33,7 +34,7 @@
     //讀取自己的story board，並保留在記憶體中，重複讀取時會拿出記憶體內的那份
     //可以繼承類別並override這方法來客製化
     
-    if(!viewController)
+    if(!m_reuse || !viewController)
         viewController = [[UIStoryboard storyboardWithName:moduleName bundle:nil] instantiateInitialViewController];
     
     return viewController;
