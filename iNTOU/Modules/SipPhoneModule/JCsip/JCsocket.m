@@ -47,15 +47,16 @@ void receiveSocket(CFSocketRef s, CFSocketCallBackType type, CFDataRef address, 
     NSData* data = [string dataUsingEncoding:NSUTF8StringEncoding];
     CFDataRef data_cf = CFDataCreate(kCFAllocatorDefault, [data bytes], [data length]);
     CFSocketSendData(myUDP,addr,data_cf,10);
+    CFRelease(data_cf);
 }
 
 -(void)sendData:(NSData *)data{
     CFDataRef data_cf = CFDataCreate(kCFAllocatorDefault, [data bytes], [data length]);
     CFSocketSendData(myUDP,addr,data_cf,10);
+    CFRelease(data_cf);
 }
 
 @end
-long long int kk = 0;
 
 void receiveSocket(CFSocketRef s, CFSocketCallBackType type, CFDataRef address, const void *data, void *info) {
     if(type == kCFSocketDataCallBack) {

@@ -82,10 +82,7 @@ static Moodle* globalPointer = nil;
     NSDictionary* dictionary = @{@"username":account_encrypted,@"password":password_encrypted,@"now":DESKey_string};
     
     NSDictionary* result;
-    if([account_temp isEqualToString:@"lincc"] && [password_temp isEqualToString:@"lincc"])
-        result = @{@"result":@"1",@"token":@"87"};
-    else
-        result = [self sendToAPIType:@"login.do" andDictionary:dictionary];
+    result = [self sendToAPIType:@"login.do" andDictionary:dictionary];
     
     if(result) {
         if([result[@"result"] intValue] == 1 ) {

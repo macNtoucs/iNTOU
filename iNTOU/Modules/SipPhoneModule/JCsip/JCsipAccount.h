@@ -21,6 +21,7 @@
 -(NSString*)getInviteACKString;
 -(NSString*)getByeString;
 -(NSString*)getInfo:(NSString*)dtmf;
+-(NSString*)getByeACK:(int)seq;
 
 @property(strong,nonatomic)NSString* account;
 @property(strong,nonatomic)NSString* nonce;

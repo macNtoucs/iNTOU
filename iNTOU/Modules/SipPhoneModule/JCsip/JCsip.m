@@ -8,6 +8,12 @@
 
 #import "JCsip.h"
 
+#define udp_timeout_second 1
+
+void timeoutCallBack(CFRunLoopTimerRef timer, void *info) {
+    
+}
+
 @implementation JCsip
 @synthesize delegate;
 
@@ -29,13 +35,33 @@
     return self;
 }
 
+//add timeout in the function
+-(void)jcsocket_sendString:(NSString*)string {
+    timeoutTimer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(timerFireMethod:) userInfo:string repeats:YES];
+    if(timeoutTimer) {
+        timeoutTimes = 0;
+        [[NSRunLoop currentRunLoop] addTimer:timeoutTimer forMode:NSDefaultRunLoopMode];
+        [timeoutTimer fire];
+    }
+    else {
+        [jcSocket sendString:string];
+    }
+}
+
+- (void)timerFireMethod:(NSTimer *)timer {
+    [jcSocket sendString:timer.userInfo];
+    timeoutTimes++;
+    if(timeoutTimes >= 10)
+        [timer invalidate];
+}
+
 -(void)registerNtou {
     [delegate changeStatue:JCSipConditionCalling];
-    [jcSocket sendString:[jcSipAccount getRegisterString]];
+    [self jcsocket_sendString:[jcSipAccount getRegisterString]];
 }
 
 -(void)makeACall {
-    [jcSocket sendString:[jcSipAccount getInviteString]];
+    [self jcsocket_sendString:[jcSipAccount getInviteString]];
 }
 
 -(void)makeACallACK {
@@ -64,17 +90,21 @@
 }
 
 -(void)sendDtmf:(NSString*)dtmf {
-    [jcSocket sendString:[jcSipAccount getInfo:dtmf]];
+     [self jcsocket_sendString:[jcSipAccount getInfo:dtmf]];
 }
 
 -(void)hangup {
+    [self disableAudio];
+    [self jcsocket_sendString:[jcSipAccount getByeString]];
+    [delegate changeStatue:JCSipConditionWaiting];
+}
+
+-(void)disableAudio {
     CFRunLoopStop(udp_rtp_out_queue_runLoopRef);
     dispatch_async(udp_rtp_out_queue, ^{
         [jcAudioRecoder audioQueueStop];
         jcAudioRecoder = nil;
     });
-    
-    [jcSocket sendString:[jcSipAccount getByeString]];
     
     CFRunLoopStop(udp_rtp_in_queue_runLoopRef);
     dispatch_async(udp_rtp_in_queue, ^{
@@ -82,7 +112,6 @@
         [jcAudioQueue audioQueueStop];
         jcAudioQueue = nil;
     });
-    [delegate changeStatue:JCSipConditionWaiting];
 }
 
 -(void)getAuthentication:(NSString*)text {
@@ -101,6 +130,8 @@
     NSData* data1 = (__bridge NSData*) data;
     if(socket == jcSocket)
     {
+        if(timeoutTimer)
+            [timeoutTimer invalidate];
         NSString* string = [[NSString alloc] initWithData:data1 encoding:NSUTF8StringEncoding];
         NSLog(@"%@",string);
         int conditionCode = 0;
@@ -109,6 +140,7 @@
         NSRange range;
         switch (conditionCode) {
             case 200:
+                //找出封包內m=audio後 學校開啟的port
                 range = [string rangeOfString:@"m=audio "];
                 if(range.location != NSNotFound)
                 {
@@ -128,6 +160,7 @@
                 }
                 break;
             case 407:
+                //認證失敗
                 [self getAuthentication:string];
                 [self makeACall];
                 break;
@@ -141,6 +174,22 @@
                 break;
             default:
                 break;
+        }
+        
+        if(string.length > 3) // get bye
+        {
+            NSString* bye = [string substringToIndex:3];
+            if([bye isEqualToString:@"BYE"])
+            {
+                [self disableAudio];
+                [delegate changeStatue:JCSipConditionWaiting];
+                range = [string rangeOfString:@"CSeq: "];
+                NSString* string2 = [string substringFromIndex:range.location+6];
+                range = [string2 rangeOfString:@" "];
+                string2 = [string2 substringToIndex:range.location];
+                int seq = [string2 intValue];
+                [self jcsocket_sendString:[jcSipAccount getByeACK:seq]];
+            }
         }
     }
     else if (socket == rtpSocket) {

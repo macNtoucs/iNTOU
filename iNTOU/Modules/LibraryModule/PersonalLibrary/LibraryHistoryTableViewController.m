@@ -25,7 +25,7 @@
     //刷新鈕
     refresh =[UIRefreshControl new];
     [refresh addTarget:self action:@selector(initDownloadDataFromServer) forControlEvents:UIControlEventValueChanged];
-    self.tableView.refreshControl = refresh;
+    self.tableView.backgroundView = refresh;
     
     libraryHistoryData = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"plist"]];
     [self initDownloadDataFromServer];

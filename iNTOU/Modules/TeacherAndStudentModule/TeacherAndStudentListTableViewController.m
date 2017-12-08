@@ -40,7 +40,7 @@ static NSArray* studentFunc;
     
     refresh =[UIRefreshControl new];
     [refresh addTarget:self action:@selector(checkType) forControlEvents:UIControlEventValueChanged];
-    self.tableView.refreshControl = refresh;
+    self.tableView.backgroundView = refresh;
 }
 
 -(void)viewWillAppear:(BOOL)animated {

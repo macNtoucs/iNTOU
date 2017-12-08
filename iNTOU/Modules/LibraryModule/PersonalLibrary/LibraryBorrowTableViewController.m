@@ -24,7 +24,7 @@
     //刷新鈕
     refresh =[UIRefreshControl new];
     [refresh addTarget:self action:@selector(downloadDataFromServer) forControlEvents:UIControlEventValueChanged];
-    self.tableView.refreshControl = refresh;
+    self.tableView.backgroundView = refresh;
     
     [self downloadDataFromServer];
 }

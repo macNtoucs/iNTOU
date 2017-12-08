@@ -45,7 +45,7 @@ static NSArray* className;
     
     refresh =[UIRefreshControl new];
     [refresh addTarget:self action:@selector(downloadDataFromServerInit) forControlEvents:UIControlEventValueChanged];
-    newsTableView.refreshControl = refresh;
+    newsTableView.backgroundView = refresh;
     
     //製造對應數量的class type按鈕
     buttonBarWidth.constant = [className count] * 80;

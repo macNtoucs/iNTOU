@@ -23,9 +23,34 @@
     
     diagPadArray = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"*",@"0",@"#"];
     
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated {
     AVAudioSession* session = [AVAudioSession sharedInstance];
-    [session setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
-    [session setActive:YES error:nil];
+    switch ([session recordPermission]) {
+        case AVAudioSessionRecordPermissionGranted:
+            [session setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
+            [session setActive:YES error:nil];
+            break;
+        case AVAudioSessionRecordPermissionDenied:
+            [statueLabel setText:@"沒有麥克風權限"];
+            [callButton setEnabled:false];
+            [hangUpButton setEnabled:false];
+            break;
+        case AVAudioSessionRecordPermissionUndetermined:
+            [session requestRecordPermission:^(BOOL granted) {
+                if(!granted)
+                {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [statueLabel setText:@"沒有麥克風權限"];
+                        [callButton setEnabled:false];
+                        [hangUpButton setEnabled:false];
+                    });
+                }
+            }];
+            break;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -81,6 +106,10 @@
             [callButton setEnabled:true];
             [hangUpButton setEnabled:false];
             break;
+        case JCsipConditionTimeOutTooMany:
+            [statueLabel setText:@"網路不穩"];
+            [callButton setEnabled:true];
+            [hangUpButton setEnabled:false];
         default:
             break;
     }

@@ -24,7 +24,6 @@
 }
 
 -(NSString*)getRegisterString {
-    CSeq = 0;
     tag = (long long int)[[NSDate date] timeIntervalSince1970];
     
     NSMutableString* text = [NSMutableString new];
@@ -34,7 +33,7 @@
     [text appendFormat:@"To: %@ <sip:%@@140.121.99.170>\r\n",account,account];
     [text appendFormat:@"Contact: \"%@\" <sip:%@@%@:8787>\r\n",account,account,ip];
     [text appendFormat:@"Call-ID: 005000-%lld@%@\r\n",tag,ip];
-    [text appendFormat:@"CSeq: %d REGISTER\r\n",CSeq];
+    [text appendString:@"CSeq: 0 REGISTER\r\n"];
     [text appendString:@"Expires: 60\r\n"];
     [text appendString:@"Max-Forwards: 70\r\n"];
     [text appendString:@"Content-Length: 0\r\n\r\n"];
@@ -43,7 +42,6 @@
 }
 
 -(NSString*)getInviteString {
-    CSeq++;
     tag = (long long int)[[NSDate date] timeIntervalSince1970];
     NSMutableString* text = [NSMutableString new];
     NSString* ha1 = [self md5:[[NSString alloc]initWithFormat:@"%@:OTS:12345678",account]];
@@ -55,7 +53,7 @@
     [text appendString:@"To: 1687 <sip:1687@140.121.99.170:5060>\r\n"];
     [text appendFormat:@"Contact: \"%@\" <sip:%@@%@:8787>\r\n",account,account,ip];
     [text appendFormat:@"Call-ID: 005000-%lld@%@\r\n",tag,ip];
-    [text appendFormat:@"CSeq: %d INVITE\r\n",CSeq];
+    [text appendString:@"CSeq: 1 INVITE\r\n"];
     [text appendFormat:@"Authorization: Digest username=\"%@\", realm=\"OTS\", nonce=\"%@\", uri=\"sip:1687@140.121.99.170\", ",account,nonce];
     [text appendFormat:@"response=\"%@\", opaque=\"1234\", algorithm=MD5, cnonce=\"e7fe6eia\", qop=\"auth\", nc=00000001\r\n",inviteResponse];
     [text appendString:@"Max-Forwards: 70\r\n"];
@@ -81,7 +79,7 @@
     [text appendFormat:@"To: 1687 <sip:1687@140.121.99.170:5060>;tag=%@\r\n",ntouTag];
     [text appendFormat:@"Contact: <sip:%@@%@:8787>\r\n",account,ip];
     [text appendFormat:@"Call-ID: 005000-%lld@%@\r\n",tag,ip];
-    [text appendFormat:@"CSeq: %d ACK\r\n",CSeq];
+    [text appendString:@"CSeq: 1 ACK\r\n"];
     [text appendString:@"Max-Forwards: 70\r\n"];
     [text appendString:@"Content-Type: application/sdp\r\n"];
     [text appendString:@"Content-Length: 123\r\n\r\n"];
@@ -93,6 +91,8 @@
     [text appendString:@"t=0 0\r\n"];
     [text appendString:@"m=audio 5032 RTP/AVP 18\r\n"];
     [text appendString:@"a=rtpmap:18 G729/8000/1\r\n\r\n"];
+    
+    CSeq = 1;
     
     return text;
 }
@@ -108,6 +108,21 @@
     [text appendFormat:@"Call-ID: 005000-%lld@%@\r\n",tag,ip];
     [text appendFormat:@"CSeq: %d BYE\r\n",CSeq];
     [text appendString:@"Max-Forwards: 70\r\n"];
+    [text appendString:@"Content-Length: 0\r\n\r\n"];
+    
+    return text;
+}
+
+-(NSString*)getByeACK:(int)seq {
+    NSMutableString* text = [NSMutableString new];
+    [text appendString:@"SIP/2.0 200 OK\r\n"];
+    [text appendFormat:@"Via: SIP/2.0/UDP %@:8787;branch=z9hG4bK%lld\r\n",ip,tag];
+    [text appendFormat:@"From: %@ <sip:%@@140.121.99.170:5060>;tag=%lld\r\n",account,account,tag];
+    [text appendFormat:@"To: 1687 <sip:1687@140.121.99.170:5060>;tag=%@\r\n",ntouTag];
+    [text appendFormat:@"Contact: <sip:%@@%@:8787>\r\n",account,ip];
+    [text appendFormat:@"Call-ID: 005000-%lld@%@\r\n",tag,ip];
+    [text appendFormat:@"CSeq: %d BYE\r\n",seq];
+    [text appendString:@"Max-Forwards: 68\r\n"];
     [text appendString:@"Content-Length: 0\r\n\r\n"];
     
     return text;
@@ -132,8 +147,6 @@
     
     return text;
 }
-
-
 
 #pragma mark - tools
 

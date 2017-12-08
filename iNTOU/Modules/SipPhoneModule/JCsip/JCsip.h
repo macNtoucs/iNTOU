@@ -18,7 +18,8 @@ enum JCSipConditionCode {
     JCSipConditionWaiting, //閒置
     JCSipConditionCalling, //撥號
     JCSipConditionSessionWork, //通話
-    JCSipConditionAllAccountBusy //server壅塞
+    JCSipConditionAllAccountBusy, //server壅塞
+    JCsipConditionTimeOutTooMany //網路不穩
 };
 
 @protocol JCSipDelegate
@@ -42,6 +43,9 @@ enum JCSipConditionCode {
     dispatch_queue_t udp_rtp_out_queue; //輸出的線程
     CFRunLoopRef udp_rtp_in_queue_runLoopRef; //輸入的線程runloop
     CFRunLoopRef udp_rtp_out_queue_runLoopRef; //輸出的線程runloop
+    
+    NSTimer* timeoutTimer;
+    int timeoutTimes;
 }
 
 -(void)registerNtou;

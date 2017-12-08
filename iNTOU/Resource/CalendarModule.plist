@@ -6,6 +6,38 @@
 	<array>
 		<dict>
 			<key>DtEnd</key>
+			<string>20171226T080000Z</string>
+			<key>DtStart</key>
+			<string>20171220T010000Z</string>
+			<key>Summary</key>
+			<string>107學年度舊生住宿資格排名順位籤號申請</string>
+		</dict>
+		<dict>
+			<key>DtEnd</key>
+			<string>20171215T090000Z</string>
+			<key>DtStart</key>
+			<string>20171211T010000Z</string>
+			<key>Summary</key>
+			<string>107學年度舊生床位保留申請</string>
+		</dict>
+		<dict>
+			<key>DtEnd</key>
+			<string>20180327</string>
+			<key>DtStart</key>
+			<string>20180321</string>
+			<key>Summary</key>
+			<string>舊生住宿資格排名順位籤號申請(依住輔組公告為主)</string>
+		</dict>
+		<dict>
+			<key>DtEnd</key>
+			<string>20180228</string>
+			<key>DtStart</key>
+			<string>20180222</string>
+			<key>Summary</key>
+			<string>舊生床位保留申請(依住輔組公告為主)</string>
+		</dict>
+		<dict>
+			<key>DtEnd</key>
 			<string>20180801</string>
 			<key>DtStart</key>
 			<string>20180731</string>
@@ -262,14 +294,6 @@
 		</dict>
 		<dict>
 			<key>DtEnd</key>
-			<string>20180327</string>
-			<key>DtStart</key>
-			<string>20180321</string>
-			<key>Summary</key>
-			<string>舊生住宿資格排名順位籤號申請</string>
-		</dict>
-		<dict>
-			<key>DtEnd</key>
 			<string>20180316</string>
 			<key>DtStart</key>
 			<string>20180315</string>
@@ -315,14 +339,6 @@
 			<string>20180222</string>
 			<key>Summary</key>
 			<string>1062新生電腦選課；舊生第三階段電 腦選課；新生申請學分抵免</string>
-		</dict>
-		<dict>
-			<key>DtEnd</key>
-			<string>20180228</string>
-			<key>DtStart</key>
-			<string>20180222</string>
-			<key>Summary</key>
-			<string>舊生床位保留申請</string>
 		</dict>
 		<dict>
 			<key>DtEnd</key>
@@ -2494,6 +2510,6 @@
 		</dict>
 	</array>
 	<key>version</key>
-	<string>20170713181253</string>
+	<string>20171202080748</string>
 </dict>
 </plist>
