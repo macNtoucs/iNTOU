@@ -32,6 +32,8 @@
         case AVAudioSessionRecordPermissionGranted:
             [session setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
             [session setActive:YES error:nil];
+            [callButton setEnabled:true];
+            [hangUpButton setEnabled:false];
             break;
         case AVAudioSessionRecordPermissionDenied:
             [statueLabel setText:@"沒有麥克風權限"];
@@ -45,6 +47,14 @@
                     dispatch_async(dispatch_get_main_queue(), ^{
                         [statueLabel setText:@"沒有麥克風權限"];
                         [callButton setEnabled:false];
+                        [hangUpButton setEnabled:false];
+                    });
+                }
+                else {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [session setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
+                        [session setActive:YES error:nil];
+                        [callButton setEnabled:true];
                         [hangUpButton setEnabled:false];
                     });
                 }
