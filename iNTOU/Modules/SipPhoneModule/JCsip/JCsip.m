@@ -10,10 +10,6 @@
 
 #define udp_timeout_second 1
 
-void timeoutCallBack(CFRunLoopTimerRef timer, void *info) {
-    
-}
-
 @implementation JCsip
 @synthesize delegate;
 

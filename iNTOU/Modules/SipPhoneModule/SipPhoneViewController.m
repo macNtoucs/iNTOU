@@ -7,7 +7,6 @@
 //
 
 #import "SipPhoneViewController.h"
-#import <AVFoundation/AVFoundation.h>
 
 @interface SipPhoneViewController ()
 
@@ -23,15 +22,12 @@
     
     diagPadArray = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"*",@"0",@"#"];
     
-    
+    session = [AVAudioSession sharedInstance];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
-    AVAudioSession* session = [AVAudioSession sharedInstance];
     switch ([session recordPermission]) {
         case AVAudioSessionRecordPermissionGranted:
-            [session setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
-            [session setActive:YES error:nil];
             [callButton setEnabled:true];
             [hangUpButton setEnabled:false];
             break;
@@ -52,8 +48,6 @@
                 }
                 else {
                     dispatch_async(dispatch_get_main_queue(), ^{
-                        [session setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
-                        [session setActive:YES error:nil];
                         [callButton setEnabled:true];
                         [hangUpButton setEnabled:false];
                     });
@@ -75,13 +69,14 @@
     }
 }
 - (IBAction)callButtonPressed:(id)sender {
+    [session setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
+    [session setActive:YES error:nil];
     [jcsip registerNtou];
 }
 - (IBAction)hangUpButtonPressed:(id)sender {
     [jcsip hangup];
 }
 - (IBAction)speakerButtonPressed:(UIButton *)sender {
-    AVAudioSession* session = [AVAudioSession sharedInstance];
     if([sender.titleLabel.text isEqualToString:@"擴音"])
     {
         [session overrideOutputAudioPort:AVAudioSessionPortOverrideSpeaker error:nil];
@@ -97,6 +92,7 @@
 -(void)changeStatue:(enum JCSipConditionCode)code {
     switch (code) {
         case JCSipConditionWaiting:
+            [session setActive:NO error:nil];
             [statueLabel setText:@"按下撥打連線至海大"];
             [callButton setEnabled:true];
             [hangUpButton setEnabled:false];

@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 #import "JCsip.h"
 
 @interface SipPhoneViewController : UIViewController <JCSipDelegate> {
     JCsip* jcsip;
     NSArray* diagPadArray;
     NSMutableString* diagString;
+    AVAudioSession* session;
 }
 @property (weak, nonatomic) IBOutlet UIButton *callButton;
 @property (weak, nonatomic) IBOutlet UIButton *hangUpButton;

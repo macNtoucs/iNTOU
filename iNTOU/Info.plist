@@ -19,7 +19,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>2.014</string>
 	<key>CFBundleVersion</key>
-	<string>5.0</string>
+	<string>8.0</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>tencent1104342231</string>
@@ -34,7 +34,7 @@
 	<key>NSCameraUsageDescription</key>
 	<string>App需要您的同意，才能訪問相機。</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>App需要您的同意，才能使用麥克風。</string>
+	<string>這將用在網路電話的收音上。</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>App需要您的同意，才能訪問相簿。</string>
 	<key>UIBackgroundModes</key>
