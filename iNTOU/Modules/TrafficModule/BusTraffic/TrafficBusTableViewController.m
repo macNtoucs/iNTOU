@@ -19,9 +19,6 @@
 static NSArray* city;
 static NSArray* cityName;
 
-//紀錄第一次點擊searchBar
-bool click=true;
-
 -(instancetype)initWithCoder:(NSCoder *)c {
     self = [super initWithCoder:c];
     if(self) {
@@ -36,7 +33,7 @@ bool click=true;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    click=true;
+    
     usuallyUse = [[[NSUserDefaults standardUserDefaults] objectForKey:@"TrafficBusUsuallyUse"] mutableCopy];
     if(!usuallyUse)
         usuallyUse = [NSMutableArray new];
@@ -206,16 +203,6 @@ sectionForSectionIndexTitle:(NSString *)title
         [self.tableView reloadData];
     }
     
-}
-
-- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar{
-    if(click)
-    {
-        [searchBar setText:@"104"];
-        [self searchBar:searchBar textDidChange:[searchBar text]];
-        [searchBar resignFirstResponder];
-        click=false;
-    }
 }
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
