@@ -38,13 +38,13 @@ static NSArray* monthNum;
     self.dataSource = self;
     self.delegate = self;
     
+    
     //讀取檔案
     calenderData = [[NSUserDefaults standardUserDefaults] objectForKey:@"CalendarModule"];
     if(!calenderData)
         calenderData = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"CalendarModule" ofType:@"plist"]];
     
     [self setCalendarData];
-    
     if([pages count] >= 1)
         [self setViewControllers:@[pages[1]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
     else
@@ -52,6 +52,14 @@ static NSArray* monthNum;
     
     //下載檔案
     [self downloadDataFromServer];
+    
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    static int i = 0;
+    int count = [calenderData[@"event"] count];
+    NSLog(@"%i: %d", i, count);
     
 }
 
@@ -73,7 +81,7 @@ static NSArray* monthNum;
     //如果過八月，年份使用下一年
     if(nowMon >= 8)
         now_year++;
-    
+
     //做出年份字串陣列 去年 今年 明年
     NSMutableArray* yearsTemp = [NSMutableArray new];
     for(int i = -1 ; i <= 1 ; i++)
@@ -133,11 +141,15 @@ static NSArray* monthNum;
             if(data) {
                 NSDictionary* json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
                 //版本不符合
-                if(![json[@"version"] isEqualToString:calenderData[@"version"]]) {
-                    
+                if(![json[@"version"] isEqualToString:self->calenderData[@"version"]]) {
                     //更新本地檔案
                     [[NSUserDefaults standardUserDefaults]setObject:json forKey:@"CalendarModule"];
-                    
+                    /*
+                    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"CalendarModule" ofType:@"plist"];
+                    NSMutableDictionary *plistData = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
+                    [plistData setValue:self->calenderData[@"version"] forKey:@"version"];
+                    [plistData writeToFile:plistPath atomically:YES];
+                    */
                     //跳出更新視窗
                     dispatch_async(dispatch_get_main_queue(), ^{
                         UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"偵測到更新"
@@ -146,9 +158,15 @@ static NSArray* monthNum;
                         
                         UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"更新" style:UIAlertActionStyleDefault
                                                                               handler:^(UIAlertAction * action) {
-                                                                                  calenderData = json;
+                                                                                  self->calenderData = json;
+        
+                                                                                  NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"CalendarModule" ofType:@"plist"];
+                                                                                  NSMutableDictionary *plistData = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
+                                                                                  [plistData setValue:self->calenderData[@"version"] forKey:@"version"];
+                                                                                  [plistData writeToFile:plistPath atomically:YES];
+                                                                                  
                                                                                   [self setCalendarData];
-                                                                                  [self setViewControllers:@[pages[0]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+                                                                                  [self setViewControllers:@[self->pages[0]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
                                                                               }];
                         
                         [alert addAction:defaultAction];

@@ -102,6 +102,11 @@
                         UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"更新" style:UIAlertActionStyleDefault
                                                                               handler:^(UIAlertAction * action) {
                                                                                   lifeData = json;
+                                                                                  //將更新過的json版本寫到LifeModule.plist中
+                                                                                  NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"LifeModule" ofType:@"plist"];
+                                                                                  NSMutableDictionary *plistData = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
+                                                                                  [plistData setValue:lifeData[@"version"] forKey:@"version"];
+                                                                                  [plistData writeToFile:plistPath atomically:YES];
                                                                                   [self setupPages];
                                                                                   [self setViewControllers:@[pages[0]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
                                                                               }];
