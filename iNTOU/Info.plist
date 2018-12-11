@@ -17,9 +17,9 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.014</string>
+	<string>2.017</string>
 	<key>CFBundleVersion</key>
-	<string>8.0</string>
+	<string>1.0</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>tencent1104342231</string>

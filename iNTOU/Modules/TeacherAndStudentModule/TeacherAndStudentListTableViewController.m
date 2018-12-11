@@ -38,14 +38,28 @@ static NSArray* studentFunc;
     else
         self.title = @"導生系統";
     
-    refresh =[UIRefreshControl new];
-    [refresh addTarget:self action:@selector(checkType) forControlEvents:UIControlEventValueChanged];
-    self.tableView.backgroundView = refresh;
+    //功能暫時停用
+    /*
+     refresh =[UIRefreshControl new];
+     [refresh addTarget:self action:@selector(checkType) forControlEvents:UIControlEventValueChanged];
+     self.tableView.backgroundView = refresh;
+     */
 }
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"公告"
+                                                                   message:@"此功能暫停使用！"
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"確定" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {
+                                                              
+                                                          }];
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
+    //功能暫時停用
+    /*
     if([moodle checkLogin])
     {
         if(!typeData)
@@ -59,6 +73,7 @@ static NSArray* studentFunc;
         [self presentViewController:alert animated:YES completion:nil];
         [self.tableView reloadData];
     }
+     */
 }
 
 - (void)didReceiveMemoryWarning {
