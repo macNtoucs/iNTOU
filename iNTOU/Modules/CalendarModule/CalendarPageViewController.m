@@ -31,7 +31,6 @@ static NSArray* monthNum;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.view.backgroundColor = [UIColor blackColor];
     
     //設定delegate
@@ -45,9 +44,14 @@ static NSArray* monthNum;
         calenderData = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"CalendarModule" ofType:@"plist"]];
     
     [self setCalendarData];
-    if([pages count] >= 1)
+    /*
+    if([pages count] >= 1){
         [self setViewControllers:@[pages[1]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
-    else
+    } else {
+        [self setViewControllers:@[pages[0]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+    }
+    */
+    if([pages count] > 0)
         [self setViewControllers:@[pages[0]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
     
     //下載檔案
@@ -58,9 +62,12 @@ static NSArray* monthNum;
 
 - (void)viewWillAppear:(BOOL)animated {
     static int i = 0;
+    /*
     int count = [calenderData[@"event"] count];
     NSLog(@"%i: %d", i, count);
-    
+    */
+    long count = [calenderData[@"event"] count];
+    NSLog(@"%i: %ld", i, count);
 }
 
 - (void)didReceiveMemoryWarning {

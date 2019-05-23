@@ -90,9 +90,9 @@ static NSArray* dayTag;
                 }
             }
             //整理資料
-            stellarData = [self makeDataEasyToShow:stellarDataTemp];
+            self->stellarData = [self makeDataEasyToShow:stellarDataTemp];
             
-            [[NSUserDefaults standardUserDefaults] setObject:stellarData forKey:@"StellarModule"];
+            [[NSUserDefaults standardUserDefaults] setObject:self->stellarData forKey:@"StellarModule"];
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self.mainScrollView reloadData];
             });

@@ -57,12 +57,13 @@
 -(void)loginAccount:(NSString*)account_temp AndPassword:(NSString*)password_temp {
     NSData* resultData = [self sendToAPIType:@"login.do" andpostString:[[NSString alloc] initWithFormat:@"account=%@&password=%@",account_temp,password_temp]];
     NSString* result = [[NSString alloc]initWithData:resultData encoding:NSUTF8StringEncoding];
-    printf("%s", result);
+    //printf("%s", result);
+    NSLog(@"%@", result);
     if([result rangeOfString:@"Login success"].location != NSNotFound) {
         account = account_temp;
         password = password_temp;
         [self save];
-        printf("success!!!!\n");
+        //printf("success!!!!\n");
     }
 }
 

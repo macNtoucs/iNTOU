@@ -39,16 +39,16 @@ static NSArray* studentFunc;
         self.title = @"導生系統";
     
     //功能暫時停用
-    /*
+    
      refresh =[UIRefreshControl new];
      [refresh addTarget:self action:@selector(checkType) forControlEvents:UIControlEventValueChanged];
      self.tableView.backgroundView = refresh;
-     */
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
+    /*
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"公告"
                                                                    message:@"此功能暫停使用！"
                                                             preferredStyle:UIAlertControllerStyleAlert];
@@ -58,8 +58,9 @@ static NSArray* studentFunc;
                                                           }];
     [alert addAction:defaultAction];
     [self presentViewController:alert animated:YES completion:nil];
+    */
     //功能暫時停用
-    /*
+    
     if([moodle checkLogin])
     {
         if(!typeData)
@@ -73,7 +74,7 @@ static NSArray* studentFunc;
         [self presentViewController:alert animated:YES completion:nil];
         [self.tableView reloadData];
     }
-     */
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -86,9 +87,9 @@ static NSArray* studentFunc;
     typeData = nil;
     [self.tableView reloadData];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSString* urlString = [[NSString alloc]initWithFormat:@"http://140.121.91.62:8080/NTOUAPI/IsTeacher?stid=%@&password=%@",moodle.account,moodle.password];
-        if(stidTarget)
-            urlString = [urlString stringByAppendingFormat:@"&stidTarget=%@",stidTarget];
+        NSString* urlString = [[NSString alloc]initWithFormat:@"http://140.121.91.62:8080/SCLAB/IsTeacher?stid=%@&password=%@",self->moodle.account,self->moodle.password];
+        if(self->stidTarget)
+            urlString = [urlString stringByAppendingFormat:@"&stidTarget=%@",self->stidTarget];
         
         NSURL* url = [[NSURL alloc]initWithString:urlString];
         NSURLRequest* request = [[NSURLRequest alloc]initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:30.0];
@@ -97,8 +98,8 @@ static NSArray* studentFunc;
         NSURLSessionDataTask* task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
             if(data)
             {
-                typeData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-                if(typeData[@"IsTeacher"])
+                self->typeData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+                if(self->typeData[@"IsTeacher"])
                 {
                     dispatch_async(dispatch_get_main_queue(), ^{
                         [self downloadDataFromServer];
@@ -133,14 +134,13 @@ static NSArray* studentFunc;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSString* urlString;
         
-        if([typeData[@"IsTeacher"] isEqualToString:@"1"] && !stidTarget)
-            urlString = [[NSString alloc]initWithFormat:@"http://140.121.91.62:8080/NTOUAPI/GetTeacherSemesterList?stid=%@&password=%@",moodle.account,moodle.password];
+        if([self->typeData[@"IsTeacher"] isEqualToString:@"1"] && !self->stidTarget)
+            urlString = [[NSString alloc]initWithFormat:@"http://140.121.91.62:8080/SCLAB/GetTeacherSemesterList?stid=%@&password=%@",self->moodle.account,self->moodle.password];
         else
-            urlString = [[NSString alloc]initWithFormat:@"http://140.121.91.62:8080/NTOUAPI/GetStudentSemesterList?stid=%@&password=%@",moodle.account,moodle.password];
+            urlString = [[NSString alloc]initWithFormat:@"http://140.121.91.62:8080/SCLAB/GetStudentSemesterList?stid=%@&password=%@",self->moodle.account,self->moodle.password];
         
-        if(stidTarget)
-            urlString = [urlString stringByAppendingFormat:@"&stidTarget=%@",stidTarget];
-            
+        if(self->stidTarget)
+            urlString = [urlString stringByAppendingFormat:@"&stidTarget=%@",self->stidTarget];
         NSURL* url = [[NSURL alloc]initWithString:urlString];
         NSURLRequest* request = [[NSURLRequest alloc]initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:30.0];
         
@@ -148,7 +148,7 @@ static NSArray* studentFunc;
         NSURLSessionDataTask* task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
             if(data)
             {
-                listData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+                self->listData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [self.tableView reloadData];
                 });
@@ -163,7 +163,7 @@ static NSArray* studentFunc;
                 });
             }
             dispatch_async(dispatch_get_main_queue(), ^{
-                [refresh endRefreshing];
+                [self->refresh endRefreshing];
             });
         }];
         [task resume];

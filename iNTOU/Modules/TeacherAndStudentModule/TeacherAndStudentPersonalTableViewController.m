@@ -45,10 +45,10 @@ static NSDictionary* conditionCode;
 
 -(void)downloadDataFromServer {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSString* urlString = [[NSString alloc]initWithFormat:@"http://140.121.91.62:8080/NTOUAPI/GetStudentInfo?stid=%@&password=%@",moodle.account,moodle.password];
+        NSString* urlString = [[NSString alloc]initWithFormat:@"http://140.121.91.62:8080/SCLAB/GetStudentInfo?stid=%@&password=%@",self->moodle.account,self->moodle.password];
         
-        if(stidTarget)
-            urlString = [urlString stringByAppendingFormat:@"&stidTarget=%@",stidTarget];
+        if(self->stidTarget)
+            urlString = [urlString stringByAppendingFormat:@"&stidTarget=%@",self->stidTarget];
         
         NSURL* url = [[NSURL alloc]initWithString:urlString];
         NSURLRequest* request = [[NSURLRequest alloc]initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:30.0];
@@ -57,7 +57,7 @@ static NSDictionary* conditionCode;
         NSURLSessionDataTask* task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
             if(data)
             {
-                personalData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+                self->personalData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [self.tableView reloadData];
                 });
@@ -116,7 +116,7 @@ static NSDictionary* conditionCode;
     
     ((UILabel*)[cell viewWithTag:101]).text = tagName[tagOrder[indexPath.row]];
     [((UITextView*)[cell viewWithTag:102]) setTextContainerInset:UIEdgeInsetsMake(0, 0, 0, 0)];
-    
+    //NSLog(@"%@", personalData);
     if(!personalData[tagOrder[indexPath.row]])
         ((UITextView*)[cell viewWithTag:102]).text = @"無";
     else if(conditionCode[tagOrder[indexPath.row]] && conditionCode[tagOrder[indexPath.row]][personalData[tagOrder[indexPath.row]]])

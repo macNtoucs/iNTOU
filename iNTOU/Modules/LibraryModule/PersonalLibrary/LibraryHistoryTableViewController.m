@@ -46,7 +46,7 @@
     
     if([library checkLogin]) {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-            NSArray* libraryHistoryDataTemp = [library getReadingHistory:segment];
+            NSArray* libraryHistoryDataTemp = [self->library getReadingHistory:segment];
             if(!libraryHistoryDataTemp) {
                 UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"錯誤" message:@"登入失敗或連線失敗！" preferredStyle:UIAlertControllerStyleAlert];
                 UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"確定" style:UIAlertActionStyleCancel handler:nil];
@@ -55,17 +55,17 @@
             }
             else {
                 if(segment == 1) {
-                    libraryHistoryData = libraryHistoryDataTemp;
+                    self->libraryHistoryData = libraryHistoryDataTemp;
                 }
                 else {
-                    libraryHistoryData = [libraryHistoryData arrayByAddingObjectsFromArray:libraryHistoryDataTemp];
+                    self->libraryHistoryData = [self->libraryHistoryData arrayByAddingObjectsFromArray:libraryHistoryDataTemp];
                 }
-                maxSegment = segment;
+                self->maxSegment = segment;
             }
             
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self.tableView reloadData];
-                [refresh endRefreshing];
+                [self->refresh endRefreshing];
             });
         });
     }
@@ -77,8 +77,8 @@
             UIViewController* loginViewController = [settingModule instantiateViewControllerWithIdentifier:@"SettingModuleLibrary"];
             loginViewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Done"
                                                                                                     style:UIBarButtonItemStylePlain target:self action:@selector(removeLogin)];
-            loginNavi = [[UINavigationController alloc] initWithRootViewController:loginViewController];
-            [self presentViewController:loginNavi animated:YES completion:nil];
+            self->loginNavi = [[UINavigationController alloc] initWithRootViewController:loginViewController];
+            [self presentViewController:self->loginNavi animated:YES completion:nil];
         }];
         [alert addAction:goToLogin];
         [alert addAction:cancel];

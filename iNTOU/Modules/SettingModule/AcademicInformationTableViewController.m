@@ -54,17 +54,17 @@
         [((UITextField*)[passwordCell viewWithTag:101]) setEnabled:NO];
         
         dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
-            [academicInformation loginAccount:account AndPassword:password];
+            [self->academicInformation loginAccount:account AndPassword:password];
             dispatch_async(dispatch_get_main_queue(), ^{
                 [MBProgressHUD hideHUDForView:self.view animated:YES];
-                if([academicInformation checkLogin])
+                if([self->academicInformation checkLogin])
                 {
-                    [loginButton setTitle:@"登出"];
+                    [self->loginButton setTitle:@"登出"];
                 }
                 else
                 {
-                    [((UITextField*)[accountCell viewWithTag:101]) setEnabled:YES];
-                    [((UITextField*)[passwordCell viewWithTag:101]) setEnabled:YES];
+                    [((UITextField*)[self->accountCell viewWithTag:101]) setEnabled:YES];
+                    [((UITextField*)[self->passwordCell viewWithTag:101]) setEnabled:YES];
                     
                     UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"錯誤" message:@"登入失敗！" preferredStyle:UIAlertControllerStyleAlert];
                     UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"確定" style:UIAlertActionStyleCancel handler:nil];

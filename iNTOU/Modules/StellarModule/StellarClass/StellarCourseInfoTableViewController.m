@@ -56,21 +56,21 @@ static NSDictionary* mustType;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         Moodle* moodle = [Moodle sharedInstance];
         if([moodle checkLogin]) {
-            courseInfoData = [moodle getCourseInfoWithCosid:classData[@"id"] Clsid:classData[@"open_clsid"]];
+            self->courseInfoData = [moodle getCourseInfoWithCosid:self->classData[@"id"] Clsid:self->classData[@"open_clsid"]];
             
             //檢查連線
-            if(!courseInfoData) {
+            if(!self->courseInfoData) {
                 UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"錯誤" message:@"連線失敗！" preferredStyle:UIAlertControllerStyleAlert];
                 UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"確定" style:UIAlertActionStyleCancel handler:nil];
                 [alert addAction:cancel];
                 [self presentViewController:alert animated:YES completion:nil];
             }
-            //token過氣
-            if([courseInfoData[@"result"] isEqualToString:@"-404"]) {
+            //token過期
+            if([self->courseInfoData[@"result"] isEqualToString:@"-404"]) {
                 NSDictionary* accountResult = [moodle loginAccount:moodle.account AndPassword:moodle.password];
                 //帳號密碼錯誤或連線出問題
                 if([accountResult[@"result"] isEqualToString:@"1"]) {
-                    courseInfoData = [moodle getCourseInfoWithCosid:classData[@"id"] Clsid:classData[@"open_clsid"]];
+                    self->courseInfoData = [moodle getCourseInfoWithCosid:self->classData[@"id"] Clsid:self->classData[@"open_clsid"]];
                 }
                 else {
                     UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"錯誤" message:@"帳號密碼錯誤或連線失敗！" preferredStyle:UIAlertControllerStyleAlert];
@@ -82,11 +82,11 @@ static NSDictionary* mustType;
             
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self.tableView reloadData];
-                [refresh endRefreshing];
+                [self->refresh endRefreshing];
             });
         }
         else {
-            [refresh endRefreshing];
+            [self->refresh endRefreshing];
             UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"錯誤" message:@"沒有登入的帳戶，請前往設定登入！" preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"確定" style:UIAlertActionStyleCancel handler:nil];
             [alert addAction:cancel];

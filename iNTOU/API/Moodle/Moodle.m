@@ -74,6 +74,7 @@ static Moodle* globalPointer = nil;
         
         account_encrypted = [self DESencrypt:account_temp Key:DESKey_string];
         password_encrypted = [self DESencrypt:password_temp Key:DESKey_string];
+        
     }
     while ([self checkIsStringIncludePulseSymbol:account_encrypted] || [self checkIsStringIncludePulseSymbol:password_encrypted]);
     

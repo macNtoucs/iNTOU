@@ -105,33 +105,25 @@ foundCharacters:(NSString *)string {
     if(![elementName isEqualToString:@"ntou"])
     {
         NSString* parseString = [parseStringTemp copy];
-        
-        
         parseString = [parseString stringByReplacingOccurrencesOfString:@"&amp;" withString:@"&"];
         parseString = [parseString stringByReplacingOccurrencesOfString:@"&quot;" withString:@"\""];
-        
         if([elementName isEqualToString:@"notice"]) {
             [dataElemetTemp setValue:[dataElemetTemp[@"Attachment_Title"] copy] forKey:@"Attachment_Title"];
             [dataElemetTemp setValue:[dataElemetTemp[@"Attachment_URL"] copy] forKey:@"Attachment_URL"];
             [dataTemp addObject:[dataElemetTemp copy]];
             return;
         }
-        
         if([elementName isEqualToString:@"Attachment_Title"] || [elementName isEqualToString:@"Attachment_URL"]) {
             [dataElemetTemp[elementName] addObject: parseString];
             return;
         }
-        
-        
         if([elementName isEqualToString:@"body"]) {
             parseString = [parseString stringByReplacingOccurrencesOfString:@"[url]" withString:@""];
             parseString = [parseString stringByReplacingOccurrencesOfString:@"[/url]" withString:@""];
         }
-        
         if([elementName isEqualToString:@"title"]) {
             parseString = [parseString stringByReplacingOccurrencesOfString:@"\n" withString:@""];
         }
-        
         if(![elementName isEqualToString:@"notice"])
             [dataElemetTemp setObject:parseString forKey:elementName];
     }

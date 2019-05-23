@@ -94,14 +94,14 @@
         
         NSURLSession* session = [NSURLSession sharedSession];
         NSURLSessionDataTask* task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-            searchResult = nil;
+            self->searchResult = nil;
             if(data)
             {
                 NSDictionary* temp = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    if([searchText isEqualToString:expressSearchBar.text])
+                    if([searchText isEqualToString:self->expressSearchBar.text])
                     {
-                        searchResult = [temp[@"searchResult"] copy];
+                        self->searchResult = [temp[@"searchResult"] copy];
                         [self.tableView reloadData];
                     }
                 });
@@ -111,12 +111,12 @@
             {
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [self.tableView reloadData];
-                    if(!messageTag)
+                    if(!self->messageTag)
                     {
-                        messageTag = true;
+                        self->messageTag = true;
                         UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"錯誤" message:@"無法取得連線！" preferredStyle:UIAlertControllerStyleAlert];
                         UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"確定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action){
-                            messageTag = false;
+                            self->messageTag = false;
                         }];
                         [alert addAction:cancel];
                         [self presentViewController:alert animated:YES completion:nil];

@@ -173,9 +173,9 @@ sectionForSectionIndexTitle:(NSString *)title
                 {
                     NSDictionary* temp = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
                     dispatch_async(dispatch_get_main_queue(), ^{
-                        if([searchText isEqualToString:busSearchBar.text])
+                        if([searchText isEqualToString:self->busSearchBar.text])
                         {
-                            searchResult[city[i]] = [temp[@"searchResult"] copy];
+                            self->searchResult[city[i]] = [temp[@"searchResult"] copy];
                             [self.tableView reloadData];
                         }
                     });
@@ -184,12 +184,12 @@ sectionForSectionIndexTitle:(NSString *)title
                 {
                     dispatch_async(dispatch_get_main_queue(), ^{
                         [self.tableView reloadData];
-                        if(!messageTag)
+                        if(!self->messageTag)
                         {
-                            messageTag = true;
+                            self->messageTag = true;
                             UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"錯誤" message:@"無法取得連線！" preferredStyle:UIAlertControllerStyleAlert];
                             UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"確定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action){
-                                messageTag = false;
+                                self->messageTag = false;
                             }];
                             [alert addAction:cancel];
                             [self presentViewController:alert animated:YES completion:nil];

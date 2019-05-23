@@ -72,9 +72,9 @@
 
 -(void)downloadDataFromServer {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSString* urlString = [[NSString alloc]initWithFormat:@"http://140.121.91.62:8080/NTOUAPI/GetTeacherSemesterClassStudentList?stid=%@&password=%@&semester=%@&cosid=%@",moodle.account,moodle.password,semester,classInfo[@"COSID"]];
-        if(classInfo[@"CLASSNO"])
-            urlString = [urlString stringByAppendingFormat:@"&classno=%@",classInfo[@"CLASSNO"]];
+        NSString* urlString = [[NSString alloc]initWithFormat:@"http://140.121.91.62:8080/SCLAB/GetTeacherSemesterClassStudentList?stid=%@&password=%@&semester=%@&cosid=%@",self->moodle.account,self->moodle.password,self->semester,self->classInfo[@"COSID"]];
+        if(self->classInfo[@"CLASSNO"])
+            urlString = [urlString stringByAppendingFormat:@"&classno=%@",self->classInfo[@"CLASSNO"]];
         NSURL* url = [[NSURL alloc]initWithString:urlString];
         NSURLRequest* request = [[NSURLRequest alloc]initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:30.0];
         
@@ -82,8 +82,8 @@
         NSURLSessionDataTask* task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
             if(data)
             {
-                classStudentListData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-                showData = classStudentListData[@"SemesterClassStudentList"];
+                self->classStudentListData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+                self->showData = self->classStudentListData[@"SemesterClassStudentList"];
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [self.tableView reloadData];
                 });
@@ -107,7 +107,7 @@
     threadLock[stid] = @"1"; // lock
     threadNum ++;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSString* urlString = [[NSString alloc]initWithFormat:@"https://ais.ntou.edu.tw/SCSPhotoQuery.aspx?ACNT=%@&PWD=%@&STNO=%@",academicInformation.account,academicInformation.password,stid];
+        NSString* urlString = [[NSString alloc]initWithFormat:@"https://ais.ntou.edu.tw/SCSPhotoQuery.aspx?ACNT=%@&PWD=%@&STNO=%@",self->academicInformation.account,self->academicInformation.password,stid];
         NSURL* url = [[NSURL alloc]initWithString:urlString];
         NSURLRequest* request = [[NSURLRequest alloc]initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
         
@@ -126,13 +126,13 @@
                     [self downloadImage:stid AndUrl:apiWeb];
                 }
                 else {
-                    threadLock[stid] = @"2"; // this student have no picture
+                    self->threadLock[stid] = @"2"; // this student have no picture
                 }
             }
             dispatch_async(dispatch_get_main_queue(), ^{
-                if([threadLock[stid] isEqualToString:@"1"])
-                    threadLock[stid] = nil;
-                threadNum --;
+                if([self->threadLock[stid] isEqualToString:@"1"])
+                    self->threadLock[stid] = nil;
+                self->threadNum --;
                 [self.tableView reloadData];
             });
         }];
@@ -149,7 +149,7 @@
     NSURLSessionDataTask* task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if(data)
         {
-            [imageCache setObject:data forKey:stid];
+            [self->imageCache setObject:data forKey:stid];
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self.tableView reloadData];
             });

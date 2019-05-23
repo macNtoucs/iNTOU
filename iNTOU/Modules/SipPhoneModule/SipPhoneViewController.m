@@ -41,15 +41,15 @@
                 if(!granted)
                 {
                     dispatch_async(dispatch_get_main_queue(), ^{
-                        [statueLabel setText:@"沒有麥克風權限"];
-                        [callButton setEnabled:false];
-                        [hangUpButton setEnabled:false];
+                        [self->statueLabel setText:@"沒有麥克風權限"];
+                        [self->callButton setEnabled:false];
+                        [self->hangUpButton setEnabled:false];
                     });
                 }
                 else {
                     dispatch_async(dispatch_get_main_queue(), ^{
-                        [callButton setEnabled:true];
-                        [hangUpButton setEnabled:false];
+                        [self->callButton setEnabled:true];
+                        [self->hangUpButton setEnabled:false];
                     });
                 }
             }];

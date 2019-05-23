@@ -88,7 +88,7 @@
             if(data) {
                 NSDictionary* json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
                 //版本不符合
-                if(![json[@"version"] isEqualToString:lifeData[@"version"]]) {
+                if(![json[@"version"] isEqualToString:self->lifeData[@"version"]]) {
                     
                     //更新本地檔案
                     [[NSUserDefaults standardUserDefaults]setObject:json forKey:@"CalendarModule"];
@@ -101,14 +101,14 @@
                         
                         UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"更新" style:UIAlertActionStyleDefault
                                                                               handler:^(UIAlertAction * action) {
-                                                                                  lifeData = json;
+                                                                                  self->lifeData = json;
                                                                                   //將更新過的json版本寫到LifeModule.plist中
                                                                                   NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"LifeModule" ofType:@"plist"];
                                                                                   NSMutableDictionary *plistData = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
-                                                                                  [plistData setValue:lifeData[@"version"] forKey:@"version"];
+                                                                                  [plistData setValue:self->lifeData[@"version"] forKey:@"version"];
                                                                                   [plistData writeToFile:plistPath atomically:YES];
                                                                                   [self setupPages];
-                                                                                  [self setViewControllers:@[pages[0]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+                                                                                  [self setViewControllers:@[self->pages[0]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
                                                                               }];
                         
                         [alert addAction:defaultAction];

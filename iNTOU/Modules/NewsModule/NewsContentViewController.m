@@ -18,13 +18,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     NSMutableString* doc = [NSMutableString new];
-    
     //title
     [doc appendString:data[@"title"]];
     [doc appendString:@"</br>"];
-    
     //dpname,promoter
     [doc appendString:[[NSString alloc]initWithFormat:@"發布單位：%@ %@",data[@"dpname"],data[@"promoter"]]];
     [doc appendString:@"</br>"];
@@ -33,7 +30,6 @@
     [doc appendString:[[NSString alloc]initWithFormat:@"發布日期：%@",data[@"pubDate"]]];
     [doc appendString:@"</br>"];
     [doc appendString:@"</br>"];
-    
     //body
     NSString* body = data[@"body"];
     body = [body stringByReplacingOccurrencesOfString:@"\n\r" withString:@"</br>"];
@@ -41,7 +37,6 @@
     body = [body stringByReplacingOccurrencesOfString:@"\t" withString:@""];
     [doc appendString:body];
     [doc appendString:@"</br>"];
-    
     //link
     if(![data[@"link"] isEqualToString:@""])
         [doc appendString:[[NSString alloc] initWithFormat:@"<a href=\"%@\">連結<a></br>",data[@"link"]]];
@@ -70,7 +65,6 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
         [self presentViewController:safari animated:YES completion:nil];
         return NO;
     }
-    
     return YES;
 }
 

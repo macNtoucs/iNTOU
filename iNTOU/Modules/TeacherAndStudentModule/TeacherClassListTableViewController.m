@@ -32,7 +32,7 @@
 
 -(void)downloadDataFromServer {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSString* urlString = [[NSString alloc]initWithFormat:@"http://140.121.91.62:8080/NTOUAPI/GetTeacherSemesterClassList?stid=%@&password=%@&semester=%@",moodle.account,moodle.password,semester];
+        NSString* urlString = [[NSString alloc]initWithFormat:@"http://140.121.91.62:8080/SCLAB/GetTeacherSemesterClassList?stid=%@&password=%@&semester=%@",self->moodle.account,self->moodle.password,self->semester];
         NSURL* url = [[NSURL alloc]initWithString:urlString];
         NSURLRequest* request = [[NSURLRequest alloc]initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:30.0];
         
@@ -40,7 +40,7 @@
         NSURLSessionDataTask* task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
             if(data)
             {
-                classListData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+                self-> classListData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [self.tableView reloadData];
                 });

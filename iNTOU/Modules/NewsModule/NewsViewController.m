@@ -105,16 +105,16 @@ static NSArray* className;
         ((NewsClassData*)classData[selected]).threadLock = true;
         int tempSelected = selected;
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-            [classData[tempSelected] downloadDataFromServer:page];
+            [self->classData[tempSelected] downloadDataFromServer:page];
             
             dispatch_async(dispatch_get_main_queue(), ^{
-                ((NewsClassData*)classData[selected]).threadLock = false;
+                ((NewsClassData*)self->classData[self->selected]).threadLock = false;
                 //頁面與使用者所選相同才自動更新
-                if(tempSelected == selected) {
-                    cellsData = [((NewsClassData*)classData[tempSelected]) classData];
-                    statusLabel.text = [((NewsClassData*)classData[tempSelected]) status];
-                    [newsTableView reloadData];
-                    [refresh endRefreshing];
+                if(tempSelected == self->selected) {
+                    self->cellsData = [((NewsClassData*)self->classData[tempSelected]) classData];
+                    self->statusLabel.text = [((NewsClassData*)self->classData[tempSelected]) status];
+                    [self->newsTableView reloadData];
+                    [self->refresh endRefreshing];
                 }
             });
         });

@@ -34,9 +34,9 @@
     
     NSURLSession* session = [NSURLSession sharedSession];
     NSURLSessionDataTask* task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        stopData = nil;
+        self->stopData = nil;
         if(data)
-            stopData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+            self->stopData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.tableView reloadData];
         });

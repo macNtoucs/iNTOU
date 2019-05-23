@@ -112,22 +112,22 @@
     [password setEnabled:NO];
     
     dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
-        [library loginAccount:account.text AndPassword:password.text];
+        [self->library loginAccount:self->account.text AndPassword:self->password.text];
         
         dispatch_async(dispatch_get_main_queue(), ^{
             [MBProgressHUD hideHUDForView:self.view animated:YES];
             
-            [button setEnabled:YES];
+            [self->button setEnabled:YES];
             
             
-            if([library checkLogin]) {
-                [button setTitle:@"登出" forState:UIControlStateNormal];
-                [button removeTarget:self action:@selector(login) forControlEvents:UIControlEventTouchDown];
-                [button addTarget:self action:@selector(logout) forControlEvents:UIControlEventTouchDown];
+            if([self->library checkLogin]) {
+                [self->button setTitle:@"登出" forState:UIControlStateNormal];
+                [self->button removeTarget:self action:@selector(login) forControlEvents:UIControlEventTouchDown];
+                [self->button addTarget:self action:@selector(logout) forControlEvents:UIControlEventTouchDown];
             }
             else {
-                [account setEnabled:YES];
-                [password setEnabled:YES];
+                [self->account setEnabled:YES];
+                [self->password setEnabled:YES];
                 UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"錯誤" message:@"登入失敗！" preferredStyle:UIAlertControllerStyleAlert];
                 UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"確定" style:UIAlertActionStyleCancel handler:nil];
                 
