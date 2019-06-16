@@ -48,19 +48,19 @@ static NSArray* studentFunc;
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    /*
+    
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"公告"
                                                                    message:@"此功能暫停使用！"
                                                             preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"確定" style:UIAlertActionStyleDefault
                                                           handler:^(UIAlertAction * action) {
-                                                              
+                                                              [self.navigationController popToRootViewControllerAnimated:YES];
                                                           }];
     [alert addAction:defaultAction];
     [self presentViewController:alert animated:YES completion:nil];
-    */
-    //功能暫時停用
     
+    //功能暫時停用
+    /*
     if([moodle checkLogin])
     {
         if(!typeData)
@@ -74,7 +74,7 @@ static NSArray* studentFunc;
         [self presentViewController:alert animated:YES completion:nil];
         [self.tableView reloadData];
     }
-    
+    */
 }
 
 - (void)didReceiveMemoryWarning {
