@@ -36,7 +36,7 @@
     switch (indexPath.row) {
         case 0:
         {
-            SFSafariViewController* safari = [[SFSafariViewController alloc]initWithURL:[NSURL URLWithString:@"http://www.season2016.com/"]];
+            SFSafariViewController* safari = [[SFSafariViewController alloc]initWithURL:[NSURL URLWithString:@"https://www.facebook.com/ntouclothes/"]];
             [self presentViewController:safari animated:YES completion:nil];
             break;
         }

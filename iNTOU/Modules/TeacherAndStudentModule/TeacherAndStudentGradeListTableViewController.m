@@ -32,7 +32,7 @@
 
 -(void)downloadDataFromServer {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSString* urlString = [[NSString alloc]initWithFormat:@"http://140.121.91.62:8080/SCLAB/GetStudentSemesterGrade?stid=%@&password=%@&semester=%@",self->moodle.account,self->moodle.password,self->semester];
+        NSString* urlString = [[NSString alloc]initWithFormat:@"http://140.121.91.62:8080/NTOUAPI/GetStudentSemesterGrade?stid=%@&password=%@&semester=%@",self->moodle.account,self->moodle.password,self->semester];
         
         if(self->stidTarget)
             urlString = [urlString stringByAppendingFormat:@"&stidTarget=%@",self->stidTarget];

@@ -87,7 +87,7 @@ static NSArray* studentFunc;
     typeData = nil;
     [self.tableView reloadData];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSString* urlString = [[NSString alloc]initWithFormat:@"http://140.121.91.62:8080/SCLAB/IsTeacher?stid=%@&password=%@",self->moodle.account,self->moodle.password];
+        NSString* urlString = [[NSString alloc]initWithFormat:@"http://140.121.91.62:8080/NTOUAPI/IsTeacher?stid=%@&password=%@",self->moodle.account,self->moodle.password];
         if(self->stidTarget)
             urlString = [urlString stringByAppendingFormat:@"&stidTarget=%@",self->stidTarget];
         
@@ -135,9 +135,9 @@ static NSArray* studentFunc;
         NSString* urlString;
         
         if([self->typeData[@"IsTeacher"] isEqualToString:@"1"] && !self->stidTarget)
-            urlString = [[NSString alloc]initWithFormat:@"http://140.121.91.62:8080/SCLAB/GetTeacherSemesterList?stid=%@&password=%@",self->moodle.account,self->moodle.password];
+            urlString = [[NSString alloc]initWithFormat:@"http://140.121.91.62:8080/NTOUAPI/GetTeacherSemesterList?stid=%@&password=%@",self->moodle.account,self->moodle.password];
         else
-            urlString = [[NSString alloc]initWithFormat:@"http://140.121.91.62:8080/SCLAB/GetStudentSemesterList?stid=%@&password=%@",self->moodle.account,self->moodle.password];
+            urlString = [[NSString alloc]initWithFormat:@"http://140.121.91.62:8080/NTOUAPI/GetStudentSemesterList?stid=%@&password=%@",self->moodle.account,self->moodle.password];
         
         if(self->stidTarget)
             urlString = [urlString stringByAppendingFormat:@"&stidTarget=%@",self->stidTarget];

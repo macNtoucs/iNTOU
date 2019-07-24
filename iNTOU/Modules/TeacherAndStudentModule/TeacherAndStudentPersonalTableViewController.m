@@ -45,7 +45,7 @@ static NSDictionary* conditionCode;
 
 -(void)downloadDataFromServer {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSString* urlString = [[NSString alloc]initWithFormat:@"http://140.121.91.62:8080/SCLAB/GetStudentInfo?stid=%@&password=%@",self->moodle.account,self->moodle.password];
+        NSString* urlString = [[NSString alloc]initWithFormat:@"http://140.121.91.62:8080/NTOUAPI/GetStudentInfo?stid=%@&password=%@",self->moodle.account,self->moodle.password];
         
         if(self->stidTarget)
             urlString = [urlString stringByAppendingFormat:@"&stidTarget=%@",self->stidTarget];
